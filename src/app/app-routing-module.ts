@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 //Frames
 import { PrincipalComponent } from './principal/principal.component';
-import { PageAboutUsComponent } from './Page-about-us/page-about-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [  
   {
@@ -13,8 +13,8 @@ const routes: Routes = [
     component: PrincipalComponent,
   },
   {
-    path:'pageaboutus',
-    component: PageAboutUsComponent 
+    path:'about-us',
+    component: AboutUsComponent
   }
 ];
 
