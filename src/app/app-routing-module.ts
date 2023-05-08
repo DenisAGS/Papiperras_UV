@@ -5,16 +5,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 //Frames
 import { PrincipalComponent } from './principal/principal.component';
-import { AppComponent } from './app.component';
+import { PageAboutUsComponent } from './Page-about-us/page-about-us.component';
 
 const routes: Routes = [  
-{
-    path:'AppComponent',
-    component: AppComponent,
+  {
+    path:'',
+    component: PrincipalComponent,
   },
   {
-    path:'principal',
-    component: PrincipalComponent,
+    path:'pageaboutus',
+    component: PageAboutUsComponent 
   }
 ];
 
