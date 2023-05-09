@@ -13,7 +13,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     background-color: #79017E;
@@ -184,7 +184,7 @@ header{
 
   .calidadImg{
     width: 80px;
-    height: 80px;
+    height: auto;
     margin: auto;
     display: block;
   }
@@ -296,9 +296,20 @@ header{
     width: auto;
 }
 
+/*Seccion de contacto*/
+
 .ContContacto{
   background-color: #FFFFFF;
   height: 280px;
   border-radius: 25px;
   width: auto;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.Btn-contacto{
+  justify-content: center;
 }
