@@ -149,7 +149,7 @@ header{
     border-radius: 25px;
 }
 
-  .title1{
+  .title1-cont{
     font-size: 50px;
     margin: 0px;
     top: 482px;
@@ -162,7 +162,7 @@ header{
     padding: 20px;
   }
 
-  .title2{
+  .title2-cont{
     font-size: 30px;
     padding: 20px;
     color: #FFB7D5;
@@ -172,7 +172,7 @@ header{
     line-height: 20px;
   }
 
-  .title3{
+  .title3-cont{
     margin-top: auto;
     font-size: 30px;
     padding: 20px;

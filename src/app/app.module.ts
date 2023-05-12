@@ -9,6 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrincipalComponent } from './principal/principal.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
+import { InventarioComponent } from './inventario/inventario.component';
+import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
+import { HeaderPageComponent } from './header-page/header-page.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { DevolucionComponent } from './devolucion/devolucion.component';
     AppComponent,
     PrincipalComponent,
     AboutUsComponent,
-    DevolucionComponent
+    DevolucionComponent,
+    InventarioComponent,
+    PreguntasFrecuentesComponent,
+    TutorialComponent,
+    HeaderPageComponent,
   ],
   imports: [
     BrowserModule,
