@@ -7,6 +7,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PrincipalComponent } from './principal/principal.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
+import { InventarioComponent } from './inventario/inventario.component';
+import { HeaderPageComponent } from './header-page/header-page.component';
+import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 
 const routes: Routes = [  
   {
@@ -20,6 +24,22 @@ const routes: Routes = [
   {
     path:'devolucion',
     component: DevolucionComponent
+  },
+  {
+    path:'inventario',
+    component: InventarioComponent
+  },
+  {
+    path:'tutorial',
+    component: TutorialComponent
+  },
+  {
+    path:'preguntas-frecuentes',
+    component: PreguntasFrecuentesComponent
+  },
+  {
+    path:'header-page',
+    component: HeaderPageComponent
   }
 ];
 
