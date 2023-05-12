@@ -2,6 +2,20 @@
 
 header{
     padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   .spacer {
@@ -13,12 +27,19 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: 11%;
     display: flex;
     align-items: center;
     background-color: #79017E;
     color: white;
     font-weight: 600;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .toolbar img {
+    margin: 0 15%;
   }
 
 
@@ -30,31 +51,44 @@ header{
     margin-right: 10px;
   }
 
-  .toolbar img {
-    margin: 0 6px;
-  }
-
   /*Estilo del nombre Asociados*/
   div .PageName{
     /* Asociados Uv */
-    width: 268px;
-    height: 43px;
-    left: 139px;
-    top: 51px;
-
     font-weight: 500;
-    font-size: 20px;
-    line-height: 43px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     color: #FFE6F5;
+    display: flex;
+    margin-right: auto;
+    position: sticky;
+    z-index: 1;
+  }
+
+  .link-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .link-icon img{
+    max-width: 100%;
+    margin-right: 5px;
+    margin-left: 8px;
+    height: 80%;
+    width: 52px;
+    justify-content: center;
+  
   }
 
   span,
   a,
+  p,
   div,
   h1,
   h2{
-    font-family: 'Lato';
+    font-family: 'Foldit', cursive;
+    font-family: 'Raleway', sans-serif;
     font-style:normal;
   }
     /*Estilos de los botones*/
@@ -63,17 +97,16 @@ header{
     color:#79017E;
     text-decoration: none;;
     font-weight: bold;
-    font-size: 15px;
-    line-height: 2.2em;
+    font-size: 93%;
     border: 2.5px solid #79017E;
     background: #FFFFFF;
-    width: 130px;
+    width: 100%;
     height: 40px;
-    top: 29px;
-    left: 1269px;
+    top: 29%;
+    left: 100%;
     border-radius: 8px;
-    margin-left: 10px;
-    margin-right: 5px;
+    margin-left: 1%;
+    margin-right: 6%;
     box-sizing: border-box;
     padding: auto;
     text-align: center;
@@ -84,14 +117,13 @@ header{
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
-    line-height: 2.2em;
+    font-size: 94%;
     border: 2.5px solid #FFFFFF;
     background: #79017E;
-    width: 130px;
+    width: 100px;
     height: 40px;
-    top: 29px;
-    left: 1269px;
+    top: 29%;
+    left: 100%;
     border-radius: 8px;
     margin-left: 10px;
     margin-right: 10px;
@@ -107,7 +139,7 @@ header{
 /*                 Estilos de las secciones             */
 
 
-/*Estilo de la seccion 1*/
+/*Estilo de la seccion inicio*/
 .ContInicio{
     background-image: url("../../assets/Images/ImgPrincipal/Section1.jpg");
     background-size: cover;
@@ -120,13 +152,14 @@ header{
   .title1{
     font-size: 50px;
     margin: 0px;
-    top: auto;
+    top: 482px;
     margin-top: auto;
     width: 80%;
     height: auto;
     color: #FFFFFF;
     text-align:center;
     line-height: 190px;
+    padding: 20px;
   }
 
   .title2{
@@ -153,14 +186,60 @@ header{
   @media screen and (max-width: 768px) {
     .title1 {
       width: 100%;
+      line-height: 70px;
+      margin-top: 20px;
+      
     }
-
+    .title2{
+      line-height: normal;
+    }
+    .image-container {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 50%;
+    }
+    .ventaImg {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      margin-left: 17%;
+    }
     .otherImg{
-        flex-direction:row;
-        align-items: flex-start;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+
+      div .PageName{
+        font-size: 1rem;
+      }
+
+      .link-icon img{
+        max-width: 50%;
+        margin-left: 30%;
+
+      }
+
+
+      .BtnIniciar{
+        height: 30%;
+        padding: 5px;
+      }
+
+      .BtnCrear{
+        height: 30%;
+        padding: 5px;
+        width: 79%;
+      }
+
+      .link-icon img{
+        max-width: 100%;
+        margin-right: 5px;
+        margin-left: 18px;
       }
   }
-
 
   .otherImg{
     display: flex;
@@ -201,7 +280,7 @@ header{
     height: auto;
 }
 
-.titleRequisitos{
+.title-cont{
     margin-top: 20px;
     font-size: 30px;
     padding: 20px;
@@ -219,6 +298,16 @@ header{
        grid-template-columns: repeat(4, 1fr);
        column-gap: 2rem;
     }
+
+    .beneficios-text{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 2rem;
+   }
+    .PageName{
+      font-size: 2px;
+    }
+    
  }
  
  .servicio{
@@ -288,28 +377,111 @@ header{
     margin-left: 80px;
   }
 
+/*Seccion de beneficios*/
 
 .ContBeneficios{
     background-color: #E1E1E1;
-    height: 280px;
+    height: auto;
     border-radius: 25px;
     width: auto;
+}
+
+ .beneficios-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .beneficios-text h3{
+    color: var(--secundario);
+    font-weight: normal;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .beneficios-text p{
+    font-weight: normal;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #575555;
+ }
+
+ .beneficios-text .icon-beneficios{
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 1.8rem;
+  background-color: #B35FD7;
+}
+
+.icon-beneficios img{
+  width: auto;
+  height: 180px;
+  justify-content: center;
+  display: flex;
+  float: left;
+  margin-right: 20px;
+}
+
+.text-container{
+  float: left;
+  width: calc(100%-150px);
 }
 
 /*Seccion de contacto*/
 
 .ContContacto{
   background-color: #FFFFFF;
-  height: 280px;
+  height: 200px;
   border-radius: 25px;
   width: auto;
+  display: flex;
 }
 
-.example-button-row {
-  display: table-cell;
+.button-row {
+  display: flex;
   max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.Btn-contacto{
+  background-color: #9B109B;
+  border: none;
+  cursor: pointer;
+  width: 320px;
+  height: 70px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 40px;
+  transition: box-shadow 0.3s ease-in-out;
+  align-items: center;
 }
 
-.Btn-contacto{
+.Btn-contacto:hover{
+  box-shadow: 0px 5px 10px rgba(0,0.2,0.2,0.8);
+}
+
+.alinear-img img{
+  width: 40px;
+  height: 40px;
+  margin-right: 9px;
+}
+
+.alinear-img {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
