@@ -1,127 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  <title>Asociados UV</title>
-  <link rel="stylesheet" href="principal.component.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <title>Asociados UV</title>
+    <link rel="stylesheet" href="principal.component.css" />
+  </head>
 
-<header> 
-  <div class="toolbar" role="banner">
-    <img
-      width="46"
-      alt="Logo Asociados"
-      src= "../assets/Images/apreton-de-manos.png"/>
-      <span class="PageName">ASOCIADOS UV</span>
-
+  <header>
+    <div class="toolbar" role="banner">
+      <a class="link-icon" href="">
+        <img width="46"alt="Logo Asociados" src="../assets/Images/apreton-de-manos.png"/>
+        <p class="PageName">ASOCIADOS UV</p>
+      </a>
 
       <div class="spacer"></div>
 
       <nav>
         <a href="#inicio" class="enlaces">Inicio</a>
-        <a href="#requisitos" class="enlaces"> Requisitos </a>
+        <a href="#requisitos" class="enlaces">Requisitos</a>
         <a href="#beneficios" class="enlaces">Beneficios</a>
         <a href="#contacto" class="enlaces">Contacto</a>
       </nav>
 
       <!--Ng Material button-->
       <div>
-      <button mat-stroked-button class="BtnIniciar" routerLink="/about-us">Iniciar sesion</button>
+        <button mat-stroked-button class="BtnIniciar" routerLink="/devolucion">
+          Iniciar sesion
+        </button>
       </div>
-
       <div>
-        <button mat-stroked-button href="" class="BtnCrear">Crear cuenta</button>
+        <button mat-stroked-button href="" class="BtnCrear">
+          Crear cuenta
+        </button>
       </div>
-  </div>
-</header>
+    </div>
+  </header>
 
-<body>
-  <section id="inicio" class="ContInicio">
-    <div>
-      <div class="otherImg">
-        <h1 class="title1">¿Estas listo para ser parte de esto?</h1>
+  <body>
+    <section id="inicio" class="ContInicio">
+      <div>
+        <div class="otherImg">
+          <h1 class="title1">¿Estas listo para ser parte de esto?</h1>
+          <div class="imagen-container">
+            <img class="ventaImg" src="../assets/Images/ImgPrincipal/ventas.jpg" alt=""
+            />
+          </div>
+        </div>
+
+        <h2 class="title2">¡Miles de personas ya lo están usando!</h2>
+        <img class="calidadImg" src="../assets/Images/ImgPrincipal/verificacion.png" alt=""/>
+
         <div>
-          <img class="ventaImg" src="../assets/Images/ImgPrincipal/ventas.jpg" alt="">
+          <h2 class="title3">Accede a miles de clientes potenciales!!!</h2>
         </div>
       </div>
-      
+    </section>
 
-      <h2 class="title2">¡Miles de personas ya lo están usando!</h2>
-      <img class="calidadImg" src="../assets/Images/ImgPrincipal/verificacion.png" alt="">
-      
+    <section id="requisitos" class="ContRequisitos">
       <div>
-        <h2 class="title3">Accede a miles de clientes potenciales!!!</h2>
+        <h1 class="title-cont">
+          Conoce los requisitos para vender tus productos en Asociados UV
+        </h1>
       </div>
-    </div>
 
-  </section>
+      <div class="servicios">
+        <section class="servicio">
+          <div class="icono">
+            <img class="Icon-Crear" src="../assets/Images/ImgPrincipal/cuenta.png" alt=""/>
+          </div>
+          <h3>Crear una cuenta</h3>
+          <p>Como vendedor en Asociados UV.</p>
+        </section>
 
-  <section id="requisitos" class="ContRequisitos">
-    <div>
-      <h1 class="titleRequisitos">
-        Conoce los requisitos para vender tus productos en Asociados UV
-      </h1>
-    </div>
-
-    <div class="servicios">
-      <section class="servicio">
-        <div class="icono">
-          <img class="Icon-Crear" src="../assets/Images/ImgPrincipal/cuenta.png" alt="">
-        </div>
-        <h3>Crear una cuenta</h3>
-        <p> Como vendedor en Asociados UV.</p>
-      </section>
-  
-      <section class="servicio">
-        <div class="icono">
-          <img class="Icon-Desc" src="../assets/Images/ImgPrincipal/caracteristica.png" alt="">
-        </div>
+        <section class="servicio">
+          <div class="icono">
+            <img class="Icon-Desc" src="../assets/Images/ImgPrincipal/caracteristica.png" alt=""/>
+          </div>
           <h3>Características de tus productos</h3>
           <p>(medidas, peso, etc).</p>
-      </section>
-  
-      <section>
-        <div class="servicio">
-          <div class="icono">
-            <img class="Icon-Cliente" src="../assets/Images/ImgPrincipal/atencion.png" alt="">
-          </div>
-          <h3>Atencion al cliente</h3>
-          <p> Gestionar preguntas y reclamaciones.</p>
-        </div>
-      </section>
-  
-      <section>
-        <div class="servicio">
-          <div class="icono Icon-Rfc">
-            <img class="Icon-Rfc" src="../assets/Images/ImgPrincipal/archivo.png" alt="">
-          </div>
-          <h3>Tener RFC</h3>
-          <p class="text"> Como persona fisica o moral.</p>
-        </div>
-      </section>
-    </div>
+        </section>
 
-  </section>
+        <section>
+          <div class="servicio">
+            <div class="icono">
+              <img class="Icon-Cliente" src="../assets/Images/ImgPrincipal/atencion.png" alt=""/>
+            </div>
+            <h3>Atencion al cliente</h3>
+            <p>Gestionar preguntas y reclamaciones.</p>
+          </div>
+        </section>
 
-  <section id="beneficios">
-    <div class="ContBeneficios">
-      
-    </div>
-  </section>
-  <section id="contacto">
-    <div class="ContContacto">
-      <div class="example-button-row">
-        <button class="Btn-contacto" mat-raised-button href="https://www.google.com/" target="_blank">Link</button>
+        <section>
+          <div class="servicio">
+            <div class="icono">
+              <img class="Icon-Rfc" src="../assets/Images/ImgPrincipal/archivo.png" alt=""/>
+            </div>
+            <h3>Tener RFC</h3>
+            <p class="text">Como persona fisica o moral.</p>
+          </div>
+        </section>
       </div>
-    </div>
-  </section>
+    </section>
 
-</body>
+    <section id="beneficios" class="ContBeneficios">
+      <div>
+        <h1 class="title-cont">Beneficios de vender en Asociados UV</h1>
+      </div>
 
-<footer>
 
-</footer>
+      <div class="beneficios-text">
+        <section class="beneficios-text">
+          <div class="icon-beneficios">
+            <img class="" src="" alt=""/>
+          </div>
+          <div class="text-container">
+            <h3>Crear una cuenta</h3>
+            <p>Como vendedor en Asociados UV.</p>
+          </div>
+        </section>
+
+      </div>
+    
+    </section>
+
+    <section id="contacto">
+      <div class="ContContacto">
+        <div class="button-row">
+          <button
+            class="Btn-contacto" mat-raised-button [routerLink]="['/about-us']" routerLinkActive="router-link-active">
+            <div class="alinear-img">
+              <img src="../../assets/Images/ImgPrincipal/llamada.png" alt="Contacto"/>
+              <span>Contáctanos</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer></footer>
 </html>
