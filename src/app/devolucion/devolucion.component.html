@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados</title>
+  <link rel="stylesheet" href="devolucion.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <div class="toolbar" role="banner">
+    <a class="link-icon" href="">
+      <img width="46" alt="Logo Asociados" src= "../assets/Images/apreton-de-manos.png"/>
+      <p class="PageName">ASOCIADOS UV</p>
+    </a>
+
+    <div class="title-container">
+      <h1 class="title-page">Devolucion</h1>
+    </div>
+
+    <div class="header-icons">
+      <a href="" class="icon-link">
+          <img src="../../assets/Images/Alerta.png" alt="Alertas">
+        <span>Alertas</span>
+      </a>
+      <a href="" class="icon-link">
+        <img src="../../assets/Images/usuario.png" alt="Sesion">
+        <span>Sesion</span>
+      </a>
+    </div>
+  </div>
+
+</header>
+
+<body>
+  <div id="menu-lateral">
+    <ul>
+      <div class="menu-item">
+        <img src="../../assets/Images/Alerta.png" alt="Image 1">
+      </div>
+      <li class="menu-item">
+        <a class="icon-menu" href="#">
+          <img src="../../assets/Images/Alerta.png" alt="Image 1">
+          <span class="menu-text">Opción 1</span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a class="icon-menu" href="#">
+          <img src="../../assets/Images/Alerta.png" alt="Image 1">
+          <span class="menu-text">Opción 1</span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a class="icon-menu" href="#">
+          <img src="../../assets/Images/Alerta.png" alt="Image 1">
+          <span class="menu-text">Opción 1</span>
+        </a>
+      </li>
+    </ul>
+
+    <script>
+    const menuItems = document.querySelectorAll('.menu-item');
+
+      menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+          item.classList.toggle('open');
+        });
+      });
+      </script>
+  </div>
+  
+</body>
+</html>
