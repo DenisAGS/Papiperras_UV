@@ -13,6 +13,7 @@ import { InventarioComponent } from './inventario/inventario.component';
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { HeaderPageComponent } from './header-page/header-page.component';
     PreguntasFrecuentesComponent,
     TutorialComponent,
     HeaderPageComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
