@@ -16,43 +16,7 @@
 <header>
   <app-header-page title="Devolucion"></app-header-page>
 </header>
-
 <body>
-  <div id="menu-lateral">
-    <ul>
-      <div class="menu-item">
-        <img src="../../assets/Images/Alerta.png" alt="Image 1">
-      </div>
-      <li class="menu-item">
-        <a class="icon-menu" href="#">
-          <img src="../../assets/Images/Alerta.png" alt="Image 1">
-          <span class="menu-text">Opción 1</span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="icon-menu" href="#">
-          <img src="../../assets/Images/Alerta.png" alt="Image 1">
-          <span class="menu-text">Opción 1</span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="icon-menu" href="#">
-          <img src="../../assets/Images/Alerta.png" alt="Image 1">
-          <span class="menu-text">Opción 1</span>
-        </a>
-      </li>
-    </ul>
-
-    <script>
-    const menuItems = document.querySelectorAll('.menu-item');
-
-      menuItems.forEach(item => {
-        item.addEventListener('click', () => {
-          item.classList.toggle('open');
-        });
-      });
-      </script>
-  </div>
-  
+  <app-sidebar></app-sidebar>
 </body>
-</html>
+
