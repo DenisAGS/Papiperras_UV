@@ -12,7 +12,7 @@
     top: -0;
     left: 0;
     right: 0;
-    height: 3%;
+    height: 4%;
     display: flex;
     align-items: center;
     background-color: #79017E;
@@ -282,6 +282,13 @@
         margin-top: 60px;
       }
 
+      .margen{
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 2px;
+      }
+
      .texto-beneficios{
       margin-top: 20px;
      }
@@ -322,11 +329,6 @@
        column-gap: 2rem;
     }
 
-    .beneficios-text{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 5rem;
-   }
     .PageName{
       font-size: 2px;
     }
@@ -401,6 +403,28 @@
 
 /*Seccion de beneficios*/
 
+@media (min-width: 768px){
+  .beneficios-text{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem; 
+ }
+}
+
+@media screen and (max-width: 768px) {
+  .texto-beneficios{
+    margin-top: 26px;
+  }
+  .beneficio-text{
+    justify-content: center;
+    column-gap: 5rem;
+    margin-top: 5px;
+  }
+  .icon-beneficios{
+    margin-left: 30px;
+  }
+}
+
 .ContBeneficios{
     background-color: #E1E1E1;
     height: auto;
@@ -412,7 +436,7 @@
  .title-cont-beneficios{
   margin-top: 20px;
   font-size: 30px;
-  padding: 20px;
+  padding: 40px;
   color: #030303;
   text-align: center;
   margin-left: 10px;
@@ -420,18 +444,16 @@
 }
  .beneficio-text{
     display: flex;
-    margin-left: 30%;
-    
+    margin-left: 10%;
  }
 
  .texto-beneficios {
   margin-left: 20px;
-  margin-right: 10px;
-  right: 10px;
+
 }
  .texto-beneficios h3{
     font-weight: normal;
-    margin: 0px;
+    margin: 2px;
  }
  
  .texto-beneficios p{
@@ -440,16 +462,6 @@
     display: flex;
  }
 
- .beneficio-text .icon-beneficios{
-  height: 10rem;
-  width: 10rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
-  margin-bottom: 1.8rem;
-
-}
 
 .icon-beneficios {
   height: 10rem;
