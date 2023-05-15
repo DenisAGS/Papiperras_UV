@@ -444,7 +444,7 @@
 }
  .beneficio-text{
     display: flex;
-    margin-left: 10%;
+    margin-left: 5%;
  }
 
  .texto-beneficios {
@@ -491,7 +491,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 1%;
 }
 .Btn-contacto{
   background-color: #9B109B;
