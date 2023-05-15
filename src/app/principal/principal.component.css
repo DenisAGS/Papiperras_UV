@@ -409,10 +409,19 @@
     margin-left:2%;
     margin-right: 2%;
 }
-
+ .title-cont-beneficios{
+  margin-top: 20px;
+  font-size: 30px;
+  padding: 20px;
+  color: #030303;
+  text-align: center;
+  margin-left: 10px;
+  top: 430px;
+}
  .beneficio-text{
     display: flex;
     margin-left: 30%;
+    
  }
 
  .texto-beneficios {
