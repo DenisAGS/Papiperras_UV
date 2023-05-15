@@ -12,7 +12,7 @@
     top: -0;
     left: 0;
     right: 0;
-    height: 4%;
+    height: 3%;
     display: flex;
     align-items: center;
     background-color: #79017E;
@@ -49,7 +49,7 @@
     z-index: 1;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .link-icon{
@@ -135,6 +135,8 @@
     width: auto;
     height: auto;
     border-radius: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
   .title1-cont{
@@ -264,15 +266,24 @@
         height: 6rem;
         width: 6rem;
         display: flex;
-        margin-right: 20px;
-        margin-left: 50px;
-      }      
-     
-     .beneficio-text p{
-        margin-right: 50px;
-     }
+        justify-content: center;
+      }
+
+      .ContBeneficios{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .beneficios-text{
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+        margin-top: 60px;
+      }
+
      .texto-beneficios{
-      margin-top: 30px;
+      margin-top: 20px;
      }
 
   }
@@ -395,12 +406,15 @@
     height: auto;
     border-radius: 25px;
     width: auto;
+    margin-left:2%;
+    margin-right: 2%;
 }
 
  .beneficio-text{
     display: flex;
-    right: 10px;
+    margin-left: 30%;
  }
+
  .texto-beneficios {
   margin-left: 20px;
   margin-right: 10px;
@@ -456,7 +470,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .Btn-contacto{
   background-color: #9B109B;
