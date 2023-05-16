@@ -12,7 +12,7 @@
     top: -0;
     left: 0;
     right: 0;
-    height: 4%;
+    height: 11%;
     display: flex;
     align-items: center;
     background-color: #79017E;
@@ -20,7 +20,7 @@
     font-weight: 600;
     width: 100%;
     justify-content: space-between;
-    position:absolute;
+    position: fixed;
   }
 
   .toolbar img {
@@ -75,7 +75,6 @@
   div,
   h1,
   h2{
-    font-family: 'Foldit', cursive;
     font-family: 'Raleway', sans-serif;
     font-style:normal;
   }
@@ -207,7 +206,7 @@
       
     }
     .toolbar{
-      height: 2%;
+      height: 11%;
     }
     .title2-cont{
       line-height: normal;
@@ -423,6 +422,9 @@
   .icon-beneficios{
     margin-left: 30px;
   }
+  .beneficios-text{
+    grid-template-columns: repeat(1, 6fr);
+ }
 }
 
 .ContBeneficios{
@@ -504,11 +506,15 @@
   font-weight: bold;
   font-size: 40px;
   transition: box-shadow 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom right, blue, red);
+  background-size: 200% 200%;
+  transition: background-position 0.3s ease;
   align-items: center;
 }
 
 .Btn-contacto:hover{
   box-shadow: 0px 5px 10px rgba(0,0.2,0.2,0.8);
+  background-position: 100% 100%;
 }
 
 .alinear-img img{
@@ -522,4 +528,24 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-image: url("../../assets/Images/Vector.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+.footer-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
 }
