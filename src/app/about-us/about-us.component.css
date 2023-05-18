@@ -210,6 +210,56 @@ h3, p {
   margin: 5px 0;
 }
 
+/*Seccion de vision y mision*/
+
+
+.title-vision{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.cont-vision{
+  margin-top: 10px;
+}
+
+.margen-vision{
+  margin-top: 3%;
+}
+
+.container {
+  display: flex;
+}
+
+.image-wrapper {
+  flex: 1;
+}
+
+.image-overlay {
+  top: 56%;
+  left: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20%;
+  color: #9B109B;
+  font-size: 24px;
+  flex: 1;
+  display: flex;
+}
+
+.image-overlay h2{
+  font-size: 300%;
+  text-align: center;
+}
+
+.text-wrapper {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: justify;
+}
+
 /*Seccion de contacto*/
 
 .title-contacto{
@@ -261,4 +311,12 @@ h3, p {
     margin-top: 15%;
     justify-content: center;
   }
+
+  h2{
+    text-align: center;
+    margin-top: 140%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
 }
