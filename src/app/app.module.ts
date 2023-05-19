@@ -7,14 +7,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrincipalComponent } from './principal/principal.component';
-import { AboutUsComponent } from './about-us/about-us.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
-    AboutUsComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
