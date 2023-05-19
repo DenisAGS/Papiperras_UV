@@ -236,9 +236,7 @@ h3, p {
   flex: 1;
 }
 
-.image-overlay {
-  top: 56%;
-  left: 100%;
+.text-overlay {
   justify-content: center;
   align-items: center;
   padding: 20%;
@@ -248,8 +246,8 @@ h3, p {
   display: flex;
 }
 
-.image-overlay h2{
-  font-size: 300%;
+.text-overlay h2{
+  font-size: 60px;
   text-align: center;
 }
 
@@ -271,16 +269,13 @@ h3, p {
   justify-content: center;
   background-color: #9B109B;
   color: #FFFFFF;
+  margin-bottom: 10px;
 }
 
 .cont-contacto {
   background-color: #f2f2f2;
   text-align: center;
-}
-
-.title-contacto {
-  font-size: 24px;
-  margin-bottom: 10px;
+  height: 150px;
 }
 
 .datos-contacto {
@@ -318,5 +313,14 @@ h3, p {
     margin-left: 2%;
     margin-right: 2%;
   }
+}
 
+footer img {
+  width: 100%;
+  margin-top: -5%;
+  display: flex;
+}
+
+footer{
+  background-color: #F2F2F2;
 }
