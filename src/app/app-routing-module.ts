@@ -11,9 +11,6 @@ import { InventarioComponent } from './inventario/inventario.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
-import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.component';
-import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
-import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component';
 
 const routes: Routes = [  
   {
@@ -43,16 +40,7 @@ const routes: Routes = [
   {
     path:'header-page',
     component: HeaderPageComponent
-  },{  
-    path: 'publicidad2',
-    component: Publicidad2Component
-  },{
-    path: 'ofertas',
-    component: PubOfertasComponent
-  },{
-    path: 'publicar-productos',
-    component: PublicarPComponent
-    }
+  }
 ];
 
 @NgModule({
