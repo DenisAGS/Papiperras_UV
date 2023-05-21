@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados</title>
+  <link rel="stylesheet" href="pub-ofertas.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <app-header-page title="Publicar Ofertas"></app-header-page>
+</header>
+<body>
+    <app-sidebar></app-sidebar>
+    <section class="fondoCrema">
+      <div class="cuadroMoradoxd">
+        <p class="text">Porcentaje Oferta</p>
+        <input class="input" type="text" id="nombreC" name="nombreCampaña"> 
+      </div>
+      <div class="cuadroMorado2xd">
+        <p class="text">Fecha de inicio de Oferta</p>
+        <input class="input" type="date" id="inicioOfe" name="inicioOferta" min="<?= date('Y-m-d'); ?>"> 
+      </div>
+      <div class="cuadroMorado3xd">
+        <p class="text">Nuevo Precio</p>
+        <div class="a"> </div>
+      </div>
+      <div class="cuadroMorado4xd">
+        <p class="text">Fecha de inicio de Oferta</p>
+        <input class="input" type="date" id="finOfe" name="finOferta"> 
+      </div>
+      
+    </section>
+    <section>
+      <button class="botonCancelar" type="button">Cancelar</button> 
+      <button class="botonContinuar" type="button">Confirmar</button>
+    </section>
+</body>
