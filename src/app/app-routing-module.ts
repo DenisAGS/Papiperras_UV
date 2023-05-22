@@ -43,16 +43,19 @@ const routes: Routes = [
   {
     path:'header-page',
     component: HeaderPageComponent
-  },{  
+  },
+  {  
     path: 'publicidad2',
     component: Publicidad2Component
-  },{
+  },
+  {
     path: 'ofertas',
     component: PubOfertasComponent
-  },{
+  },
+  {
     path: 'publicar-productos',
     component: PublicarPComponent
-    }
+  }
 ];
 
 @NgModule({

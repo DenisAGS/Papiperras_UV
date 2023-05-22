@@ -14,6 +14,9 @@ import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-f
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.component';
+import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
+import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component' ;
 
 
 @NgModule({
@@ -27,6 +30,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     TutorialComponent,
     HeaderPageComponent,
     SidebarComponent,
+    Publicidad2Component,
+    PubOfertasComponent,
+    PublicarPComponent
   ],
   imports: [
     BrowserModule,
