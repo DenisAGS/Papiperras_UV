@@ -11,6 +11,7 @@ import { InventarioComponent } from './inventario/inventario.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
 
 const routes: Routes = [  
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path:'header-page',
     component: HeaderPageComponent
+  },
+  {
+    path:'reclamos-formulario',
+    component: ReclamosFormularioComponent
   }
 ];
 
