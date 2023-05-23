@@ -1,5 +1,19 @@
 /*Encabezado*/
 
+header{
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   body {
     overflow-x: hidden;
   }
@@ -9,23 +23,25 @@
   }
 
   .toolbar {
-    top: -0;
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
-    height: 11%;
+    height: 70px;
     display: flex;
     align-items: center;
     background-color: #79017E;
     color: white;
     font-weight: 600;
+    position: absolute;
     width: 100%;
     justify-content: space-between;
-    position: fixed;
   }
 
   .toolbar img {
     margin: 0 15%;
   }
+
 
   .enlaces{
     color: white;
@@ -37,7 +53,7 @@
 
   /*Estilo del nombre Asociados*/
   div .PageName{
-    /* Asociados UV */
+    /* Asociados Uv */
     font-weight: 500;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -46,9 +62,6 @@
     margin-right: auto;
     position: sticky;
     z-index: 1;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
   }
 
   .link-icon{
@@ -74,6 +87,7 @@
   div,
   h1,
   h2{
+    font-family: 'Foldit', cursive;
     font-family: 'Raleway', sans-serif;
     font-style:normal;
   }
@@ -103,7 +117,7 @@
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-    font-size: 85%;
+    font-size: 94%;
     border: 2.5px solid #FFFFFF;
     background: #79017E;
     width: 100px;
@@ -129,12 +143,10 @@
 .ContInicio{
     background-image: url("../../assets/Images/ImgPrincipal/Section1.jpg");
     background-size: cover;
-    margin-top: 100px;
+    margin-top: 60px;
     width: auto;
     height: auto;
     border-radius: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
   .title1-cont{
@@ -169,6 +181,66 @@
     margin-left: 10px;
     top: 482px;
   }
+
+
+  @media screen and (max-width: 768px) {
+    .title1 {
+      width: 100%;
+      line-height: 70px;
+      margin-top: 20px;
+      
+    }
+    .title2{
+      line-height: normal;
+    }
+    .image-container {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 50%;
+    }
+    .ventaImg {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      margin-left: 17%;
+    }
+    .otherImg{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+
+      div .PageName{
+        font-size: 1rem;
+      }
+
+      .link-icon img{
+        max-width: 50%;
+        margin-left: 30%;
+
+      }
+
+
+      .BtnIniciar{
+        height: 30%;
+        padding: 5px;
+      }
+
+      .BtnCrear{
+        height: 30%;
+        padding: 5px;
+        width: 79%;
+      }
+
+      .link-icon img{
+        max-width: 100%;
+        margin-right: 5px;
+        margin-left: 18px;
+      }
+  }
+
   .otherImg{
     display: flex;
     text-align: center;
@@ -195,106 +267,6 @@
     margin: auto;
     display: block;
   }
-
- /*Estilos cuando se hace mas pequeña la pantalla*/
-  @media screen and (max-width: 768px) {
-    .title1-cont {
-      width: 100%;
-      line-height: 70px;
-      margin-top: 20px;
-      
-    }
-    .toolbar{
-      height: 11%;
-    }
-    .title2-cont{
-      line-height: normal;
-    }
-    .image-container {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin-left: 50%;
-    }
-    .ventaImg {
-      max-width: 100%;
-      height: 200px;
-      margin-top: 10px;
-      margin-left: 17%;
-    }
-    .otherImg{
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-      }
-
-      div .PageName{
-        font-size: 1rem;
-      }
-
-      .link-icon img{
-        max-width: 50%;
-        margin-left: 30%;
-      }
-
-      .BtnIniciar{
-        height: 30%;
-        padding: 5px;
-        width: 79%;
-      }
-
-      .BtnCrear{
-        height: 30%;
-        padding: 5px;
-        width: 79%;
-      }
-
-      .link-icon img{
-        max-width: 100%;
-        margin-right: 5px;
-        margin-left: 18px;
-      }
-      /*Para que no aparezca la barra de navegacion cuanddo se hacen pequeña la pantalla*/
-      nav{
-        display: none;
-      }
-
-      .icon-beneficios img{
-        height: 6rem;
-        width: 6rem;
-        display: flex;
-        justify-content: center;
-      }
-
-      .ContBeneficios{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .beneficios-text{
-        justify-content: center;
-        align-items: center;
-        margin-right: 100px;
-        margin-top: 60px;
-      }
-
-      .margen{
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-        margin-top: 2px;
-      }
-
-     .texto-beneficios{
-      margin-top: 20px;
-     }
-
-  }
-
-  /**************************************************/
-
 
   /*Estilos del contenedor de requisitos*/
 
@@ -327,6 +299,11 @@
        column-gap: 2rem;
     }
 
+    .beneficios-text{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 2rem;
+   }
     .PageName{
       font-size: 2px;
     }
@@ -340,11 +317,11 @@
  }
  
  .servicio h3{
+    color: var(--secundario);
     font-weight: normal;
     margin: 0px;
     align-items: center;
     justify-content: center;
-    text-align: center;
  }
  
  .servicio p{
@@ -366,6 +343,7 @@
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     margin-bottom: 1.8rem;
     background-color: #B35FD7;
  }
@@ -401,79 +379,63 @@
 
 /*Seccion de beneficios*/
 
-@media (min-width: 768px){
-  .beneficios-text{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5rem; 
- }
-}
-
-@media screen and (max-width: 768px) {
-  .texto-beneficios{
-    margin-top: 26px;
-  }
-  .beneficio-text{
-    justify-content: center;
-    column-gap: 5rem;
-    margin-top: 5px;
-  }
-  .icon-beneficios{
-    margin-left: 30px;
-  }
-  .beneficios-text{
-    grid-template-columns: repeat(1, 6fr);
- }
-}
-
 .ContBeneficios{
     background-color: #E1E1E1;
     height: auto;
     border-radius: 25px;
     width: auto;
-    margin-left:2%;
-    margin-right: 2%;
 }
- .title-cont-beneficios{
-  margin-top: 20px;
-  font-size: 30px;
-  padding: 40px;
-  color: #030303;
-  text-align: center;
-  margin-left: 10px;
-  top: 430px;
-}
- .beneficio-text{
+
+ .beneficios-text{
     display: flex;
-    margin-left: 5%;
- }
-
- .texto-beneficios {
-  margin-left: 20px;
-
-}
- .texto-beneficios h3{
-    font-weight: normal;
-    margin: 2px;
+    flex-direction: column;
+    align-items: center;
  }
  
- .texto-beneficios p{
+ .beneficios-text h3{
+    color: var(--secundario);
     font-weight: normal;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .beneficios-text p{
+    font-weight: normal;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
     color: #575555;
-    display: flex;
  }
 
-
-.icon-beneficios {
-  height: 10rem;
-  width: 10rem;
+ .beneficios-text .icon-beneficios{
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--primario);
+  border-radius: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   margin-bottom: 1.8rem;
-  text-align: center;
+  background-color: #B35FD7;
 }
 
+.icon-beneficios img{
+  width: auto;
+  height: 180px;
+  justify-content: center;
+  display: flex;
+  float: left;
+  margin-right: 20px;
+}
+
+.text-container{
+  float: left;
+  width: calc(100%-150px);
+}
 
 /*Seccion de contacto*/
 
@@ -491,7 +453,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 1%;
+  margin-top: 60px;
 }
 .Btn-contacto{
   background-color: #9B109B;
@@ -504,15 +466,11 @@
   font-weight: bold;
   font-size: 40px;
   transition: box-shadow 0.3s ease-in-out;
-  background-image: linear-gradient(to bottom right, blue, red);
-  background-size: 200% 200%;
-  transition: background-position 0.3s ease;
   align-items: center;
 }
 
 .Btn-contacto:hover{
   box-shadow: 0px 5px 10px rgba(0,0.2,0.2,0.8);
-  background-position: 100% 100%;
 }
 
 .alinear-img img{

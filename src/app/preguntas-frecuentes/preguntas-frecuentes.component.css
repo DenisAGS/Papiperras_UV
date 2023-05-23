@@ -67,6 +67,7 @@ p, li{
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 20%;
+    padding-left: 100px;
 }
 
 .secciones{
@@ -82,6 +83,7 @@ p, li{
     align-content: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 1.5rem;
     
     margin: 10rem auto;
 }
@@ -89,6 +91,7 @@ p, li{
 .contenido{
     width: 60%;
     margin-left: auto;
+    padding-left: 1rem;
 }
 
 
@@ -106,6 +109,8 @@ p, li{
     }
     .secciones{
         margin-top: 6rem;
+        margin-left: 0;
+        padding: 0;
     }
     .contenido{
         margin-top: -13rem;

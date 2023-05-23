@@ -14,9 +14,8 @@ import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-f
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.component';
-import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
-import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component' ;
+import { HomepageComponent } from './homepage/homepage.component';
+import { RetiroComponent } from './retiro/retiro.component';
 
 
 @NgModule({
@@ -30,9 +29,8 @@ import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.c
     TutorialComponent,
     HeaderPageComponent,
     SidebarComponent,
-    Publicidad2Component,
-    PubOfertasComponent,
-    PublicarPComponent
+    HomepageComponent,
+    RetiroComponent,
   ],
   imports: [
     BrowserModule,
