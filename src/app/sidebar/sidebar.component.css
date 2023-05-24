@@ -4,4 +4,12 @@
 .p-centered {
     align-items: center;
   }
-  
+  .main-sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-grow: 1;
+    overflow-y: auto;
+  }  

@@ -13,6 +13,7 @@ import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-f
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
+import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 
 const routes: Routes = [  
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     path:'header-page',
     component: HeaderPageComponent
+  },
+  {
+    path:'datos-retiro',
+    component: DatosRetiroComponent
   }
 ];
 

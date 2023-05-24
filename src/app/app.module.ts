@@ -16,6 +16,7 @@ import { HeaderPageComponent } from './header-page/header-page.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
+import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { RetiroComponent } from './retiro/retiro.component';
     SidebarComponent,
     HomepageComponent,
     RetiroComponent,
+    DatosRetiroComponent,
   ],
   imports: [
     BrowserModule,
