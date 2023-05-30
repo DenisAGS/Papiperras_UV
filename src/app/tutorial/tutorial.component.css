@@ -60,6 +60,10 @@ p, li{
     text-align: justify;
 }
 
+p{
+    margin-left: 0.5rem;
+}
+
 h3{
     font-weight: bold;
     color: grey;
@@ -91,6 +95,8 @@ h3{
     padding-right: 1rem;
     
     margin: 10rem auto;
+
+    cursor: pointer;
 }
 
 .contenido{
@@ -126,6 +132,9 @@ h3{
     .contenido{
         margin-top: -13rem;
         text-align: center;
+    }
+    p{
+        margin: 1rem;
     }
 }
 
