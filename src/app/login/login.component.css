@@ -1,0 +1,171 @@
+body {
+    font-family: 'lato', sans-serif;
+    font-weight: normal;
+      font-size: 100%;
+      color: #42505C;
+
+      width: 99%;
+      background-color: #ffffff;
+  }
+
+
+  form {
+  position: absolute;     
+  width: 750px;
+  height: 1000px;
+  left: 151px;
+  top: 128px;
+  
+  background: rgba(255, 201, 148, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  }
+
+
+  
+  .imagen {
+    position: absolute;
+    width: 374px;
+    height: 188px;
+    left: 192px;
+    top: 160px;
+    
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 60%;
+    text-align: left;
+    position: absolute;
+    height: 92px;
+    width: 530px;
+    left: 114px;
+    top: 500px;
+    border-radius: 0px;
+  }
+
+  
+  .logos {
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  left: 864px;
+  top: 546px;
+  }
+  
+  .logos2{
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  left: 1216px;
+  top: 268px;
+  
+  }
+
+  input{
+    padding: 15px;
+  width: 530px;
+  height: 50px;
+  left: 114px;
+  top: 542px;
+
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  border-radius: 30px;
+  outline: none;
+  }
+  
+  label {
+
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+  }
+  
+  .olv-txt{
+    color: #9B109B;
+    font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+  
+  .BtnIniciar{
+
+position: absolute;
+width: 200px;
+height: 50px;
+left: 135px;
+top: 853px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+/* or 117% */
+
+text-align: center;
+letter-spacing: 0.25px;
+
+color: #FFFFFF;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+background: #9B109B;
+border: 1px solid #D1D1D1;
+border-radius: 30px;
+outline: none;
+  }
+
+.BtnRegistrar{
+
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 426px;
+  top: 853px;
+
+  
+  background: #9B109B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 1px solid #D1D1D1;
+  outline: none;
+
+
+}
+
+.BtnRegistrar2{
+position: absolute;
+height: 40px;
+width: 190px;
+left: 431px;
+top: 858px;
+border-radius: 30px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 22px;
+/* identical to box height, or 92% */
+
+text-align: center;
+
+color: #9B109B;
+
+background: #ffffff;
+border-radius: 30px;
+border: 1px solid #D1D1D1;
+outline: none;
+
+
+}

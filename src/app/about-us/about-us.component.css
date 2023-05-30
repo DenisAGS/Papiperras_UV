@@ -123,7 +123,7 @@ span,
 div,
 h1,
 h2{
-  font-family: 'Lato';
+  font-family: 'Raleway', sans-serif;
   font-style:normal;
 }
 
@@ -152,26 +152,175 @@ h2{
 }
 
 .margen-about-us{
-  position: absolute;
-  top: 100px;
-  display: flex;
+  margin-top: 7%;
 }
 
 .title-about-us{
-  align-items: center;
+  display: flex;
   justify-content: center;
-  text-align:center;
-  margin-left: 300px;
   display: flex;
   font-size: 30px;
-  margin-top: auto;
-  width: 60%;
+  width: 100%;
+  padding: 20px;
 }
+
+.text-about-us{
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: justify;
+}
+
+/*Seccion del  equipo directivo*/
+
+.title-equipo{
+  display: flex;
+  font-size: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-equipo{
+  margin: 20px;
+  margin-top: 30px;
+  width: auto;
+  height: auto;
+}
+
+.fila-equipo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.miembro {
+  text-align: center;
+}
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #9B109B;
+  margin: 0 auto;
+}
+
+h3, p {
+  margin: 5px 0;
+}
+
+/*Seccion de vision y mision*/
+
+
+.title-vision{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.cont-vision{
+  margin-top: 10px;
+}
+
+.margen-vision{
+  margin-top: 3%;
+}
+
+.container {
+  display: flex;
+}
+
+.image-wrapper {
+  flex: 1;
+}
+
+.text-overlay {
+  justify-content: center;
+  align-items: center;
+  padding: 20%;
+  color: #9B109B;
+  font-size: 24px;
+  flex: 1;
+  display: flex;
+}
+
+.text-overlay h2{
+  font-size: 60px;
+  text-align: center;
+}
+
+.text-wrapper {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: justify;
+}
+
+/*Seccion de contacto*/
+
+.title-contacto{
+  display: flex;
+  margin-top: 60px;
+  font-size: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #9B109B;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.cont-contacto {
+  background-color: #f2f2f2;
+  text-align: center;
+  height: 150px;
+}
+
+.datos-contacto {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.datos-contacto li {
+  margin-bottom: 10px;
+}
+
+.datos-contacto li i {
+  margin-right: 10px;
+}
+
 
 @media screen and (max-width: 768px) {
   .title-about-us {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15%;
     justify-content: center;
   }
+
+  .title-equipo {
+    width: 100%;
+    margin-top: 15%;
+    justify-content: center;
+  }
+
+  h2{
+    text-align: center;
+    margin-top: 140%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+footer img {
+  width: 100%;
+  margin-top: -5%;
+  display: flex;
+}
+
+footer{
+  background-color: #F2F2F2;
 }
