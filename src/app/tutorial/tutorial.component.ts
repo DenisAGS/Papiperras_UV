@@ -11,5 +11,11 @@ export class TutorialComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  redirectToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth'});
+    }
+  }
 }
