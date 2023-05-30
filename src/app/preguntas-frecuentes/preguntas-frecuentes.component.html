@@ -11,14 +11,16 @@
     <app-header-page title="Preguntas frecuentes"></app-header-page>
   </header>
   
+  <app-sidebar></app-sidebar>
+
   <main class="contenedor">
     <div class="secciones">
       <ul class="menuFijo">
-        <li><a href="#titulo1">1-Dudas Generales</a><br></li>
-        <li><a href="#titulo2">2-Dudas sobre precios y tarifas</a><br></li>
-        <li><a href="#titulo3">3-Dudas sobre el funcionamiento de vender en AsociadosUV</a><br></li>
-        <li><a href="#titulo4">4-Preguntas sobre nuestros servicios</a><br></li>
-        <li><a href="#titulo5">5-Registro Global</a></li>
+        <li><a (click)="redirectToSection('titulo1')">1-Dudas Generales</a><br></li>
+        <li><a (click)="redirectToSection('titulo2')">2-Dudas sobre precios y tarifas</a><br></li>
+        <li><a (click)="redirectToSection('titulo3')">3-Dudas sobre el funcionamiento de vender en AsociadosUV</a><br></li>
+        <li><a (click)="redirectToSection('titulo4')">4-Preguntas sobre nuestros servicios</a><br></li>
+        <li><a (click)="redirectToSection('titulo5')">5-Registro Global</a></li>
       </ul>
     </div>
     <div class="contenido">

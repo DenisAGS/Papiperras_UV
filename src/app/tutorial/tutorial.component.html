@@ -4,7 +4,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayuda</title>
-  <link rel="stylesheet" href="./tutorial.component.css">
 </head>
 
 <body>
@@ -15,12 +14,12 @@
   <main class="contenedor">
     <div class="secciones">
       <ul class="menuFijo">
-        <li><a href="#titulo1">1-Antes de comenzar</a><br></li>
-        <li><a href="#titulo2">2-¿Cómo publicar tus productos?</a><br></li>
-        <li><a href="#titulo3">3-Corrige el listado de tus productos</a><br></li>
-        <li><a href="#titulo4">4-¿Cómo enviar tus productos?</a><br></li>
-        <li><a href="#titulo5">5-Administra tu negocio</a><br></li>
-        <li><a href="#titulo6">6- Crece</a></li>
+        <li><a (click)="redirectToSection('titulo1')">1-Antes de comenzar</a><br></li>
+        <li><a (click)="redirectToSection('titulo2')">2-¿Cómo publicar tus productos?</a><br></li>
+        <li><a (click)="redirectToSection('titulo3')">3-Corrige el listado de tus productos</a><br></li>
+        <li><a (click)="redirectToSection('titulo4')">4-¿Cómo enviar tus productos?</a><br></li>
+        <li><a (click)="redirectToSection('titulo5')">5-Administra tu negocio</a><br></li>
+        <li><a (click)="redirectToSection('titulo6')">6- Crece</a></li>
       </ul>
     </div>
     <div class="contenido">
