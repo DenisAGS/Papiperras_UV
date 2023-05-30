@@ -17,6 +17,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.component';
 import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
 import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component' ;
+import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.c
     SidebarComponent,
     Publicidad2Component,
     PubOfertasComponent,
-    PublicarPComponent
+    PublicarPComponent,
+    ReclamosFormularioComponent
   ],
   imports: [
     BrowserModule,
