@@ -18,6 +18,9 @@ import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.compo
 import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
 import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component' ;
 import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { RetiroComponent } from './retiro/retiro.component';
+import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-form
     Publicidad2Component,
     PubOfertasComponent,
     PublicarPComponent,
-    ReclamosFormularioComponent
+    ReclamosFormularioComponent,
+    HomepageComponent,
+    RetiroComponent,
+    DatosRetiroComponent
   ],
   imports: [
     BrowserModule,
