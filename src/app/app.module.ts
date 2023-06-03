@@ -22,6 +22,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
+import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -42,12 +44,14 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
     HomepageComponent,
     RetiroComponent,
     DatosRetiroComponent,
-    FooterPageComponent
+    FooterPageComponent,
+    EstadisticaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
