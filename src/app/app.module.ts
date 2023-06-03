@@ -21,6 +21,7 @@ import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-form
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
+import { FooterPageComponent } from './footer-page/footer-page.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
     ReclamosFormularioComponent,
     HomepageComponent,
     RetiroComponent,
-    DatosRetiroComponent
+    DatosRetiroComponent,
+    FooterPageComponent
   ],
   imports: [
     BrowserModule,
