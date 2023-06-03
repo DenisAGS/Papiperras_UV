@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclamos</title>
+</head>
+
+<body>
+    <header>
+        <app-header-page title="Reclamos"></app-header-page>
+    </header>
+
+    <app-sidebar></app-sidebar>
+    
+    <div class="contenedorsvg">
+        <img class="svg" src="../../assets/Images/top-contenedor.svg">
+        <div class="contenedor">
+            <div class="divisor">
+                <form action="#">
+                    <label for="lang">¿Qué problema tuviste con el producto?</label>
+                        <select name="problemas" id="lang">
+                            <option value="">--Selecciona una opción--</option>
+                            <option value="golpeado">Está golpeado</option>
+                            <option value="incompleto">Está incompleto</option>
+                            <option value="rayado">Está rayado</option>
+                            <option value="manipulado">Está manipulado</option>
+                        </select>
+                </form>
+                <form action="#">
+                    <label for="lang">¿Qué problema tuviste con la entrega?</label>
+                    <select name="problemas" id="lang">
+                    <option value="">--Selecciona una opción--</option>
+                    <option value="fechaError">Error en la fecha de entrega</option>
+                    <option value="precioalto">Costo elevado</option>
+                    <option value="manipulado">Falta de check de recibido</option>
+                    </select>
+                </form>
+                <form action="#">
+                    <label for="lang">¿Qué problema tuviste al recibir el pago?</label>
+                    <select name="problemas" id="lang">
+                    <option value="">--Selecciona una opción--</option>
+                    <option value="norecibido">Aún no lo he recibido</option>
+                    <option value="pagomenor">Recibi un pago menor al asignado</option>
+                    </select>
+                </form>
+            </div>
+
+            <!--<p class="p2">¿Quieres hacer un reclamo diferente? <a href="#ejemplo1">click aquí</a><button>Enviar</button></p> -->
+
+            <details>
+                <summary class="p2">¿Quieres hacer un reclamo diferente? <span>click aquí</span><button>Enviar</button></summary>
+                <textarea  rows="4" cols="40"> </textarea>
+            </details>
+
+        </div>
+    </div>
+</body>
+</html>
