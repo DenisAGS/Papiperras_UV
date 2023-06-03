@@ -18,6 +18,7 @@ import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-form
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
+import { EstadisticaComponent } from './estadistica/estadistica.component';
 
 const routes: Routes = [  
   {
@@ -75,6 +76,10 @@ const routes: Routes = [
   {
     path:'reclamos-formulario',
     component: ReclamosFormularioComponent
+  },
+  {
+    path:'estadistica',
+    component: EstadisticaComponent
   }
 ];
 
