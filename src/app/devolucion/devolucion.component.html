@@ -20,7 +20,11 @@
   <app-sidebar></app-sidebar>
 
   <main>
-    
+    <div class="search-wrapper">
+      <input class="search-input" type="text" placeholder="Buscar"/>
+      <i class="fas fa-search search-icon" (click)="search()" (keydown.enter)="search()"></i>
+    </div>
+
   </main>
   <app-footer-page></app-footer-page>
 </body>

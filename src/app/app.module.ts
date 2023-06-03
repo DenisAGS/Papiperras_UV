@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-/*import { MatIconModule} from '@angular/material/icon';*/
-
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing-module';
@@ -25,13 +24,11 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
     AboutUsComponent,
-    DevolucionComponent,
     InventarioComponent,
     PreguntasFrecuentesComponent,
     TutorialComponent,
@@ -45,13 +42,15 @@ import { HttpClientModule } from '@angular/common/http';
     RetiroComponent,
     DatosRetiroComponent,
     FooterPageComponent,
-    EstadisticaComponent
+    EstadisticaComponent,
+    DevolucionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,3 +10,34 @@ h2{
   font-family: 'Raleway', sans-serif;
   font-style:normal;
 }
+
+
+/*Estilo del cuadro de busqueda*/
+.search-wrapper {
+  cursor: pointer;
+  margin-left: 7em;
+  margin-top: 6em;
+  width: 13.7em;
+  display: flex;
+  align-items: center;
+  border-radius: 1px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.search-input{
+  border-radius: 5px;
+  border: 1px solid #aa9b9b;
+}
+.fa-search {
+  color: #999;
+  transition: color 0.3s;
+  margin-left: 5px;
+}
+
+.fa-search:hover {
+  color: #000;
+}
+
+/*Estilos de tabla*/
+

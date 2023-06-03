@@ -6,10 +6,17 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./devolucion.component.css']
 })
 export class DevolucionComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  searchTerm: string = '';
+  searchResults: any[] = [];
+
+  search() {
+    // Implementa aquí la lógica de búsqueda
   }
 
 }
