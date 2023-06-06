@@ -30,6 +30,7 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ValoracionComponent } from './valoracion/valoracion.component';
+import { PruebaComponent } from './prueba/prueba.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ValoracionComponent } from './valoracion/valoracion.component';
     FooterPageComponent,
     EstadisticaComponent,
     DevolucionComponent,
-    ValoracionComponent
+    ValoracionComponent,
+    PruebaComponent
   ],
   imports: [
     BrowserModule,

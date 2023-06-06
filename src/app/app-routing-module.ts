@@ -18,8 +18,9 @@ import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-form
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
-import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { ValoracionComponent } from './valoracion/valoracion.component';
+import { PruebaComponent } from './prueba/prueba.component';
 
 const routes: Routes = [  
   {
@@ -81,6 +82,14 @@ const routes: Routes = [
   {
     path:'estadistica',
     component: EstadisticaComponent
+  },
+  {
+    path:'valoracion',
+    component: ValoracionComponent
+  },
+  {
+    path:'prueba',
+    component: PruebaComponent
   }
 ];
 
