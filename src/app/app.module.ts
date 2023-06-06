@@ -29,6 +29,7 @@ import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ValoracionComponent } from './valoracion/valoracion.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { HttpClientModule } from '@angular/common/http';
     DatosRetiroComponent,
     FooterPageComponent,
     EstadisticaComponent,
-    DevolucionComponent
+    DevolucionComponent,
+    ValoracionComponent
   ],
   imports: [
     BrowserModule,
