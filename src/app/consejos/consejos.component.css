@@ -1,0 +1,84 @@
+h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5em;
+    font-weight: 600;
+    font-size: 2.4em;
+    padding-left: 2em;
+    padding-right: 0.5em;
+    position: static;
+}
+
+h4{
+    color: #FFB7D5;
+}
+
+p{
+    color:#FFFFFF;
+}
+
+.text-overlay img{
+    height: 6em;
+    width: 10em;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        padding-left: 1em;
+        padding-right: 0.9em;
+        font-size: 2em;
+    }
+}
+
+p
+div,
+h1,
+h2,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+/*Estilos de consejos*/
+
+.margen-consejo {
+    margin-top: 2%;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.image-wrapper {
+    flex: 1;
+}
+
+.text-overlay {
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    color: #9B109B;
+    font-size: 24px;
+    flex: 1;
+    display: flex;
+}
+
+.cont-consejo{
+    margin-top: -10px;
+}
+
+.text-overlay h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.text-wrapper {
+    flex: 1;
+    padding: 20px;
+    background-image: url(../../assets/Images/img-consejos/fondo-tips.png);
+    background-size: cover;
+    text-align: justify;
+    border-radius: 20px;
+}
