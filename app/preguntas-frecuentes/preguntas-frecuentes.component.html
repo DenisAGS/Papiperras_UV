@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociados UV</title>
+</head>
+
+<body>  
+  <header> 
+    <app-header-page title="Preguntas frecuentes"></app-header-page>
+  </header>
+  
+  <app-sidebar></app-sidebar>
+
+  <main class="contenedor">
+    <div class="secciones">
+      <ul class="menuFijo">
+        <li><a (click)="redirectToSection('titulo1')">1-Dudas Generales</a><br></li>
+        <li><a (click)="redirectToSection('titulo2')">2-Dudas sobre precios y tarifas</a><br></li>
+        <li><a (click)="redirectToSection('titulo3')">3-Dudas sobre el funcionamiento de vender en AsociadosUV</a><br></li>
+        <li><a (click)="redirectToSection('titulo4')">4-Preguntas sobre nuestros servicios</a><br></li>
+        <li><a (click)="redirectToSection('titulo5')">5-Registro Global</a></li>
+      </ul>
+    </div>
+    <div class="contenido">
+      <!--    TITULO 1    -->
+      <h1 name="titulo1" id="titulo1">Dudas Generales</h1>
+        <details>
+          <summary>¿Qué es vender en Asociados UV?</summary>
+          <p>Vender en Asociados UV supone un programa que permite tanto a empresas como particulares vender 
+            sus productos a traves de AsociadosUV.com</p>
+        </details>
+          <hr>
+        <details>
+          <summary>¿Qué productos puedo vender en AsociadosUV.com?</summary>
+          <p>Puedes vender en una amplia gama de categorías de productos. Sin embargo, algunas de ellas requieren 
+            aprobación previa por parte de Amazon. Si deseas vender en una categoría que requiera dicha aprobación, 
+            contacta a Asistencia al vendedor.</p>
+        </details>
+          <hr>
+        <details>
+          <summary>¿Qué tipo de productos no se pueden vender en AsociadosUV.com?</summary>
+          <p>Algunos productos se encuentran prohibidos o restringidos debido a múltiples razones, tales como seguridad, 
+            salud y restricciones regulatorias. </p>
+        </details>
+          <hr>
+        <details>
+          <summary>¿Qué información necesito para registrarme como vendedor en Asociados UV?</summary>
+          <p>Para registrarte, solo tienes que brindarnos la siguiente información:<br>
+
+            - Nombre, dirección e información de contacto de tu empresa. <br>
+            - Una tarjeta de crédito o débito con una dirección de facturación válida. <br>
+            - Un número telefónico en el que podamos contactarte durante el proceso de registro. <br>
+            - Información de identificación de tu empresa.</p>
+        </details>
+          <hr>
+        <!--  TITULO 2      -->
+        <h1 name="titulo2" id="titulo2">Dudas sobre precios y tarifas</h1>
+        <details>
+          <summary>¿Cuánto cuesta vender en Asociados UV?</summary>
+          <p>Registrandote hoy, obtienes 12 meses sin pagar tarifa mensual. Una vez terminados los 12 meses GRATIS, 
+            vende los productos que quieras y paga una cuota fija de $600 MXN. Las tarifas de venta pueden variar 
+            según la categoría a la que pertenezca el producto.
+
+            Si utilizas Logística de Asociados UV, por cada unidad vendida se te cobrarán tarifas adicionales, ya que será 
+            Asociados UV quien recoja, empaque y envíe tus productos, además de proporcionar servicio de atención al cliente. </p>
+        </details>
+          <hr>
+        <details>
+          <summary>¿Cómo recibo mis pagos?</summary>
+          <p>AsociadosUV.com deposita tus pagos en tu cuenta bancaria periódicamente y te notifica cada vez que se haya 
+            realizado un depósito. El Conversor de divisas de Asociados UV para vendedores es un servicio opcional que permite 
+            a los vendedores de Asociados UV recibir las ganancias de sus ingresos en su divisa local, en caso de que su cuenta 
+            bancaria sea de un país distinto al del sitio en el que vende. <br> <br>
+
+            Para que un pago pueda efectuarse, debes cumplir con los siguientes requisitos: <br> <br>
+            
+            Tener un saldo positivo en tu cuenta de Vender en Asociados UV. Ten en cuenta que las cuotas de suscripción y los 
+            reembolsos a clientes, en caso de haberlos, pueden afectar a tu saldo. <br>
+            Introducir datos bancarios válidos en tu cuenta de vendedor.</p>
+        </details>
+          <hr>
+        <!--    TITULO 3    -->
+        <h1 name="titulo3" id="titulo3">Dudas sobre el funcionamiento de vender en AsociadosUV</h1>
+        <details>
+          <summary>¿Qué es Seller Central?</summary>
+          <p>Seller Central es la interfaz en línea que usarás para administrar todos los aspectos de tu cuenta de Vender en 
+            AsociadosUV. Puedes agregar información de los productos que vendes, actualizar tu inventario, administrar tus pedidos 
+            y pagos y evaluar el desempeño de tus ventas a través de un conjunto de herramientas y funciones, muchas de ellas también 
+            disponibles en formato descargable. </p>
+        </details>
+          <hr>
+        <details>
+          <summary>¿Cómo agrego productos a la web de Asociados UV?</summary>
+          <p>Tienes tres opciones para ingresar la información de tus productos:</p>
+          <ul>
+            <li>Usar la función de Agregar un producto de Seller Central para crear productos uno por uno.</li>
+            <li>Usar un archivo de carga de inventario basado en una plantilla de Excel para crear varios productos simultáneamente.</li>
+            <li>Usar AsociadosUV para realizar subidas masivas y recibir informes de éstas.</li>
+          </ul>
+        </details>
+          <hr>
+        <details>
+          <summary>¿Cómo puedo saber cuándo hice una venta?</summary>
+          <p>Cuando recibes un pedido, Amazon te lo notifica a través de un correo electrónico o mensaje de texto. Puedes 
+            escoger cualquiera de estos métodos de notificación en tu configuración de cuenta.</p>
+        </details>
+        <hr>
+        <details>
+          <summary>¿Cómo administro mis pedidos?</summary>
+          <p>Tienes dos opciones para administrar tus pedidos:</p>
+          <ul>
+            <li>Puedes usar la función de Administración de pedidos de Seller Central para identificar nuevos pedidos, las 
+              direcciones a las que van y el servicio de envío asociado.</li>
+            <li>Puedes descargar un informe diario de pedidos: un archivo delimitado por tabulaciones que te proporciona un 
+              resumen de todos los pedidos recibidos, así como información sobre el envío.</li>
+          </ul>
+        </details>
+        <hr>
+        <details>
+          <summary>¿Cómo funciona la logística de Asociados UV?</summary>
+          <p>Logística de Amazon es un servicio que te permite enviar y almacenar tus productos en nuestros centros logísticos. 
+            Cuando un cliente hace un pedido, nosotros recogemos el artículo, lo empacamos, lo enviamos y proporcionamos cualquier 
+            servicio de asistencia al cliente que sea necesario.</p>
+        </details>
+        <hr>
+        <details>
+          <summary>¿Qué es una oferta destacada?</summary>
+          <p>Buy Box es el recuadro que aparece en la página de detalles de un producto. A través del Buy Box, los clientes 
+            inician sus compras y agregan artículos a su cesta virtual. Una de las características principales de Asociados UV 
+            posibilita que un mismo producto pueda ser ofrecido por varios vendedores. Si más de un vendedor ofrece el mismo 
+            producto, deben competir entre ellos para ganar el Buy Box de ese producto. <br> <br>
+
+            Para optar a ganar el Buy Box, los vendedores deben demostrar que brindan constantemente una excelente experiencia 
+            de compra a los clientes. Para determinar tu elegibilidad para el Buy Box, usamos criterios basados en tu desempeño 
+            como vendedor. Los listados que cumplan con los requisitos necesarios para el Buy Box, pero no lo ganen, pueden aparecer 
+            en el apartado Más Opciones de Compra. Ten en cuenta no obstante que Asociados UV no puede garantizar que tu producto 
+            vaya a mostrarse en el Buy Box o en Más Opciones de Compra.</p>
+        </details>
+        <hr>
+        <!--    TITULO 4    -->
+        <h1 name="titulo4" id="titulo4">Preguntas sobre nuestros servicios</h1>
+        <details>
+          <summary>¿Ofrecemos protección contra el fraude de tarjetas de crédito o débito?</summary>
+          <p>Sí. Siempre y cuando se cumplan ciertas condiciones, Asociados UV se responsabiliza de cualquier pago relacionado con 
+            reversiones de cargo por fraude, tales como, tarjetas de crédito o débito robadas u otros intentos de pago fraudulento.</p>
+        </details>
+        <hr>
+        <details>
+          <summary>¿Qué es la garantía de la A a la Z?</summary>
+          <p>El programa de Garantía de la A a la Z está diseñado para aquellas situaciones en las que el cliente no recibe 
+            el producto o recibió un producto físicamente distinto al que pidió o esperaba recibir. Cuando los clientes tienen 
+            problemas con un pedido, les pedimos que contacten primero con el vendedor. Si el vendedor no consigue solucionar el 
+            problema, el cliente puede interponer un reclamo bajo el programa de Garantía de la A a la Z. Cuando Asociados UV recibe ese 
+            reclamo, envía al vendedor un correo electrónico automático con los detalles de este. Luego, solicitamos una respuesta 
+            con la información básica del pedido y el proceso de envío. Una vez recibida la información, determinaremos cómo resolver 
+            el reclamo, lo que puede incluir el reembolso del costo del pedido a cuenta del vendedor.</p>
+        </details>
+        <hr>
+        <details>
+          <summary>¿Pueden los clientes dejar comentarios sobre sus pedidos?¿Por qué son importantes los comentarios del cliente?</summary>
+          <p>Sí, los clientes pueden dejar comentarios sobre los productos que compraron y sobre su experiencia en general con 
+            los vendedores. Como vendedor, tener comentarios positivos supone un factor fundamental para tener éxito en Asociados UV, 
+            ya que es la mejor manera que tienen otros compradores de identificarte como un vendedor confiable. Tu calificación como 
+            vendedor, obtenida de los comentarios recibidos, aparece en la página de ofertas de venta y es una de las primeras 
+            características que ven los clientes. Los clientes tienden a comprar productos de vendedores con calificación alta.</p>
+        </details>
+        <hr>
+        <details>
+          <summary>¿Pueden los clientes usar tarjetas de regalo de AsociadosUV.com para comprar mis productos?</summary>
+          <p>Sí, los clientes pueden usar tarjetas regalo de AsociadosUVcom para comprar productos de los vendedores de Amazon.</p>
+        </details>
+        <hr>
+          <!--    TITULO 5    -->
+        <h1 name="titulo5" id="titulo5">Registro Global</h1>
+        <details>
+          <summary>¿Qué debería hacer si no tengo toda la información para completar el registro de una tienda particular?</summary>
+          <p>Para el proceso de registro no necesitas tener información específica por tienda, sino únicamente la información 
+            general de tu negocio. Durante el registro puedes ir guardando tu progreso y volver a ingresar a tu cuenta retomando 
+            desde donde dejaste la última vez. Una vez que completaste tu registro.</p>
+        </details>
+          <hr>
+        <details>
+          <summary>¿En qué tiendas estoy registrado?</summary>
+          <p>Cuando registras tu cuenta de vendedor en Asociados UV automáticamente se crean cuentas unificadas que te dan acceso 
+            a las tiendas de México. Una vez que has creado tu cuenta de vendedor puedes empezar a listar productos en cada una de las 
+            tiendas, a menos que dicha tienda requiera información adicional. Puedes revisar una lista de tus cuentas globales unificadas aquí.</p>
+        </details>
+          <hr>
+        <details>
+          <summary>¿Tengo que vender en todas las tiendas?</summary>
+          <p>No, a pesar de que tengas una cuenta en las tiendas México, tienes la oportunidad de seleccionar las tiendas específicas 
+            en las que quieras vender tus productos. No estás obligado a listar productos en todas las tiendas. Si quieres listar un 
+            producto en una tienda donde ya tengas una cuenta unificada, no tendrás que realizar el proceso entero de registro de nuevo.</p>
+        </details>
+          <hr>
+        <details>
+          <summary>Ya completé mi proceso de registro, pero no necesito una cuenta de vendedor en todas las tiendas donde puedo 
+            tener cuentas unificadas, y quisiera deshabilitar mi registro de una tienda. ¿Cómo lo puedo hacer?</summary>
+          <p>Para cerrar una cuenta, accede a la cuenta de la tienda que quisieras cerrar y ve a 
+            Ajustes > Información de Cuenta > Cerrar cuenta en Seller Central. <br>
+            Si disminuyes o cierras una de tus cuentas, pero aún tienes ASINs que se pueden vender listados en tus otras 
+            cuentas unificadas, todavía pagarás una cuota mensual de suscripción. Asegúrate de disminuir cada cuenta unificada 
+            de manera individual si no quieres que se te cobre de manera mensual la cuota de suscripción del Plan Profesional.</p>
+        </details>
+          <hr>
+        <details>
+          <summary>Quisiera vender en una tienda para la cual Amazon no crea cuentas unificadas de manera automática. 
+            ¿Qué necesito hacer?</summary>
+          <p>Tendrás que registrarte a esa tienda de forma separada. Después podrás unificar la cuenta de esa tienda a 
+            tu cuenta de Global Registration siguiendo los pasos aquí descritos.</p>
+        </details>
+          <hr>
+    </div>
+  </main>
+<footer>Todos los derechos reservados 2023</footer>
+</body>
+</html>

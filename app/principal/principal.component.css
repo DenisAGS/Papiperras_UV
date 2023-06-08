@@ -1,0 +1,529 @@
+/*Encabezado*/
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    top: -0;
+    left: 0;
+    right: 0;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    background-color: #79017E;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .toolbar img {
+    margin: 0 15%;
+  }
+
+  .enlaces{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /*Estilo del nombre Asociados*/
+  div .PageName{
+    /* Asociados UV */
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #FFE6F5;
+    display: flex;
+    margin-right: auto;
+    position: sticky;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .link-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .link-icon img{
+    max-width: 100%;
+    margin-right: 5px;
+    margin-left: 8px;
+    height: 80%;
+    width: 52px;
+    justify-content: center;
+  
+  }
+
+  span,
+  a,
+  p,
+  div,
+  h1,
+  h2{
+    font-family: 'Raleway', sans-serif;
+    font-style:normal;
+  }
+    /*Estilos de los botones*/
+
+  .BtnIniciar{
+    color:#79017E;
+    text-decoration: none;;
+    font-weight: bold;
+    font-size: 93%;
+    border: 2.5px solid #79017E;
+    background: #FFFFFF;
+    width: 100%;
+    height: 40px;
+    top: 29%;
+    left: 100%;
+    border-radius: 8px;
+    margin-left: 1%;
+    margin-right: 6%;
+    box-sizing: border-box;
+    padding: auto;
+    text-align: center;
+    cursor: pointer;
+  }
+
+   .BtnCrear{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 85%;
+    border: 2.5px solid #FFFFFF;
+    background: #79017E;
+    width: 100px;
+    height: 40px;
+    top: 29%;
+    left: 100%;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: auto;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+/*********************************************/
+
+/*                 Estilos de las secciones             */
+
+
+/*Estilo de la seccion inicio*/
+.ContInicio{
+    background-image: url("../../assets/Images/ImgPrincipal/Section1.jpg");
+    background-size: cover;
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+  .title1-cont{
+    font-size: 50px;
+    margin: 0px;
+    top: 482px;
+    margin-top: auto;
+    width: 80%;
+    height: auto;
+    color: #FFFFFF;
+    text-align:center;
+    line-height: 190px;
+    padding: 20px;
+  }
+
+  .title2-cont{
+    font-size: 30px;
+    padding: 20px;
+    color: #FFB7D5;
+    text-align: center;
+    margin-left: 10px;
+    top: 482px;
+    line-height: 20px;
+  }
+
+  .title3-cont{
+    margin-top: auto;
+    font-size: 30px;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 10px;
+    top: 482px;
+  }
+  .otherImg{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .ventaImg{
+    width: 220px;
+    height: 190px;
+    margin-right: 50px;
+    border-radius: 25px;
+    margin-top: 40px;
+  }
+
+  .ventaImg img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .calidadImg{
+    width: 80px;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+ /*Estilos cuando se hace mas pequeña la pantalla*/
+  @media screen and (max-width: 768px) {
+    .title1-cont {
+      width: 100%;
+      line-height: 70px;
+      margin-top: 20px;
+      
+    }
+    .toolbar{
+      height: 11%;
+    }
+    .title2-cont{
+      line-height: normal;
+    }
+    .image-container {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 50%;
+    }
+    .ventaImg {
+      max-width: 100%;
+      height: 200px;
+      margin-top: 10px;
+      margin-left: 17%;
+    }
+    .otherImg{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+
+      div .PageName{
+        font-size: 1rem;
+      }
+
+      .link-icon img{
+        max-width: 50%;
+        margin-left: 30%;
+      }
+
+      .BtnIniciar{
+        height: 30%;
+        padding: 5px;
+        width: 79%;
+      }
+
+      .BtnCrear{
+        height: 30%;
+        padding: 5px;
+        width: 79%;
+      }
+
+      .link-icon img{
+        max-width: 100%;
+        margin-right: 5px;
+        margin-left: 18px;
+      }
+      /*Para que no aparezca la barra de navegacion cuanddo se hacen pequeña la pantalla*/
+      nav{
+        display: none;
+      }
+
+      .icon-beneficios img{
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .ContBeneficios{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .beneficios-text{
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+        margin-top: 60px;
+      }
+
+      .margen{
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 2px;
+      }
+
+     .texto-beneficios{
+      margin-top: 20px;
+     }
+
+  }
+
+  /**************************************************/
+
+
+  /*Estilos del contenedor de requisitos*/
+
+.ContRequisitos{
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 25px;
+    background-size: cover;
+    margin-top: 60px;
+    width: auto;
+    height: auto;
+}
+
+.title-cont{
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 20px;
+    color: #030303;
+    text-align: center;
+    margin-left: 10px;
+    top: 382px;
+}
+
+  /* Requisitos */
+
+@media (min-width: 768px){
+    .servicios{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       column-gap: 2rem;
+    }
+
+    .PageName{
+      font-size: 2px;
+    }
+    
+ }
+ 
+ .servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .servicio h3{
+    font-weight: normal;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ 
+ .servicio p{
+    line-height: 2;
+    font-weight: normal;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #575555;
+ }
+ 
+ .servicio .icono{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.8rem;
+    background-color: #B35FD7;
+ }
+
+ .icono img{
+    width: auto;
+    height: 180px;
+    justify-content: center;
+    display: flex;
+ }
+
+ .icono .Icon-Crear{
+    margin: 60px;
+    margin-top: 60px;
+ }
+
+ .icono .Icon-Desc{
+    margin: 60px;
+    margin-top: 56px;
+  }
+
+  .icono .Icon-Cliente{
+    margin: 60px;
+    margin-top: 56px;
+    margin-left: 80px;
+  }
+
+  .icono .Icon-Rfc{
+    margin: 60px;
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+
+/*Seccion de beneficios*/
+
+@media (min-width: 768px){
+  .beneficios-text{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem; 
+ }
+}
+
+@media screen and (max-width: 768px) {
+  .texto-beneficios{
+    margin-top: 26px;
+  }
+  .beneficio-text{
+    justify-content: center;
+    column-gap: 5rem;
+    margin-top: 5px;
+  }
+  .icon-beneficios{
+    margin-left: 30px;
+  }
+  .beneficios-text{
+    grid-template-columns: repeat(1, 6fr);
+ }
+}
+
+.ContBeneficios{
+    background-color: #E1E1E1;
+    height: auto;
+    border-radius: 25px;
+    width: auto;
+    margin-left:2%;
+    margin-right: 2%;
+}
+ .title-cont-beneficios{
+  margin-top: 20px;
+  font-size: 30px;
+  padding: 40px;
+  color: #030303;
+  text-align: center;
+  margin-left: 10px;
+  top: 430px;
+}
+ .beneficio-text{
+    display: flex;
+    margin-left: 5%;
+ }
+
+ .texto-beneficios {
+  margin-left: 20px;
+
+}
+ .texto-beneficios h3{
+    font-weight: normal;
+    margin: 2px;
+ }
+ 
+ .texto-beneficios p{
+    font-weight: normal;
+    color: #575555;
+    display: flex;
+ }
+
+
+.icon-beneficios {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+
+/*Seccion de contacto*/
+
+.ContContacto{
+  background-color: #FFFFFF;
+  height: 200px;
+  border-radius: 25px;
+  width: auto;
+  display: flex;
+}
+
+.button-row {
+  display: flex;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+.Btn-contacto{
+  background-color: #9B109B;
+  border: none;
+  cursor: pointer;
+  width: 320px;
+  height: 70px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 40px;
+  transition: box-shadow 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom right, blue, red);
+  background-size: 200% 200%;
+  transition: background-position 0.3s ease;
+  align-items: center;
+}
+
+.Btn-contacto:hover{
+  box-shadow: 0px 5px 10px rgba(0,0.2,0.2,0.8);
+  background-position: 100% 100%;
+}
+
+.alinear-img img{
+  width: 40px;
+  height: 40px;
+  margin-right: 9px;
+}
+
+.alinear-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

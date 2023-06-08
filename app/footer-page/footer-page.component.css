@@ -1,0 +1,12 @@
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Asegura que el footer esté detrás del app sidebar */
+}
+
+.app-footer img {
+  width: 100%;
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+}

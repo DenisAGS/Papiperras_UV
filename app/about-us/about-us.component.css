@@ -1,0 +1,364 @@
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  background-color: #79017E;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+.link-icon{
+  color: white;
+}
+
+/* Logo y nombre de la pagina*/
+
+.PageName {
+  /* Asociados Uv */
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #FFE6F5;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  position: sticky;
+  z-index: 1;
+}
+
+
+.link-icon{
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+}
+
+.link-icon img{
+max-width: 100%;
+margin-right: 5px;
+margin-left: 8px;
+height: 52px;
+width: 52px;
+justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+  .title-page {
+    font-size: 1.8rem;
+    margin-left: 600px;
+
+  }
+  .title-container{
+    margin-top: 2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .PageName {
+    font-size: 1rem;
+  }
+  .link-icon img{
+    max-width: 50%;
+  }
+  header h1{
+    display: none;
+  }
+}
+
+/* Titulo de pagina*/
+
+.title-page{
+color: #FFFFFF;
+margin: 10px;
+margin: 0 auto;
+}
+
+.title-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 16px;
+margin: 0 auto; /*para centrar*/
+
+}
+
+/*Estilo de los iconos*/
+
+.header-icons {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-top: 15px;
+}
+
+.icon-link {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 10px;
+text-decoration: none;
+color: #FFFFFF;
+margin-bottom: 10px;
+}
+
+.icon-link img {
+width: 42px;
+height: 42px;
+}
+
+/*span{
+  margin-top: -5px;
+}*/
+
+a,
+span,
+div,
+h1,
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-style:normal;
+}
+
+/*Estilo de los iconos*/
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.icon-link img {
+  width: 42px;
+  height: 42px;
+}
+
+.margen-about-us{
+  margin-top: 7%;
+}
+
+.title-about-us{
+  display: flex;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  width: 100%;
+  padding: 20px;
+}
+
+.text-about-us{
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: justify;
+}
+
+/*Seccion del  equipo directivo*/
+
+.title-equipo{
+  display: flex;
+  font-size: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-equipo{
+  margin: 20px;
+  margin-top: 30px;
+  width: auto;
+  height: auto;
+}
+
+.fila-equipo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.miembro {
+  text-align: center;
+}
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.img-alexis{
+  background-image: url(../../assets/Images/img-about/beber.png);
+  background-size: cover;
+}
+
+.img-johan{
+  background-image: url(../../assets/Images/img-about/papas-fritas.png);
+  background-size: cover;
+}
+
+.img-daniel{
+  background-image: url(../../assets/Images/img-about/palomitas-de-maiz.png);
+  background-size: cover;
+}
+
+.img-denis{
+  background-image: url(../../assets/Images/img-about/papas-francesa.png);
+  background-size: cover;
+}
+
+.img-lizbeth{
+  background-image: url(../../assets/Images/img-about/comer.png);
+  background-size: cover;
+}
+
+.img-diego{
+  background-image: url(../../assets/Images/img-about/vago.png);
+  background-size: cover;
+}
+
+.img-sergio{
+  background-image: url(../../assets/Images/img-about/dormir.png);
+  background-size: cover;
+}
+
+h3, p {
+  margin: 5px 0;
+}
+
+p{
+  margin-left: 10px;
+}
+
+/*Seccion de vision y mision*/
+
+
+.title-vision{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.cont-vision{
+  margin-top: 10px;
+}
+
+.margen-vision{
+  margin-top: 3%;
+}
+
+.container {
+  display: flex;
+}
+
+.image-wrapper {
+  flex: 1;
+}
+
+.text-overlay {
+  justify-content: center;
+  align-items: center;
+  padding: 20%;
+  color: #9B109B;
+  font-size: 24px;
+  flex: 1;
+  display: flex;
+}
+
+.text-overlay h2{
+  font-size: 60px;
+  text-align: center;
+}
+
+.text-wrapper {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: justify;
+}
+
+/*Seccion de contacto*/
+
+.title-contacto{
+  display: flex;
+  margin-top: 60px;
+  font-size: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #9B109B;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.cont-contacto {
+  background-color: #f2f2f2;
+  text-align: center;
+  height: 150px;
+}
+
+.datos-contacto {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.datos-contacto li {
+  margin-bottom: 10px;
+}
+
+.datos-contacto li i {
+  margin-right: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .title-about-us {
+    width: 100%;
+    margin-top: 15%;
+    justify-content: center;
+  }
+
+  .title-equipo {
+    width: 100%;
+    margin-top: 15%;
+    justify-content: center;
+  }
+
+  h2{
+    text-align: center;
+    margin-top: 140%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+footer img {
+  width: 100%;
+  margin-top: -5%;
+  display: flex;
+}
+
+footer{
+  background-color: #F2F2F2;
+}

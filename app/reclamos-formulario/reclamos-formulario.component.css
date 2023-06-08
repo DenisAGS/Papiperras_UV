@@ -1,0 +1,275 @@
+.contenedorsvg{
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.contenedor{
+    margin-top: -25rem;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 26%;
+}
+
+.svg{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    height: auto;
+    width: 47rem;
+    max-width: fit-content;
+}
+
+.divisor{
+    display: flex;
+    flex-direction: column;
+}
+
+label,option,details,select,textarea{
+    font-family: 'Cambria';
+    color: #000000;
+}
+
+.contenedor label{
+    font-weight: 450;
+    padding-bottom: 1.5rem;
+}
+
+details{
+    padding-top: 2rem;
+}
+
+details summary{
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.contenedor details{
+    font-weight: 450;
+}
+
+select{
+    margin-right: 35%;
+    background-color: gray;
+    opacity: 60%;
+    width: 18rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    justify-content: space-between;
+}
+
+button{
+    margin-left: 10.5rem;
+    width: 13%;
+    border-radius: 10px;
+    background-color: #9B109B;
+    color: white;
+    border-width: 0;
+    padding: 5px;
+    position: relative;
+}
+
+option{
+    background-color: lightgray;
+}
+
+span{
+    color:#690569;
+    font-weight: 550;
+    position: relative;
+}
+
+textarea{
+    color: gray;
+    width: 35%;
+    position: relative;
+    font-size: 18px;
+}
+
+@media (max-width: 1354px) {
+    .contenedor{
+        padding-left: 22%;
+    }
+}
+
+@media (max-width: 1300px) {
+    label{
+        padding-right: 15%;
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+    .svg{
+        width: 70%;
+    }
+    .contenedor{
+        padding-left: 20%;
+        display: flex;
+    }
+    select{
+        width: 60%;
+    }
+    .divisor,details{
+        margin-top: 0;
+    }
+    details{
+        margin-left: -6.5rem;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20%;
+    }
+    button{
+        display: flex;
+        margin-top: 11rem;
+        width: 10rem;
+        justify-content: center;
+        margin-left: 7rem;
+    }
+    textarea{
+        margin-top: -47%;
+        width: 80%;
+        
+    }
+}
+
+@media (max-width: 1270px) {
+    textarea{
+        margin-top: -60%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    button{
+        width: 45%;
+        align-content: center;
+        margin-left: 5rem;
+    }
+    .contenedor{
+        padding-left: 0;
+        margin-top: -31rem;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .contenedorsvg{
+        margin-top: 0rem;
+    }
+    select{
+        margin: auto;
+        align-items: center;
+        float: left;
+        margin-left: 5rem;
+    }
+    .svg{
+        width: auto;
+    }
+    details{
+        padding-right: 3rem;
+    }
+    textarea{
+        margin-top: -55%;
+    }
+}
+
+@media (max-width: 908px) {
+    .svg{
+        max-width: 100%;
+        height: 55rem;
+        margin-top: -10rem;
+        border-radius: 0px;  
+        
+    }
+    .divisor,details{
+        margin-top: -8rem;
+    }
+    .contenedorsvg{
+        padding-top: 12%;
+    }
+}
+
+@media (max-width: 800px) {
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 8rem;
+    }
+    .p2{
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        margin-top: 7rem;
+        width: 17rem;
+        font-size: 23px;
+        margin-left: auto;
+    }
+    .contenedorsvg{
+        justify-content: center;
+        padding-top: 3.5rem;
+    }
+    textarea{
+        margin-top: -8.45rem;
+        width: auto;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .svg{
+        visibility: hidden;
+    }
+    .contenedor{
+        margin-top: -35rem;
+        padding-left: 10%;
+        justify-content: center;
+    }
+    select{
+        margin-right: 5rem;
+        margin-left: 25%;
+        width: 15rem;
+    }
+    .p2{
+        margin-left: 10%;
+        margin-right: 0;
+    }
+    button{
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-left: 7rem;
+    }
+    .contenedorsvg{
+        justify-content: center;
+        margin: 0;
+    }
+    details{
+        margin-right: 1rem;
+        width: 35rem;
+    }
+    textarea{
+        margin-left: 5.8rem;
+    }
+}
+
+@media (max-width: 445px) {
+    select{
+        margin-right: 15%;
+        margin-left: 10%;
+    }
+    .contenedor{
+        text-align: left;
+    }
+    details{
+        margin-left: 0;
+    }
+    textarea{
+        margin-left: 0;
+        width: 110%;
+        margin-top: -9.5rem;
+    }
+    button{
+        margin-left: 0;
+    }
+}

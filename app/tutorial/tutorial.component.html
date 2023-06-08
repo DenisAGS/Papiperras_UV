@@ -1,0 +1,323 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda</title>
+</head>
+
+<body>
+  <header>
+    <app-header-page title="Tutorial"></app-header-page>
+  </header>
+    
+  <main class="contenedor">
+    <div class="secciones">
+      <ul class="menuFijo">
+        <li><a (click)="redirectToSection('titulo1')">1-Antes de comenzar</a><br></li>
+        <li><a (click)="redirectToSection('titulo2')">2-¿Cómo publicar tus productos?</a><br></li>
+        <li><a (click)="redirectToSection('titulo3')">3-Corrige el listado de tus productos</a><br></li>
+        <li><a (click)="redirectToSection('titulo4')">4-¿Cómo enviar tus productos?</a><br></li>
+        <li><a (click)="redirectToSection('titulo5')">5-Administra tu negocio</a><br></li>
+        <li><a (click)="redirectToSection('titulo6')">6- Crece</a></li>
+      </ul>
+    </div>
+    <div class="contenido">
+        <!--    Titulo 0    -->
+        <h1 class="h1">¿Cómo vender en Asociados UV?</h1>
+        <p class="p1">En esta página te explicaremos todo lo que necesitas saber para empezar a vender en Asociados UV. Hablaremos de cuánto 
+            pagarás, cómo publicar, listar y enviar tus productos, cómo administrar tu negocio y algunas herramientas de venta 
+            que te ayudarán a hacer crecer tu negocio.</p>
+
+      <!--    TITULO 1    -->
+        <h1 name="titulo1" id="titulo1">1- Antes de comenzar</h1>
+        <details>
+          <summary>¿Por qué vender en Asociados UV?</summary>
+          <p>Cuando comienzas a vender en AsociadosUV, te integras a un destino de ventas en línea que alberga a vendedores de todo 
+            tipo, desde empresas con presencia nacional hasta vendedores artesanales que fabrican productos hechos a mano. 
+            Todos venden aquí por una misma razón: llegar a los cientos de millones de clientes que visitan Asociados UV para comprar.</p>
+        </details>
+          <hr>
+        <details>
+          <summary>Entiende cuánto pagarás</summary>
+          <p>Sea cual sea el tamaño de tu negocio, AsociadosUV es una de las maneras más rápidas para empezar a vender tus productos 
+            por Internet. Con el plan profesional de ventas, registrándote hoy, obtienes 12 meses sin pagar tarifa mensual. Una 
+            vez terminados los 12 meses GRATIS, se cobrarán MXN $600 al mes, sin importar cuántos productos vendas. También pagarás 
+            tarifas por referencia por cada venta, que es un porcentaje del total de la transacción, el cual varía (entre 8% y 20%) 
+            dependiendo la categoría del producto.</p>
+        </details>
+          <hr>
+        <details>
+          <summary>Planea una estrategia de venta</summary>
+          <p>¿Eres un distribuidor o un dueño de marca? <br><br>
+            Los distribuidores encuentran productos populares que ya existen y los ofrecen en Asociados UV. Es una forma rápida de empezar 
+            y aprender el sistema. <br><br>
+            Los dueños de marca fabrican sus propios productos, o adquieren productos para venderlos bajo una etiqueta privada, para 
+            ofrecerles a los compradores una selección única. <br><br>
+            Muchos vendedores hacen ambas cosas, y pueden vender varios productos, categorías y marcas desde la misma cuenta. 
+            Combina estos y otros métodos basados en lo que funciona para lograr tus objetivos empresariales. </p>
+        </details>
+          <hr>
+        <details>
+            <summary>Regístrate y crea una cuenta de vendedor</summary>
+            <p>
+                Cuando estés listo, asegúrate de tener todos estos documentos antes de iniciar tu registro como vendedor en Asociados UV. <br><br>
+                Documentos para el proceso de registro: <br></p>
+                <ul>
+                    <li>Nombre del titular de la cuenta</li>
+                    <li>CLABE interbancaria</li>
+                    <li>Correo electrónico y número de teléfono móvil</li>
+                    <li>Tarjeta de crédito o débito del titular de la cuenta: </li>
+                        <ul>
+                            <li>En esta tarjeta, una vez terminados los 12 meses GRATIS, se cobrarán MXN $600 al mes, sin importar 
+                                cuántos productos vendas. Posteriormente, la mensualidad se restará automáticamente de tus ingresos 
+                                por ventas directamente de tu cuenta de vendedor.
+                            </li> <br>
+                        </ul>
+                    <li>Información de la empresa: </li>
+                    <ul>
+                        <li>Razón social, o nombre de la persona física titular de la cuenta.</li>
+                        <li>Dirección comercial (que sea comprobable con un estado de cuenta con la misma dirección).</li>
+                        <li>Nombre público. Este será el nombre de tu tienda en línea en Asociados UV.</li>
+                    </ul>
+                </ul> <br>
+            
+            
+            <p>Documentos para verificar tu identidad: <br></p>
+            <ul>
+                <li>Identificación oficial escaneada a color de la persona titular de la cuenta (debe coincidir con el nombre en 
+                    la tarjeta de crédito o débito). Puede ser:</li> <br><br>
+                    <ul>
+                        <li>INE/IFE</li>
+                        <li>Pasaporte</li>
+                        <li>Licencia de conducir</li>
+                    </ul> <br>
+                <li>Número de RFC de la empresa o persona física.</li>
+                <li>Comprobante de domicilio de algún servicio fijo (teléfono, internet, agua o luz) no mayor a 90 días.</li>
+                <li>Estado de cuenta bancario. Antigüedad máxima de tres meses:</li>
+                <ul>
+                    <li>Debe coincidir con el método de depósito que se ingresará.</li>
+                    <li>La dirección debe coincidir con la que se dio de alta como dirección comercial.</li>
+                    <li>Nombre de la razón social que se ingresó.</li>
+                    <li>Debe ser el archivo completo (no únicamente la carátula).</li>
+                </ul> <br>
+                <li>Constancia de situación fiscal (SAT)</li>
+                <ul>
+                    <li>Debe ser el archivo completo, y no únicamente la ficha.</li>
+                </ul> <br>
+            </ul>
+            <p>Si eres Distribuidor y pretendes vender productos de ciertas categorías como: Mascota, Salud y Belleza, Juguetes, entre 
+                otras (nosotros te lo comunicaremos en caso de que sea necesario durante tu proceso de registro), es posible que te 
+                solicitemos una factura de los productos en donde podamos verificar su origen (tu factura debe contar con un mínimo de 
+                10 productos y que sea menor a 90 días de antigüedad). <br>
+                Si vas a vender productos de tu propia marca (Dueño de Marca), te solicitaremos tu registro ante el IMPI, COFEPRIS o 
+                Inscripción al Patrón de bebidas Alcohólicas dependiendo de la categoría. <br> <br>
+                
+                Importante: es posible que te soliciten un comprobante de domicilio de algún servicio fijo (teléfono, internet, agua o luz), 
+                el cual no debe ser mayor a 90 días. <br> <br>
+            </p>
+                <h3>¿Ya te registraste? ¡Bienvenido a vender en Asociados UV!</h3>
+            <p>
+                ¡Felicidades! Si ya lograste registrarte como vendedor, ahora formas parte de una comunidad nacional de ventas. 
+                Al igual que muchos emprendedores y dueños de negocios de todos los tamaños, podrás crecer tu negocio y aprender 
+                muchísimas cosas sobre la venta en línea.
+            </p>
+        </details>
+        <hr>
+        <details>
+            <summary>Familiarízate con Seller Central</summary>
+            <p>Una vez que te registres como vendedor de Asociados UV, podrás acceder a tu cuenta dentro de Seller Central. Piensa en 
+                Seller Central como el administrador de tus ventas en Asociados UV. Es un portal único para subir tus productos, analizar 
+                tus ventas, agregar información a tus listados, realizar actualizaciones de inventario, administrar pagos y encontrar 
+                contenido útil que te ayudará a mejorar como vendedor de Asociados UV. <br> <br></p>
+
+                Es muy importante también que configures la información de tu cuenta, para que conozcas donde:
+                <ul>
+                    <li>Editar la información del vendedor</li>
+                    <li>Editar el estado de los listados</li>
+                    <li>Agregar métodos de los depósitos y cobro</li>
+                    <li>Editar la información de tu empresa</li>
+                    <li>Agregar tu dirección de devolución para los clientes</li>
+                </ul>
+            
+          </details>
+          <hr>
+        <!--  TITULO 2      -->
+        <h1 name="titulo2" id="titulo2">2- ¿Cómo publicar tus productos?</h1>
+        <p>¿Qué puedes vender en Asociados UV? Depende del producto, la categoría y la marca. <br> <br>
+            Algunas categorías están abiertas a todos los vendedores y otras están restringidas. Las categorías restringidas 
+            requieren autorización para vender, y algunas categorías restringidas incluyen productos que no están abiertas para 
+            vendedores externos. <br> <br>
+            Para vender productos de marca protegidos por derechos de autor, marca comercial o patente, debes ser el propietario 
+            legal de la marca o un distribuidor autorizado. Visita Seller Central para obtener más información sobre la Política 
+            de propiedad intelectual de Asociados UV. <br> <br>
+            Visita Seller Central para obtener más información sobre las restricciones.
+        </p>
+        <details>
+          <summary>Crea tu primer listado de producto</summary>
+          <p>Para vender un producto en Asociados UV, primero debes crear un listado de producto. Esto lo puedes lograr de dos formas distintas, 
+            ya sea que coincida con un listado existente (si alguien más ya está vendiendo el mismo producto en Asociados UV), o que tú mismo 
+            crees un nuevo listado (si eres el primero o el único que vende ese producto). <br> <br>
+
+            La forma en la que distintos vendedores de Asociados UV cargan y listan sus productos varía. En pocas palabras, algunos vendedores 
+            prefieren listar sus productos en lotes usando cargas masivas o a través de gestión de inventario con sistemas de terceros, 
+            mientras que otros más pequeños eligen hacerlo uno por uno. </p>
+        </details>
+          <hr>
+        <details>
+          <summary>Lo que necesitas para crear un listado</summary>
+          <p>En la mayoría de los casos, los productos deben tener un identificador de producto (Global Trade Item Númber-GTIN), como 
+            un UPC, un ISBN o un EAN. Ama utiliza estos IDs de producto para identificar el artículo exacto que estás vendiendo. <br> <br>
+            Si el producto que estás cargando coincide con un listado existente, no necesitas proporcionar un ID de producto porque ya 
+            existe. Si estás agregando un producto nuevo en Asociados UV, es posible que debas comprar un código UPC o solicitar una excepción. <br>
+            Además de un ID de producto, la siguiente información también debe estar incluida en cada listado de producto:</p>
+            <h3>1. SKU</h3>
+            <p>un identificador del producto que creas para realizar un seguimiento de tu propio inventario.</p>
+            <h3>2. Detalles de oferta</h3>
+            <p>incluido el precio, el estado del producto, la cantidad de unidades disponible, las opciones de envío, etc.</p>
+            <h3>3. Detalles del producto</h3>
+            <p>nombre, marca, categoría, descripción, imágenes, etc.</p>
+            <h3>4. Palabras clave y términos de búsqueda</h3>
+            <p>para ayudar a los compradores a encontrar tu producto.</p>
+        </details>
+          <hr>
+        <details>
+            <summary>La página de detalles del producto</summary>
+            <p>Una página de detalles es donde los clientes ven un producto vendido en Asociados UV y su información relevante. Si has comprado en 
+            Asociados UV, probablemente reconoces la página de detalles de cualquier producto. <br> <br>
+            Un producto puede ser vendido sólo por ti o por varios vendedores. Cuando varios vendedores ofrecen el mismo producto, 
+            Asociados UV combina información de todas las ofertas en una sola página de detalles del producto (para ofrecerle la mejor 
+            experiencia a los clientes). Puedes proponer modificar información en una página de detalles del producto, junto con 
+            otros vendedores y fabricantes, y solicitar revisiones de la página de detalles si crees que la información no es correcta. <br> <br>
+            
+            Mientras creas las páginas de detalles de tus productos, piensa de qué forma puedes ayudar a los clientes a que encuentren 
+            tus productos más fácilmente, a que descubran respuestas a sus preguntas y a que puedan tomar una decisión de compra. Mejora 
+            la experiencia del cliente al hacer que tus listados sean concisos, precisos y fáciles de entender.</p>
+            <h3>Para crear nuevos listados trabaja en los detalles</h3>
+            <p>Los títulos, imágenes, viñetas, descripciones y palabras clave pueden ayudarte a construir una página de detalles del 
+                producto que ayude a convencer a los compradores.</p>
+        </details>
+        <hr>
+        <details>
+            <summary>Modificar páginas de detalles del producto compartidas</summary>
+            <p>Cuando varios vendedores venden el mismo producto en una sola página de detalles del producto, seleccionamos los 
+                datos del producto de entre los proporcionados por varios vendedores para representar el producto lo mejor posible. 
+                Si la información que aparece en la página de detalles del producto no es correcta, modifícala:</p> <br>
+            <ol>
+                <li>Ve a Administración de inventario. Haz clic en Modificar junto al producto que quieres corregir.</li>
+                <li>Realiza las modificaciones que desees y luego haz clic en Guardar y finalizar.</li>
+            </ol>
+            <p>Si validamos tus contribuciones, estas aparecerán en la página de detalles del producto en 15 minutos. Después de 
+                24 horas, si consideras que la información que aparece en la página de un producto aún no es correcta, solicita 
+                corregir una página de detalles de producto y revisaremos los cambios.</p>
+        </details>
+        <hr>
+        <!--    TITULO 3    -->
+        <h1 name="titulo3" id="titulo3">3- Corrige el listado de tus productos</h1>
+        <p>Seguir las mejores prácticas al agregar listados puede ser un factor clave para que tengan éxito. Aun así, es posible 
+            encontrar algunos errores a la hora de publicar los productos, que imposibiliten la compra del producto o que se suprima 
+            la búsqueda. Por ejemplo, las ofertas pueden eliminarse de la búsqueda del sitio debido a problemas con la calidad de la 
+            información, incluidos el título o la imagen del producto. <br><br>
+
+            Los productos suprimidos u ocultos no aparecerán en las búsquedas de los clientes hasta que se ajusten. Por lo tanto, 
+            necesitamos que sus productos cumplan con las siguientes especificaciones: <br>
+            </p>
+        <ol>
+            <li>Los títulos deben ser concisos. Recomendamos que el tamaño sea mayor a 10 y menor a 200 caracteres, espacios incluidos.</li>
+            <li>Los títulos no pueden contener frases promocionales como "Envío gratis", “Black Friday", "100% de calidad garantizada", etc.</li>
+            <li>El producto debe tener al menos 3 imágenes, una de las cuales se denomina "PRINCIPAL", que no contenga texto, logotipo o 
+                marca de agua y con un fondo completamente blanco.</li>
+        </ol>
+        <hr>
+        <!--    TITULO 4    -->
+        <h1 name="titulo4" id="titulo4">4- ¿Cómo enviar tus servicios?</h1>
+        <h3>Elige el método de entrega</h3>
+        <p>Cuando un cliente de Asociados UV compra tu producto, puedes enviar el pedido tú mismo o podemos hacerlo por ti con 
+            los servicios de Logística de Asociados UV y Asociados UV Easy Ship. Tu estrategia de gestión logística dependerá de 
+            tus objetivos empresariales. Por ejemplo, algunos vendedores usan una combinación de Logística de Asociados UV y 
+            gestión de sus propios pedidos.</p>
+        <details>
+          <summary>Logística de Asociados UV</summary>
+          <p>Cuando te registras para vender en Asociados UV, tu cuenta queda automáticamente habilitada para utilizar el servicio de 
+            Logística de Asociados UV. Si decides usar el servicio, tú te encargarás de enviar tu inventario a los centros de distribución 
+            de Asociados UV y nosotros nos haremos cargo de gestionar tus envíos, proporcionar servicio de atención al cliente sobre tus 
+            pedidos, administrar reembolsos y gestionar devoluciones. Podrás darle seguimiento a tu inventario de Logística de Asociados UV 
+            desde Seller Central en cualquier momento.</p>
+        </details>
+        <hr>
+        <details>
+          <summary>Asociados UV easy ship</summary>
+          <p>Asociados UV Easy Ship es un servicio que te beneficiará a través de nuestra red de transportistas asociados, repercutiendo 
+            positivamente en tu negocio y clientes. <br> <br>
+
+            Con Asociados UV Easy Ship venderás tus productos, los empaquetarás, imprimirás la etiqueta y a través de nuestros transportistas 
+            asociados se entregarán a tus clientes, con precios de entrega competitivos, entrega rápida y 100% rastreable, además de 
+            ofrecer envío gratuito para los clientes.</p>
+        </details>
+        <hr>
+        <details>
+          <summary>Logística del vendedor</summary>
+          <p>La gestión logística del vendedor puede ser la adecuada para tu negocio si ya dispones de una red logística, si únicamente 
+            tienes uno o dos artículos para vender, o si tus productos pertenecen a alguna categoría que no es ideal para manejar a 
+            través de Logística de Asociados UV (como productos peligrosos). <br> <br>
+
+            En casos como estos, la Logística del vendedor te permite:</p>
+            <ul>
+                <li>Mantener un control total del ciclo logístico de tu inventario;</li>
+                <li>Usar tu propio empaque y/o etiquetas;</li>
+                <li>Mantener la rentabilidad de los productos con márgenes más ajustados;</li>
+                <li>Ofrecer productos aptos para la venta en Asociados UV, pero no aptos para Logística de Asociados UV.</li>
+            </ul>
+            <p>Los Servicios de compra de envío pueden ayudarte a obtener excelentes precios en etiquetas de envío a través de 
+                la red confiable de socios de envío de Asociados UV y, también te permite enviar, confirmar pedidos y dar seguimiento 
+                a tus envíos.</p>
+        </details>
+        <hr>
+        <details>
+          <summary>¿Pueden los clientes usar tarjetas de regalo de AsociadosUV.com para comprar mis productos?</summary>
+          <p>Sí, los clientes pueden usar tarjetas regalo de AsociadosUVcom para comprar productos de los vendedores de Asociados UV.</p>
+        </details>
+        <hr>
+          <!--    TITULO 5    -->
+        <h1 name="titulo5" id="titulo5">5- Administra tu negocio</h1>
+        <details>
+          <summary>Administra tu negocio en Asociados UV</summary>
+          <p>Tu primera venta es un gran logro, pero es solo el comienzo de muchas oportunidades de crecimiento vendiendo en Asociados UV. 
+            Una vez que tu tienda esté en funcionamiento, hay algunas cosas importantes que debes tener en mente.</p>
+        </details>
+          <hr>
+        <details>
+          <summary>Métricas de rendimiento (y por qué son importantes)</summary>
+          <p>Cuando vendes en Asociados UV, supervisar tu desempeño es fundamental para tener éxito. Puedes hacerlo en la página Estado de 
+            la cuenta, que te ayuda a analizar si tu cuenta de vendedor cumple con las políticas y los objetivos de desempeño 
+            necesarios para vender en Asociados UV. Además, para comunicarte con tus clientes de forma directa, sigue las Pautas de 
+            comunicación para darles asistencia y brindarles una experiencia de compra de calidad. <br> <br>
+
+            Los vendedores de Asociados UV operan a un nivel muy alto para que podamos ofrecer una experiencia de compra perfecta y agradable 
+            al cliente. Nosotros lo llamamos obsesión por el cliente, y como vendedor de Asociados UV eso significa que debes vigilar las 
+            siguientes métricas clave (como referencia):</p>
+            <ul>
+                <li>Porcentaje de pedidos defectuosos (una medida de los estándares de servicio al cliente del vendedor): menor a 1%</li>
+                <li>Porcentaje de cancelación de pedidos (iniciada por el vendedor antes del envío): menor a 2.5%</li>
+                <li>Porcentaje de envíos atrasados (pedidos que se envían después de la fecha esperada): menor a 4%</li>
+            </ul>
+        </details>
+          <hr>
+        <details>
+          <summary>Reseña de los clientes</summary>
+          <p>Los comentarios de los clientes son una parte integral de la experiencia de compra en Asociados UV, y benefician tanto a 
+            clientes como a vendedores. Si recibes una valoración negativa, es importante determinar rápidamente la causa del 
+            problema y hacer lo posible para resolverlo.</p>
+        </details>
+          <hr>
+        <!--  TITULO 6      -->
+        <h1 name="titulo6" id="titulo6">6- Crece</h1>
+        <h3>Conoce programas y herramienta de venta</h3>
+        <p>Una vez que entiendas los conceptos básicos de cómo vender en Asociados UV, conoce otros programas y herramientas de venta 
+            que te pueden ayudar a hacer crecer tu negocio.</p>
+        <hr>
+    </div>
+  </main>
+<footer>Todos los derechos reservados 2023</footer>
+</body>
+</html>

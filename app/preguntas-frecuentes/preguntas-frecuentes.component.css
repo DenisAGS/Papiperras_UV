@@ -1,0 +1,151 @@
+/*Estilos base*/
+h1,details,a,summary,p, li{
+    font-family: 'Cambria';
+    font-style: normal;
+    color: #000000;
+}
+
+hr{
+    margin-top: 45px;
+}
+
+/* Titulo de preguntas */
+
+h1{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 58px;
+    text-align: center;
+}
+
+#titulo1{
+    margin-top: 6rem;
+}
+
+
+
+/* Preguntas */
+
+details summary{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 48px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+
+details summary::before{
+    position: absolute;
+    content: "+";
+    font-size: 2.4rem;
+    right: 16px;
+}
+
+details[open] summary::before{
+    position: absolute;
+    content: "X";
+    font-size: 1.2rem;
+    font-weight: 600;
+    right: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+summary{
+    padding-inline-end: 5rem;
+}
+
+p, li{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: grey;
+    text-align: justify;
+}
+
+p{
+    margin-right: 2rem;
+}
+
+/*Menu de secciones de preguntas*/
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 20%;
+}
+
+.secciones{
+    width: 30%;
+    height: auto;
+    background: rgba(255, 201, 148, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    
+    position: fixed;
+    
+    line-height: 43px;
+    align-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    /*margin: 10rem auto;*/
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+
+.contenido{
+    width: 60%;
+    margin-left: auto;
+}
+
+a{
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .secciones{
+        margin-left: auto;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-content: center;
+    }
+    .secciones,.contenido{
+        position: relative;
+        align-content: center;
+        width: 100%;
+    }
+    .secciones{
+        margin-top: 6rem;
+    }
+    .contenido{
+        margin-top: -3rem;
+        text-align: center;
+    }
+    p{
+        margin: 1rem;
+    }
+}
+
+.menuFijo a{
+    font-weight: 540;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.menuFijo li{
+    display: inline;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+}

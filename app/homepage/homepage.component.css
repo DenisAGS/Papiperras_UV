@@ -1,0 +1,61 @@
+#principal {
+    padding-left: 75px;
+  }
+
+  @media (max-width: 768px) {
+    #principal {
+      padding-left: 0;
+    }
+}
+.invoice{
+    width: flex;
+    height: flex;
+    background: rgba(255, 201, 148, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+.card{
+    width: flex;
+    height: flex;
+    background: rgba(255, 201, 148, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+ul.semaforo {
+    position: relative;
+    width: flex;
+    /* para 5 (ancho li x nº de círculos total) */
+    margin: 10px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.semaforo li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    /* ancho de cada círculo */
+    height: 50px;
+    border-radius: 5%;
+    background: lightgrey;
+}
+
+.rojo li:nth-of-type(1) {
+    background: #cc0000;
+}
+
+.naranja li:nth-of-type(2) {
+    background: #FF9326;
+}
+
+.amarillo li:nth-of-type(3) {
+    background: #ffff00;
+}
+
+.verde li:nth-of-type(4) {
+    background: #00ff00;
+}
+.azul li:nth-of-type(5) {
+    background:  #01ff69;
+}

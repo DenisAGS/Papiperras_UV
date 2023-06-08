@@ -1,0 +1,146 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  background-color: #79017E;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+.link-icon{
+  color: white;
+}
+
+/* Logo y nombre de la pagina*/
+
+.PageName {
+  /* Asociados Uv */
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #FFE6F5;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  position: sticky;
+  z-index: 1;
+}
+
+
+.link-icon{
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+}
+
+.link-icon img{
+max-width: 100%;
+margin-right: 5px;
+margin-left: 8px;
+height: 52px;
+width: 52px;
+justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+.title-page {
+  font-size: 1.8rem;
+  margin-left: 600px;
+
+}
+.title-container{
+  margin-top: 2px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.PageName {
+  font-size: 1rem;
+}
+.link-icon img{
+  max-width: 50%;
+}
+header h1{
+  display: none;
+}
+}
+
+
+a,
+span,
+p,
+div,
+h1
+{
+font-family: 'Raleway', sans-serif;
+font-style:normal;
+}
+/* Titulo de pagina*/
+
+.title-page{
+color: #FFFFFF;
+margin: 10px;
+margin: 0 auto;
+}
+
+.title-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 16px;
+margin: 0 auto; /*para centrar*/
+
+}
+
+/*Estilo de los iconos*/
+
+.header-icons {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-top: 15px;
+}
+
+.icon-link {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 10px;
+text-decoration: none;
+color: #FFFFFF;
+margin-bottom: 10px;
+}
+.nav-item{
+  display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-top: 15px;
+margin-left: 15px;
+margin-right: 15px;
+  width: 42px;
+height: 42px;
+
+}
+.icon-link img {
+width: 42px;
+height: 42px;
+}
+
+/*span{
+  margin-top: -5px;
+}*/
+
+/*  *******************************     */
+
+/*footer*/
+footer{
+  text-align: center;
+}
