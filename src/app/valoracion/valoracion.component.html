@@ -25,21 +25,198 @@
                             <h3>
                                 Daniel Rosas
                                 <i class="fas fa-check-circle"></i>
+                                <a [routerLink]="['/about-us']" class="verified-text">Ver reputacion >>></a>
                             </h3>
-                              <div class="rating-chart"></div>
+                            <div class="align-items-center">
+                                <ul class="semaforo verde rojo amarillo azul naranja">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <h5>4 años vendiendo en Asociados UV</h5>
+
+                    <div class="circle-container">
+                        <div class="circle">
+                            <div class="image-wrapper">
+                                <img src="../../assets/Images/img-reseñas/atencion.png" alt="Imagen 1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span style="margin-left: 150px;" class="circle-text">Buena atencion</span>
+                        </div>
+
+                        <div class="circle">
+                            <div class="image-wrapper">
+                                <img src="../../assets/Images/img-reseñas/ventas-info.png" alt="Imagen 1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="circle-text">+1000 ventas</span>
+                        </div>
+
+                        <div class="circle">
+                            <div class="image-wrapper">
+                                <img src="../../assets/Images/img-reseñas/entrega.png" alt="Imagen 1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span style="margin-left: 150px;" class="circle-text">Entregas a tiempo</span>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="cont-estadistica">
                     <h4>Estadisticas</h4>
+                    <div class="space-barra">
+                        <div class="rating-bars-container">
+                            <!-- Primera barra de valoración -->
+                            <div class="rating-bar">
+                                <div class="bar" [style.width.%]="barras[0].porcentajeValoracion"></div>
+                                <span class="bar-text">Buena ( {{ barras[0].valoracion }} )</span>
+                            </div>
+
+                            <!-- Estrellas de la primera barra -->
+                            <div class="rating">
+                                <span *ngFor="let _ of [].constructor(5)" class="stars"
+                                    [attr.data-rating]="barras[0].valoracion"></span>
+                            </div>
+
+                            <!-- Segunda barra de valoración -->
+                            <div class="rating-bar">
+                                <div class="bar" [style.width.%]="barras[1].porcentajeValoracion"></div>
+                                <span class="bar-text">Regular ( {{ barras[1].valoracion }} )</span>
+                            </div>
+
+                            <!-- Estrellas de la segunda barra -->
+                            <div class="rating">
+                                <div class="stars-container">
+                                    <span *ngFor="let _ of [].constructor(3)" class="stars"
+                                        [attr.data-rating]="barras[1].valoracion"></span>
+                                    <span class="stars-divider"></span>
+                                    <span *ngFor="let _ of [].constructor(4)" class="stars"
+                                        [attr.data-rating]="barras[1].valoracion"></span>
+                                </div>
+                            </div>
+
+                            <!-- Tercera barra de valoración -->
+                            <div class="rating-bar">
+                                <div class="bar" [style.width.%]="barras[2].porcentajeValoracion"></div>
+                                <span class="bar-text">Mala ( {{ barras[2].valoracion }} )</span>
+                            </div>
+
+                            <!-- Estrellas de la tercera barra -->
+                            <div class="rating">
+                                <div class="stars-container">
+                                    <span *ngFor="let _ of [].constructor(1)" class="stars"
+                                        [attr.data-rating]="barras[1].valoracion"></span>
+                                    <span class="stars-divider"></span>
+                                    <span *ngFor="let _ of [].constructor(2)" class="stars"
+                                        [attr.data-rating]="barras[1].valoracion"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="orden-col">
-                <div class="cont-comentarios">
-                    
+            <div class="card direct-chat direct-chat-primary cont-comentarios">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div class="mr-3">
+                            <select id="opciones1" name="opciones1">
+                                <option value="opcion1">Ultima semana</option>
+                                <option value="opcion2">Ultimos 15 dias</option>
+                                <option value="opcion2">Ultimo mes</option>
+                                <option value="opcion3">Ultimo año</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="opciones2" name="opciones2">
+                                <option value="opcion1">Buena</option>
+                                <option value="opcion2">Regular</option>
+                                <option value="opcion3">Mala</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Estilos de lo comentarios-->
+                </div>
+                <div class="card-body">
+                    <div class="direct-chat-messages" style="height: 56vh;">
+                        <div class="row m-2 style-comentarios">
+                            <div class="col-3 col-md-2 d-flex posicion-user">
+                                <img class="img-perfil" src="../../assets/Images/img-reseñas/user.png">
+                            </div>
+                            <div class="col-5 col-md-6 d-flex ">
+                                <p class="name-user">Diego Conde</p>
+                            </div>
+                            <p class="mt-2 date-comentarios">23/03/2023</p>
+                            <p class="style-reseña">Excelente servicio</p>
+                            <div class="rating" style="padding: 15px; margin-left: -9.2em;">
+                                <span *ngFor="let _ of [].constructor(5)" class="stars"
+                                    [attr.data-rating]="barras[0].valoracion"></span>
+                            </div>
+                        </div>
+                        <div class="row m-2 style-comentarios">
+                            <div class="col-3 col-md-2 d-flex posicion-user">
+                                <img class="img-perfil" src="../../assets/Images/img-reseñas/user.png">
+                            </div>
+                            <div class="col-5 col-md-6 d-flex">
+                                <p class="name-user">Alexis Roman</p>
+                            </div>
+                            <p class="mt-2 date-comentarios">23/03/2023</p>
+                            <p class="style-reseña">Le hace falta mejorar el empaquetado de los envios.</p>
+                            <div class="rating" style="padding: 15px; margin-left: -25.4em;">
+                                <span *ngFor="let _ of [].constructor(4)" class="stars"
+                                    [attr.data-rating]="barras[0].valoracion"></span>
+                            </div>
+                        </div>
+                        <div class="row m-2 style-comentarios">
+                            <div class="col-3 col-md-2 d-flex posicion-user">
+                                <img class="img-perfil" src="../../assets/Images/img-reseñas/user.png">
+                            </div>
+                            <div class="col-5 col-md-6 d-flex">
+                                <p class="name-user">johan Ortega</p>
+                            </div>
+                            <p class="mt-2 date-comentarios">23/03/2023</p>
+                            <p class="style-reseña">Casi no estuvo al pendiente de que el pedido llegara en buen estado.</p>
+                            <div class="rating" style="padding: 15px; margin-left: -33.3em;">
+                                <span *ngFor="let _ of [].constructor(3)" class="stars"
+                                    [attr.data-rating]="barras[0].valoracion"></span>
+                            </div>
+                        </div>
+                        <div class="row m-2 style-comentarios">
+                            <div class="col-3 col-md-2 d-flex posicion-user">
+                                <img class="img-perfil" src="../../assets/Images/img-reseñas/user.png">
+                            </div>
+                            <div class="col-5 col-md-6 d-flex">
+                                <p class="name-user">Lizbeth Ortiz</p>
+                            </div>
+                            <p class="mt-2 date-comentarios">23/03/2023</p>
+                            <p class="style-reseña">Falta mejorar.</p>
+                            <div class="rating" style="padding: 15px; margin-left: -7.3em;">
+                                <span *ngFor="let _ of [].constructor(2)" class="stars"
+                                    [attr.data-rating]="barras[0].valoracion"></span>
+                            </div>
+                        </div>
+                        <div class="row m-2 style-comentarios">
+                            <div class="col-3 col-md-2 d-flex posicion-user">
+                                <img class="img-perfil" src="../../assets/Images/img-reseñas/user.png">
+                            </div>
+                            <div class="col-5 col-md-6 d-flex">
+                                <p class="name-user">Sergio Jimenez</p>
+                            </div>
+                            <p class="mt-2 date-comentarios">23/03/2023</p>
+                            <p class="style-reseña">Mal servicio.</p>
+                            <div class="rating" style="padding: 15px; margin-left: -6.8em;">
+                                <span *ngFor="let _ of [].constructor(1)" class="stars"
+                                    [attr.data-rating]="barras[0].valoracion"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </main>
     <app-footer-page></app-footer-page>
 </body>
