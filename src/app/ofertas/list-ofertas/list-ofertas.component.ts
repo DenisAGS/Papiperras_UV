@@ -76,8 +76,8 @@ export class ListOfertasComponent implements OnInit {
     this.paginaActual = pagina;
     this.actualizarProductosPaginados();
   }
-  
-  redireccionar(index: number) {
-    this.router.navigate(['/ofertas', index]);
-  }
+
+  redireccionar() {
+  this.router.navigate(['/ofertas']);
+  } 
 }
