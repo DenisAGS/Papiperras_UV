@@ -15,6 +15,7 @@ import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.compo
 import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
 import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component';
 import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
+import { ProblemasProductosComponent } from './problemas-productos/problemas-productos.component';
 
 const routes: Routes = [  
   {
@@ -60,6 +61,10 @@ const routes: Routes = [
   {
     path:'reclamos-formulario',
     component: ReclamosFormularioComponent
+  },
+  {
+    path:'problemas-productos',
+    component: ProblemasProductosComponent
   }
 ];
 
