@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados</title>
+  <link rel="stylesheet" href="campañas.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <app-header-page title="Campañas"></app-header-page>
+</header>
+<body>
+    <app-sidebar></app-sidebar>
+    <section>
+        <h2 class="text1">Nombre campaña*</h2>
+        <input class="buscarO" type="text" id="buscarCam" name="buscarCampaña" placeholder="BUSCAR POR TITULO O ANUNCIO">
+        <button class="imgBuscador" type="button"></button> 
+        <button class="agregarProductos" type="button">Agregar productos</button>
+    </section>
+    <section>
+        <div class="container">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th colspan="2">Titulo</th>
+                        <th>Impresiones</th>
+                        <th>Clic's</th>
+                        <th>Ventas</th>
+                        <th>Ingresos</th>
+                        <th>Inversión</th>
+                        <th>Inversion/Costos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let campania of campanias">
+                        <td class="td2"><input class="checkbox" type="checkbox"></td>         
+                        <td class="td2"><img src="{{ campania.foto }}" alt="{{ campania.nombre }}"></td>
+                        <td class="td3">{{ campania.titulo }}</td>
+                        <td>{{ campania.impresiones }}</td>
+                        <td>{{ campania.clics }}</td>
+                        <td>{{ campania.ventas }}</td>
+                        <td>{{ campania.ingresos}}</td>
+                        <td>{{ campania.inversion}}</td>
+                        <td>{{ campania.inv_cos}}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>

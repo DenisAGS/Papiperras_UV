@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 /*import { MatIconModule} from '@angular/material/icon';*/
 
 
@@ -25,6 +26,10 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConsejosComponent } from './consejos/consejos.component';
+import { ListOfertasComponent } from './ofertas/list-ofertas/list-ofertas.component' ;
+import { CampañasComponent } from './publicidad/campañas/campañas.component';
+import { MetricasComponent } from './publicidad/metricas/metricas.component';
+
 
 
 @NgModule({
@@ -47,13 +52,18 @@ import { ConsejosComponent } from './consejos/consejos.component';
     DatosRetiroComponent,
     FooterPageComponent,
     EstadisticaComponent,
-    ConsejosComponent
+    ConsejosComponent,
+    PublicarPComponent,
+    ListOfertasComponent,
+    CampañasComponent,
+    MetricasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

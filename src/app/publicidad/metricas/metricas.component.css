@@ -1,0 +1,73 @@
+.fondoCrema{
+    background-size: cover;
+    position: absolute;
+    width: 1160.88px;
+    height: 350.2px;
+    left: 140.81px;
+    top: 68.49px;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction:row;
+    align-items: flex-start;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+      
+    background: rgba(255, 201, 148, 0.2);
+    box-shadow: 0px 3.16204px 3.16204px rgba(0, 0, 0, 0.25), 0px 3.16204px 3.16204px rgba(0, 0, 0, 0.25);
+    border-radius: 23.7153px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.circulito1xd{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 70.1px;
+    top: 40px;
+    border-radius: 30px;
+    background: #500250;
+}
+.circulito2xd{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 325.1px;
+    top: 40px;
+    border-radius: 30px;
+    background: #33CFFF;
+}
+.text1{
+    position: absolute;
+    width: 837.15px;
+    height: 145.45px;
+    left: 90px;
+    top: 28.79px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.6204px;
+    line-height: 38px;
+    color: #000000;
+    text-align: left;
+}
+.text2{
+    position: absolute;
+    width: 837.15px;
+    height: 145.45px;
+    left: 345px;
+    top: 28.79px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.6204px;
+    line-height: 38px;
+    color: #000000;
+    text-align: left;
+}
+.boton{
+    left: 1000px;
+    top:20px;
+}

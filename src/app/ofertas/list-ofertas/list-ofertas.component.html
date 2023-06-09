@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados</title>
+  <link rel="stylesheet" href="list-ofertas.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <app-header-page title="Ofertas"></app-header-page>
+</header>
+<body>
+    <app-sidebar></app-sidebar>
+    <section>
+        <input class="buscarO" type="text" id="buscarOfer" name="buscarOferta" placeholder="BUSCAR POR TITULO">
+        <button class="imgBuscador" type="button"></button> 
+    </section>
+    <section>
+        <div class="container">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th><input class="checkbox" type="checkbox" id=""></th>
+                        <th colspan="2">Producto</th>
+                        <th>Precio original</th>
+                        <th>Descuento</th>
+                        <th>Precio final</th>
+                        <th>Stock</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let producto of productos">
+                        <td class="td2"><input class="checkbox" type="checkbox"></td>         
+                        <td class="td2"><img src="{{ producto.foto }}" alt="{{ producto.nombre }}"></td>
+                        <td class="td3">{{ producto.nombre }}</td>
+                        <td>{{ producto.precioOriginal }}</td>
+                        <td>{{ producto.descuento }}</td>
+                        <td>{{ producto.nuevoPrecio }}</td>
+                        <td>{{ producto.stock}}</td>
+                        <td><button (click)="redireccionar()" class="imgEditar" type="button"></button></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>

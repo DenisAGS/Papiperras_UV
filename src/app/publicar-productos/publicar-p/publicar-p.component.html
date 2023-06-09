@@ -22,49 +22,49 @@
             <div class="columns">
                 <div>
                     <p class="text">Ingresa el nombre de tu producto</p>
-                    <input class="input" type="text" id="nombreProd" name="nombreProducto"> 
+                    <input class="input" type="text" id="nombre" name="nombre" [(ngModel)]="producto.nombre" required> 
                 </div>
                 <div>
                     <p class="text1">Precio del producto</p>
-                    <input class="input1" type="number" id="precioProd" name="precioProducto"> 
+                    <input class="input1" type="number" id="precio" name="precio" [(ngModel)]="producto.precio" required> 
                 </div>
                 <div>
                     <p class="text2">Disponibilidad</p>
-                    <input class="input2" type="number" id="distProd" name="disponibilidadProducto"> 
+                    <input class="input2" type="number" id="cantidad" name="cantidad" [(ngModel)]="producto.cantidad" required> 
                 </div>
             </div>
             <div class="file">
                 <p class="text3">Ingresa la descripción del producto</p>
-                <textarea class="input3" name="descripcionProducto" id="desProd" cols="20" rows="4"></textarea>
+                <textarea class="input3" name="descripcion" id="descripcion" cols="20" rows="4" [(ngModel)]="producto.descripcion" required></textarea>
             </div>     
         </div>
         <div class="cuadroMorado2xd">
             <div class="columns2">
                 <div>
                     <p class="text">Marca</p>
-                    <input class="input" type="text" id="marca" name="marcaProducto"> 
+                    <input class="input" type="text" id="marca" name="marca" [(ngModel)]="producto.marca" required> 
                 </div>
                 <div>
                     <p class="text1">Modelo</p>
-                    <input class="input" type="text" id="marca" name="marcaProducto"> 
+                    <input class="input" type="text" id="modelo" name="modelo" [(ngModel)]="producto.modelo" required> 
                 </div>              
             </div>
             <div class="file">
                 <p class="text3">Fotos</p>
-                <input class="inputFile" type="file" id="desProd" name="descripcionProducto"> 
+                <input class="inputFile" type="file" id="fotos" name="fotos" multiple (change)="onFileChange($event)" required> 
             </div> 
         </div>
         <div class="cuadroMorado3xd">
             <div>
                 <p class="text">Terminos y condiciones</p>
-                <textarea class="input3" name="comments" id="comments" cols="20" rows="4"></textarea>
+                <textarea class="input3" name="terminosCondiciones" id="terminosCondiciones" cols="20" rows="4" [(ngModel)]="producto.terminosCondiciones" required></textarea>
 
             </div>
         </div>
     </section>
     <section>
         <button class="botonCancelar" type="button">Cancelar</button> 
-        <button class="botonContinuar" type="button">Confirmar</button>
+        <button (click)="agregarProducto(); imprimirProductos()" class="botonContinuar" type="button">Confirmar</button>
       </section>
     <img class="ondita" alt="">
 

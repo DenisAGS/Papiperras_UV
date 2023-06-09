@@ -249,7 +249,7 @@ h2{
   height: 86.96px;
   left: -10px;
   top: 1547.88px;
-  
+  border-color: none;
   background: url("../../../assets/Images/Sergio/pub1/Vector.png");
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }

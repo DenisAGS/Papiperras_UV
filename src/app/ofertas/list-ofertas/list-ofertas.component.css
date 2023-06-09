@@ -1,0 +1,175 @@
+
+/* Titulo de pagina*/
+ 
+a,
+span,
+p,
+div,
+h1,
+h2{
+  font-family: 'Foldit', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-style:normal;
+}
+
+/*Estilos del menu*/
+
+#menu-lateral {
+  margin-top: 62px;
+  width: 100px;
+  height: 100%;
+  background-color: #D9D9D9;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+
+}
+
+#menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu-lateral li {
+  background-color: #D9D9D9;
+  margin: 1px 0;
+  padding: 10px;
+}
+
+#menu-lateral li a {
+  color: #fff;
+  text-decoration: none;
+  display:flex;
+}
+
+
+.menu-item img{
+  width: auto;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #bebbbb;
+}
+
+.menu-text {
+  display: none;
+}
+
+.menu-item:hover .menu-text {
+  display: block;
+}
+
+.icon-menu{
+  width: auto;
+  height: 40px;
+}
+.buscarO[placeholder], [placeholder], *[placeholder]{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 18.3333px 77.5px;
+    gap: 8.33px;
+
+    position: absolute;
+    width: 370.83px;
+    height: 41.67px;
+    left: 125px;
+    top: 120px;
+
+    border: 0.833333px solid rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 16.6667px 29.1667px rgba(0, 0, 0, 0.05));
+    border-radius: 12.5px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.6667px;
+    line-height: 10px;
+    color: rgba(105, 5, 105, 0.81);
+    opacity: 0.6;
+    text-transform: uppercase;   
+}
+.imgBuscador{
+    position: absolute;
+    width: 23.33px;
+    height: 23.33px;
+    left: 447.5px;
+    top: 130.17px;   
+    background: url("../../../assets/Images/Sergio/ofertas/imagen4.png");
+    border: none; 
+
+}
+.container{
+    width: 100%;
+    max-width: 1125px;
+    margin: auto;
+    top: 600px;
+    text-align: center;
+
+}
+.tabla{
+    
+    left: 10px;
+    width: 100%;
+    margin-top: 180px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 0.833333px solid #000000;
+    border-collapse: unset;
+    border-spacing: 0;
+}
+.checkbox{
+  top: 10%;
+  left: 10px;
+  height: 17px;
+  width: 17px;
+  background-color: #eee;
+}
+.th, td {
+  padding: 1em;
+  background: white;
+  border-top: 0.833333px solid #000000;
+  text-align: center
+}
+.td2{
+  width: 80px;
+}
+.td3{
+  width: 120px;
+  text-align: left;
+}
+.imgEditar{
+    width: 33px;
+    height: 33px;
+    background: url("../../../assets/Images/Sergio/ofertas/imagen130.png");
+    border: none; 
+}
+
+.pagination {
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #ccc;
+}

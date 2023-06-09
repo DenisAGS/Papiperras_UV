@@ -20,6 +20,9 @@ import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { ConsejosComponent } from './consejos/consejos.component';
+import { ListOfertasComponent } from './ofertas/list-ofertas/list-ofertas.component';
+import { CampañasComponent } from './publicidad/campañas/campañas.component';
+import { MetricasComponent } from './publicidad/metricas/metricas.component';
 
 const routes: Routes = [  
   {
@@ -85,6 +88,15 @@ const routes: Routes = [
   {
     path:'consejos',
     component: ConsejosComponent
+  },{
+    path: 'list-ofertas',
+    component: ListOfertasComponent
+  },{
+    path: 'campañas',
+    component: CampañasComponent
+  },{
+    path: 'metricas',
+    component: MetricasComponent
   }
 ];
 
