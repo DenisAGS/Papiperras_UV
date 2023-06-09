@@ -14,14 +14,19 @@
 
     <main>
         <div class="busqueda">
-            
-            <input type="text"
-                placeholder="  buscar">
-            <button class="boton2">
-                <i class="fa fa-search"
-                    style="font-size: 18px;">
-                </i>
-            </button>
+            <div class="filtro">
+                <form action="problemas-productos.component.ts">
+                    <select name="filtro" id="lang">
+                        <option value="" (click)="filtrar('dia')">ordenar por</option>
+                        <option value="dia" (click)="filtrar('semana')">Día</option>
+                        <option value="semana" (click)="filtrar('mes')">Semana</option>
+                        <option value="mes" (click)="filtrar('mes')">Mes</option>
+                        <option value="anio" (click)="filtrar('anio')">Año</option>
+                    </select>
+                </form>
+              </div>
+
+              <input class="buscar" type="text" name="search" (ngModel)="searchText" autocomplete="on" placeholder=" BUSCAR  ">
         </div>
         <div class="contenedor">
             <table class="tabla">
@@ -34,16 +39,25 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr *ngFor="let item of jsonData">
-                    <td>{{ item.fecha }}</td>
-                    <td>{{ item.tipo_producto }}</td>
-                    <td>{{ item.motivo }}</td>
-                    <td>{{item.estado}}</td>
-                </tr>
+                     <tr *ngFor="let item of data | paginate: {itemsPerPage: elementosPorPagina, currentPage: paginaActual} | filter: searchText">
+                        <td>{{ item.fecha }}</td>
+                        <td>{{ item.tipo_producto }}</td>
+                        <td>{{ item.motivo }}</td>
+                        <td>{{item.estado}}</td>
+                    </tr>
                 </tbody>
             </table>
+            
         </div>
-    
+        
+        <div class="paginacion">
+            <pagination-controls (page)="paginaActual"
+            (itemsPerPage)="elementosPorPagina"
+            (totalItems)="data.length"
+            (pageChange)="onPageChange($event)"
+            ></pagination-controls>
+        </div>
+
         <div class="final">
             <p class="p">🔵 Concluido</p>
             <p>🟡 Pendiente</p>
