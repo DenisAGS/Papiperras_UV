@@ -13,8 +13,8 @@ main{
 }
 
 .tabla{
-    max-height: 27rem;
     width: 100%;
+    min-height: 29rem;
 }
 
 td,th{
@@ -25,26 +25,39 @@ td{
     border-top: 1px solid;
 }
 
-.busqueda{
-    margin-top: 7%;
-    text-align: end;
-    margin-right: 18%;
-}
-
-input{
-    margin-right: -2.5rem;
+.buscar{
     border-radius: 15px;
-    padding: 5px;
-    border-width: 1.5px;
+    margin-left: 2rem;
 }
 
-.boton2{
-    background-color: white;
-    border: white;
+.busqueda{
+    margin-top: 6%;
+    justify-content: end;
+    margin-right: 18%;
+    display: flex;
+    flex-direction: row;
+}
+
+select{
+    width: 35%;
+    padding: 0.2rem;
+    border-radius: 15px;
+    justify-content: end;
+}
+
+.filtro{
+    width: 35%;
+    float: right;
+    color: #9B109B;
+}
+
+.paginacion{
+    text-align: center;
+    padding-top: 0.5rem;
 }
 
 .final{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
     margin-left: 20%;
@@ -133,7 +146,6 @@ p{
         margin-top: 12%;
     }
     .tabla{
-        max-height: 27rem;
         width: 100%;
     }
 }
