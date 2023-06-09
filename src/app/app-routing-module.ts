@@ -19,6 +19,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { SaldosComponent } from './saldos/saldos.component';
 
 const routes: Routes = [  
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path:'about-us',
     component: AboutUsComponent
+  },
+  {
+    path:'saldos',
+    component: SaldosComponent
   },
   {
     path:'devolucion',

@@ -1,0 +1,345 @@
+{
+    "pedidos": [
+      {
+        "id_pedido": 1,
+        "concepto": "Pedido 1",
+        "nombre": "Cliente 1",
+        "tipo_pago": "Tarjeta de crédito",
+        "costo": 100.50,
+        "fecha_hora": "2023-05-01 10:00:00",
+        "estado": "Pendiente",
+        "factura": "FACT-001",
+        "envio": {
+          "numero_guia": "123456789",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-02",
+          "hora": "14:30:00",
+          "fecha_entrega": "2023-05-05"
+        }
+      },
+      {
+        "id_pedido": 2,
+        "concepto": "Pedido 2",
+        "nombre": "Cliente 2",
+        "tipo_pago": "Transferencia bancaria",
+        "costo": 150.75,
+        "fecha_hora": "2023-05-03 09:15:00",
+        "estado": "En proceso",
+        "factura": "FACT-002",
+        "envio": {
+          "numero_guia": "987654321",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-04",
+          "hora": "11:45:00",
+          "fecha_entrega": "2023-05-06"
+        }
+      },
+      {
+        "id_pedido": 3,
+        "concepto": "Pedido 3",
+        "nombre": "Cliente 3",
+        "tipo_pago": "PayPal",
+        "costo": 75.20,
+        "fecha_hora": "2023-05-02 16:20:00",
+        "estado": "Completado",
+        "factura": "FACT-003",
+        "envio": {
+          "numero_guia": "456123789",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-03",
+          "hora": "10:00:00",
+          "fecha_entrega": "2023-05-07"
+        }
+      },
+      {
+        "id_pedido": 4,
+        "concepto": "Pedido 4",
+        "nombre": "Cliente 4",
+        "tipo_pago": "Efectivo",
+        "costo": 42.90,
+        "fecha_hora": "2023-05-04 14:45:00",
+        "estado": "Pendiente",
+        "factura": "FACT-004",
+        "envio": {
+          "numero_guia": "789321654",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-05",
+          "hora": "16:30:00",
+          "fecha_entrega": "2023-05-08"
+        }
+      },
+      {
+        "id_pedido": 5,
+        "concepto": "Pedido 5",
+        "nombre": "Cliente 5",
+        "tipo_pago": "Tarjeta de débito",
+        "costo": 89.60,
+        "fecha_hora": "2023-05-05 11:30:00",
+        "estado": "En proceso",
+        "factura": "FACT-005",
+        "envio": {
+          "numero_guia": "321654987",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-06",
+          "hora": "09:15:00",
+          "fecha_entrega": "2023-05-09"
+        }
+      },
+      {
+        "id_pedido": 6,
+        "concepto": "Pedido 6",
+        "nombre": "Cliente 6",
+        "tipo_pago": "Tarjeta de crédito",
+        "costo": 120.25,
+        "fecha_hora": "2023-05-06 13:20:00",
+        "estado": "Completado",
+        "factura": "FACT-006",
+        "envio": {
+          "numero_guia": "987654123",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-07",
+          "hora": "14:45:00",
+          "fecha_entrega": "2023-05-10"
+        }
+      },
+      {
+        "id_pedido": 7,
+        "concepto": "Pedido 7",
+        "nombre": "Cliente 7",
+        "tipo_pago": "Transferencia bancaria",
+        "costo": 65.80,
+        "fecha_hora": "2023-05-07 10:45:00",
+        "estado": "Pendiente",
+        "factura": "FACT-007",
+        "envio": {
+          "numero_guia": "654321987",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-08",
+          "hora": "11:30:00",
+          "fecha_entrega": "2023-05-11"
+        }
+      },
+      {
+        "id_pedido": 8,
+        "concepto": "Pedido 8",
+        "nombre": "Cliente 8",
+        "tipo_pago": "PayPal",
+        "costo": 95.10,
+        "fecha_hora": "2023-05-08 15:10:00",
+        "estado": "En proceso",
+        "factura": "FACT-008",
+        "envio": {
+          "numero_guia": "123987456",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-09",
+          "hora": "13:20:00",
+          "fecha_entrega": "2023-05-12"
+        }
+      },
+      {
+        "id_pedido": 9,
+        "concepto": "Pedido 9",
+        "nombre": "Cliente 9",
+        "tipo_pago": "Efectivo",
+        "costo": 38.50,
+        "fecha_hora": "2023-05-09 12:00:00",
+        "estado": "Completado",
+        "factura": "FACT-009",
+        "envio": {
+          "numero_guia": "654789321",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-10",
+          "hora": "10:45:00",
+          "fecha_entrega": "2023-05-13"
+        }
+      },
+      {
+        "id_pedido": 10,
+        "concepto": "Pedido 10",
+        "nombre": "Cliente 10",
+        "tipo_pago": "Tarjeta de débito",
+        "costo": 79.30,
+        "fecha_hora": "2023-05-10 14:30:00",
+        "estado": "Pendiente",
+        "factura": "FACT-010",
+        "envio": {
+          "numero_guia": "987321654",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-11",
+          "hora": "15:10:00",
+          "fecha_entrega": "2023-05-14"
+        }
+      },
+      {
+        "id_pedido": 11,
+        "concepto": "Pedido 11",
+        "nombre": "Cliente 11",
+        "tipo_pago": "Tarjeta de crédito",
+        "costo": 110.80,
+        "fecha_hora": "2023-05-11 11:15:00",
+        "estado": "En proceso",
+        "factura": "FACT-011",
+        "envio": {
+          "numero_guia": "321654789",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-12",
+          "hora": "09:30:00",
+          "fecha_entrega": "2023-05-15"
+        }
+      },
+      {
+        "id_pedido": 12,
+        "concepto": "Pedido 12",
+        "nombre": "Cliente 12",
+        "tipo_pago": "Transferencia bancaria",
+        "costo": 85.60,
+        "fecha_hora": "2023-05-12 13:40:00",
+        "estado": "Completado",
+        "factura": "FACT-012",
+        "envio": {
+          "numero_guia": "987456321",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-13",
+          "hora": "11:15:00",
+          "fecha_entrega": "2023-05-16"
+        }
+      },
+      {
+        "id_pedido": 13,
+        "concepto": "Pedido 13",
+        "nombre": "Cliente 13",
+        "tipo_pago": "PayPal",
+        "costo": 58.90,
+        "fecha_hora": "2023-05-13 09:30:00",
+        "estado": "Pendiente",
+        "factura": "FACT-013",
+        "envio": {
+          "numero_guia": "789654321",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-14",
+          "hora": "13:40:00",
+          "fecha_entrega": "2023-05-17"
+        }
+      },
+      {
+        "id_pedido": 14,
+        "concepto": "Pedido 14",
+        "nombre": "Cliente 14",
+        "tipo_pago": "Efectivo",
+        "costo": 47.25,
+        "fecha_hora": "2023-05-14 12:20:00",
+        "estado": "En proceso",
+        "factura": "FACT-014",
+        "envio": {
+          "numero_guia": "654789123",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-15",
+          "hora": "14:00:00",
+          "fecha_entrega": "2023-05-18"
+        }
+      },
+      {
+        "id_pedido": 15,
+        "concepto": "Pedido 15",
+        "nombre": "Cliente 15",
+        "tipo_pago": "Tarjeta de débito",
+        "costo": 95.40,
+        "fecha_hora": "2023-05-15 15:00:00",
+        "estado": "Completado",
+        "factura": "FACT-015",
+        "envio": {
+          "numero_guia": "321987654",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-16",
+          "hora": "16:20:00",
+          "fecha_entrega": "2023-05-19"
+        }
+      },
+      {
+        "id_pedido": 16,
+        "concepto": "Pedido 16",
+        "nombre": "Cliente 16",
+        "tipo_pago": "Tarjeta de crédito",
+        "costo": 130.75,
+        "fecha_hora": "2023-05-16 10:30:00",
+        "estado": "Pendiente",
+        "factura": "FACT-016",
+        "envio": {
+          "numero_guia": "987654321",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-17",
+          "hora": "09:45:00",
+          "fecha_entrega": "2023-05-20"
+        }
+      },
+      {
+        "id_pedido": 17,
+        "concepto": "Pedido 17",
+        "nombre": "Cliente 17",
+        "tipo_pago": "Transferencia bancaria",
+        "costo": 78.60,
+        "fecha_hora": "2023-05-17 11:45:00",
+        "estado": "En proceso",
+        "factura": "FACT-017",
+        "envio": {
+          "numero_guia": "456123789",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-18",
+          "hora": "11:00:00",
+          "fecha_entrega": "2023-05-21"
+        }
+      },
+      {
+        "id_pedido": 18,
+        "concepto": "Pedido 18",
+        "nombre": "Cliente 18",
+        "tipo_pago": "PayPal",
+        "costo": 64.80,
+        "fecha_hora": "2023-05-18 14:00:00",
+        "estado": "Completado",
+        "factura": "FACT-018",
+        "envio": {
+          "numero_guia": "789321654",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-19",
+          "hora": "13:15:00",
+          "fecha_entrega": "2023-05-22"
+        }
+      },
+      {
+        "id_pedido": 19,
+        "concepto": "Pedido 19",
+        "nombre": "Cliente 19",
+        "tipo_pago": "Efectivo",
+        "costo": 36.90,
+        "fecha_hora": "2023-05-19 13:15:00",
+        "estado": "Pendiente",
+        "factura": "FACT-019",
+        "envio": {
+          "numero_guia": "654789321",
+          "estado": "Entregado",
+          "fecha_envio": "2023-05-20",
+          "hora": "15:30:00",
+          "fecha_entrega": "2023-05-23"
+        }
+      },
+      {
+        "id_pedido": 20,
+        "concepto": "Pedido 20",
+        "nombre": "Cliente 20",
+        "tipo_pago": "Tarjeta de débito",
+        "costo": 85.20,
+        "fecha_hora": "2023-05-20 09:45:00",
+        "estado": "En proceso",
+        "factura": "FACT-020",
+        "envio": {
+          "numero_guia": "321654987",
+          "estado": "En tránsito",
+          "fecha_envio": "2023-05-21",
+          "hora": "12:00:00",
+          "fecha_entrega": "2023-05-24"
+        }
+      }
+    ]
+  }
+  

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProblemasServices } from '../services/problemas.services.ts.service';
+import { CargosService } from 'src/app/services/cargos.service';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-estadistica',
@@ -7,27 +8,20 @@ import { ProblemasServices } from '../services/problemas.services.ts.service';
   styleUrls: ['./estadistica.component.css']
 })
 export class EstadisticaComponent implements OnInit {
+  cargos: any[] = [];
 
-  jsonData: any;
+  constructor(private cargosService: CargosService) { }
+  monthControl = new FormControl(); // Puedes agregar un valor inicial aquí si es necesario
 
-  constructor(private jsonService: ProblemasServices) {}
-
-  ngOnInit() {
-    this.getJsonData();
+  ngOnInit(): void {
+    this.getCargos();
   }
 
-  getJsonData() {
-    this.jsonService.getJsonData().subscribe(data => {
-      this.jsonData = data;
-      console.log(data);
-    });
+  getCargos(): void {
+    this.cargosService.getCargos()
+      .subscribe(data => {
+        this.cargos = data;
+        console.log('Datos de los cargos:', this.cargos); // Imprimir en consola
+      });
   }
-
-  saveJsonData() {
-    this.jsonService.saveJsonData(this.jsonData).subscribe(response => {
-      // Aquí puedes realizar cualquier acción después de guardar los datos
-    });
-  }
-
 }
-

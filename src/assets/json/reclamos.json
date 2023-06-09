@@ -1,0 +1,73 @@
+[
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Electrónico",
+      "condición": "Nuevo",
+      "motivo": "Regalo de cumpleaños",
+      "estado": "🔴"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Ropa",
+      "condición": "Usado",
+      "motivo": "Venta de garaje",
+      "estado": "🟢"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Hogar",
+      "condición": "Nuevo",
+      "motivo": "Decoración",
+      "estado": "🔵"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Electrónico",
+      "condición": "Usado",
+      "motivo": "Actualización",
+      "estado": "🟡"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Ropa",
+      "condición": "Nuevo",
+      "motivo": "Moda",
+      "estado": "🟢"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Hogar",
+      "condición": "Usado",
+      "motivo": "Mudanza",
+      "estado": "🔴"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Electrónico",
+      "condición": "Nuevo",
+      "motivo": "Necesidad",
+      "estado": "🔵"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Ropa",
+      "condición": "Usado",
+      "motivo": "Regalo",
+      "estado": "🟡"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Hogar",
+      "condición": "Nuevo",
+      "motivo": "Renovación",
+      "estado": "🔵"
+    },
+    {
+      "fecha": "02-06-2023",
+      "tipo de producto": "Electrónico",
+      "condición": "Usado",
+      "motivo": "Tecnología",
+      "estado": "🔴"
+    }
+  ]
+  
