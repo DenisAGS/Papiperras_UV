@@ -25,6 +25,7 @@ import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
     RetiroComponent,
     DatosRetiroComponent,
     FooterPageComponent,
-    EstadisticaComponent
+    EstadisticaComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

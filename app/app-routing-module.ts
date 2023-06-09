@@ -24,7 +24,7 @@ import { EstadisticaComponent } from './estadistica/estadistica.component';
 
 const routes: Routes = [  
   {
-    path:'',
+    path:'principal',
     component: PrincipalComponent,
   },
   {
