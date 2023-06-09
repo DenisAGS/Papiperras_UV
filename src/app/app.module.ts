@@ -32,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ValoracionComponent } from './valoracion/valoracion.component';
 import { PruebaComponent } from './prueba/prueba.component';
 import { VentasComponent } from './ventas/ventas.component';
+import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { VentasComponent } from './ventas/ventas.component';
     DevolucionComponent,
     ValoracionComponent,
     PruebaComponent,
-    VentasComponent
+    VentasComponent,
+    ProgresoVentaComponent
   ],
   imports: [
     BrowserModule,
