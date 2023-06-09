@@ -1,10 +1,73 @@
-#principal {
-    padding-left: 75px;
-  }
-
-  @media (max-width: 768px) {
-    #principal {
-      padding-left: 0;
-    }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
-  
+
+.etapas-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.etapa {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.etapa::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 10px);
+  left: -15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.en-preparacion::before {
+  background-color: yellow;
+}
+
+.lista-enviar::before {
+  background-color: orange;
+}
+
+.en-transito::before {
+  background-color: lightblue;
+}
+
+.entregado::before {
+  background-color: lightgreen;
+}
+
+.conector {
+  position: relative;
+  flex: 1;
+}
+
+.conector::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -5px;
+  width: calc(100% + 10px);
+  height: 4px;
+  background-color: gray;
+}
+
+.conector::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}

@@ -1,0 +1,32 @@
+<div class="container">
+    <h2>Carrito</h2>
+    <div class="icono-carrito">
+        <i class="fa fa-shopping-cart"></i> <!-- Ajusta el nombre de la clase del icono según tu elección -->
+      </div>
+    <div class="etapas-container">
+      <div class="etapa en-preparacion">En Preparación</div>
+       <div class="conector">
+        <div class="circle"></div>
+      </div>
+      <div class="etapa lista-enviar">Lista para Enviar</div>
+      <div class="conector">
+        <div class="circle"></div>
+      </div>
+      <div class="etapa en-transito">En Tránsito</div>
+          <div class="conector">
+      <div class="circle"></div>
+    </div>
+      <div class="etapa entregado">Entregado</div>
+    </div>
+  
+    <div class="producto-container">
+      
+      <div *ngFor="let producto of productos" [ngClass]="producto.estado">
+        <h3>Información del Producto</h3>
+        <p>Nombre: {{ producto.nombre }}</p>
+        <p>Precio: {{ producto.precio }}</p>
+        <p>Descripción: {{ producto.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+  

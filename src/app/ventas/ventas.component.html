@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociados UV</title>
+</head>
+
+<body>
+    <header>
+        <app-header-page title="Ventas"></app-header-page>
+    </header>
+    <app-sidebar></app-sidebar>
+
+    <main>
+        <div class="numero-ventas">
+            <div class="columna">
+                <p class="title-etapas">En preparacion</p>
+                <a id="enPreparacion" class="contador">{{ enPreparacion }}</a>
+            </div>
+            <div class="columna">
+                <p class="title-etapas">Listas para enviar</p>
+                <a id="lista" class="contador">{{ lista }}</a>
+            </div>
+            <div class="columna">
+                <p class="title-etapas">En transito</p>
+                <a id="transito" class="contador">{{ transito }}</a>
+            </div>
+            <div class="columna">
+                <p class="title-etapas">Problemas</p>
+                <a id="problemas" class="contador">{{ problemas }}</a>
+            </div>
+            <div class="columna">
+                <p class="title-etapas">Entregado</p>
+                <a id="entregado" class="contador">{{ entregado }}</a>
+            </div>
+        </div>
+
+        <div class="ordernar-fila style-seleccion space">
+            <label class="style-label-seleccionar">
+                <input class="style-input" type="checkbox" id="seleccionMasiva" />
+                Selecciona para accionar masivamente
+            </label>
+        </div>
+        <div class="mr-3 ordernar-fila" style="margin-left: 1em;">
+            <select class="select-style" id="opcion" name="opciones1">
+                <option value="opcion1">En preparacion</option>
+                <option value="opcion2">Lista para enviar</option>
+                <option value="opcion2">En transito</option>
+                <option value="opcion3">Problemas</option>
+                <option value="opcion3"></option>
+            </select>
+        </div>
+        <div class="mr-3 ordernar-fila espacio">
+            <select class="select-style" id="opciones1" name="opciones1">
+                <option selected value="opcion1">Ultima semana</option>
+                <option value="opcion2">Ultimos 15 dias</option>
+                <option value="opcion2">Ultimo mes</option>
+                <option value="opcion3">Ultimo año</option>
+            </select>
+        </div>
+
+        <div class="mr-3 ordernar-fila" style="margin-left: -7em;">
+            <div class="search-wrapper">
+                <input type="search" class="search-input" placeholder="Buscar">
+                <div class="input-group-append">
+                    <i class="fas fa-search search-icon" (click)="search()" (keydown.enter)="search()"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="card direct-chat direct-chat-primary datos-cont">
+            <div class="d-flex" style="margin-top: -20px;">
+                <div class="card-body">
+                    <div class="direct-chat-messages" style="height: 32vh;">
+                        <div class="m-2 style-productos">
+                            <div class="d-flex">
+                                <div class="header-producto">
+                                    <div class="ordernar-fila">
+                                        <label class="label-seleccion">
+                                            <input class="input-seleccion" type="checkbox" id="seleccionMasiva" />
+                                            #0908
+                                        </label>
+                                        <label class="label-fecha">16/03/2023 03:32 hrs</label>
+                                        <label class="cliente">
+                                            Denisse Santos
+                                        </label>
+                                        <label class="numero-cliente">N.01</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordernar-producto">
+                                <span class="status">En transito</span>
+                                <div>
+                                    <span class="descripcion-venta">01008</span>
+                                    <img class="img-producto" src="../../assets/Images/ventas/redmi.png"  alt="">
+                                    <span class="descripcion-venta">Xiaomi Redmi 9t 128gb 4gb Ram 4glte Telefono Barato
+                                        Nuevo</span>
+                                    <span class="descripcion-venta">$4,899</span>
+                                    <span class="descripcion-venta">1 unidad</span>
+                                    <span class="descripcion-venta">Color: Blanco</span>
+                                    <button class="style-boton" mat-raised-button [routerLink]="['/progreso']" routerLinkActive="router-link-active"> Ver detalle >> </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-2 style-productos">
+                            <div class="d-flex">
+                                <div class="header-producto">
+                                    <div class="ordernar-fila">
+                                        <label class="label-seleccion">
+                                            <input class="input-seleccion" type="checkbox" id="seleccionMasiva" />
+                                            #0909
+                                        </label>
+                                        <label class="label-fecha">17/03/2023 04:32 hrs</label>
+                                        <label class="cliente" style="margin-left: 42.5em;">
+                                            Daniel Rosas
+                                        </label>
+                                        <label class="numero-cliente" style="margin-left: 2.4em;">N.02</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordernar-producto">
+                                <span class="status">En transito</span>
+                                <div>
+                                    <span class="descripcion-venta">01009</span>
+                                    <img class="img-producto" src="../../assets/Images/ventas/Moto-cel.png" alt="">
+                                    <span class="descripcion-venta">Moto G51 5G Dual SIM 128 GB azul 8 GB RAM
+                                        Nuevo</span>
+                                    <span class="descripcion-venta">$3,331</span>
+                                    <span class="descripcion-venta">1 unidad</span>
+                                    <span class="descripcion-venta">Color: Negro</span>
+                                    <button mat-raised-button [routerLink]="['/progreso']" routerLinkActive="router-link-active" class="style-boton" style="margin-left: 12.5em;"> Ver detalle >> </button>
+                                </div>                            
+                            </div>
+                        </div>
+
+                        <div class="m-2 style-productos">
+                            <div class="d-flex">
+                                <div class="header-producto">
+                                    <div class="ordernar-fila">
+                                        <label class="label-seleccion">
+                                            <input class="input-seleccion" type="checkbox" id="seleccionMasiva" />
+                                            #0910
+                                        </label>
+                                        <label class="label-fecha">17/03/2023 05:32 hrs</label>
+                                        <label class="cliente">
+                                            Alexis Roman
+                                        </label>
+                                        <label class="numero-cliente" style="margin-left: 2em;">N.03</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordernar-producto">
+                                <span class="status">En transito</span>
+                                <div>
+                                    <span class="descripcion-venta">01010</span>
+                                    <img class="img-producto" src="../../assets/Images/ventas/iphone.png"  alt="">
+                                    <span class="descripcion-venta">Apple iPhone 12 Pro 128 Gb - Azul Original Liberado
+                                        Nuevo</span>
+                                    <span class="descripcion-venta">$12,498</span>
+                                    <span class="descripcion-venta">1 unidad</span>
+                                    <span class="descripcion-venta">Color: Azul</span>
+                                    <button class="style-boton" mat-raised-button [routerLink]="['/progreso']" routerLinkActive="router-link-active" style="margin-left: 10em;"> Ver detalle >> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<app-footer-page></app-footer-page>
+</html>

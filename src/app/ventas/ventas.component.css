@@ -1,0 +1,248 @@
+span,
+label,
+p,
+h1,
+h2{
+  font-family: 'Raleway', sans-serif;
+}
+
+.numero-ventas{
+    align-items: center;
+    margin: 0px auto;
+    justify-content: center;
+    display: flex;
+    width: 1218px;
+    height: 125px;
+    margin-left: 7em;
+    margin-top: 4em;
+    background: rgba(255, 201, 148, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.columna {
+    flex: 1;
+    height: 64%;
+    margin-top: 10px;
+    background: rgba(103, 0, 105, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 20px;
+  }
+  
+  .title-etapas{
+    margin-top: 0px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .contador {
+    font-size: 15px;
+    margin-top: -14px;
+    text-align: center;
+    font-weight: 500;
+    color: #F4C3F5;
+    cursor: pointer;
+
+  }
+  @media screen and (max-width: 600px) {
+      .spancer{
+        margin-left: 0.5em;
+      }  
+      
+      .space{
+        margin-left: -5em;
+      }
+    
+  }
+
+  /*Estilos de las herramientas*/
+  .ordernar-fila{
+    display: inline-block;
+  }
+
+  .flex-form {
+    display: flex;
+  }
+
+  .espacio{
+    margin-left: 19em;
+  }
+
+  .style-input{
+    margin-left: 6px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+       /*Date*/
+  .select-style{
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+        /*Buscador*/
+  .search-wrapper {
+    cursor: pointer;
+    margin-left: 7em;
+    margin-top: 3em;
+    width: 12.6em;
+    display: flex;
+    align-items: center;
+    border-radius: 1px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  
+  .search-input{
+    border-radius: 5px;
+    border: 1px solid #aa9b9b;
+  }
+  .fa-search {
+    color: #999;
+    transition: color 0.3s;
+    margin-left: 5px;
+  }
+  
+  .fa-search:hover {
+    color: #000;
+  }
+
+    /*Seleccion*/
+.style-seleccion{
+    background: #D8D8D8;
+    padding: 1px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 1.6em;
+    margin-left: 7em;
+}
+
+.style-label-seleccionar{
+    margin-bottom: 13px;
+    display: inline-block; 
+    font-size: 15px;
+    margin-right: 10px; 
+    color: rgba(87, 85, 85, 0.75);
+}
+
+/*Estilos de la tabla de los productos*/
+
+.datos-cont {
+  margin-top: 1.2em;
+  margin-left: 7em;
+  width: 90%;
+  height: 14em;
+  padding: 20px;
+  background: rgba(202, 104, 5, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.header-producto{
+  height: 2.4em;
+  width: 100%;
+  border-radius: 10px;
+  background: rgba(121, 1, 126, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.label-seleccion{
+  position: relative;
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 10px; 
+}
+
+.label-fecha{
+  margin-left: 1.5em;
+}
+
+.label-seleccion::before {
+  content: '';
+  position: absolute;
+  top: -8.7px;
+  margin-left: 6em; /* Ajusta el valor según el grosor de la línea */
+  height: 38.4px;
+  width: 2px; /* Ajusta el valor según el ancho deseado de la línea */
+  background-color: white;
+}
+
+.cliente{
+  position: relative;
+  display: inline-block;
+  margin-left: 42.5em; 
+}
+
+.numero-cliente{
+  margin-left: 1.5em;
+}
+
+.cliente::before{
+  content: '';
+  position: absolute;
+  top: -8.7px;
+  margin-left: 8em; /* Ajusta el valor según el grosor de la línea */
+  height: 38.4px;
+  width: 2px; /* Ajusta el valor según el ancho deseado de la línea */
+  background-color: white;
+}
+
+label{
+  color: #FFFFFF;
+}
+
+.input-seleccion{
+  margin-right: 5px;
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.style-productos{
+  height: auto;
+  border-radius: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.status{
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  color: #887E7E;
+}
+
+.ordernar-producto{
+  display: flex;
+  flex-direction: column;
+}
+
+.descripcion-venta{
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.img-producto{
+  margin-left: 3em;
+  width: 45px;
+  height: 88px;
+  margin-bottom: 10px;
+}
+
+.style-boton{
+  margin-bottom: 10px;
+  margin-left: 8em;
+  background: #FFFFFF;
+  border: 2px solid #79017E;
+  border-radius: 15px;
+  color: #79017E;
+  font-weight: 500;
+}

@@ -21,6 +21,7 @@ import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { ValoracionComponent } from './valoracion/valoracion.component';
 import { PruebaComponent } from './prueba/prueba.component';
+import { VentasComponent } from './ventas/ventas.component';
 
 const routes: Routes = [  
   {
@@ -90,6 +91,10 @@ const routes: Routes = [
   {
     path:'prueba',
     component: PruebaComponent
+  },
+  {
+    path:'ventas',
+    component: VentasComponent
   }
 ];
 

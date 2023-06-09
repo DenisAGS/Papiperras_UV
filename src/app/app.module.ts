@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatIconModule} from '@angular/material/icon';
-import { MatFormFieldModule} from '@angular/material/form-field';
-import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker'; 
+import {MatSelectModule} from '@angular/material/select'; 
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing-module';
@@ -30,6 +31,7 @@ import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ValoracionComponent } from './valoracion/valoracion.component';
 import { PruebaComponent } from './prueba/prueba.component';
+import { VentasComponent } from './ventas/ventas.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,8 @@ import { PruebaComponent } from './prueba/prueba.component';
     EstadisticaComponent,
     DevolucionComponent,
     ValoracionComponent,
-    PruebaComponent
+    PruebaComponent,
+    VentasComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +70,7 @@ import { PruebaComponent } from './prueba/prueba.component';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

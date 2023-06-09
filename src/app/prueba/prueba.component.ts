@@ -12,4 +12,8 @@ export class PruebaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  productos = [
+    { nombre: 'Producto 1', estado: 'enPreparacion',precio: 35, descripcion:'nuevo'  },
+  ];
+
 }
