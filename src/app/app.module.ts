@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 /*import { MatIconModule} from '@angular/material/icon';*/
 
 
@@ -39,7 +40,8 @@ import { ProblemasProductosComponent } from './problemas-productos/problemas-pro
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
