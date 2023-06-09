@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProblemasProductos</title>
+</head>
+<body>
+    <header> 
+        <app-header-page title="Problemas Productos"></app-header-page>
+      </header>
+      
+      <app-sidebar></app-sidebar>
+
+    <main>
+        <div class="busqueda">
+            
+            <input type="text"
+                placeholder="  buscar">
+            <button class="boton2">
+                <i class="fa fa-search"
+                    style="font-size: 18px;">
+                </i>
+            </button>
+        </div>
+        <div class="contenedor">
+            <table class="tabla">
+                <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Tipo de producto</th>
+                    <th>Motivo</th>
+                    <th>Estado</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let item of jsonData">
+                    <td>{{ item.fecha }}</td>
+                    <td>{{ item.tipo_producto }}</td>
+                    <td>{{ item.motivo }}</td>
+                    <td>{{item.estado}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="final">
+            <p class="p">🔵 Concluido</p>
+            <p>🟡 Pendiente</p>
+            <p>🟢 Enviado</p>
+            <p>🔴 Declinado</p>
+            
+            <button class="boton" routerLink="/reclamos-formulario">Nuevo reclamo</button>
+        </div>
+    </main>
+</body>
+</html>
