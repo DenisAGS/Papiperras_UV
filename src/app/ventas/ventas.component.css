@@ -169,9 +169,9 @@ h2{
   content: '';
   position: absolute;
   top: -8.7px;
-  margin-left: 6em; /* Ajusta el valor según el grosor de la línea */
+  margin-left: 6em;
   height: 38.4px;
-  width: 2px; /* Ajusta el valor según el ancho deseado de la línea */
+  width: 2px;
   background-color: white;
 }
 
@@ -189,9 +189,9 @@ h2{
   content: '';
   position: absolute;
   top: -8.7px;
-  margin-left: 8em; /* Ajusta el valor según el grosor de la línea */
+  margin-left: 8em;
   height: 38.4px;
-  width: 2px; /* Ajusta el valor según el ancho deseado de la línea */
+  width: 2px;
   background-color: white;
 }
 

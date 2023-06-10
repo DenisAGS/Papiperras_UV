@@ -23,6 +23,7 @@ import { ValoracionComponent } from './valoracion/valoracion.component';
 import { PruebaComponent } from './prueba/prueba.component';
 import { VentasComponent } from './ventas/ventas.component';
 import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.component';
+import { Prueba2Component } from './prueba2/prueba2.component';
 
 const routes: Routes = [  
   {
@@ -100,6 +101,10 @@ const routes: Routes = [
   {
     path:'progreso',
     component: ProgresoVentaComponent
+  },
+  {
+    path:'prueba2',
+    component: Prueba2Component
   }
 ];
 

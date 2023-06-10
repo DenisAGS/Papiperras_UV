@@ -88,32 +88,29 @@ main {
   background-color: gray;
 }
 
-/*Diseño de la tabla del producto*/
+/*Diseño del producto*/
 .producto-container {
   position: absolute;
+  display: inline-block;
   width: 80%;
-  height: 290px;
+  height: 302px;
   right: 4em;
   left: 10em;
-  top: 284px;
+  top: 264px;
   background: rgba(255, 201, 148, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-  display: flex;
-  align-items: center; 
-}
-
-.product-image-container {
-  margin-left: 1em;
 }
 
 .detalles-envio {
   text-align: justify;
   margin-left: 8em;
-  margin-top: -2em;
+  margin-top: 1em;
   display: inline-block;
   font-weight: 600;
+  flex-grow: 1;
 }
+
 
 .color-valor {
   margin-left: 0.5em;
@@ -124,7 +121,8 @@ main {
 .detalles-producto {
   width: 7em;
   height: 30px;
-  margin-left: 3em;
+  margin-top: 1em;
+  margin-left: 4em;
   font-weight: 500;
   font-size: 30px;
   color: rgba(87, 85, 85, 0.75);
@@ -132,21 +130,17 @@ main {
 }
 
 .img-producto-venta{
-  margin-top: 0.5em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-left: 2em; /* Centrar horizontalmente */
+  display: flex; /* Utilizar flexbox para centrar verticalmente */
   width: 20em;
-  height: 16em; /* Aumentar el tamaño */
+  height: 17em; /* Aumentar el tamaño */
   background-color: #ffffff;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  flex: 0 0 auto; /* No crecerá ni se encogerá */
-  margin-right: 10px;
-  margin-left: 3em;
 }
 
 .product-image-thumb img {
-  align-items: center;
-  height: 2.5em;
   transition: opacity 0.3s ease; /* Agrega una transición suave de opacidad */
 }
 
@@ -154,22 +148,18 @@ main {
   opacity: 0.7; /* Reduce la opacidad de la imagen al pasar el cursor sobre ella */
 }
 
-.product-image-thumbs {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.product-image {
+  display: inline-block;
+  max-width: 100%; /* Asegurarse de que la imagen no exceda el tamaño del contenedor */
+  max-height: 100%; /* Asegurarse de que la imagen no exceda el tamaño del contenedor */
 }
+  .product-image-thumbs {
+    justify-content: space-between; /* Aumentar el espacio entre las miniaturas */
+    margin-top: 1em;
+    flex-direction: column;
+  }
 
-.product-image-thumb {
-    display: inline-block;
+  .product-image-thumb {
     width: 3em;
     height: 3em;
-    margin-left: 1em;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.product-image{
-    margin-left: 2em;
-    width: 8em;
-}
+  }

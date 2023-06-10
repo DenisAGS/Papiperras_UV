@@ -1,32 +1,64 @@
-<div class="container">
-    <h2>Carrito</h2>
-    <div class="icono-carrito">
-        <i class="fa fa-shopping-cart"></i> <!-- Ajusta el nombre de la clase del icono según tu elección -->
-      </div>
-    <div class="etapas-container">
-      <div class="etapa en-preparacion">En Preparación</div>
-       <div class="conector">
-        <div class="circle"></div>
-      </div>
-      <div class="etapa lista-enviar">Lista para Enviar</div>
-      <div class="conector">
-        <div class="circle"></div>
-      </div>
-      <div class="etapa en-transito">En Tránsito</div>
-          <div class="conector">
-      <div class="circle"></div>
-    </div>
-      <div class="etapa entregado">Entregado</div>
-    </div>
-  
-    <div class="producto-container">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados UV</title>
+</head>
+
+<body>
+  <header>
+    <app-header-page title="Progreso de la venta"></app-header-page>
+  </header>
+  <app-sidebar></app-sidebar>
+
+  <main>
+    <div class="container">
+      <h2>Carrito</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100">
+        <line id="line" [attr.x1]="circles[0].cx" y1="50" [attr.x2]="circles[circles.length - 1].cx" y2="50" stroke="purple" stroke-width="5" />      
+
+        <circle *ngFor="let circle of circles; let i = index" [attr.id]="'circle' + (i + 1)" [attr.cx]="circle.cx" cy="50" r="10" fill="purple" />
+        <text *ngFor="let circle of circles; let i = index" [attr.x]="circle.cx" y="80" text-anchor="middle" fill="black">{{ circle.text }}</text>
       
-      <div *ngFor="let producto of productos" [ngClass]="producto.estado">
-        <h3>Información del Producto</h3>
-        <p>Nombre: {{ producto.nombre }}</p>
-        <p>Precio: {{ producto.precio }}</p>
-        <p>Descripción: {{ producto.descripcion }}</p>
+        <image id="carrito" [attr.href]="'assets/Images/progreso/camion.png'" [style.transform]="carritoTransform" y="20" width="50" height="50" />
+      </svg>  
+      
+      <div class="producto-container">
+        <div class="col-12 img-producto-venta">
+          <div class="product-image-thumbs">
+            <div class="product-image-thumb active" onclick="changeImage(0)"><img style="margin-top: -0.4em; margin-left: 0.3em;"
+                src="../../assets/Images/progreso/cel1.png" alt="Product Image"></div>
+            <div class="product-image-thumb" onclick="changeImage(1)"><img style="margin-top: -0.4em; margin-left: 0.3em;" src="../../assets/Images/progreso/cel2.png"
+                alt="Product Image"></div>
+            <div class="product-image-thumb" onclick="changeImage(2)"><img style="margin-top: -0.4em;" src="../../assets/Images/progreso/cel3.png"
+                alt="Product Image"></div>
+            <div class="product-image-thumb" onclick="changeImage(3)"><img style="margin-top: -0.4em; margin-left: 0.1em;" src="../../assets/Images/progreso/cel4.png"
+                alt="Product Image"></div>
+          </div>
+          <div class="product-image-container">
+            <img src="../../assets/Images/progreso/cel1.png" class="product-image" alt="Product Image">
+          </div>
+        </div>
+        <div class="detalles-container">
+          <div class="detalles-producto">
+            <p>Xiaomi Redmi 9A Dual SIM 32 GB verde majestuoso 2 GB RAM</p>
+          </div>
+          <div class="detalles-envio" *ngFor="let producto of productos" [ngClass]="producto.estado">
+            <p>Numero de envio: <span class="color-valor">{{ producto.numeroenvio }}</span></p>
+            <p>Numero de producto: <span class="color-valor">{{ producto.numeroproducto }}</span></p>
+            <p>Estado de envio: <span class="color-valor">{{ producto.estado }}</span></p>
+            <p>Fecha de envio: <span class="color-valor">{{ producto.fechaenvio }}</span></p>
+            <p>Hora de envio: <span class="color-valor">{{ producto.horaenvio }}</span></p>
+            <p>Fecha de entrega: <span class="color-valor">{{ producto.fechaentrega }}</span></p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  
+
+  </main>
+  <app-footer-page></app-footer-page>
+</body>
