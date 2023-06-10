@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 /*import { MatIconModule} from '@angular/material/icon';*/
 
-
+import { NgChartsModule } from 'ng2-charts';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,6 +27,8 @@ import { SaldosComponent } from './saldos/saldos.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 
 @NgModule({
@@ -48,17 +50,19 @@ import { ReactiveFormsModule } from '@angular/forms';
     RetiroComponent,
     DatosRetiroComponent,
     EstadisticaComponent,
-    SaldosComponent
+    SaldosComponent,
+    CalendarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgChartsModule,
     HttpClientModule,
     MatFormFieldModule,
     MatSelectModule,
     ReactiveFormsModule,
-    
+    FullCalendarModule
     ],
   providers: [],
   bootstrap: [AppComponent]

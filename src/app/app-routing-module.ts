@@ -20,6 +20,7 @@ import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { SaldosComponent } from './saldos/saldos.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 const routes: Routes = [  
   {
@@ -73,6 +74,10 @@ const routes: Routes = [
   {
     path: 'ofertas',
     component: PubOfertasComponent
+  },
+  {
+    path: 'calendario',
+    component: CalendarioComponent
   },
   {
     path: 'publicar-productos',
