@@ -1,81 +1,80 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-prueba',
   templateUrl: './prueba.component.html',
   styleUrls: ['./prueba.component.css']
 })
 export class PruebaComponent implements OnInit {
+  data = [
+    ['01008','assets/Images/devolucion/celular.png', 'Celulares', 'Error de modelo', 'Producto original', 'Orizaba', this.getRandomDate(), '0011'],
+    ['01009','assets/Images/devolucion/zapatos.png', 'Zapatos', 'Otra talla', 'Original', 'Orizaba', this.getRandomDate(), '0012'],
+    ['01010','assets/Images/devolucion/tablet.png', 'Tablet', 'Otro tamaño', 'Nuevo', 'Cordoba', this.getRandomDate(), '0013'],
+    ['01011','assets/Images/devolucion/laptop.png', 'Laptop', 'no es el modelo', 'Original', 'Fortin', this.getRandomDate(), '0014'],
+    ['01012','assets/Images/devolucion/camara.png', 'Camara web', 'No es el modelo', 'Original', 'Mendoza', this.getRandomDate(), '0015'],
+    ['01013','assets/Images/devolucion/audifonos.png', 'Audifonos', 'Estan rotos', 'Original', 'Maltrata', this.getRandomDate(), '0016'],
+
+  ];
+
+  searchTerm: string = '';
+  currentPage = 1;
+  recordsPerPage = 5;
+  searchResults: any[] = [];
   
-  productos = [
-    { numeroenvio: '#1209', numeroproducto: '01008',estado: 'En transito', fechaenvio:'',  horaenvio:'', fechaentrega:''},
-  ];
 
-  circles = [
-    { cx: '20%', text: 'En preparacion' },
-    { cx: '40%', text: 'Listo para enviar' },
-    { cx: '60%', text: 'En transito' },
-    { cx: '80%', text: 'Entregado' },
-  ];
-
-  carritoTransform = '';
-
-  currentIndex = 0;
-  currentStep = 0;
-  totalSteps = 10;
-
-  constructor() {
-  this.inicializarFechasEnvioYEntrega();    
-
-   }
-
-  ngOnInit(): void {
-    this.moverCarrito();
-  }
-
-  moverCarrito(): void {
-    const startCx = this.circles[this.currentIndex].cx;
-    const endCx = this.circles[(this.currentIndex + 1) % this.circles.length].cx;
-
-    const startPos = parseFloat(startCx);
-    const endPos = parseFloat(endCx);
-
-    const stepSize = (endPos - startPos) / this.totalSteps;
-    this.currentStep = 0;
-
-    this.animateCarrito(startPos, endPos, stepSize);
-  }
-
-  animateCarrito(startPos: number, endPos: number, stepSize: number): void {
-    this.carritoTransform = `translateX(${startPos + stepSize * this.currentStep}%)`;
-
-    this.currentStep++;
-
-    if (this.currentStep <= this.totalSteps) {
-      setTimeout(() => {
-        this.animateCarrito(startPos, endPos, stepSize);
-      }, 200);
+  search() {
+    if (this.searchTerm.trim() !== '') {
+      this.searchResults = this.data.filter(row =>
+        row.some(cell => cell.toString().toLowerCase().includes(this.searchTerm.toLowerCase()))
+      );
+      this.currentPage = 1; // Reinicia la página actual al realizar una búsqueda
     } else {
-      this.currentIndex = (this.currentIndex + 1) % this.circles.length;
-      setTimeout(() => {
-        this.moverCarrito();
-      }, 5000);
+      this.searchResults = [];
     }
   }
+  
+  get columns() {
+    return ['ID','Foto', 'Producto', 'Motivo', 'Estado', 'Lugar', 'Fecha', 'N. Cliente'];
+  }
 
-  inicializarFechasEnvioYEntrega() {
-    const fechaActual =new Date();
+  get displayedData() {
+    const startIndex = (this.currentPage - 1) * this.recordsPerPage;
+    const endIndex = startIndex + this.recordsPerPage;
+  
+    if (this.searchResults.length > 0) {
+      return this.searchResults.slice(startIndex, endIndex);
+    }
+  
+    return this.data.slice(startIndex, endIndex);
+  }
+  
 
-    //Recorrer la lista de productos
-    this.productos.forEach(producto => {
-      producto.fechaenvio = fechaActual.toLocaleDateString();
-      producto.horaenvio = fechaActual.toLocaleTimeString();
+  get totalPages() {
+    return Math.ceil(this.data.length / this.recordsPerPage);
+  }
 
-      //Generar una fecha aleatoria posterior a la fecha de envio
-      const fechaEntrega = new Date(fechaActual.getTime() + Math.random() * 604800000)  // 604800000 Milisegundos = 1 semana
-      producto.fechaentrega = fechaEntrega.toLocaleDateString();
-    });
+  getPageNumbers() {
+    return Array.from({ length: this.totalPages }, (_, index) => index + 1);
+  }
 
+  changePage(pageNumber: number) {
+    this.currentPage = pageNumber;
+  }
+
+  //Poner una fecha aleatoria
+  getRandomDate(): string {
+    const startDate = new Date(2023, 0, 1).getTime(); // Fecha inicial
+    const endDate = new Date().getTime(); // Fecha actual
+    const randomDate = new Date(Math.random() * (endDate - startDate) + startDate);
+    return randomDate.toLocaleDateString();
+  }
+
+  constructor() {
+
+  }
+
+  ngOnInit(): void {
   }
 
 }

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <title>Asociados UV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -15,16 +17,61 @@
   </header>
   <app-sidebar></app-sidebar>
 
-  <main>
-    <div class="search-wrapper">
-      <input class="search-input" type="text" placeholder="Buscar"/>
-      <i class="fas fa-search search-icon" (click)="search()" (keydown.enter)="search()"></i>
+  <div style="margin-left: 8em;">
+    <div class="mr-3" style="margin-left: 2em; display: inline-block;">
+      <div class="search-wrapper">
+        <input type="search" class="search-input" placeholder="Buscar">
+        <div class="input-group-append">
+          <i class="fas fa-search search-icon" (click)="search()" (keydown.enter)="search()"></i>
+        </div>
+      </div>
+    </div>
+    <div class="filtro-date">
+      <select id="filter-date" #filterDate (change)="filterByDate(filterDate.value)">
+        <option value="">Todos</option>
+        <option value="2023-06-01">1 de Junio, 2023</option>
+        <option value="2023-06-02">2 de Junio, 2023</option>
+      </select>
     </div>
 
-    <div>
-      
+    <div id="table-container">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th *ngFor="let column of columns">{{ column }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of displayedData">
+            <td>{{ row[0] }}</td> <!-- ID -->
+            <td>
+              <img *ngIf="row[1]" [src]="row[1]" alt="Foto" style="max-width: 50px; max-height: 50px;">
+            </td> <!-- Foto -->
+            <td>{{ row[2] }}</td> <!-- Producto -->
+            <td>{{ row[3] }}</td> <!-- Motivo -->
+            <td>{{ row[4] }}</td> <!-- Estado -->
+            <td>{{ row[5] }}</td> <!-- Lugar -->
+            <td>{{ row[6] }}</td> <!-- Fecha -->
+            <td>{{ row[7] }}</td> <!-- N. Cliente -->
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </main>
+    <div id="pagination" class="centered-pagination">
+      <button class="pagination-button" (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">
+        <i class="fas fa-arrow-left"></i> Anterior
+      </button>
+
+      <button *ngFor="let pageNumber of getPageNumbers()" [class.active]="pageNumber === currentPage"
+        (click)="changePage(pageNumber)">
+        {{ pageNumber }}
+      </button>
+
+      <button class="pagination-button" (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">
+        Siguiente <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
   <app-footer-page></app-footer-page>
 </body>
-

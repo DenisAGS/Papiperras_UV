@@ -5,60 +5,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  <title>Asociados UV</title>
+  <title>Document</title>
 </head>
 
 <body>
   <header>
-    <app-header-page title="Progreso de la venta"></app-header-page>
+    <app-header-page title="Devolucion de la venta"></app-header-page>
   </header>
   <app-sidebar></app-sidebar>
 
-  <main>
-    <div class="container">
-      <h2>Carrito</h2>
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100">
-        <line id="line" [attr.x1]="circles[0].cx" y1="50" [attr.x2]="circles[circles.length - 1].cx" y2="50" stroke="purple" stroke-width="5" />      
+  <div class="search-wrapper">
+    <input class="search-input" type="text" placeholder="Buscar" [(ngModel)]="searchTerm" (keydown.enter)="search()" />
+    <i class="fas fa-search search-icon" (click)="search()"></i>
+  </div>  
 
-        <circle *ngFor="let circle of circles; let i = index" [attr.id]="'circle' + (i + 1)" [attr.cx]="circle.cx" cy="50" r="10" fill="purple" />
-        <text *ngFor="let circle of circles; let i = index" [attr.x]="circle.cx" y="80" text-anchor="middle" fill="black">{{ circle.text }}</text>
-      
-        <image id="carrito" [attr.href]="'assets/Images/progreso/camion.png'" [style.transform]="carritoTransform" y="20" width="50" height="50" />
-      </svg>  
-      
-      <div class="producto-container">
-        <div class="col-12 img-producto-venta">
-          <div class="product-image-thumbs">
-            <div class="product-image-thumb active" onclick="changeImage(0)"><img style="margin-top: -0.4em; margin-left: 0.3em;"
-                src="../../assets/Images/progreso/cel1.png" alt="Product Image"></div>
-            <div class="product-image-thumb" onclick="changeImage(1)"><img style="margin-top: -0.4em; margin-left: 0.3em;" src="../../assets/Images/progreso/cel2.png"
-                alt="Product Image"></div>
-            <div class="product-image-thumb" onclick="changeImage(2)"><img style="margin-top: -0.4em;" src="../../assets/Images/progreso/cel3.png"
-                alt="Product Image"></div>
-            <div class="product-image-thumb" onclick="changeImage(3)"><img style="margin-top: -0.4em; margin-left: 0.1em;" src="../../assets/Images/progreso/cel4.png"
-                alt="Product Image"></div>
-          </div>
-          <div class="product-image-container">
-            <img src="../../assets/Images/progreso/cel1.png" class="product-image" alt="Product Image">
-          </div>
-        </div>
-        <div class="detalles-container">
-          <div class="detalles-producto">
-            <p>Xiaomi Redmi 9A Dual SIM 32 GB verde majestuoso 2 GB RAM</p>
-          </div>
-          <div class="detalles-envio" *ngFor="let producto of productos" [ngClass]="producto.estado">
-            <p>Numero de envio: <span class="color-valor">{{ producto.numeroenvio }}</span></p>
-            <p>Numero de producto: <span class="color-valor">{{ producto.numeroproducto }}</span></p>
-            <p>Estado de envio: <span class="color-valor">{{ producto.estado }}</span></p>
-            <p>Fecha de envio: <span class="color-valor">{{ producto.fechaenvio }}</span></p>
-            <p>Hora de envio: <span class="color-valor">{{ producto.horaenvio }}</span></p>
-            <p>Fecha de entrega: <span class="color-valor">{{ producto.fechaentrega }}</span></p>
-          </div>
-        </div>
-      </div>
+  <div style="margin-left: 8em; margin-top: 6em;">
+    <div id="table-container">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th *ngFor="let column of columns">{{ column }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of displayedData">
+            <td>{{ row[0] }}</td> <!-- ID -->
+            <td>
+              <img *ngIf="row[1]" [src]="row[1]" alt="Foto" style="max-width: 50px; max-height: 50px;">
+            </td> <!-- Foto -->
+            <td>{{ row[2] }}</td> <!-- Producto -->
+            <td>{{ row[3] }}</td> <!-- Motivo -->
+            <td>{{ row[4] }}</td> <!-- Estado -->
+            <td>{{ row[5] }}</td> <!-- Lugar -->
+            <td>{{ row[6] }}</td> <!-- Fecha -->
+            <td>{{ row[7] }}</td> <!-- N. Cliente -->
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <div id="pagination" class="centered-pagination">
+      <button class="pagination-button" (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">
+        <i class="fas fa-arrow-left"></i> Anterior
+      </button>
 
-  </main>
+      <button *ngFor="let pageNumber of getPageNumbers()" [class.active]="pageNumber === currentPage"
+        (click)="changePage(pageNumber)">
+        {{ pageNumber }}
+      </button>
+
+      <button class="pagination-button" (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">
+        Siguiente <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
   <app-footer-page></app-footer-page>
 </body>
+
+</html>
