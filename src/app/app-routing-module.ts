@@ -18,56 +18,60 @@ import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-form
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
-import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { SaldosComponent } from './saldos/saldos.component';
 import { CalendarioComponent } from './calendario/calendario.component';
+import { EstadisticaComponent } from './estadistica/estadistica.component';
 
-const routes: Routes = [  
+const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: PrincipalComponent,
   },
   {
-    path:'home',
+    path: 'home',
     component: HomepageComponent,
   },
   {
-    path:'retiro',
+    path: 'estadistica',
+    component: EstadisticaComponent,
+  },
+  {
+    path: 'retiro',
     component: RetiroComponent,
   },
   {
-    path:'datos-retiro',
+    path: 'datos-retiro',
     component: DatosRetiroComponent,
   },
   {
-    path:'about-us',
+    path: 'about-us',
     component: AboutUsComponent
   },
   {
-    path:'saldos',
+    path: 'saldos',
     component: SaldosComponent
   },
   {
-    path:'devolucion',
+    path: 'devolucion',
     component: DevolucionComponent
   },
   {
-    path:'inventario',
+    path: 'inventario',
     component: InventarioComponent
   },
   {
-    path:'tutorial',
+    path: 'tutorial',
     component: TutorialComponent
   },
   {
-    path:'preguntas-frecuentes',
+    path: 'preguntas-frecuentes',
     component: PreguntasFrecuentesComponent
   },
   {
-    path:'header-page',
+    path: 'header-page',
     component: HeaderPageComponent
   },
-  {  
+  {
     path: 'publicidad2',
     component: Publicidad2Component
   },
@@ -84,13 +88,10 @@ const routes: Routes = [
     component: PublicarPComponent
   },
   {
-    path:'reclamos-formulario',
+    path: 'reclamos-formulario',
     component: ReclamosFormularioComponent
-  },
-  {
-    path:'estadistica',
-    component: EstadisticaComponent
   }
+
 ];
 
 @NgModule({
