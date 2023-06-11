@@ -21,6 +21,7 @@ import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { SaldosComponent } from './saldos/saldos.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { VolumenComponent } from './volumen/volumen.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'estadistica',
     component: EstadisticaComponent,
+  },
+  {
+    path: 'volumen',
+    component: VolumenComponent
   },
   {
     path: 'retiro',

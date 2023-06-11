@@ -29,6 +29,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { NgChartsModule } from 'ng2-charts';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { VolumenComponent } from './volumen/volumen.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { EstadisticaComponent } from './estadistica/estadistica.component';
     DatosRetiroComponent,
     SaldosComponent,
     CalendarioComponent,
-    EstadisticaComponent
+    EstadisticaComponent,
+    VolumenComponent
   ],
   imports: [
     BrowserModule,
