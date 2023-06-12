@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrincipalComponent } from './principal/principal.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { LoginComponent } from './login/login.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
@@ -26,12 +27,12 @@ import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConsejosComponent } from './consejos/consejos.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
     AboutUsComponent,
+    LoginComponent,
     DevolucionComponent,
     InventarioComponent,
     PreguntasFrecuentesComponent,

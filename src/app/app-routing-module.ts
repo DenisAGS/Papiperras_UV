@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 //Frames
 import { PrincipalComponent } from './principal/principal.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { LoginComponent } from './login/login.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
@@ -18,12 +19,12 @@ import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-form
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
+import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
-import { ConsejosComponent } from './consejos/consejos.component';
 
 const routes: Routes = [  
   {
-    path:'',
+    path:'principal',
     component: PrincipalComponent,
   },
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path:'about-us',
     component: AboutUsComponent
+  },
+  {
+    path:'login',
+    component: LoginComponent
   },
   {
     path:'devolucion',
@@ -81,10 +86,6 @@ const routes: Routes = [
   {
     path:'estadistica',
     component: EstadisticaComponent
-  },
-  {
-    path:'consejos',
-    component: ConsejosComponent
   }
 ];
 
