@@ -33,6 +33,7 @@ import { ValoracionComponent } from './valoracion/valoracion.component';
 import { PruebaComponent } from './prueba/prueba.component';
 import { VentasComponent } from './ventas/ventas.component';
 import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.componen
     PruebaComponent,
     VentasComponent,
     ProgresoVentaComponent,
+    PopupComponent,
   ],
   imports: [
     BrowserModule,
