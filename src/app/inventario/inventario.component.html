@@ -17,7 +17,7 @@
     </header>
     <app-sidebar></app-sidebar>
 
-    <div style="margin-left: 8em; margin-top: 5em; ">
+    <div class="margin-page">
         <div class="margen-btn">
             <button class="actualizar">Actualizar stock</button>
             <button class="crear-oferta">Crear oferta</button>
@@ -40,9 +40,10 @@
                     <thead>
                         <tr>
                             <th>
-                  9              <input type="checkbox" [(ngModel)]="selectAll" (change)="selectAllRows($event)" />
+                                <input type="checkbox" [(ngModel)]="selectAll" (change)="selectAllRows($event)" />
                             </th>
                             <th *ngFor="let column of columns">{{ column }}</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -63,9 +64,8 @@
                             <td>{{ row[8] }}</td> <!-- Total -->
 
                             <td>
-                                <a href="#"><i class="fas fa-edit"></i></a> <!-- Símbolo de editar, ajusta el estilo y el enlace según tus necesidades -->
+                                <a href="#"><i class="fas fa-edit"></i></a> <!-- Símbolo de editar -->
                               </td>
-                        
                         </tr>
                     </tbody>
                 </table>

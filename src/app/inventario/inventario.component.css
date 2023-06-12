@@ -11,6 +11,12 @@ button{
   font-style:normal;
 }
 
+/*Margen de toda la pagina*/
+.margin-page{
+  margin-left: 8em; 
+  margin-top: 5em; 
+}
+
 /*Estilos de tabla*/
 
 #table-container {
@@ -88,7 +94,7 @@ button{
   font-size: 12px;
 }
 
-/*Botones de actualizar y crear oferta*/
+/*Botones de actualizar, crear oferta y registrar*/
 .actualizar{
   margin-right: 2em;
   background: #FFFFFF;
@@ -139,4 +145,19 @@ button{
 .margen-btn{
   margin-bottom: 1em;
   margin-left: 37em;
+}
+
+/*Responsiva*/
+
+@media screen and (max-width: 758px){
+  .margin-page{
+    margin-left: 1em; 
+    margin-top: 5em; 
+  }   
+
+  .margen-btn{
+    margin-bottom: 1em;
+    margin-left: auto;
+  }
+
 }
