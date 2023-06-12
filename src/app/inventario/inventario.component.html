@@ -25,13 +25,7 @@
         </div>
         <div style="display: flex; align-items: center; margin-bottom: 0.5em;">
             <div class="filtro-date">
-                <select id="filter-date" #filterDate (change)="filterByDate(filterDate.value)">
-                    <option value="">Todos</option>
-                    <option value="">Ultima semana</option>
-                    <option value="">Ultimos 15 dias</option>
-                    <option value="">Ultimo mes</option>
-                    <option value="">Ultimo año</option>
-                </select>
+                <input class="input" type="date" id="inicioOfe" name="inicioOferta" min="<?= date('Y-m-d'); ?>"> 
             </div>
         </div>
         <div style="display: flex; flex-direction: column;">

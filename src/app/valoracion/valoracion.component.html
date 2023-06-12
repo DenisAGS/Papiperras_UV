@@ -124,12 +124,9 @@
                 <div class="card-header">
                     <div class="d-flex">
                         <div class="mr-3">
-                            <select class="select-style" id="opciones1" name="opciones1">
-                                <option value="opcion1">Ultima semana</option>
-                                <option value="opcion2">Ultimos 15 dias</option>
-                                <option value="opcion2">Ultimo mes</option>
-                                <option value="opcion3">Ultimo año</option>
-                            </select>
+                            <div class="filtro-date">
+                                <input class="input" type="date" id="inicioOfe" name="inicioOferta" min="<?= date('Y-m-d'); ?>"> 
+                            </div>
                         </div>
                         <div>
                             <select class="select-style" id="opciones2" name="opciones2">
