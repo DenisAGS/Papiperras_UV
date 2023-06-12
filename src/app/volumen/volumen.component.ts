@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js/auto';
-import { GraficasService } from '../services/graficas.service';
 import { FormsModule } from '@angular/forms';
+import { VolumenService } from '../services/volumen.service';
 
 @Component({
   selector: 'app-volumen',
@@ -12,23 +12,24 @@ export class VolumenComponent implements OnInit {
   private barChart: Chart | undefined;
   private datos: any;
   chartCanvas: any;
-  selectedOption: string = 'anio';
-  selectedOption2: string = 'mes';;
+  selectedOption: string = 'dia';
+  selectedOption2: string = 'dia';;
   selectedOption3: string = 'dia';;
 
-  constructor(private graficasService: GraficasService) { }
+  constructor(private volumenService: VolumenService) { }
 
   ngOnInit() {
-    this.graficasService.getGraficasData().subscribe(datos => {
+    this.volumenService.getVolumen().subscribe(datos => {
       this.datos = datos;
-      this.createChart();
+      console.log(this.datos.categorias.semana.labels),
+        this.createChart();
     });
   }
 
   handleDateChange(): void {
     const name = 'barChart'
     console.log("Selected option:", this.selectedOption);
-    this.updateChart(this.selectedOption, name);
+    this.updateBarChart(this.selectedOption, name);
   }
   handleDateChange2(): void {
     const name = 'barChart2'
@@ -45,12 +46,12 @@ export class VolumenComponent implements OnInit {
     const barChart = new Chart('barChart', {
       type: 'bar',
       data: {
-        labels: this.datos.anual.labels,
+        labels: this.datos.categorias.semana.labels,
         datasets: [{
           label: 'Monto',
-          data: this.datos.anual.volumen,
-          backgroundColor: this.datos.anual.backgroundColor,
-          borderColor: this.datos.anual.borderColor,
+          data: this.datos.categorias.semana.volumentotal,
+          backgroundColor: ['purple', 'cyan'],
+          borderColor: ['purple', 'cyan'],
           borderWidth: 1
         }]
       },
@@ -63,42 +64,30 @@ export class VolumenComponent implements OnInit {
         }
       }
     });
+    const datasets2 = []
+    const categorias = this.datos.area.semana.categorias;
+    const nombresCategorias = Object.keys(categorias);
+    for (let i = 0; i < this.datos.area.semana.labels.length; i++) {
+      const color = this.getRandomColor(i);
+      const dataset = {
+        label: nombresCategorias[i],
+        backgroundColor: color,
+        borderColor: color,
+        pointBackgroundColor: color,
+        borderWidth: 1,
+        tension: 0.3,
+        fill: true,
+        data: categorias[nombresCategorias[i]].volumen
+      };
+      datasets2.push(dataset);
+    };
+    console.log(datasets2);
+
     const barChart2 = new Chart('barChart2', {
       type: 'line',
       data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [
-          {
-            label: 'Digital Goods',
-            backgroundColor: 'rgba(121, 1, 126, 0.5)',
-            borderColor: 'rgba(121, 1, 126, 1)',
-            pointBackgroundColor :'rgba(121, 1, 126, 1)',
-            borderWidth: 1,
-            tension: 0.3,
-            fill:true,
-            data: [28, 48, 40, 19, 86, 27, 90]
-          },
-          {
-            label: 'Digital Goods',
-            backgroundColor: 'rgba(255, 201, 148, 0.5)',
-            borderColor: 'rgba(255, 201, 148, 1)',
-            pointBackgroundColor :'rgba(255, 201, 148, 0.1)',
-            borderWidth: 1,
-            tension: 0.3,
-            fill:true,
-            data: [21, 56, 45, 29, 96, 17, 10]
-          },
-          {
-            label: 'Electronics',
-            backgroundColor: 'rgba(51, 207, 255, 0.5)',
-            borderColor: 'rgba(51, 207, 255, 1)',
-            pointBackgroundColor :'rgba(51, 207, 255, 1)',
-            borderWidth: 1,
-            tension: 0.3,
-            fill:true,
-            data: [65, 59, 80, 81, 56, 55, 40]
-          },
-        ]
+        labels: this.datos.area.semana.labels,
+        datasets: datasets2,
       },
       options: {
         maintainAspectRatio: false,
@@ -122,30 +111,13 @@ export class VolumenComponent implements OnInit {
         }
       }
     });
-    
-    
-    
+
+
     const barChart3 = new Chart('barChart3', {
       type: 'bar',
       data: {
-        labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'],
-        datasets: [
-          {
-            label: 'Región Norte',
-            data: [120, 180, 150, 200, 160],
-            backgroundColor: 'rgba(255, 99, 132, 0.6)',
-          },
-          {
-            label: 'Región Sur',
-            data: [80, 140, 100, 120, 90],
-            backgroundColor: 'rgba(54, 162, 235, 0.6)',
-          },
-          {
-            label: 'Región Centro',
-            data: [60, 80, 70, 90, 80],
-            backgroundColor: 'rgba(75, 192, 192, 0.6)',
-          },
-        ],
+        labels: this.datos.area.semana.labels,
+        datasets: datasets2,
       },
       options: {
         responsive: true,
@@ -161,25 +133,75 @@ export class VolumenComponent implements OnInit {
         },
       },
     });
-    
+
   }
 
-  updateChart(data: string | undefined, name: string): void {
+  updateBarChart(data: string | undefined, name: string): void {
     const chart = Chart.getChart(name);
-    let selectedData = this.datos.semana;
+    let selectedData = this.datos.categorias.semana;
     if (data == 'mes') {
-      selectedData = this.datos.meses;
+      selectedData = this.datos.categorias.mensual;
     } else if (data == 'anio') {
-      selectedData = this.datos.anual
+      selectedData = this.datos.categorias.anual
     }
-    console.log(selectedData, name);
     if (chart) {
       chart.data.labels = selectedData.labels;
-      chart.data.datasets[0].data = selectedData.volumen;
-      chart.data.datasets[0].backgroundColor = selectedData.backgroundColor;
-      chart.data.datasets[0].borderColor = selectedData.borderColor;
-
+      chart.data.datasets[0].data = selectedData.volumentotal;
       chart.update();
+    }
+  }
+  updateChart(data: string | undefined, name: string): void {
+    const chart = Chart.getChart(name);
+    let selectedData = this.datos.area.semana;
+    if (data == 'mes') {
+      selectedData = this.datos.area.mensual;
+    } else if (data == 'anio') {
+      selectedData = this.datos.area.anual
+    }
+    const datasets2 = []
+    const categorias = selectedData.categorias;
+    const nombresCategorias = Object.keys(categorias);
+    for (let i = 0; i < nombresCategorias.length; i++) {
+      const color = this.getRandomColor(i);
+      const dataset = {
+        label: nombresCategorias[i],
+        backgroundColor: color,
+        borderColor: color,
+        pointBackgroundColor: color,
+        borderWidth: 1,
+        tension: 0.3,
+        fill: true,
+        data: categorias[nombresCategorias[i]].volumen
+      };
+      datasets2.push(dataset);
+    };
+    if (chart) {
+      chart.data.labels = selectedData.labels;
+      chart.data.datasets = datasets2;
+      chart.update();
+    }
+  }
+
+  getRandomColor(i: number): string {
+    let colorIndex = i % 8;
+
+    switch (colorIndex) {
+      case 0:
+        return 'rgb(128, 0, 128, 0.2)';   // Púrpura
+      case 1:
+        return 'rgb(0, 0, 128, 0.2)';     // Azul
+      case 2:
+        return 'rgb(128, 0, 0, 0.2)';     // Rojo
+      case 3:
+        return 'rgb(128, 128, 0, 0.2)';   // Amarillo
+      case 4:
+        return 'rgb(0, 128, 0, 0.2)';     // Verde
+      case 5:
+        return 'rgb(0, 128, 128, 0.2)';   // Cian
+      case 6:
+        return 'rgb(128, 128, 128, 0.2)'; // Gris
+      default:
+        return 'rgb(0, 0, 0)';       // Negro por defecto
     }
   }
 
