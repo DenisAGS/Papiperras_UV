@@ -21,6 +21,7 @@ import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { ConsejosComponent } from './consejos/consejos.component';
 import { DetalleVentaComponent } from './detalle-venta/detalle-venta.component';
+import { TopComponent } from './top/top.component';
 
 const routes: Routes = [  
   {
@@ -90,6 +91,10 @@ const routes: Routes = [
   {
     path:'detalle',
     component: DetalleVentaComponent
+  },
+  {
+    path:'top',
+    component: TopComponent
   }
 ];
 

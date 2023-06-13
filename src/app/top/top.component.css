@@ -1,0 +1,134 @@
+p
+div,
+h1,
+h2,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5em;
+    font-weight: 600;
+    font-size: 2.4em;
+    padding-left: 2em;
+    padding-right: 0.5em;
+    position: static;
+}
+
+h3 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2em;
+    padding-left: 2em;
+    padding-right: 0.5em;
+    position: static;
+}
+
+.seccion1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 2em;
+    display: flex;
+}
+
+.seccion1 img{
+    width: 20em;
+    height: 10em;
+}
+
+.seccion1 button{
+    margin-left: 12em;
+    width: 8em;
+    height: 3em;
+    font-size: 1.5rem;
+    background: #9B109B;
+    border-radius: 25px;
+    border: none;
+    color: #FFFF;
+}
+
+/*Estilos de Top*/
+h4{
+    color: #FFB7D5;
+}
+
+p{
+    color:#FFFFFF;
+}
+
+.text-overlay img{
+    height: 6em;
+    width: 10em;
+}
+
+.margen-consejo {
+    margin-top: 2%;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.image-wrapper {
+    flex: 1;
+}
+
+.text-overlay {
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    font-size: 34px;
+    flex: 1;
+    display: flex;
+}
+
+.cont-consejo{
+    margin-top: -10px;
+}
+
+.text-overlay h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.text-wrapper {
+    flex: 1;
+    height: auto;
+    padding: 20px;
+    background-image: url(../../assets/Images/img-consejos/fondo-tips.png);
+    background-size: cover;
+    text-align: justify;
+    border-radius: 20px;
+}
+
+.img-trofeo{
+    width: 2em;
+    height: 3em;
+}
+
+@media screen and (max-width: 768px) {
+    .seccion1 button{
+        margin-left: 5em;
+    }
+
+    .text-overlay img{
+        margin-top: 5.5em;
+        padding: 8%;
+        width: 25em;
+        height: 23em;
+        font-size: 10px;
+        display: flex;
+    }
+
+      .image-wrapper {
+        margin-top: 10px; /* Ajusta el espaciado entre el texto y la imagen */
+      }
+}

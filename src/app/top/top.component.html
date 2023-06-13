@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Asociados</title>
+</head>
+
+<body>
+    <header>
+        <app-header-page title="Tips"></app-header-page>
+    </header>
+    <app-sidebar></app-sidebar>
+
+    <main>
+        <h1>¿Quieres conocer tu top de ventas?</h1>
+        <h3>Da click en el boton de abajo</h3>
+
+        <div class="seccion1">
+            <img src="../../assets/Images/img-top/cima.png" alt="">
+            <button>Ir a seccion</button>
+        </div>
+
+        <div class="cont-consejo">
+            <div class="margen-consejo">
+                <div class="container">
+                    <div class="text-wrapper">
+                        <h4>{{ contents1[currentIndex1].title }}</h4>
+                        <p>{{ contents1[currentIndex1].content }}</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <div class="text-overlay">
+                            <img class="img-trofeo" src="../../assets/Images/img-top/premio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="image-wrapper">
+                        <div class="text-overlay">
+                            <img src="../../assets/Images/img-top/shop.png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <h4>{{ contents2[currentIndex2].title }}</h4>
+                        <p>{{ contents2[currentIndex2].content }}</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text-wrapper">
+                        <h4>{{ contents1[currentIndex1].title }}</h4>
+                        <p>{{ contents1[currentIndex1].content }}</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <div class="text-overlay">
+                            <img class="img-estrella" src="../../assets/Images/img-top/estrella.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <app-footer-page></app-footer-page>
+</body>
