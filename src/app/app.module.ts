@@ -30,6 +30,11 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { NgChartsModule } from 'ng2-charts';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { VolumenComponent } from './volumen/volumen.component';
+import { FooterPageComponent } from './footer-page/footer-page.component';
+import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ConsejosComponent } from './consejos/consejos.component';
+
 
 
 @NgModule({
@@ -54,6 +59,9 @@ import { VolumenComponent } from './volumen/volumen.component';
     CalendarioComponent,
     EstadisticaComponent,
     VolumenComponent
+    FooterPageComponent,
+    EstadisticaComponent,
+    ConsejosComponent
   ],
   imports: [
     BrowserModule,

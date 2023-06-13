@@ -22,6 +22,7 @@ import { SaldosComponent } from './saldos/saldos.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { VolumenComponent } from './volumen/volumen.component';
+import { ConsejosComponent } from './consejos/consejos.component';
 
 const routes: Routes = [
   {
@@ -95,6 +96,14 @@ const routes: Routes = [
   {
     path: 'reclamos-formulario',
     component: ReclamosFormularioComponent
+  },
+  {
+    path:'estadistica',
+    component: EstadisticaComponent
+  },
+  {
+    path:'consejos',
+    component: ConsejosComponent
   }
 
 ];
