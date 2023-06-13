@@ -22,6 +22,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
+import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { HttpClientModule } from '@angular/common/http';
 import { ConsejosComponent } from './consejos/consejos.component';
 
 
@@ -43,13 +45,6 @@ import { ConsejosComponent } from './consejos/consejos.component';
     HomepageComponent,
     RetiroComponent,
     DatosRetiroComponent,
-<<<<<<< HEAD
-    SaldosComponent,
-    CalendarioComponent,
-    EstadisticaComponent,
-    VolumenComponent,
-=======
->>>>>>> 524a4dad7345f886adfce12a638d73db0f2f3879
     FooterPageComponent,
     EstadisticaComponent,
     ConsejosComponent
