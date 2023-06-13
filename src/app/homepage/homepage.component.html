@@ -63,7 +63,7 @@
                 <p>Ver Detalle</p>
               </div>
             </div>
-            
+
           </div>
         </div>
         <div class="row">
@@ -78,58 +78,21 @@
               <div class="card-body">
                 <!-- Conversations are loaded here -->
                 <div class="direct-chat-messages">
-                  <!-- Message. Default to the left -->
-                  <div class="row m-2" style="background: #79017E; color: white ; border-radius: 20px;">
-                    <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                      <img src="../assets/dist/img/prod-1.jpg" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px;">
-                    </div>
-                    <div class="col-8 col-md-8">
-                      <div>
-                        <p class="mb-2">Botas de trabajo</p>
-                      
-                        <p class="mb-2">Alexis Roman</p>
-                  
-                        <p class="mb-2">¿Que talla tienes?</p>
+                  <ng-container *ngFor="let mensaje of datosPreguntas">
+                    <div class="row m-2" style="background: #79017E; color: white; border-radius: 20px;">
+                      <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
+                        <img src="{{ mensaje.Image }}" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px; margin: 10px;">
+                      </div>
+                      <div class="col-8 col-md-8">
+                        <div>
+                          <p class="mb-2">{{ mensaje.Tipo_producto }}</p>
+                          <p class="mb-2">{{ mensaje.Nombre }}</p>
+                          <p class="mb-2">{{ mensaje.Pregunta }}</p>
+                          <p class="mb-2">{{mensaje.Fecha}}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  
-                  
-                  <div class="row m-2" style="background: #79017E; color: white;border-radius: 20px;">
-                    <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                      <img src="../assets/dist/img/prod-1.jpg" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px;">
-                    </div>
-                    <div class="col-8 col-md-8">
-                      <div>
-                        <p class="mb-2">Botas de trabajo</p>
-                      
-                        <p class="mb-2">Alexis Roman</p>
-                  
-                        <p class="mb-2">¿Que talla tienes?</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row m-2" style="background: #79017E; color: white ; border-radius: 20px;">
-                    <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                      <img src="../assets/dist/img/prod-1.jpg" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px;">
-                    </div>
-                    <div class="col-8 col-md-8">
-                      <div>
-                        <p class="mb-2">Botas de trabajo</p>
-                      
-                        <p class="mb-2">Alexis Roman</p>
-                  
-                        <p class="mb-2">¿Que talla tienes?</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- /.direct-chat-msg -->
-                  <div style="display: flex; align-items: flex-end; justify-content: flex-end; margin-right: 15px;">
-                    <p>ver mas</p>
-                  </div>
+                  </ng-container>
                 </div>
                 <!--/.direct-chat-messages-->
               </div>
@@ -148,75 +111,27 @@
               <!-- /.card-header -->
               <div class="card-body">
                 <!-- Conversations are loaded here -->
-                <div class="direct-chat-messages ">
-                  <!-- Message. Default to the left -->
-
-                  <div class="row m-2" style="background: #79017E; color: white ; border-radius: 20px;">
-                    <div class="col-3 col-md-3 d-flex align-items-center justify-content-center">
-                      <img src="../assets/dist/img/prod-1.jpg" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px;">
-                    </div>
-                    <div class="col-9 col-md-6">
-                      <div>
-                        <p class="mb-2">Venta 001</p>
-
-                        <p class="mb-2">Botas de trabajo</p>
-                      
-                        <p class="mb-2">Alexis Roman</p>
-                  
-                        <p class="mb-2">5 de Mayo de 2023 08:40</p>
+                <div class="direct-chat-messages">
+                  <ng-container *ngFor="let venta of datosVentas">
+                    <div class="row m-2" style="background: #79017E; color: white; border-radius: 20px;">
+                      <div class="col-3 col-md-3 d-flex align-items-center justify-content-center">
+                        <img src="{{ venta.image }}" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px;">
+                      </div>
+                      <div class="col-9 col-md-6">
+                        <div>
+                          <p class="mb-2">Venta #{{ venta.numero }}</p>
+                          <p class="mb-2">{{ venta.nombre_producto }}</p>
+                          <p class="mb-2">{{ venta.nombre_cliente }}</p>
+                          <p class="mb-2">{{ venta.fecha }}</p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-3 d-flex align-items-center justify-content-center" style="font-size: 30px">
+                        <p>${{ venta.precio }}</p>
                       </div>
                     </div>
-                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
-                      <p> $ 3,000.00</p>
-                    </div>
-                  </div>
-
-
-
-                  <div class="row m-2" style="background: #79017E; color: white ; border-radius: 20px;">
-                    <div class="col-3 col-md-3 d-flex align-items-center justify-content-center">
-                      <img src="../assets/dist/img/prod-1.jpg" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px;">
-                    </div>
-                    <div class="col-9 col-md-6">
-                      <div>
-                        <p class="mb-2">Venta 001</p>
-
-                        <p class="mb-2">Botas de trabajo</p>
-                      
-                        <p class="mb-2">Alexis Roman</p>
-                  
-                        <p class="mb-2">5 de Mayo de 2023 08:40</p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
-                      <p> $ 3,000.00</p>
-                    </div>
-                  </div>
-                  <!-- /.direct-chat-msg -->
-                  <div class="row m-2" style="background: #79017E; color: white ; border-radius: 20px;">
-                    <div class="col-3 col-md-3 d-flex align-items-center justify-content-center">
-                      <img src="../assets/dist/img/prod-1.jpg" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px;">
-                    </div>
-                    <div class="col-9 col-md-6">
-                      <div>
-                        <p class="mb-2">Venta 001</p>
-
-                        <p class="mb-2">Botas de trabajo</p>
-                      
-                        <p class="mb-2">Alexis Roman</p>
-                  
-                        <p class="mb-2">5 de Mayo de 2023 08:40</p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
-                      <p> $ 3,000.00</p>
-                    </div>
-                  </div>
-                  <!-- /.direct-chat-msg -->
-                  <div style="display: flex; align-items: flex-end; justify-content: flex-end; margin-right: 15px;">
-                    <p>ver mas</p>
-                  </div>
+                  </ng-container>
                 </div>
+                
                 <!--/.direct-chat-messages-->
               </div>
 
