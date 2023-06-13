@@ -201,13 +201,51 @@ h2{
 .circulo {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  background-color: #9B109B;
+  background-color: #FFFFFF;
   margin: 0 auto;
+}
+
+.img-alexis{
+  background-image: url(../../assets/Images/img-about/beber.png);
+  background-size: cover;
+}
+
+.img-johan{
+  background-image: url(../../assets/Images/img-about/papas-fritas.png);
+  background-size: cover;
+}
+
+.img-daniel{
+  background-image: url(../../assets/Images/img-about/palomitas-de-maiz.png);
+  background-size: cover;
+}
+
+.img-denis{
+  background-image: url(../../assets/Images/img-about/papas-francesa.png);
+  background-size: cover;
+}
+
+.img-lizbeth{
+  background-image: url(../../assets/Images/img-about/comer.png);
+  background-size: cover;
+}
+
+.img-diego{
+  background-image: url(../../assets/Images/img-about/vago.png);
+  background-size: cover;
+}
+
+.img-sergio{
+  background-image: url(../../assets/Images/img-about/dormir.png);
+  background-size: cover;
 }
 
 h3, p {
   margin: 5px 0;
+}
+
+p{
+  margin-left: 10px;
 }
 
 /*Seccion de vision y mision*/
