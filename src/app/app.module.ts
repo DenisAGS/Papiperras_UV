@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrincipalComponent } from './principal/principal.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
+import { PasswordComponent } from './password/password.component';
+import { ProfileComponent } from './profile/profile.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
@@ -33,6 +35,8 @@ import { ConsejosComponent } from './consejos/consejos.component';
     PrincipalComponent,
     AboutUsComponent,
     LoginComponent,
+    PasswordComponent,
+    ProfileComponent,
     DevolucionComponent,
     InventarioComponent,
     PreguntasFrecuentesComponent,
@@ -48,7 +52,9 @@ import { ConsejosComponent } from './consejos/consejos.component';
     DatosRetiroComponent,
     FooterPageComponent,
     EstadisticaComponent,
-    ConsejosComponent
+    ConsejosComponent,
+    ProfileComponent,
+    PasswordComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PrincipalComponent } from './principal/principal.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
+import { PasswordComponent } from './password/password.component';
+import { ProfileComponent } from './profile/profile.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
@@ -46,6 +48,14 @@ const routes: Routes = [
   {
     path:'login',
     component: LoginComponent
+  },
+  {
+    path:'password',
+    component: PasswordComponent
+  },
+  {
+    path:'profile',
+    component: ProfileComponent
   },
   {
     path:'devolucion',
