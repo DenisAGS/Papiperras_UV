@@ -20,6 +20,7 @@ import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { ConsejosComponent } from './consejos/consejos.component';
+import { DetalleVentaComponent } from './detalle-venta/detalle-venta.component';
 
 const routes: Routes = [  
   {
@@ -85,6 +86,10 @@ const routes: Routes = [
   {
     path:'consejos',
     component: ConsejosComponent
+  },
+  {
+    path:'detalle',
+    component: DetalleVentaComponent
   }
 ];
 

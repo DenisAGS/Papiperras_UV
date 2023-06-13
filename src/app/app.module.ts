@@ -25,6 +25,7 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConsejosComponent } from './consejos/consejos.component';
+import { DetalleVentaComponent } from './detalle-venta/detalle-venta.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { ConsejosComponent } from './consejos/consejos.component';
     DatosRetiroComponent,
     FooterPageComponent,
     EstadisticaComponent,
-    ConsejosComponent
+    ConsejosComponent,
+    DetalleVentaComponent
   ],
   imports: [
     BrowserModule,

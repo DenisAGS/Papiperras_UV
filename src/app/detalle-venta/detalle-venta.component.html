@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Asociados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <app-header-page title="Detalle de producto(s)"></app-header-page>
+    </header>
+    <app-sidebar></app-sidebar>
+
+    <main>
+        <div class="search-wrapper ">
+            <input type="search" class="search-input" placeholder="Buscar">
+            <div class="input-group-append">
+                <button class="search-button" (click)="search()" (keydown.enter)="search()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-container">
+                <div class="detalles-img-container">
+                    <div class="img-producto-venta">
+                        <div class="product-image-thumbs">
+                            <div class="product-image-thumb active" onclick="changeImage(0)">
+                                <img style="margin-top: -0.4em; margin-left: 0.2em;"
+                                    src="../../assets/Images/img-productos-detalles/refri.png" alt="Product Image">
+                            </div>
+                            <div class="product-image-thumb" onclick="changeImage(1)">
+                                <img style="margin-top: -0.4em; margin-left: 0.2em;"
+                                    src="../../assets/Images/img-productos-detalles/refri2.png" alt="Product Image">
+                            </div>
+                            <div class="product-image-thumb" onclick="changeImage(2)">
+                                <img style="margin-top: -0.4em;"
+                                    src="../../assets/Images/img-productos-detalles/refri3.png" alt="Product Image">
+                            </div>
+                            <div class="product-image-thumb" onclick="changeImage(3)">
+                                <img style="margin-top: -0.4em; margin-left: 0.5em;"
+                                    src="../../assets/Images/img-productos-detalles/refri4.png" alt="Product Image">
+                            </div>
+                        </div>
+                        <div class="product-image-container">
+                            <img src="../../assets/Images/img-productos-detalles/refri.png" class="product-image"
+                                alt="Product Image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centrar-div">
+                    <h5>
+                        Refrigerador inverter no frost
+                    </h5>
+                    <div class="price-info">
+                        <span class="val-precio-label">Precio normal:</span>
+                        <span class="valor-precio"> $16,999 </span>
+                        <span class="val-promocion">Promocion: $10,599</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <h2>Descripción del producto</h2>
+                <p>Refrigerador inverter no frost Samsung Top Mount RT32A5710 elegant inox con freezer 320L 127V </p>
+
+                <div class="container-detalles">
+                    <div class="columna-datos">
+                        <h5>Categoria</h5>
+                        <p>Electrodomesticos -- Linea blanca</p>
+
+                        <h5>Cliente</h5>
+                        <p>Johan Daniel Perez Jimenez</p>
+
+                        <h5>Monto</h5>
+                        <span>$960.00</span>
+
+                        <h5 style="margin-top: 0.8em;">Reseña</h5>
+                        <p>Me llego justo como lo pedi</p>
+                    </div>
+                    <div class="columna-datos" style="margin-left: 4em;">
+                        <h5>Unidad(es)</h5>
+                        <span>1 pz</span>
+
+                        <h5>Direccion</h5>
+                        <p>Orizaba</p>
+
+                        <h5>Fecha</h5>
+                        <span>{{ randomDate | date: 'dd/MM/yyyy' }}</span>
+                        
+                        <h5 style="margin-top: 0.8em;">Valoracion</h5>
+                        <div class="rating">
+                            <span *ngFor="let _ of [].constructor(5)" class="stars"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <app-footer-page></app-footer-page>
+</body>
