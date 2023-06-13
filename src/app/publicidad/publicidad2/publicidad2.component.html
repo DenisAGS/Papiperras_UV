@@ -21,11 +21,11 @@
     <h2 class="text1">Elige el nombre y presupuesto de tu campaña</h2>
     <div class="cuadroMoradoxd">
         <p class="nombre">Nombre</p>
-        <input class="input" type="text" id="nombre" name="nombre" [(ngModel)]="campania.nombre" required>       
+        <input class="input" type="text" id="nombre" name="nombre" [(ngModel)]="nombre" [(ngModel)]="campania.nombre" required>       
     </div>
     <div class="cuadroMorado2xd">
         <p class="presupuesto">Presupuesto diario</p>
-        <input class="input" type="number" id="presupuestoDiario" name="presupuestoDiario" [(ngModel)]="campania.presupuestoDiario" required>  
+        <input class="input" type="number" id="presupuestoDiario" name="presupuestoDiario" [(ngModel)]="presupuestoDiario"  [(ngModel)]="campania.presupuestoDiario"required>  
     </div>
     <div class="cuadroMorado3xd">
       <img class="imgFoquito" alt="" src="../../../assets/Images/Sergio/pub2/imagen8.png">
@@ -35,7 +35,7 @@
   </section>
   <section>
     <button class="botonCancelar" type="button">Cancelar</button> 
-    <button (click)="agregarCampania(); imprimirCampania()" class="botonContinuar" type="button">Confirmar</button>
+    <button (click)="agregarCampania(); imprimirCampania(); enviarCampania()" class="botonContinuar" type="button">Confirmar</button>
   </section>
   
 </body>

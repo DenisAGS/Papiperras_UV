@@ -100,6 +100,10 @@ const routes: Routes = [
   },{
     path: 'ofertas/:id', 
     component: PubOfertasComponent
+  },
+  {
+    path: 'metricas/:id',
+    component: MetricasComponent
   }
 ];
 

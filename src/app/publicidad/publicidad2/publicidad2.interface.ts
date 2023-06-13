@@ -2,7 +2,7 @@ export interface Campania {
     id: string,
     nombre: string;
     presupuestoDiario: number;
-    estado: null,
+    estado: boolean,
     impresiones: null,
     clics:null,
     ingresos:null,

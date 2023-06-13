@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Campania } from './publicidad2.interface';
 import { v4 as uuidv4 } from 'uuid';
 import * as campaniasJson from 'src/assets/json/campaniasJson.json';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-publicidad2',
@@ -9,14 +10,16 @@ import * as campaniasJson from 'src/assets/json/campaniasJson.json';
   styleUrls: ['./publicidad2.component.css']
 })
 export class Publicidad2Component implements OnInit {
+  id: string = uuidv4();
   nombre: string = '';
   presupuestoDiario: number = 0;
+  estado!: boolean;
   campanias: Campania[] = [];
   campania: Campania = {
-    id: uuidv4(),
+    id: '',
     nombre: '',
     presupuestoDiario: 0,
-    estado: null,
+    estado: true,
     impresiones: null,
     clics: null,
     ingresos: null,
@@ -41,7 +44,7 @@ export class Publicidad2Component implements OnInit {
       id: '',
       nombre: '',
       presupuestoDiario: 0,
-      estado: null,
+      estado: true,
       impresiones: null,
       clics: null,
       ingresos: null,
@@ -51,9 +54,21 @@ export class Publicidad2Component implements OnInit {
       productos: []
     };
     console.log(campanias);  
+    
   }
 
-  constructor() { }
+  enviarCampania(): void {
+    const campania = {
+      id:this.id,
+      nombre: this.nombre,
+      presupuestoDiario: this.presupuestoDiario,
+      estado:this.estado
+    };
+  
+    this.router.navigate(['/metricas'], { state: { campania } });
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

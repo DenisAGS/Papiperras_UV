@@ -66,12 +66,12 @@
             <ng-container *ngFor="let campania of campanias">
               <tr *ngIf="getCampaniasbyId(campania.id)">
                 <td class="td2">{{ getCampaniasbyId(campania.id)?.nombre }}</td>
-                <th class ="td2">{{ getCampaniasbyId(campania.id)?.estado }}</th>
-                <th class ="td2">{{ getCampaniasbyId(campania.id)?.presupuestoDiario }}</th>
-                <th class ="td2">{{ getCampaniasbyId(campania.id)?.ventas }}</th>
-                <th class ="td2">{{ getCampaniasbyId(campania.id)?.impresiones }}</th>
-                <th class ="td2">{{ getCampaniasbyId(campania.id)?.ingresos }}</th>
-                <th class ="td2">{{ getCampaniasbyId(campania.id)?.inversion}}</th>
+                <td class ="td2">{{ getCampaniasbyId(campania.id)?.estado }}</td>
+                <td class ="td2">{{ getCampaniasbyId(campania.id)?.presupuestoDiario }}</td>
+                <td class ="td2">{{ getCampaniasbyId(campania.id)?.ventas }}</td>
+                <td class ="td2">{{ getCampaniasbyId(campania.id)?.impresiones }}</td>
+                <td class ="td2">{{ getCampaniasbyId(campania.id)?.ingresos }}</td>
+                <td class ="td2">{{ getCampaniasbyId(campania.id)?.inversion}}</td>
               </tr>
               
             </ng-container>

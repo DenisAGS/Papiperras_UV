@@ -11,9 +11,14 @@ import * as campanias from 'src/assets/json/campaniasJson.json'
   styleUrls: ['./metricas.component.css']
 })
 export class MetricasComponent implements OnInit {
+  datosCampaña: any;
   isDropdownOpen: boolean = false;
+  id!:any;
+  nombre!:any;
+  presupuestoDiario!:any;
 
   campanias: Campania[] = (campanias as any).default;
+  campania: any;
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 
@@ -33,6 +38,10 @@ export class MetricasComponent implements OnInit {
   
 
   ngOnInit(): void {
+    this.campania = history.state.campania;
+    this.id = history.state.campania['id'];
+    console.log(this.campania)
+    console.log(this.id)
   }
 
 }

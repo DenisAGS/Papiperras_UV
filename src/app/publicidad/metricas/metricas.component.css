@@ -137,3 +137,18 @@
     margin-left: 130px;
     text-align: center;
 }
+button {
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .on {
+    background-color: green;
+  }
+  
+  .off {
+    background-color: red;
+  }
