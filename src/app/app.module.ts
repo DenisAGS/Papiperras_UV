@@ -31,8 +31,6 @@ import { NgChartsModule } from 'ng2-charts';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { VolumenComponent } from './volumen/volumen.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
-import { EstadisticaComponent } from './estadistica/estadistica.component';
-import { HttpClientModule } from '@angular/common/http';
 import { ConsejosComponent } from './consejos/consejos.component';
 
 
@@ -58,7 +56,7 @@ import { ConsejosComponent } from './consejos/consejos.component';
     SaldosComponent,
     CalendarioComponent,
     EstadisticaComponent,
-    VolumenComponent
+    VolumenComponent,
     FooterPageComponent,
     EstadisticaComponent,
     ConsejosComponent
