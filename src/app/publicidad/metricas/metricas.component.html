@@ -22,14 +22,63 @@
         <h2 class="text1">Ventas por publicidad</h2>
         <div class="circulito2xd"></div>
         <h2 class="text2">Ventas sin publicidad</h2>
-        <button type="button" class="btn btn-default dropdown-toggle"
-          data-toggle="dropdown">
-         Utimo mes <span class="caret"></span>
-         <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Ultimos 15 dias</a></li>
-            <li><a href="#">Ultimos 6 meses</a></li>
-            <li><a href="#">Ultimo trimestre</a></li>
-          </ul>
-  </button>
+        <div class="dropdown">
+        </div>
+        <div class="fondoGrafica">
+          <div class="fondoDatos">
+            <table class="tabla">
+              <thead>
+                <tr>
+                  <th>Impresiones</th>
+                  <th>Clics</th>
+                  <th>Ingresos</th>
+                  <th>Inversión</th>
+                  <th>Inversión/Ingresos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <td>100</td>
+                <td>50</td>
+                <td>$300</td>
+                <td>$500</td>
+                <td>62%</td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </section>
+    <section>
+      <h2 class="text3">Campañas</h2>
+      <div class="container">
+        <table class="tabla2">
+          <thead>
+            <tr>
+              <th>Nombre Campaña</th>
+              <th>Estado</th>
+              <th>Presupuesto</th>
+              <th>Ventas por publicidad</th>
+              <th>Impresiones</th>
+              <th>Ingresos</th>
+              <th>Inversión</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let campania of campanias">
+              <tr *ngIf="getCampaniasbyId(campania.id)">
+                <td class="td2">{{ getCampaniasbyId(campania.id)?.nombre }}</td>
+                <th class ="td2">{{ getCampaniasbyId(campania.id)?.estado }}</th>
+                <th class ="td2">{{ getCampaniasbyId(campania.id)?.presupuestoDiario }}</th>
+                <th class ="td2">{{ getCampaniasbyId(campania.id)?.ventas }}</th>
+                <th class ="td2">{{ getCampaniasbyId(campania.id)?.impresiones }}</th>
+                <th class ="td2">{{ getCampaniasbyId(campania.id)?.ingresos }}</th>
+                <th class ="td2">{{ getCampaniasbyId(campania.id)?.inversion}}</th>
+              </tr>
+              
+            </ng-container>
+            
+          </tbody>
+        </table>
+      </div>
+
     </section>
 </body>

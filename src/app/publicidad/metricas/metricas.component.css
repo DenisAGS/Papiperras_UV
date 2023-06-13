@@ -24,7 +24,7 @@
     width: 15px;
     height: 15px;
     left: 70.1px;
-    top: 40px;
+    top: 30px;
     border-radius: 30px;
     background: #500250;
 }
@@ -33,7 +33,7 @@
     width: 15px;
     height: 15px;
     left: 325.1px;
-    top: 40px;
+    top: 30px;
     border-radius: 30px;
     background: #33CFFF;
 }
@@ -42,7 +42,7 @@
     width: 837.15px;
     height: 145.45px;
     left: 90px;
-    top: 28.79px;
+    top: 18.79px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -57,7 +57,7 @@
     width: 837.15px;
     height: 145.45px;
     left: 345px;
-    top: 28.79px;
+    top: 18.79px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -70,4 +70,70 @@
 .boton{
     left: 1000px;
     top:20px;
+}
+.fondoGrafica{
+    position: absolute;
+    width: 1003.95px;
+    height: 176.28px;
+    left: 78.1px;
+    top: 61.11px;
+
+    background: #D9D9D9;
+}
+.fondoDatos{
+    position: absolute;
+    width: 1092.48px;
+    height: 80.19px;
+    left: -35px;
+    top: 190px;
+
+    background: rgba(121, 1, 126, 0.7);
+    box-shadow: 0px 3.16204px 3.16204px rgba(0, 0, 0, 0.25);
+    border-radius: 19.7627px;
+}
+.tabla{   
+    left: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-collapse: unset;
+    border-spacing: 0;
+    color: #FFFFFF;
+}
+.text3{
+    position: absolute;
+    width: 837.15px;
+    height: 145.45px;
+    left: 145px;
+    top: 450.79px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25.6204px;
+    line-height: 38px;
+    color: #000000;
+    text-align: left;
+}
+.tabla2{     
+    left: 30px;
+    width: 100%;
+    margin-top: 470px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 0.833333px solid #000000;
+    border-collapse: unset;
+    border-spacing: 0;
+}
+.td2{
+    padding: 1em;
+    width: 40px;
+    border-top: 0.833333px solid #000000;
+}
+
+.container{
+    width: 100%;
+    max-width: 1165px;
+    margin-left: 130px;
+    text-align: center;
 }
