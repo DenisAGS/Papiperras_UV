@@ -97,6 +97,9 @@ const routes: Routes = [
   },{
     path: 'metricas',
     component: MetricasComponent
+  },{
+    path: 'ofertas/:id', 
+    component: PubOfertasComponent
   }
 ];
 

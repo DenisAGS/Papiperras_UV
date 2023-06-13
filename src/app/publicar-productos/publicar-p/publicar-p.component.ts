@@ -1,6 +1,8 @@
 import { Component, NgModule, OnInit } from '@angular/core';
 import { Producto } from './publicar-p.interface';
 import { Router } from '@angular/router';
+import { v4 as uuidv4 } from 'uuid';
+import * as productosJson from 'src/assets/json/productosJson.json';
 
 @Component({
   selector: 'app-publicar-p',
@@ -9,15 +11,18 @@ import { Router } from '@angular/router';
 })
 export class PublicarPComponent implements OnInit {
   productos: Producto[] = [];
+  productosEnMemoria: Producto[] = [];
   producto: Producto = {
-  nombre: '',
-  precio: 0,
-  cantidad: 0,
-  descripcion: '',
-  marca: '',
-  modelo: '',
-  fotos: [],
-  terminosCondiciones: ''
+    id:uuidv4(),
+    nombre: '',
+    precio: 0,
+    cantidad: 0,
+    descripcion: '',
+    marca: '',
+    modelo: '',
+    fotos: [],
+    terminosCondiciones: '',
+    precioFinal: null
   }
 
   onFileChange(event: any) {
@@ -27,7 +32,7 @@ export class PublicarPComponent implements OnInit {
   imprimirProductos() {
     for (let i = 0; i < this.productos.length; i++) {
       const producto = this.productos[i];
-      console.log(`Producto ${i + 1}:`);
+      console.log(`Producto:`, producto.id);
       console.log('Nombre:', producto.nombre);
       console.log('Precio:', producto.precio);
       console.log('Cantidad:', producto.cantidad);
@@ -39,8 +44,10 @@ export class PublicarPComponent implements OnInit {
     }
   }
   agregarProducto() {
-    this.productos.push(this.producto);
+    const productos = (productosJson as any).default;
+    productos.push(this.producto);
     this.producto = {
+      id: '',
       nombre: '',
       precio: 0,
       cantidad: 0,
@@ -48,23 +55,30 @@ export class PublicarPComponent implements OnInit {
       marca: '',
       modelo: '',
       fotos: [],
-      terminosCondiciones:''
+      terminosCondiciones:'',
+      precioFinal: null
     };
+    console.log(productos);
+    
   }
 
-  aplicarOferta(producto: Producto): number {
-    if (producto.oferta) {
-      const { porcentaje, fechaInicio, fechaFin } = producto.oferta;
-      const ahora = new Date();
-  
-      if (ahora >= fechaInicio && ahora <= fechaFin) {
-        const descuento = producto.precio * (porcentaje / 100);
-        return producto.precio - descuento;
-      }
+  imprimirProductosEnMemoria() {
+    for (let i = 0; i < this.productosEnMemoria.length; i++) {
+      const producto = this.productosEnMemoria[i];
+      console.log(`Producto ${i + 1}:`);
+      console.log('ID:', producto.id);
+      console.log('Nombre:', producto.nombre);
+      console.log('Precio:', producto.precio);
+      console.log('Cantidad:', producto.cantidad);
+      console.log('Descripción:', producto.descripcion);
+      console.log('Marca:', producto.marca);
+      console.log('Modelo:', producto.modelo);
+      console.log('Fotos:', producto.fotos);
+      console.log('Términos y Condiciones:', producto.terminosCondiciones);
+      console.log('------------------------------');
     }
-  
-    return producto.precio;
   }
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {

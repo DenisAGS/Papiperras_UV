@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+
 import { Producto } from 'src/app/publicar-productos/publicar-p/publicar-p.interface';
+import * as ofertasJson from 'src/assets/json/ofertasJson.json';
+import * as productosJson from 'src/assets/json/productosJson.json'
 
 @Component({
   selector: 'app-list-ofertas',
@@ -8,76 +12,78 @@ import { Producto } from 'src/app/publicar-productos/publicar-p/publicar-p.inter
   styleUrls: ['./list-ofertas.component.css']
 })
 export class ListOfertasComponent implements OnInit {
-  productos : any[] = [
-    {
-      nombre: 'Audifonos Sony',
-      foto: '../../../assets/Images/Sergio/Productos/produc1.png',
-      precioOriginal: 1200,
-      descuento: 14,
-      nuevoPrecio: 1032,
-      stock: 50
-    },
-    {
-      nombre: 'Airpods',
-      foto: '../../../assets/Images/Sergio/Productos/produc2.png',
-      precioOriginal: 2600,
-      descuento: 30,
-      nuevoPrecio: 1820,
-      stock: 81
-    },
-    {
-      nombre: 'Audifonos patito',
-      foto: '../../../assets/Images/Sergio/Productos/produc3.png',
-      precioOriginal: 800,
-      descuento: 20,
-      nuevoPrecio: 640,
-      stock: 24
-    },
-    {
-      nombre: 'Samsung Galaxy S23+',
-      foto:'../../../assets/Images/Sergio/Productos/produc3.png',
-      precioOriginal: 17999,
-      descuento: 10,
-      nuevoPrecio: 16200,
-      stock: 12
-    },
-    {
-      nombre: 'Samsung Galaxy S23+',
-      foto:'../../../assets/Images/Sergio/Productos/produc3.png',
-      precioOriginal: 17999,
-      descuento: 10,
-      nuevoPrecio: 16200,
-      stock: 12
-    }
-  ]
-
-  itemsPorPagina = 3;
-  paginaActual = 1;
-  productosPaginados: any[] = [];
-  paginas: number[] = [3];
+  datos:any;
+  descuento!:number; 
+  precioFinal!:number; 
+  fechaInicio!: Date;
+  fechaFin!: Date;
   
 
-  constructor(private router: Router) { 
-    this.actualizarProductosPaginados();
-    
+  productos: Producto[] = (productosJson as any).default;
+  ofertas: any[] = (ofertasJson as any).default;
+  searchTerm: string = '';
+
+  constructor(private router: Router, private route: ActivatedRoute) {}
+
+
+  getProductobyId(id: string): Producto | undefined {
+    const producto = this.productos.find(producto => producto.id === id);
+    if (producto && this.searchTerm) {
+      const searchTermLower = this.searchTerm.toLowerCase();
+      const nombreLower = producto.nombre.toLowerCase();
+  
+      if (nombreLower.indexOf(searchTermLower) === -1) {
+        return undefined;
+      }
+    }  
+    if (producto && producto.precioFinal === null && this.ofertas.length > 0) {
+      const oferta = this.ofertas.find(oferta => oferta.id === id);
+  
+      if (oferta) {
+        const descuento = oferta.descuento;
+        const precioDescuento = producto.precio * (1 - (descuento / 100));
+        const precioDescuentoEntero = parseInt(precioDescuento.toFixed(0), 10);
+        producto.precioDescuento = precioDescuentoEntero;
+      }
+    }
+  
+    return producto;
   }
 
+  updateTable(): void {
+    const datosModificados = this.route.snapshot.queryParamMap.get('datosModificados');
+    if (datosModificados) {
+      const datosModificadosParsed = JSON.parse(datosModificados);
+      const { id, descuento, precioFinal, fechaInicio, fechaFin } = datosModificadosParsed;
+      this.ofertas.forEach(oferta => {
+        if (oferta.id === id) {
+          oferta.descuento = descuento;
+          oferta.precioFinal = precioFinal;
+          oferta.fechaInicio = fechaInicio;
+          oferta.fechaFin = fechaFin;
+        }
+      });
+    }
+  }
+  redireccionar(id: string) {
+  const producto = this.getProductobyId(id);
+  if (producto) {
+    const oferta = this.ofertas.find(o => o.id === id);
+    if (oferta) {
+      this.router.navigate(['/ofertas'], { state: { producto, oferta } });
+      setTimeout(() => {
+        this.updateTable();
+      }, 100);
+    }
+  }
+}
 
   ngOnInit(): void {
-    
+  const datosModificados = this.route.snapshot.queryParamMap.get('datosModificados');
+  if (datosModificados) {
+    const datosModificadosParsed = JSON.parse(datosModificados);
+    console.log('Datos modificados:', datosModificadosParsed);
+    }
+    this.updateTable();
   }
-  actualizarProductosPaginados() {
-    const indiceInicial = (this.paginaActual - 1) * this.itemsPorPagina;
-    const indiceFinal = indiceInicial + this.itemsPorPagina;
-    this.productosPaginados = this.productos.slice(indiceInicial, indiceFinal);
-  }
-
-  cambiarPagina(pagina: number) {
-    this.paginaActual = pagina;
-    this.actualizarProductosPaginados();
-  }
-
-  redireccionar() {
-  this.router.navigate(['/ofertas']);
-  } 
 }

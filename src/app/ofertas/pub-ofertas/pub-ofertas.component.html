@@ -20,24 +20,23 @@
     <section class="fondoCrema">
       <div class="cuadroMoradoxd">
         <p class="text">Porcentaje Oferta</p>
-        <input class="input" type="text" id="nombreC" name="nombreCampaña"> 
+        <input class="input" type="number" placeholder="{{ descuento }}"  [(ngModel)]="descuento" (input)="calcularPrecioFinal()"> 
       </div>
       <div class="cuadroMorado2xd">
-        <p class="text">Fecha de inicio de Oferta</p>
-        <input class="input" type="date" id="inicioOfe" name="inicioOferta" min="<?= date('Y-m-d'); ?>"> 
+        <input class = "input" type="date" id="fechaInicio" [ngModel]="parseFecha(oferta.fechaInicio)" (ngModelChange)="oferta.fechaInicio = formatFecha($event)">
       </div>
       <div class="cuadroMorado3xd">
         <p class="text">Nuevo Precio</p>
-        <div class="a"> </div>
+          <input class="input" type="text" id="precioFinal" [value]="precioFinal | currency" readonly>
       </div>
       <div class="cuadroMorado4xd">
         <p class="text">Fecha de inicio de Oferta</p>
-        <input class="input" type="date" id="finOfe" name="finOferta"> 
+        <input class="input" type="date" id="fechaFin" [ngModel]="parseFecha(oferta.fechaFin)" (ngModelChange)="oferta.fechaFin = formatFecha($event)"> 
       </div>
       
     </section>
     <section>
       <button class="botonCancelar" type="button">Cancelar</button> 
-      <button class="botonContinuar" type="button">Confirmar</button>
+      <button (click)="si()" class="botonContinuar" type="button">Confirmar</button>
     </section>
 </body>

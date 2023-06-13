@@ -18,8 +18,7 @@
 <body>
     <app-sidebar></app-sidebar>
     <section>
-        <input class="buscarO" type="text" id="buscarOfer" name="buscarOferta" placeholder="BUSCAR POR TITULO">
-        <button class="imgBuscador" type="button"></button> 
+        <input type="text" [(ngModel)]="searchTerm" placeholder="BUSCAR POR NOMBRE" (input)="updateTable()">
     </section>
     <section>
         <div class="container">
@@ -36,17 +35,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let producto of productos">
-                        <td class="td2"><input class="checkbox" type="checkbox"></td>         
-                        <td class="td2"><img src="{{ producto.foto }}" alt="{{ producto.nombre }}"></td>
-                        <td class="td3">{{ producto.nombre }}</td>
-                        <td>{{ producto.precioOriginal }}</td>
-                        <td>{{ producto.descuento }}</td>
-                        <td>{{ producto.nuevoPrecio }}</td>
-                        <td>{{ producto.stock}}</td>
-                        <td><button (click)="redireccionar()" class="imgEditar" type="button"></button></td>
-                        
-                    </tr>
+                    <ng-container *ngFor="let oferta of ofertas">
+                        <tr *ngIf="getProductobyId(oferta.id) && getProductobyId(oferta.id)?.precio">
+                            <td class="td2"><input class="checkbox" type="checkbox"></td>         
+                            <td class="td2"><img src="{{ getProductobyId(oferta.id)?.fotos }}" alt="{{ getProductobyId(oferta.id)?.nombre }}"></td>
+                            <td class="td3">{{ getProductobyId(oferta.id)?.nombre }}</td>
+                            <td>${{ getProductobyId(oferta.id)?.precio }}</td>
+                            <td>{{ oferta.descuento }}%</td>
+                            <td>${{ getProductobyId(oferta.id)?.precioDescuento }}</td>
+                            <td>{{ getProductobyId(oferta.id)?.cantidad }}</td>
+                            <td><button (click)="redireccionar(oferta.id)" class="imgEditar" type="button"></button></td>                          
+                        </tr>
+                    </ng-container>
                 </tbody>
             </table>
         </div>

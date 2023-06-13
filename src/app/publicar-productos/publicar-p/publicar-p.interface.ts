@@ -1,15 +1,13 @@
 export interface Producto {
+    id: string;
     nombre: string;
     precio: number;
     cantidad: number;
     descripcion: string;
     marca: string;
     modelo: string;
-    fotos: File[];
+    fotos: string[];
     terminosCondiciones: string;
-    oferta?: {
-        porcentaje: number;
-        fechaInicio: Date;
-        fechaFin: Date;
-      };
+    precioFinal: number | null;
+    precioDescuento?: number;
 }

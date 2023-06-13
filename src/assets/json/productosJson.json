@@ -1,0 +1,128 @@
+[
+    {
+      "id": "d86883e0-2b76-4a1d-94ed-85a9fdd1478d",
+      "nombre": "Audifonos sony",
+      "precio": 1200,
+      "cantidad": 50,
+      "descripcion": "Audifonos sony",
+      "marca": "Sony",
+      "modelo": "Modelo 1",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/produc1.png"
+      ],
+      "terminosCondiciones": "No lavar",
+      "precioFinal": null
+    },
+    {
+      "id": "eb00a524-9a0c-4d63-829e-bf0133010918",
+      "nombre": "Airpods",
+      "precio": 2600,
+      "cantidad": 81,
+      "descripcion": "audifonos iphone",
+      "marca": "aipon",
+      "modelo": "Modelo 2",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/produc2.png"
+      ],
+      "terminosCondiciones": "Cocinar por 3 minutos",
+      "precioFinal": null
+    },
+    {
+      "id": "1552eb9a-c80f-4fad-b8e1-814f0fe8428a",
+      "nombre": "Audifonos PIRATAS",
+      "precio": 800,
+      "cantidad": 24,
+      "descripcion": "audifonos PIRATAS",
+      "marca": "super piratas",
+      "modelo": "Modelo 3",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/produc3.png"
+      ],
+      "terminosCondiciones": "Dejar al sol por 30 min",
+      "precioFinal": null
+    },
+    {
+      "id": "19a13716-bb16-46b3-a2d5-ea63f57a9076",
+      "nombre": "Samsung galaxy s23+",
+      "precio": 16500,
+      "cantidad": 10,
+      "descripcion": "celular bonitos para hacer fotos",
+      "marca": "Samsung",
+      "modelo": "Galaxy s23+",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/produc4.png"
+      ],
+      "terminosCondiciones": "No lavar",
+      "precioFinal": null
+    },
+    {
+      "id": "d91d8b79-bf83-4ebc-85b4-d66eed264a1c",
+      "nombre": "Smartwatch Redmi",
+      "precio": 1199,
+      "cantidad": 33,
+      "descripcion": "reloj para  ver la hora",
+      "marca": "Xiaomi",
+      "modelo": "Watch 2 Lite",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/smartw.png"
+      ],
+      "terminosCondiciones": "No meter al microhondas",
+      "precioFinal": null
+    },
+    {
+      "id": "8e82700b-d029-49bf-85d1-e3830912223d",
+      "nombre": "Pantalla LG OLED",
+      "precio": 12999,
+      "cantidad": 13,
+      "descripcion": "Para ver el netflix",
+      "marca": "LG",
+      "modelo": "evo 55",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/tvLG.png"
+      ],
+      "terminosCondiciones": "No meter al microhondas",
+      "precioFinal": null
+    },
+    {
+      "id": "49aeddd7-f641-424d-b54f-ae62d2a797d2",
+      "nombre": "Mouse gamer",
+      "precio": 510,
+      "cantidad": 6,
+      "descripcion": "Para jugar juegos",
+      "marca": "Razer",
+      "modelo": "DeathAdder",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/mouse.png"
+      ],
+      "terminosCondiciones": "No usar mas de media hora al día",
+      "precioFinal": null
+    },
+    {   
+      "id": "e0fe7701-ee8c-4424-90b8-517bbc275fad",
+      "nombre": "Teclado gamer",
+      "precio": 849,
+      "cantidad": 1,
+      "descripcion": "Para jugar juegos",
+      "marca": "Razer",
+      "modelo": "Redragon",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/tecladorgb.png"
+      ],
+      "terminosCondiciones": "No sacar de la caja",
+      "precioFinal": null
+    },
+    {   
+      "id": "be15baad-ea85-4205-ad0a-eadc67346545",
+      "nombre": "Xbox Series X",
+      "precio": 13790,
+      "cantidad": 40,
+      "descripcion": "Para jugar juegos",
+      "marca": "Xbox",
+      "modelo": "Series X",
+      "fotos": [
+        "/assets/Images/Sergio/Productos/xboxSerieX.png"
+      ],
+      "terminosCondiciones": "No usar en lavadora",
+      "precioFinal": null
+    }
+  ]

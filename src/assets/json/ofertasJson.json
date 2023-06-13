@@ -1,0 +1,56 @@
+[
+    {
+        "id": "d86883e0-2b76-4a1d-94ed-85a9fdd1478d",
+        "descuento": 14,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    },
+    {
+        "id": "eb00a524-9a0c-4d63-829e-bf0133010918",
+        "descuento": 30,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    },
+    {
+        "id": "1552eb9a-c80f-4fad-b8e1-814f0fe8428a",
+        "descuento": 20,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    },
+    {
+        "id": "19a13716-bb16-46b3-a2d5-ea63f57a9076",
+        "descuento": 15,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    },
+    {
+        "id": "d91d8b79-bf83-4ebc-85b4-d66eed264a1c",
+        "descuento": 50,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    },
+    {
+        "id": "8e82700b-d029-49bf-85d1-e3830912223d",
+        "descuento": 10,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    },
+    {
+        "id": "49aeddd7-f641-424d-b54f-ae62d2a797d2",
+        "descuento": 5,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    },
+    {
+        "id": "e0fe7701-ee8c-4424-90b8-517bbc275fad",
+        "descuento": 30,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    },
+    {
+        "id": "be15baad-ea85-4205-ad0a-eadc67346545",
+        "descuento": 20,
+        "fechaInicio": "13/06/2023",
+        "fechaFin": "20/06/2023"
+    }
+]
