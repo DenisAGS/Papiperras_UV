@@ -58,8 +58,7 @@ export class PublicarPComponent implements OnInit {
       terminosCondiciones:'',
       precioFinal: null
     };
-    console.log(productos);
-    
+    console.log(productos);  
   }
 
   imprimirProductosEnMemoria() {

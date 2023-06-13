@@ -1,0 +1,28 @@
+[
+    {
+        "id":"f91ac6fd-aae6-410c-bb1a-3c85a0740eec",
+        "nombre": "Audifonos",
+        "presupuestoDiario": 50,
+        "estado": true,
+        "impresiones": 1000,
+        "clics": 20,
+        "ingresos": 1000,
+        "inversion": 500,
+        "ventas": 10,
+        "ingresosinversion": 50,
+        "productos": null
+      },
+      {
+        "id": "9a6439fb-1646-45fe-92e4-e8f0a3d48128",
+        "nombre": "Computo",
+        "presupuestoDiario": 30,
+        "estado": false,
+        "impresiones": 500,
+        "clics": 10,
+        "ingresos": 500,
+        "inversion": 300,
+        "ventas": 5,
+        "ingresosinversion": 24,
+        "productos": null
+      }
+]
