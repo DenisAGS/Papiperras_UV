@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 /*import { MatIconModule} from '@angular/material/icon';*/
 
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,10 +20,21 @@ import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-form
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SaldosComponent } from './saldos/saldos.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { CalendarioComponent } from './calendario/calendario.component';
+import { NgChartsModule } from 'ng2-charts';
+import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { VolumenComponent } from './volumen/volumen.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConsejosComponent } from './consejos/consejos.component';
+
 
 
 @NgModule({
@@ -45,6 +55,10 @@ import { ConsejosComponent } from './consejos/consejos.component';
     HomepageComponent,
     RetiroComponent,
     DatosRetiroComponent,
+    SaldosComponent,
+    CalendarioComponent,
+    EstadisticaComponent,
+    VolumenComponent
     FooterPageComponent,
     EstadisticaComponent,
     ConsejosComponent
@@ -53,8 +67,15 @@ import { ConsejosComponent } from './consejos/consejos.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
-  ],
+    NgChartsModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    FullCalendarModule,
+    NgChartsModule,
+    FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
