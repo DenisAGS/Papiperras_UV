@@ -29,6 +29,18 @@ p{
         padding-right: 0.9em;
         font-size: 2em;
     }
+
+    .text-overlay img{
+        margin-top: 5.5em;
+        padding: 8%;
+        width: 25em;
+        height: 23em;
+        font-size: 10px;
+        display: flex;
+    }
+      .image-wrapper {
+        margin-top: 10px; /* Ajusta el espaciado entre el texto y la imagen */
+      }
 }
 
 p
@@ -59,8 +71,7 @@ h4 {
     justify-content: center;
     align-items: center;
     padding: 8%;
-    color: #9B109B;
-    font-size: 24px;
+    font-size: 34px;
     flex: 1;
     display: flex;
 }
