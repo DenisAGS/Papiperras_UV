@@ -1,9 +1,0 @@
-#principal {
-    padding-left: 75px;
-  }
-
-  @media (max-width: 768px) {
-    #principal {
-      padding-left: 0;
-    }
-}
