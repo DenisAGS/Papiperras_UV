@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retiro de Fondos</title>
+</head>
+<header>
+    <app-header-page title="Retiro de Fondos"></app-header-page>
+</header>
+<app-sidebar></app-sidebar>
+
+<body style="margin-top: 60px;">
+    <!-- Content Wrapper. Contains page content -->
+    <div id="principal">
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card direct-chat direct-chat-primary" style="background: rgba(255, 201, 148, 0.2);
+                            border-radius: 25px;">
+                            <div class="card-header">
+                                <h5 class="card-title">Selecciona el mes</h5>
+                            </div>
+                            <div class="form-group" style="padding: 60px; padding-bottom: 40px; ">
+                                <select class="form-control select2"
+                                    style="width: 100%; height: 100px; background: #79017E; border-radius: 15px; font-size: 27px; color: white; text-align: center;"
+                                    [(ngModel)]="mesSeleccionado" (change)="cambiarMes()">
+                                    <option value="enero">Enero</option>
+                                    <option value="febrero">Febrero</option>
+                                    <option value="marzo">Marzo</option>
+                                    <option value="abril">Abril</option>
+                                    <option value="mayo">Mayo</option>
+                                    <option value="junio">Junio</option>
+                                    <option value="julio">Julio</option>
+                                    <option value="agosto">Agosto</option>
+                                    <option value="septiembre">Septiembre</option>
+                                    <option value="octubre">Octubre</option>
+                                    <option value="noviembre">Noviembre</option>
+                                    <option value="diciembre">Diciembre</option>
+                                </select>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: center; margin-left: 40px ; margin-right: 40px ; margin-top: 30px; margin-bottom: 30px;">
+                                <button type="button" class="btn btn-block btn-default btn-lg"
+                                    style="font-size: 25px; background-color: #79017E; width: 300px; height: 80px; color: white; border-radius: 25px;">Descargar
+                                    PDF</button>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: center; margin-left: 40px ; margin-right: 40px ; margin-top: 30px; margin-bottom: 30px;">
+                                <button type="button" routerLink="/calendario" class="btn btn-block btn-default btn-lg"
+                                    style="font-size: 25px; border-color: #79017E; width: 300px; height: 80px; border-radius: 25px;">Ver
+                                    Calendario</button>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <div class="card direct-chat direct-chat-primary"
+                                style="background: rgba(255, 201, 148, 0.2); border-radius: 25px;">
+                                <div class="card-header">
+                                    <h3 class="card-title">Movimientos</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="direct-chat-messages" style="height: 70vh;">
+                                        <div *ngFor="let movimiento of movimientos" class="row m-2"
+                                            [ngStyle]="{ 'background': movimiento.tipo === 'retiro' ? '#79017E' : '#33CFFF' }"
+                                            style="border-radius: 20px; color: white;">
+                                            <div
+                                                class="col-3 col-md-2 d-flex align-items-center justify-content-center">
+                                                <img [src]="movimiento.tipo === 'retiro' ? '../assets/Images/iRetira.png' : '../assets/Images/iRecibo.png'"
+                                                    alt="Imagen del producto"
+                                                    style="height: 70px; width: 70px; border-radius: 15px;">
+                                            </div>
+                                            <div class="col-5 col-md-6 d-flex align-items-center">
+                                                <p style="font-size: 25px;">{{ movimiento.tipo === 'retiro' ?
+                                                    'Retiraste' : 'Recibiste' }}</p>
+                                            </div>
+                                            <div class="col-4 col-md-4">
+                                                <p class="mt-2"
+                                                    [style.color]="movimiento.tipo === 'retiro' ? 'red' : 'green'"
+                                                    style="font-size: 25px;">$ {{ movimiento.monto }}</p>
+                                                <p class="mt-2">{{ movimiento.fecha || movimiento.fecha_hora }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
