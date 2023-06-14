@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-campañas',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./campañas.component.css']
 })
 export class CampañasComponent implements OnInit {
+  campania: any;
+  nombre:any;
   campanias: any[] = [
     {
       estado: 'activo',
@@ -41,9 +45,13 @@ export class CampañasComponent implements OnInit {
       inv_cos: 26
     }
   ]
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.campania = history.state.campania;
+    this.nombre = history.state.campania['nombre'];
+    console.log(this.campania);
+    console.log(this.nombre);
   }
 
 }

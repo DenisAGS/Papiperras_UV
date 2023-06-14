@@ -75,4 +75,8 @@ export class MetricasComponent implements OnInit {
     this.isDropdownOpen = !this.isDropdownOpen;
   }
 
+  verDetallesCampania(campania: Campania) {
+    this.router.navigate(['/campañas'], { state: { campania } });
+  }
+
 }

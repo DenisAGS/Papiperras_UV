@@ -10,7 +10,11 @@
         "inversion": 500,
         "ventas": 10,
         "ingresosinversion": 50,
-        "productos": null
+        "productos": [
+          "d86883e0-2b76-4a1d-94ed-85a9fdd1478d",
+          "d86883e0-2b76-4a1d-94ed-85a9fdd1478d",
+          "1552eb9a-c80f-4fad-b8e1-814f0fe8428a"
+        ]
       },
       {
         "id": "9a6439fb-1646-45fe-92e4-e8f0a3d48128",
@@ -23,6 +27,10 @@
         "inversion": 300,
         "ventas": 5,
         "ingresosinversion": 24,
-        "productos": null
+        "productos": [
+          "49aeddd7-f641-424d-b54f-ae62d2a797d2",
+          "e0fe7701-ee8c-4424-90b8-517bbc275fad",
+          "1552eb9a-c80f-4fad-b8e1-814f0fe8428a"
+        ]
       }
 ]
