@@ -18,6 +18,8 @@ import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-form
 import { ProblemasProductosComponent } from './problemas-productos/problemas-productos.component';
 import { PreguntasClientesComponent } from './preguntas-clientes/preguntas-clientes.component';
 import { RespuestasPreguntasComponent } from './respuestas-preguntas/respuestas-preguntas.component';
+import { ReclamosClientesComponent } from './reclamos-clientes/reclamos-clientes.component';
+import { DetallesComponent } from './detalles/detalles.component';
 
 const routes: Routes = [  
   {
@@ -75,6 +77,14 @@ const routes: Routes = [
   {
     path:'respuestas-preguntas',
     component: RespuestasPreguntasComponent
+  },
+  {
+    path:'reclamos-clientes',
+    component: ReclamosClientesComponent
+  },
+  {
+    path:'detalles',
+    component: DetallesComponent
   }
 ];
 
