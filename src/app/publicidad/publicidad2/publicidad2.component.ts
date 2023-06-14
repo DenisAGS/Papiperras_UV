@@ -13,10 +13,10 @@ export class Publicidad2Component implements OnInit {
   id: string = uuidv4();
   nombre: string = '';
   presupuestoDiario: number = 0;
-  estado!: boolean;
+  estado!: true;
   campanias: Campania[] = [];
   campania: Campania = {
-    id: '',
+    id: uuidv4(),
     nombre: '',
     presupuestoDiario: 0,
     estado: true,
@@ -39,9 +39,8 @@ export class Publicidad2Component implements OnInit {
   }
   agregarCampania() {
     const campanias = (campaniasJson as any).default;
-    campanias.push(this.campania);
     this.campania = {
-      id: '',
+      id: uuidv4(),
       nombre: '',
       presupuestoDiario: 0,
       estado: true,
@@ -54,7 +53,7 @@ export class Publicidad2Component implements OnInit {
       productos: []
     };
     console.log(campanias);  
-    
+    campanias.push(this.campania); 
   }
 
   enviarCampania(): void {
@@ -62,10 +61,10 @@ export class Publicidad2Component implements OnInit {
       id:this.id,
       nombre: this.nombre,
       presupuestoDiario: this.presupuestoDiario,
-      estado:this.estado
+      estado: this.estado
     };
-  
-    this.router.navigate(['/metricas'], { state: { campania } });
+    const url = '/metricas?campania=' + encodeURIComponent(JSON.stringify(campania));
+    this.router.navigateByUrl(url);
   }
 
   constructor(private router: Router) { }

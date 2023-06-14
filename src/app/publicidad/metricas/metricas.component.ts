@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Campania } from '../publicidad2/publicidad2.interface';
 import * as campanias from 'src/assets/json/campaniasJson.json'
+import * as campaniasJson from 'src/assets/json/campaniasJson.json';
 
 @Component({
   selector: 'app-metricas',
@@ -11,37 +12,67 @@ import * as campanias from 'src/assets/json/campaniasJson.json'
   styleUrls: ['./metricas.component.css']
 })
 export class MetricasComponent implements OnInit {
-  datosCampaña: any;
   isDropdownOpen: boolean = false;
   id!:any;
   nombre!:any;
   presupuestoDiario!:any;
+  estado: boolean = true;
 
   campanias: Campania[] = (campanias as any).default;
   campania: any;
+  datosModificados: any;
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 
-  getCampaniasbyId(id: string): Campania | undefined {
-    const campania = this.campanias.find(campania => campania.id === id);
-    if (campania && this.campanias.length > 0) {
-      const oferta = this.campanias.find(campania => campania.id === id);
+  ngOnInit(): void {
+    const campaña= this.route.snapshot.queryParamMap.get('campania');
+    if (campaña) {
+      const datosModificadosParsed = JSON.parse(campaña);
+      this.datosModificados = datosModificadosParsed;
+      this.id = datosModificadosParsed.id;
+      this.nombre = datosModificadosParsed.nombre;
+      this.presupuestoDiario = datosModificadosParsed.presupuestoDiario;
+      console.log('Datos recibidos:')
+      console.log('ID: ', this.id);
+      console.log('Nombre:', this.nombre);
+      console.log('Presupuesto', this.presupuestoDiario);
+      console.log('Estado:', this.estado)
+      this.agregarCampania();
+      }
     }
-  
-    return campania;
+
+  getCampaniasbyId(id: string): any {
+  const campania = this.campanias.find(campania => campania.id === id);
+  if (campania) {
+    const datosModificadosCampaña = this.datosModificados?.[id];
+    if (datosModificadosCampaña) {
+      return { ...campania, ...datosModificadosCampaña };
+    }
+  }
+  return campania;
+  }
+
+  agregarCampania() {
+    const campanias = (campaniasJson as any).default;
+    this.campania = {
+      id: this.id,
+      nombre: this.nombre,
+      presupuestoDiario: this.presupuestoDiario,
+      estado: true,
+      impresiones: null,
+      clics: null,
+      ingresos: null,
+      inversion: null,
+      ventas: null,
+      ingresosinversion: null,
+      productos: []
+    };
+    console.log(campanias);  
+    campanias.push(this.campania); 
   }
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
-  }
-
-  
-
-  ngOnInit(): void {
-    this.campania = history.state.campania;
-    this.id = history.state.campania['id'];
-    console.log(this.campania)
-    console.log(this.id)
   }
 
 }
