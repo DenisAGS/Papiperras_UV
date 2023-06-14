@@ -12,17 +12,22 @@ main{
     margin-bottom: 0%;
 }
 
+img{
+    max-width: 3.5rem;
+}
+
 .tabla{
     width: 100%;
     min-height: 29rem;
 }
 
-td,th{
-    padding: 1.5rem 4.5rem;
+th{
+    padding: 1rem 4.5rem;
 }
 
 td{
     border-top: 1px solid;
+    padding: 0.3rem 4.5rem;
 }
 
 .buscar{
