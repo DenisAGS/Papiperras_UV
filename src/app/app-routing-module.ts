@@ -16,6 +16,8 @@ import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component
 import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component';
 import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
 import { ProblemasProductosComponent } from './problemas-productos/problemas-productos.component';
+import { PreguntasClientesComponent } from './preguntas-clientes/preguntas-clientes.component';
+import { RespuestasPreguntasComponent } from './respuestas-preguntas/respuestas-preguntas.component';
 
 const routes: Routes = [  
   {
@@ -65,6 +67,14 @@ const routes: Routes = [
   {
     path:'problemas-productos',
     component: ProblemasProductosComponent
+  },
+  {
+    path:'preguntas-clientes',
+    component: PreguntasClientesComponent
+  },
+  {
+    path:'respuestas-preguntas',
+    component: RespuestasPreguntasComponent
   }
 ];
 
