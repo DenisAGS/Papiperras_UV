@@ -26,6 +26,8 @@ import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.c
 import { ProblemasProductosComponent } from './problemas-productos/problemas-productos.component';
 import { PreguntasClientesComponent } from './preguntas-clientes/preguntas-clientes.component';
 import { RespuestasPreguntasComponent } from './respuestas-preguntas/respuestas-preguntas.component';
+import { ReclamosClientesComponent } from './reclamos-clientes/reclamos-clientes.component';
+import { DetallesComponent } from './detalles/detalles.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { RespuestasPreguntasComponent } from './respuestas-preguntas/respuestas-
     PublicarPComponent,
     ProblemasProductosComponent,
     PreguntasClientesComponent,
-    RespuestasPreguntasComponent
+    RespuestasPreguntasComponent,
+    ReclamosClientesComponent,
+    DetallesComponent
   ],
   imports: [
     BrowserModule,
