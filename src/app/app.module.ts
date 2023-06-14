@@ -34,6 +34,7 @@ import { PruebaComponent } from './prueba/prueba.component';
 import { VentasComponent } from './ventas/ventas.component';
 import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.component';
 import { PopupComponent } from './popup/popup.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { PopupComponent } from './popup/popup.component';
     VentasComponent,
     ProgresoVentaComponent,
     PopupComponent,
+    CatalogoComponent,
   ],
   imports: [
     BrowserModule,

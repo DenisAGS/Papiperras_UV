@@ -1,0 +1,67 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Producto 1",
+      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "descripcion": "Aspiradora Koblenz 2 motor",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+
+    },
+    {
+      "id": 2,
+      "nombre": "Producto 2",
+      "imagen": "assets/Images/img-carrusel/lava.png",
+      "descripcion": "Descripción del Producto 2",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 3,
+      "nombre": "Producto 3",
+      "imagen": "assets/Images/img-carrusel/lavadora.png",
+      "descripcion": "Descripción del Producto 3",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 4,
+      "nombre": "Producto 4",
+      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "descripcion": "Descripción del Producto 4",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 5,
+      "nombre": "Producto 5",
+      "imagen": "../Images/img-carrusel/aspi.png",
+      "descripcion": "Descripción del Producto 3",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 6,
+      "nombre": "Producto 6",
+      "imagen": "../Images/img-carrusel/aspi.png",
+      "descripcion": "Descripción del Producto 4",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 7,
+      "nombre": "Producto 7",
+      "imagen": "../Images/img-carrusel/aspi.png",
+      "descripcion": "Descripción del Producto 3",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 8,
+      "nombre": "Producto 8",
+      "imagen": "../Images/img-carrusel/aspi.png",
+      "descripcion": "Descripción del Producto 4"
+    }
+  ]
+}

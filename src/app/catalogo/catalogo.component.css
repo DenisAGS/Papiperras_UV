@@ -1,0 +1,108 @@
+a,
+span,
+p,
+div,
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+/*Buscador*/
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    margin-top: 3.4em;
+    width: 30em;
+    height: 2.5em;
+    padding-right: 40px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.fa-search {
+    color: #999;
+    transition: color 0.3s;
+    margin-left: 5px;
+    margin-top: 3.4em;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-search:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .container-detalles{
+        display: none;
+    }
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-container {
+    display: flex;
+    width: 80%;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.product img {
+    max-width: 100px;
+    max-height: 100px;   
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows .arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrows .arrow i {
+    font-size: 50px;
+}
+
+.arrows .arrow.left {
+    margin-right: 6em;
+}
+
+.arrows .arrow.right {
+    margin-left: 6em;
+}
