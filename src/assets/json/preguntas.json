@@ -1,0 +1,82 @@
+[
+    {
+        "fecha": "2022-02-11",
+        "tipo_producto": "Electrónico",
+        "Pregunta": "¿Cuál es el precio?",
+        "Nombre": "Juan",
+        "Estado": "🟢",
+        "selected": false
+    },
+    {
+        "fecha": "2022-02-03",
+        "tipo_producto": "Ropa",
+        "Pregunta": "¿Tienes esta camiseta en talla L?",
+        "Nombre": "María",
+        "Estado": "🔴",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-03",
+        "tipo_producto": "Hogar",
+        "Pregunta": "¿Cuál es el tiempo de entrega?",
+        "Nombre": "Pedro",
+        "Estado": "🟢",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-03",
+        "tipo_producto": "Electrónico",
+        "Pregunta": "¿Es compatible con mi dispositivo?",
+        "Nombre": "Laura",
+        "Estado": "🔴",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-02",
+        "tipo_producto": "Hogar",
+        "Pregunta": "¿Viene con garantía?",
+        "Nombre": "Carlos",
+        "Estado": "🟢",
+        "selected": false
+    },
+    {
+        "fecha": "2021-02-02",
+        "tipo_producto": "Ropa",
+        "Pregunta": "¿Tienes este vestido en color azul?",
+        "Nombre": "Ana",
+        "Estado": "🔴",
+        "selected": false
+    },
+    {
+        "fecha": "2021-02-02",
+        "tipo_producto": "Electrónico",
+        "Pregunta": "¿Cuántos megapíxeles tiene la cámara?",
+        "Nombre": "Luis",
+        "Estado": "🟢",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-06",
+        "tipo_producto": "Hogar",
+        "Pregunta": "¿Tienen envío internacional?",
+        "Nombre": "Elena",
+        "Estado": "🔴",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-11",
+        "tipo_producto": "Ropa",
+        "Pregunta": "¿Cuál es la composición del tejido?",
+        "Nombre": "Marta",
+        "Estado": "🟢",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-11",
+        "tipo_producto": "Electrónico",
+        "Pregunta": "¿Cuál es la capacidad de almacenamiento?",
+        "Nombre": "Javier",
+        "Estado": "🔴",
+        "selected": false
+    }
+]
