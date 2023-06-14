@@ -20,6 +20,7 @@ export class ProblemasProductosComponent implements OnInit {
   paginaActual = 1;
 
   searchText : any;
+  filtroSeleccionado : string = '';
 
   dataPagina : any[] = [];//datos para la paginacion
   dataCompleta : any[] = [];//datos para la paginacion
@@ -29,6 +30,10 @@ export class ProblemasProductosComponent implements OnInit {
     this.actualizarDatosTabla(); // Método para actualizar los datos de la tabla según la página actual
   }
 
+  cambioPagina(paginaActual : number){
+    this.paginaActual = paginaActual
+  }
+
   actualizarDatosTabla() {//actualizar cada vez que se haga cambio de pagina en la tabla
     const indiceInicial = (this.paginaActual - 1) * this.elementosPorPagina;
     const indiceFinal = indiceInicial + this.elementosPorPagina;
@@ -36,6 +41,20 @@ export class ProblemasProductosComponent implements OnInit {
   }
 
   /* **********************************FILTRO************************************************************/
+  
+  filtrarTabla() {
+    if (this.filtroSeleccionado) {
+      this.dataPagina = this.data.filter(item => {
+        // Asegúrate de ajustar esta lógica según los campos que deseas filtrar
+        return (
+          item.tipo_producto.toLowerCase().includes(this.filtroSeleccionado.toLowerCase()) ||
+          item.motivo.toLowerCase().includes(this.filtroSeleccionado.toLowerCase())
+        );
+      });
+    } else {
+      this.dataPagina = [...this.dataCompleta];
+    }
+  }
   
  
   datosFiltrados : any[] = [];
@@ -87,6 +106,7 @@ export class ProblemasProductosComponent implements OnInit {
       this.filtrarPorAnio(fechaActual);
     }
   } 
+
   /* **********************************************FIN DEL FILTRO************************************************ */
   
   ngOnInit(){
