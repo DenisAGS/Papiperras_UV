@@ -1,0 +1,100 @@
+<p>volumen works!</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage</title>
+</head>
+<header>
+    <app-header-page title="Volumen De Ventas"></app-header-page>
+</header>
+<app-sidebar></app-sidebar>
+
+<body style="margin-top: 60px;">
+
+    <div class="card card-success" style="height: 200px;">
+        <div class="row align-items-center" style="margin: auto; font-size: 30px;">
+            <div class="col-md-6">
+                <p class="d-flex justify-content-center align-items-center" style="height: 100%;">Tu Categoría Mas
+                    Vendida es:</p>
+            </div>
+            <div class="col-md-6">
+                <p class="d-flex justify-content-center align-items-center"
+                    style="background-color: purple; color: white; height: 100%; border-radius: 25px; height: 80px; margin-bottom: 20px;">Electrónica</p>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="card card-success">
+        <div class="card-header" style="background: purple;">
+            <h3 class="card-title">Volumen Por Categoría</h3>
+            <div class="card-tools">
+                <div class="form-group mb-0">
+                    <select class="form-control" [(ngModel)]="selectedOption" (change)="handleDateChange()"
+                        style="height: 30px; font-size: 15px; border-radius: 10px; background-color: #D9D9D9;">
+                        <option value="dia">Ultima Semana</option>
+                        <option value="mes">Ultimo Mes</option>
+                        <option value="anio">Ultimo Año</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="chart">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+        <!-- /.card-footer -->
+    </div>
+
+
+    <div class="card card-success">
+        <div class="card-header" style="background: purple;">
+            <h3 class="card-title">Evolución del volumen</h3>
+            <div class="card-tools">
+                <div class="form-group mb-0">
+                    <select class="form-control" [(ngModel)]="selectedOption2" (change)="handleDateChange2()"
+                        style="height: 30px; font-size: 15px; border-radius: 10px; background-color: #D9D9D9;">
+                        <option value="dia">Ultima Semana</option>
+                        <option value="mes">Ultimo Mes</option>
+                        <option value="anio">Ultimo Año</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="chart">
+                <canvas id="barChart2"></canvas>
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <div class="card card-success">
+        <div class="card-header" style="background: purple;">
+            <h3 class="card-title">Desglose del volumen</h3>
+            <div class="card-tools">
+                <div class="form-group mb-0">
+                    <select class="form-control" [(ngModel)]="selectedOption3" (change)="handleDateChange3()"
+                        style="height: 30px; font-size: 15px; border-radius: 10px; background-color: #D9D9D9;">
+                        <option value="dia">Ultima Semana</option>
+                        <option value="mes">Ultimo Mes</option>
+                        <option value="anio">Ultimo Año</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="chart">
+                <canvas id="barChart3"></canvas>
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+
+
+</body>
+<!-- /.card -->
+
+</html>

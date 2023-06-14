@@ -1,0 +1,182 @@
+[
+    {
+      "image": "../assets/Images/productos/1.jpg",
+      "id": 1,
+      "fecha": "2023-05-10",
+      "nombre_cliente": "Juan Perez",
+      "numero": 12345,
+      "estado": "Pendiente",
+      "nombre_producto": "Licuadora Oster LM-100",
+      "precio": 39.99,
+      "numerounidades": 1,
+      "color": "Negro",
+      "envio": {
+        "estado_del_envio": "En tránsito",
+        "fecha_de_envio": "2023-05-11",
+        "hora_de_envio": "14:30",
+        "fecha_de_entrega": "2023-05-15"
+      }
+    },
+    {
+      "image": "../assets/Images/productos/2.jpg",
+      "id": 2,
+      "fecha": "2023-05-15",
+      "nombre_cliente": "Maria Gomez",
+      "numero": 54321,
+      "estado": "Entregado",
+      "nombre_producto": "Televisor Samsung UHD-55",
+      "precio": 499.99,
+      "numerounidades": 1,
+      "color": "Negro",
+      "envio": {
+        "estado_del_envio": "Entregado",
+        "fecha_de_envio": "2023-05-16",
+        "hora_de_envio": "10:15",
+        "fecha_de_entrega": "2023-05-18"
+      }
+    },
+    {
+      "image": "../assets/Images/productos/3.jpg",
+      "id": 3,
+      "fecha": "2023-05-20",
+      "nombre_cliente": "Carlos Ramirez",
+      "numero": 98765,
+      "estado": "Cancelado",
+      "nombre_producto": "Horno eléctrico Whirlpool WHE-500",
+      "precio": 129.99,
+      "numerounidades": 1,
+      "color": "Plata",
+      "envio": {
+        "estado_del_envio": "Cancelado",
+        "fecha_de_envio": "",
+        "hora_de_envio": "",
+        "fecha_de_entrega": ""
+      }
+    },
+    {
+      "image": "../assets/Images/productos/4.jpg",
+      "id": 4,
+      "fecha": "2023-05-25",
+      "nombre_cliente": "Laura Torres",
+      "numero": 24680,
+      "estado": "Pendiente",
+      "nombre_producto": "Aspiradora Dyson V11",
+      "precio": 89.99,
+      "numerounidades": 1,
+      "color": "Rojo",
+      "envio": {
+        "estado_del_envio": "Pendiente",
+        "fecha_de_envio": "",
+        "hora_de_envio": "",
+        "fecha_de_entrega": ""
+      }
+    },
+    {
+      "image": "../assets/Images/productos/5.jpg",
+      "id": 5,
+      "fecha": "2023-06-01",
+      "nombre_cliente": "Ana Lopez",
+      "numero": 13579,
+      "estado": "Entregado",
+      "nombre_producto": "Refrigerador LG Inverter Linear",
+      "precio": 799.99,
+      "numerounidades": 1,
+      "color": "Acero inoxidable",
+      "envio": {
+        "estado_del_envio": "Entregado",
+        "fecha_de_envio": "2023-06-02",
+        "hora_de_envio": "09:45",
+        "fecha_de_entrega": "2023-06-04"
+      }
+    },
+    {
+      "image": "../assets/Images/productos/6.jpg",
+      "id": 6,
+      "fecha": "2023-06-05",
+      "nombre_cliente": "Pedro Sanchez",
+      "numero": 97531,
+      "estado": "Pendiente",
+      "nombre_producto": "Lavadora Whirlpool Carga Frontal",
+      "precio": 399.99,
+      "numerounidades": 1,
+      "color": "Blanco",
+      "envio": {
+        "estado_del_envio": "Pendiente",
+        "fecha_de_envio": "",
+        "hora_de_envio": "",
+        "fecha_de_entrega": ""
+      }
+    },
+    {
+      "image": "../assets/Images/productos/7.jpg",
+      "id": 7,
+      "fecha": "2023-06-10",
+      "nombre_cliente": "Sofia Martinez",
+      "numero": 86420,
+      "estado": "Entregado",
+      "nombre_producto": "Cafetera Nespresso Vertuo",
+      "precio": 49.99,
+      "numerounidades": 1,
+      "color": "Negro",
+      "envio": {
+        "estado_del_envio": "Entregado",
+        "fecha_de_envio": "2023-06-11",
+        "hora_de_envio": "11:30",
+        "fecha_de_entrega": "2023-06-13"
+      }
+    },
+    {
+      "image": "../assets/Images/productos/8.jpg",
+      "id": 8,
+      "fecha": "2023-06-15",
+      "nombre_cliente": "Luis Hernandez",
+      "numero": 20394,
+      "estado": "Pendiente",
+      "nombre_producto": "Microondas Panasonic NN-SN686S",
+      "precio": 79.99,
+      "numerounidades": 1,
+      "color": "Blanco",
+      "envio": {
+        "estado_del_envio": "Pendiente",
+        "fecha_de_envio": "",
+        "hora_de_envio": "",
+        "fecha_de_entrega": ""
+      }
+    },
+    {
+      "image": "../assets/Images/productos/9.jpg",
+      "id": 9,
+      "fecha": "2023-06-20",
+      "nombre_cliente": "Gabriela Castro",
+      "numero": 71928,
+      "estado": "Entregado",
+      "nombre_producto": "Secadora Samsung DV-45H7000EW",
+      "precio": 549.99,
+      "numerounidades": 1,
+      "color": "Blanco",
+      "envio": {
+        "estado_del_envio": "Entregado",
+        "fecha_de_envio": "2023-06-21",
+        "hora_de_envio": "15:20",
+        "fecha_de_entrega": "2023-06-23"
+      }
+    },
+    {
+      "image": "../assets/Images/productos/10.jpg",
+      "id": 10,
+      "fecha": "2023-06-25",
+      "nombre_cliente": "Roberto Fernandez",
+      "numero": 48652,
+      "estado": "Pendiente",
+      "nombre_producto": "Robot de cocina Moulinex HF800A",
+      "precio": 249.99,
+      "numerounidades": 1,
+      "color": "Gris",
+      "envio": {
+        "estado_del_envio": "Pendiente",
+        "fecha_de_envio": "",
+        "hora_de_envio": "",
+        "fecha_de_entrega": ""
+      }
+    }
+  ]

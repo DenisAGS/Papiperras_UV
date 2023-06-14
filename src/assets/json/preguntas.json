@@ -1,0 +1,82 @@
+[
+    {
+    "Fecha": "2023-06-10",
+    "Tipo_producto": "Cafetera Nespresso Vertuo",
+    "Image": "../assets/Images/productos/7.jpg",
+    "Pregunta": "¿Qué tipo de bebidas puede preparar esta cafetera?",
+    "Nombre": "Sofia Martinez",
+    "Estado": "🔴"
+    },
+    {
+    "Fecha": "2023-05-15",
+    "Tipo_producto": "Televisor Samsung UHD-55",
+    "Image": "../assets/Images/productos/2.jpg",
+    "Pregunta": "¿Cuáles son las características principales de este televisor?",
+    "Nombre": "Maria Gomez",
+    "Estado": "🟢"
+    },
+    {
+    "Fecha": "2023-06-05",
+    "Tipo_producto": "Lavadora Whirlpool Carga Frontal",
+    "Image": "../assets/Images/productos/6.jpg",
+    "Pregunta": "¿Cuál es la capacidad de carga de esta lavadora?",
+    "Nombre": "Pedro Sanchez",
+    "Estado": "🔴"
+    },
+    {
+    "Fecha": "2023-06-20",
+    "Tipo_producto": "Secadora Samsung DV-45H7000EW",
+    "Image": "../assets/Images/productos/9.jpg",
+    "Pregunta": "¿Qué programas de secado tiene esta secadora?",
+    "Nombre": "Gabriela Castro",
+    "Estado": "🟢"
+    },
+    {
+    "Fecha": "2023-06-15",
+    "Tipo_producto": "Microondas Panasonic NN-SN686S",
+    "Image": "../assets/Images/productos/8.jpg",
+    "Pregunta": "¿Cuáles son las funciones especiales de este microondas?",
+    "Nombre": "Luis Hernandez",
+    "Estado": "🔴"
+    },
+    {
+    "Fecha": "2023-06-01",
+    "Tipo_producto": "Refrigerador LG Inverter Linear",
+    "Image": "../assets/Images/productos/5.jpg",
+    "Pregunta": "¿Cuál es la capacidad de almacenamiento de este refrigerador?",
+    "Nombre": "Ana Lopez",
+    "Estado": "🟢"
+    },
+    {
+    "Fecha": "2023-06-25",
+    "Tipo_producto": "Robot de cocina Moulinex HF800A",
+    "Image": "../assets/Images/productos/10.jpg",
+    "Pregunta": "¿Qué accesorios vienen incluidos con este robot de cocina?",
+    "Nombre": "Roberto Fernandez",
+    "Estado": "🔴"
+    },
+    {
+    "Fecha": "2023-05-25",
+    "Tipo_producto": "Aspiradora Dyson V11",
+    "Image": "../assets/Images/productos/4.jpg",
+    "Pregunta": "¿Cuál es la duración de la batería de esta aspiradora?",
+    "Nombre": "Laura Torres",
+    "Estado": "🟢"
+    },
+    {
+    "Fecha": "2023-05-10",
+    "Tipo_producto": "Licuadora Oster LM-100",
+    "Image": "../assets/Images/productos/1.jpg",
+    "Pregunta": "¿Cuál es la potencia de esta licuadora?",
+    "Nombre": "Juan Perez",
+    "Estado": "🔴"
+    },
+    {
+    "Fecha": "2023-06-10",
+    "Tipo_producto": "Horno eléctrico Whirlpool WHE-500",
+    "Image": "../assets/Images/productos/3.jpg",
+    "Pregunta": "¿Cuántas bandejas tiene este horno eléctrico?",
+    "Nombre": "Carlos Ramirez",
+    "Estado": "🟢"
+    }
+    ]
