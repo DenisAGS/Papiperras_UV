@@ -16,7 +16,7 @@
         <div class="busqueda">
             <div class="filtro">
                 <form action="problemas-productos.component.ts">
-                    <select name="filtro" id="lang">
+                    <select (ngModel)="filtroSeleccionado">
                         <option value="" (click)="filtrar('dia')">ordenar por</option>
                         <option value="dia" (click)="filtrar('semana')">Día</option>
                         <option value="semana" (click)="filtrar('mes')">Semana</option>
@@ -26,7 +26,8 @@
                 </form>
               </div>
 
-              <input class="buscar" type="text" name="search" (ngModel)="searchText" autocomplete="on" placeholder=" BUSCAR  ">
+              <input class="buscar" type="text" name="search" (ngModel)="searchText" (keyup)="filtrarTabla()" autocomplete="on" placeholder=" BUSCAR  ">
+
         </div>
         <div class="contenedor">
             <table class="tabla">
@@ -41,7 +42,7 @@
                 <tbody>
                      <tr *ngFor="let item of data | paginate: {itemsPerPage: elementosPorPagina, currentPage: paginaActual} | filter: searchText">
                         <td>{{ item.fecha }}</td>
-                        <td>{{ item.tipo_producto }}</td>
+                        <td><img [src]="item.imagePath" alt="imagen">{{ item.tipo_producto }}</td>
                         <td>{{ item.motivo }}</td>
                         <td>{{item.estado}}</td>
                     </tr>
