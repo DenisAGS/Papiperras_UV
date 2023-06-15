@@ -15,15 +15,13 @@
 
     }
     
-    div.btn,button.btn{
+    .btn{
         background-color: #9B109B;
-        color: #eee
+        color: #eee;
+        border-radius: 30px;
     }
-    
-    div.btn:hover, button.btn:hover{
-        background-color: #9B109B;
-    }
-    
+
+
     p{
     font-family: 'raleway';
   font-style: normal;

@@ -73,16 +73,14 @@ input{
   margin-top: 10%;
 }
 
-a{
-  line-height: 10%;
+p{
   position: relative;
   color:#9B109B;
-  text-decoration: none;
   font-family: 'raleway';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 30px;
+cursor: pointer;
 }
 
 .BtnIniciar {
