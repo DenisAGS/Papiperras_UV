@@ -112,7 +112,7 @@ const routes: Routes = [
     component: Publicidad1Component
   },
   {
-    path: 'editar_productos',
+    path: 'editar-productos',
     component: EditarProductosComponent
   }
 ];
