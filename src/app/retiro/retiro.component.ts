@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CargosService } from '../services/cargos.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-retiro',
@@ -11,7 +12,7 @@ export class RetiroComponent implements OnInit {
   ingresos: any[] = [];
   movimientos: any[] = [];
   saldo: number| undefined;
-  constructor(private cargosService: CargosService) { }
+  constructor(private cargosService: CargosService, private router: Router) { }
 
   ngOnInit(): void {
     this.cargosService.getCargos().subscribe(datos => {
@@ -29,5 +30,8 @@ export class RetiroComponent implements OnInit {
 
       console.log(this.saldo);
     });
+  }
+  redirectToSaldos(): void {
+    this.router.navigate(['/saldos']); // Reemplaza '/saldos' por la ruta correspondiente al componente de saldos
   }
 }

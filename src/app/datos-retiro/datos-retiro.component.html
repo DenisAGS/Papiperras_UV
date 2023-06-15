@@ -10,7 +10,7 @@
 </header>
 <app-sidebar></app-sidebar>
 
-<body style="margin-top: 60px;">
+<body style="padding-top: 60px;">
     <!-- Content Wrapper. Contains page content -->
     <div id="principal">
         <!-- Main content -->
@@ -18,48 +18,51 @@
             <div class="container-fluid">
                 <div style="background-color: antiquewhite; border-radius: 25px;">
                     <div class="box box-default">
-                        <label style="padding-left: 60px; padding-top: 20px; font-size: 20px;">Ingresa el monto a retirar:</label>
+                        <label style="padding-left: 60px; padding-top: 20px; font-size: 20px;">Ingresa el monto a
+                            retirar:</label>
                         <div class="box-body">
                             <div class="form-group">
                                 <div class="input-group">
-                                    <input type="number" class="form-control" id ="numero" value="0" min="0" max="100">
+                                    <input type="number" class="form-control" id="numero" [(ngModel)]="numero" min="0"
+                                        [max]="cuenta" (ngModelChange)="actualizarDisponible()">
                                 </div>
-                                <p style="margin-top: 5px;">Disponible: 100</p>
+                                <p style="margin-top: 5px;">Disponible: $ {{ disponible }}</p>
                             </div>
                         </div>
                     </div>
                     <div>
                         <label style="padding-left: 60px; font-size: 20px;">Datos del beneficiario:</label>
                     </div>
-                    <div id ="datosB">                        
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-12 col-sm-4">
-                                    <p style="margin-top: 15px;">Nombre del beneficiario: </p>
-                                </div>
-                                <div class="col-12 col-sm-8">
-                                    <input type="text" class="form-control" placeholder="Nombre completo">
-                                </div>
+                    <div id="datosB">
+                        <form [formGroup]="beneficiarioForm">
+                          <div class="row">
+                            <div class="col-12 col-sm-4">
+                              <p style="margin-top: 15px;">Nombre del beneficiario: </p>
                             </div>
-                            <div class="row" style="padding-bottom: 20px;">
-                                <div class="col-12 col-sm-4">
-                                    <p style="margin-top: 15px;">Numero de Cuenta CLABE: </p>
-                                </div>
-                                <div class="col-12 col-sm-8">
-                                    <input type="text" class="form-control" placeholder="Numero de cuenta">
-                                </div>
-                            </div>    
+                            <div class="col-12 col-sm-8">
+                              <input type="text" class="form-control" placeholder="Nombre completo" formControlName="nombreBeneficiario">
+                            </div>
+                          </div>
+                          <div class="row" style="padding-bottom: 20px;">
+                            <div class="col-12 col-sm-4">
+                              <p style="margin-top: 15px;">Número de Cuenta CLABE: </p>
+                            </div>
+                            <div class="col-12 col-sm-8">
+                              <input type="text" class="form-control" placeholder="Número de cuenta" formControlName="numeroCuenta">
+                            </div>
+                          </div>
                         </form>
-                    </div>
-                    <div class="row " style="padding-top: 40px; padding-bottom: 40px; ">
+                      </div>
+                      <div class="row" style="padding-top: 40px; padding-bottom: 40px;">
                         <div class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
-                            <button type="button" routerLink="/retiro" id="btnCancelar" class="btn btn-default btn-block">Cancelar</button>
+                          <button type="button" routerLink="/retiro" id="btnCancelar" class="btn btn-default btn-block">Cancelar</button>
                         </div>
                         <div class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
-                            <button type="submit" id="btnAceptar"class="btn btn-primary btn-block">Confirmar</button>
+                          <button type="submit" id="btnAceptar" class="btn btn-primary btn-block" (click)="mostrarConfirmacion()"
+                            [disabled]="beneficiarioForm.invalid">Confirmar</button>
                         </div>
-                    </div>
-                </div>
+                      </div>
+                </div>                      
             </div>
         </section>
     </div>

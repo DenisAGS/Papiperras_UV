@@ -9,7 +9,7 @@
 </header>
 <app-sidebar></app-sidebar>
 
-<body style="margin-top: 60px;">
+<body style="padding-top: 60px;">
     <!-- Content Wrapper. Contains page content -->
     <div id="principal">
         <!-- Main content -->
@@ -41,10 +41,10 @@
                         <div>
                             <div class="card direct-chat direct-chat-primary" style="background: rgba(255, 201, 148, 0.2); border-radius: 25px;">
                               <div class="card-header">
-                                <h3 class="card-title">Movimientos</h3>
-                              </div>
+                                <h3 class="card-title">Ultimos Movimientos</h3>
+                              </div>                              
                               <div class="card-body">
-                                <div class="direct-chat-messages" style="height: 70vh;">
+                                <div class="direct-chat-messages" style="height: 65vh;">
                                   <div *ngFor="let movimiento of movimientos" class="row m-2" [ngStyle]="{ 'background': movimiento.tipo === 'retiro' ? '#79017E' : '#33CFFF' }" style="border-radius: 20px; color: white;">
                                     <div class="col-3 col-md-2 d-flex align-items-center justify-content-center">
                                       <img [src]="movimiento.tipo === 'retiro' ? '../assets/Images/iRetira.png' : '../assets/Images/iRecibo.png'" alt="Imagen del producto" style="height: 70px; width: 70px; border-radius: 15px;">
@@ -59,6 +59,9 @@
                                   </div>
                                 </div>
                               </div>
+                              <div class="direct-chat-footer" style="padding: 10px; text-align: right;">
+                                <a class="ver-movimientos" (click)="redirectToSaldos()">Ver todos los movimientos</a>
+                              </div>                              
                             </div>
                           </div>
                     </div>                          

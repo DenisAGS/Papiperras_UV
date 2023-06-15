@@ -9,7 +9,7 @@
 </header>
 <app-sidebar></app-sidebar>
 
-<body style="margin-top: 60px;">
+<body style="padding-top: 60px;">
   <!-- Content Wrapper. Contains page content -->
   <div id="principal">
     <!-- Contenido de tu página -->
@@ -25,25 +25,25 @@
           <div class="row invoice-info">
             <div class="col-sm-2 invoice-col">
               <i class="far fa-clock" style="font-size: 35px;"></i>
-              <strong> ÚLTIMA SESIÓN</strong><br>
+              <strong>ÚLTIMA SESIÓN</strong><br>
               <p class="m-4">
-                Tu ultima sesion fue hace 2 horas
+                Tu última sesión fue hace {{ ultimaSesion }}
               </p>
             </div>
-            <!-- /.col -->
+            
             <div class="col-sm-2 invoice-col">
               <i class="fas fa-bullhorn" style="font-size: 35px;"></i>
-              <strong> RECLAMOS </strong><br>
+              <strong>RECLAMOS</strong><br>
               <p class="m-4">
-                Has tenido 2 reclamos en el último mes
+                Has tenido {{ reclamos }} reclamos en el último mes
               </p>
             </div>
-            <!-- /.col -->
+            
             <div class="col-sm-2 invoice-col">
               <i class="fas fa-shopping-cart" style="font-size: 35px;"></i>
-              <strong> VENTAS </strong><br>
+              <strong>VENTAS</strong><br>
               <p class="m-4">
-                Has realizado 20 ventas este mes
+                Has realizado {{ ventas }} ventas este mes
               </p>
             </div>
             <div class="col-sm-6 invoice-col d-flex flex-column">
@@ -60,7 +60,7 @@
                 </ul>
               </div>
               <div style="text-align: end;">
-                <p>Ver Detalle</p>
+                <p (click)="redirectToOpinion()" style="cursor: pointer;">Ver Detalle</p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@
 
             <div class="card direct-chat direct-chat-primary">
               <div class="card-header">
-                <h3 class="card-title">Mensajes sin responder</h3>
+                <h3 class="card-title" (click)="redirectToPreguntas()">Mensajes sin responder</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -106,7 +106,7 @@
 
             <div class="card direct-chat direct-chat-primary">
               <div class="card-header">
-                <h3 class="card-title">Ventas por preparar</h3>
+                <h3 class="card-title" (click)="redirectToVentas()">Ventas por Preparar</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
