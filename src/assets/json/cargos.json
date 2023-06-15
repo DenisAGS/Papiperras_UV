@@ -1,0 +1,479 @@
+{
+  "disponible": [
+    {
+      "saldo": 50000
+    }
+  ],
+  "retiro": [
+    {
+      "monto": 5000,
+      "mes": "junio",
+      "fecha_hora": "2023-06-02 14:30:00",
+      "beneficiario": "Juan Pérez",
+      "cuenta_clabe": "012345678901234567",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3000,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-31 10:15:00",
+      "beneficiario": "Ana Gómez",
+      "cuenta_clabe": "987654321098765432",
+      "estado": "Completado"
+    },
+    {
+      "monto": 8000,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-30 09:45:00",
+      "beneficiario": "Pedro López",
+      "cuenta_clabe": "456789012345678901",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2000,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-28 16:20:00",
+      "beneficiario": "María Torres",
+      "cuenta_clabe": "789012345678901234",
+      "estado": "Completado"
+    },
+    {
+      "monto": 7000,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-25 11:30:00",
+      "beneficiario": "Luisa Ramírez",
+      "cuenta_clabe": "234567890123456789",
+      "estado": "Completado"
+    },
+    {
+      "monto": 4000,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-22 14:55:00",
+      "beneficiario": "Jorge García",
+      "cuenta_clabe": "901234567890123456",
+      "estado": "Completado"
+    },
+    {
+      "monto": 6000,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-20 08:45:00",
+      "beneficiario": "Laura Herrera",
+      "cuenta_clabe": "345678901234567890",
+      "estado": "Completado"
+    },
+    {
+      "monto": 1500,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-18 12:10:00",
+      "beneficiario": "Roberto Castro",
+      "cuenta_clabe": "678901234567890123",
+      "estado": "Completado"
+    },
+    {
+      "monto": 9000,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-16 15:20:00",
+      "beneficiario": "Carolina Navarro",
+      "cuenta_clabe": "123456789012345678",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2500,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-14 09:00:00",
+      "beneficiario": "Fernando Sánchez",
+      "cuenta_clabe": "890123456789012345",
+      "estado": "Completado"
+    },
+    {
+      "monto": 5500,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-12 13:45:00",
+      "beneficiario": "Daniela Guzmán",
+      "cuenta_clabe": "567890123456789012",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3500,
+      "mes": "abril",
+      "fecha_hora": "2023-04-30 16:30:00",
+      "beneficiario": "Gabriel Morales",
+      "cuenta_clabe": "345678901234567890",
+      "estado": "Completado"
+    },
+    {
+      "monto": 5000,
+      "mes": "enero",
+      "fecha_hora": "2023-01-02 14:30:00",
+      "beneficiario": "Juan Pérez",
+      "cuenta_clabe": "012345678901234567",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3000,
+      "mes": "enero",
+      "fecha_hora": "2023-01-05 10:15:00",
+      "beneficiario": "Ana Gómez",
+      "cuenta_clabe": "987654321098765432",
+      "estado": "Completado"
+    },
+    {
+      "monto": 8000,
+      "mes": "febrero",
+      "fecha_hora": "2023-02-10 09:45:00",
+      "beneficiario": "Pedro López",
+      "cuenta_clabe": "456789012345678901",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2000,
+      "mes": "febrero",
+      "fecha_hora": "2023-02-15 16:20:00",
+      "beneficiario": "María Torres",
+      "cuenta_clabe": "789012345678901234",
+      "estado": "Completado"
+    },
+    {
+      "monto": 7000,
+      "mes": "febrero",
+      "fecha_hora": "2023-02-20 11:30:00",
+      "beneficiario": "Luisa Ramírez",
+      "cuenta_clabe": "234567890123456789",
+      "estado": "Completado"
+    },
+    {
+      "monto": 4000,
+      "mes": "marzo",
+      "fecha_hora": "2023-03-01 08:45:00",
+      "beneficiario": "Jorge García",
+      "cuenta_clabe": "901234567890123456",
+      "estado": "Completado"
+    },
+    {
+      "monto": 6000,
+      "mes": "marzo",
+      "fecha_hora": "2023-03-05 12:10:00",
+      "beneficiario": "Laura Herrera",
+      "cuenta_clabe": "345678901234567890",
+      "estado": "Completado"
+    },
+    {
+      "monto": 1500,
+      "mes": "abril",
+      "fecha_hora": "2023-04-10 15:20:00",
+      "beneficiario": "Roberto Castro",
+      "cuenta_clabe": "678901234567890123",
+      "estado": "Completado"
+    },
+    {
+      "monto": 9000,
+      "mes": "abril",
+      "fecha_hora": "2023-04-15 09:00:00",
+      "beneficiario": "Carolina Navarro",
+      "cuenta_clabe": "123456789012345678",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2500,
+      "mes": "abril",
+      "fecha_hora": "2023-04-20 13:45:00",
+      "beneficiario": "Fernando Sánchez",
+      "cuenta_clabe": "890123456789012345",
+      "estado": "Completado"
+    },
+    {
+      "monto": 5500,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-02 16:30:00",
+      "beneficiario": "Daniela Guzmán",
+      "cuenta_clabe": "567890123456789012",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3500,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-05 10:45:00",
+      "beneficiario": "Gabriel Morales",
+      "cuenta_clabe": "345678901234567890",
+      "estado": "Completado"
+    },
+    {
+      "monto": 5900,
+      "mes": "mayo",
+      "fecha_hora": "2023-05-10 11:20:00",
+      "beneficiario": "Emilio Guzmán",
+      "cuenta_clabe": "901234567890123456",
+      "estado": "Completado"
+    },
+    {
+      "monto": 4100,
+      "mes": "junio",
+      "fecha_hora": "2023-06-15 14:45:00",
+      "beneficiario": "María López",
+      "cuenta_clabe": "234567890123456789",
+      "estado": "Completado"
+    },
+    {
+      "monto": 7500,
+      "mes": "junio",
+      "fecha_hora": "2023-06-20 08:30:00",
+      "beneficiario": "Carlos Torres",
+      "cuenta_clabe": "678901234567890123",
+      "estado": "Completado"
+    },
+    {
+      "monto": 1800,
+      "mes": "julio",
+      "fecha_hora": "2023-07-01 12:45:00",
+      "beneficiario": "Patricia Ruiz",
+      "cuenta_clabe": "123456789012345678",
+      "estado": "Completado"
+    },
+    {
+      "monto": 6700,
+      "mes": "julio",
+      "fecha_hora": "2023-07-05 15:20:00",
+      "beneficiario": "Eduardo Soto",
+      "cuenta_clabe": "890123456789012345",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3900,
+      "mes": "julio",
+      "fecha_hora": "2023-07-10 09:30:00",
+      "beneficiario": "Silvia Morales",
+      "cuenta_clabe": "567890123456789012",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2200,
+      "mes": "agosto",
+      "fecha_hora": "2023-08-15 16:15:00",
+      "beneficiario": "David González",
+      "cuenta_clabe": "345678901234567890",
+      "estado": "Completado"
+    },
+    {
+      "monto": 5900,
+      "mes": "agosto",
+      "fecha_hora": "2023-08-20 10:45:00",
+      "beneficiario": "María Castillo",
+      "cuenta_clabe": "901234567890123456",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3400,
+      "mes": "septiembre",
+      "fecha_hora": "2023-09-01 09:00:00",
+      "beneficiario": "Javier Sánchez",
+      "cuenta_clabe": "234567890123456789",
+      "estado": "Completado"
+    },
+    {
+      "monto": 4800,
+      "mes": "septiembre",
+      "fecha_hora": "2023-09-05 13:30:00",
+      "beneficiario": "Ana Torres",
+      "cuenta_clabe": "678901234567890123",
+      "estado": "Completado"
+    },
+    {
+      "monto": 1200,
+      "mes": "septiembre",
+      "fecha_hora": "2023-09-10 11:45:00",
+      "beneficiario": "Pedro García",
+      "cuenta_clabe": "123456789012345678",
+      "estado": "Completado"
+    },
+    {
+      "monto": 5100,
+      "mes": "octubre",
+      "fecha_hora": "2023-10-15 15:00:00",
+      "beneficiario": "Laura Jiménez",
+      "cuenta_clabe": "890123456789012345",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2900,
+      "mes": "octubre",
+      "fecha_hora": "2023-10-20 09:30:00",
+      "beneficiario": "Fernando López",
+      "cuenta_clabe": "567890123456789012",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3800,
+      "mes": "noviembre",
+      "fecha_hora": "2023-11-01 14:15:00",
+      "beneficiario": "María Gómez",
+      "cuenta_clabe": "345678901234567890",
+      "estado": "Completado"
+    },
+    {
+      "monto": 4200,
+      "mes": "noviembre",
+      "fecha_hora": "2023-11-05 10:45:00",
+      "beneficiario": "Gabriel Morales",
+      "cuenta_clabe": "901234567890123456",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2600,
+      "mes": "noviembre",
+      "fecha_hora": "2023-11-10 11:20:00",
+      "beneficiario": "Emilio Guzmán",
+      "cuenta_clabe": "234567890123456789",
+      "estado": "Completado"
+    },
+    {
+      "monto": 1900,
+      "mes": "diciembre",
+      "fecha_hora": "2023-12-15 14:45:00",
+      "beneficiario": "María López",
+      "cuenta_clabe": "678901234567890123",
+      "estado": "Completado"
+    },
+    {
+      "monto": 4700,
+      "mes": "diciembre",
+      "fecha_hora": "2023-12-20 08:30:00",
+      "beneficiario": "Carlos Torres",
+      "cuenta_clabe": "123456789012345678",
+      "estado": "Completado"
+    }
+  ],
+  "ingreso": [
+    {
+      "monto": 10000,
+      "mes": "junio",
+      "fecha": "2023-06-01",
+      "producto": "Producto A",
+      "metodo_pago": "Tarjeta de crédito",
+      "fecha_envio": "2023-06-02",
+      "fecha_entrega": "2023-06-05",
+      "cliente": "María Rodríguez",
+      "estado": "Pendiente"
+    },
+    {
+      "monto": 5000,
+      "mes": "junio",
+      "fecha": "2023-06-02",
+      "producto": "Producto B",
+      "metodo_pago": "Transferencia bancaria",
+      "fecha_envio": "2023-06-03",
+      "fecha_entrega": "2023-06-07",
+      "cliente": "Juan González",
+      "estado": "Pendiente"
+    },
+    {
+      "monto": 7000,
+      "mes": "mayo",
+      "fecha": "2023-05-30",
+      "producto": "Producto C",
+      "metodo_pago": "Tarjeta de débito",
+      "fecha_envio": "2023-05-31",
+      "fecha_entrega": "2023-06-03",
+      "cliente": "Pedro Ramírez",
+      "estado": "Completado"
+    },
+    {
+      "monto": 4000,
+      "mes": "mayo",
+      "fecha": "2023-05-28",
+      "producto": "Producto D",
+      "metodo_pago": "Efectivo",
+      "fecha_envio": "2023-05-29",
+      "fecha_entrega": "2023-06-01",
+      "cliente": "Ana López",
+      "estado": "Completado"
+    },
+    {
+      "monto": 6000,
+      "mes": "mayo",
+      "fecha": "2023-05-25",
+      "producto": "Producto E",
+      "metodo_pago": "PayPal",
+      "fecha_envio": "2023-05-26",
+      "fecha_entrega": "2023-05-30",
+      "cliente": "Luis García",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3000,
+      "mes": "mayo",
+      "fecha": "2023-05-22",
+      "producto": "Producto F",
+      "metodo_pago": "Tarjeta de crédito",
+      "fecha_envio": "2023-05-23",
+      "fecha_entrega": "2023-05-27",
+      "cliente": "María Torres",
+      "estado": "Completado"
+    },
+    {
+      "monto": 5000,
+      "mes": "mayo",
+      "fecha": "2023-05-20",
+      "producto": "Producto G",
+      "metodo_pago": "Transferencia bancaria",
+      "fecha_envio": "2023-05-21",
+      "fecha_entrega": "2023-05-25",
+      "cliente": "Javier Rodríguez",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2000,
+      "mes": "mayo",
+      "fecha": "2023-05-18",
+      "producto": "Producto H",
+      "metodo_pago": "Efectivo",
+      "fecha_envio": "2023-05-19",
+      "fecha_entrega": "2023-05-23",
+      "cliente": "Laura Pérez",
+      "estado": "Completado"
+    },
+    {
+      "monto": 9000,
+      "mes": "mayo",
+      "fecha": "2023-05-16",
+      "producto": "Producto I",
+      "metodo_pago": "Tarjeta de débito",
+      "fecha_envio": "2023-05-17",
+      "fecha_entrega": "2023-05-21",
+      "cliente": "Roberto Morales",
+      "estado": "Completado"
+    },
+    {
+      "monto": 2500,
+      "mes": "mayo",
+      "fecha": "2023-05-14",
+      "producto": "Producto J",
+      "metodo_pago": "PayPal",
+      "fecha_envio": "2023-05-15",
+      "fecha_entrega": "2023-05-19",
+      "cliente": "Carolina Gómez",
+      "estado": "Completado"
+    },
+    {
+      "monto": 5500,
+      "mes": "mayo",
+      "fecha": "2023-05-12",
+      "producto": "Producto K",
+      "metodo_pago": "Tarjeta de crédito",
+      "fecha_envio": "2023-05-13",
+      "fecha_entrega": "2023-05-17",
+      "cliente": "Fernando Torres",
+      "estado": "Completado"
+    },
+    {
+      "monto": 3500,
+      "mes": "abril",
+      "fecha": "2023-04-30",
+      "producto": "Producto L",
+      "metodo_pago": "Transferencia bancaria",
+      "fecha_envio": "2023-05-01",
+      "fecha_entrega": "2023-05-05",
+      "cliente": "Gabriela Ramírez",
+      "estado": "Completado"
+    }
+  ]
+}

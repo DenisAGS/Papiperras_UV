@@ -15,42 +15,76 @@ import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.compo
 import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
 import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component';
 import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
+
 import { ProblemasProductosComponent } from './problemas-productos/problemas-productos.component';
 import { PreguntasClientesComponent } from './preguntas-clientes/preguntas-clientes.component';
 import { RespuestasPreguntasComponent } from './respuestas-preguntas/respuestas-preguntas.component';
 import { ReclamosClientesComponent } from './reclamos-clientes/reclamos-clientes.component';
 import { DetallesComponent } from './detalles/detalles.component';
 
-const routes: Routes = [  
+import { HomepageComponent } from './homepage/homepage.component';
+import { RetiroComponent } from './retiro/retiro.component';
+import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
+import { SaldosComponent } from './saldos/saldos.component';
+import { CalendarioComponent } from './calendario/calendario.component';
+import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { VolumenComponent } from './volumen/volumen.component';
+
+
+const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: PrincipalComponent,
   },
   {
-    path:'about-us',
+    path: 'home',
+    component: HomepageComponent,
+  },
+  {
+    path: 'estadistica',
+    component: EstadisticaComponent,
+  },
+  {
+    path: 'volumen',
+    component: VolumenComponent
+  },
+  {
+    path: 'retiro',
+    component: RetiroComponent,
+  },
+  {
+    path: 'datos-retiro',
+    component: DatosRetiroComponent,
+  },
+  {
+    path: 'about-us',
     component: AboutUsComponent
   },
   {
-    path:'devolucion',
+    path: 'saldos',
+    component: SaldosComponent
+  },
+  {
+    path: 'devolucion',
     component: DevolucionComponent
   },
   {
-    path:'inventario',
+    path: 'inventario',
     component: InventarioComponent
   },
   {
-    path:'tutorial',
+    path: 'tutorial',
     component: TutorialComponent
   },
   {
-    path:'preguntas-frecuentes',
+    path: 'preguntas-frecuentes',
     component: PreguntasFrecuentesComponent
   },
   {
-    path:'header-page',
+    path: 'header-page',
     component: HeaderPageComponent
   },
-  {  
+  {
     path: 'publicidad2',
     component: Publicidad2Component
   },
@@ -59,11 +93,15 @@ const routes: Routes = [
     component: PubOfertasComponent
   },
   {
+    path: 'calendario',
+    component: CalendarioComponent
+  },
+  {
     path: 'publicar-productos',
     component: PublicarPComponent
   },
   {
-    path:'reclamos-formulario',
+    path: 'reclamos-formulario',
     component: ReclamosFormularioComponent
   },
   {
@@ -86,6 +124,7 @@ const routes: Routes = [
     path:'detalles',
     component: DetallesComponent
   }
+
 ];
 
 @NgModule({

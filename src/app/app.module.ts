@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 
 /*import { MatIconModule} from '@angular/material/icon';*/
 
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,7 +27,22 @@ import { PreguntasClientesComponent } from './preguntas-clientes/preguntas-clien
 import { RespuestasPreguntasComponent } from './respuestas-preguntas/respuestas-preguntas.component';
 import { ReclamosClientesComponent } from './reclamos-clientes/reclamos-clientes.component';
 import { DetallesComponent } from './detalles/detalles.component';
-
+import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { RetiroComponent } from './retiro/retiro.component';
+import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SaldosComponent } from './saldos/saldos.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { CalendarioComponent } from './calendario/calendario.component';
+import { NgChartsModule } from 'ng2-charts';
+import { EstadisticaComponent } from './estadistica/estadistica.component';
+import { VolumenComponent } from './volumen/volumen.component';
+import { ConsejosComponent } from './consejos/consejos.component';
+import { FooterPageComponent } from './footer-page/footer-page.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +63,16 @@ import { DetallesComponent } from './detalles/detalles.component';
     RespuestasPreguntasComponent,
     ReclamosClientesComponent,
     DetallesComponent
+    ReclamosFormularioComponent,
+    HomepageComponent,
+    RetiroComponent,
+    DatosRetiroComponent,
+    FooterPageComponent,
+    EstadisticaComponent,
+    ConsejosComponent,
+    CalendarioComponent,
+    VolumenComponent,
+    SaldosComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +81,13 @@ import { DetallesComponent } from './detalles/detalles.component';
     HttpClientModule,
     NgxPaginationModule,
     Ng2SearchPipeModule,
+    NgChartsModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    FullCalendarModule,
+    NgChartsModule,
     FormsModule
   ],
   providers: [],
