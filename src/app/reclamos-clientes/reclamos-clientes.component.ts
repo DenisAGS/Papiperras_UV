@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ReclamosServices } from '../services/reclamos.services';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-reclamos-clientes',
@@ -10,10 +11,9 @@ import { ReclamosServices } from '../services/reclamos.services';
 export class ReclamosClientesComponent implements OnInit {
 
   
-  constructor(private preguntasService: ReclamosServices, private router: Router) { }
+  constructor(private preguntasService: ReclamosServices, private router: Router, private route: ActivatedRoute) { }
 
   redirectToRespuestaPreguntas(){
-    this.router.navigate(['/home']);
     this.router.navigate(['/detalles']);
   }
 
@@ -28,6 +28,8 @@ export class ReclamosClientesComponent implements OnInit {
 
   dataPagina: any[] = [];//datos para la paginacion
   dataCompleta: any[] = [];//datos para la paginacion
+
+  selectedItems: any[] = [];//arreglo que almacena los checkbox seleccionados para redireccionar a la otra pagina
 
   onPageChange(event: any) {
     this.paginaActual = event; // Actualizar la página actual con el valor proporcionado por el evento
@@ -46,7 +48,13 @@ export class ReclamosClientesComponent implements OnInit {
   }
 
   getSelectedItems() {//checkbox uno por uno
-    return this.data.filter(item => item.selected);
+    this.selectedItems = this.data.filter(item => item.selected);
+    return this.selectedItems;
+  }
+
+  redireccionar() {
+    const items = this.getSelectedItems();
+    this.router.navigate(['/detalles'], { queryParams: { items: JSON.stringify(items) } });
   }
 
   toggleSelectAll() {//checkbox selecciona todo
