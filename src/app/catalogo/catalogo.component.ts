@@ -10,12 +10,20 @@ import { HttpClient } from '@angular/common/http';
 export class CatalogoComponent implements OnInit {
   productos!: any[]; // Array para almacenar los productos del JSON
   currentIndex: number = 0; // Índice del producto actual
+  categorias: string[] = ['Todas', 'Categoría 1', 'Categoría 2'];
+  imagenes: string[] = [];
+  searchText: string = '';
+  filteredProductos: any[] = [];
+  selectedCategory: string = 'Todas';
 
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
     this.http.get<any>('assets/json/productos.json').subscribe(data => {
       this.productos = data.productos;
+
+      this.filteredProductos = this.productos;
+      this.imagenes = this.filteredProductos.slice(0, 6).map(producto => producto.imagen);
     });
   }
 
@@ -41,4 +49,19 @@ export class CatalogoComponent implements OnInit {
     console.log('Ir al producto con ID:', id);
   }
 
+  filterProducts() {
+    if (this.selectedCategory === 'Todas') {
+      this.filteredProductos = this.productos.filter(producto =>
+        producto.descripcion.toLowerCase().includes(this.searchText.toLowerCase())
+      ).slice(this.currentIndex, this.currentIndex + 4);
+    } else {
+      this.filteredProductos = this.productos.filter(producto =>
+        producto.categoria === this.selectedCategory &&
+        producto.descripcion.toLowerCase().includes(this.searchText.toLowerCase())
+      ).slice(this.currentIndex, this.currentIndex + 4);
+    }
+  
+    // Actualizar las imágenes
+    this.imagenes = this.filteredProductos.map(producto => producto.imagen);
+  }
 }

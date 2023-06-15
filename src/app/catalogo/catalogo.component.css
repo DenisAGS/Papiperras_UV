@@ -7,6 +7,11 @@ h1 {
     font-style: normal;
 }
 
+h2{
+    justify-content: center;
+    text-align: center;
+}
+
 /*Buscador*/
 .search-wrapper {
     display: flex;
@@ -39,18 +44,31 @@ h1 {
 }
 
 .fa-search:hover {
-    color: #000;
+    color: #a18181;
 }
 
-@media (max-width: 768px) {
-    .container-detalles{
-        display: none;
+@media screen and (max-width: 768px) {
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        width: 60%;
+        margin-left: 2em;
     }
+
 }
+
+/*Filtro*/
+.filter-icon::before {
+    content: "\f0b0"; /* Código Unicode del icono de filtrado */
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 5px; /* Ajusta el espaciado si es necesario */
+}
+  
 
 /* Carrusel */
 .carousel {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,3 +124,22 @@ h1 {
 .arrows .arrow.right {
     margin-left: 6em;
 }
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+    margin-left: 9em;
+}
+  
+.img-p {
+    max-width: 100px;
+    max-height: 100px;   
+    object-fit: cover;
+    cursor: pointer;
+}
+
+  

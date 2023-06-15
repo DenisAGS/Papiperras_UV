@@ -19,15 +19,15 @@
 
     <main>
         <div class="search-wrapper ">
-            <input type="search" class="search-input" placeholder="Buscar">
+            <input type="search" class="search-input" placeholder="Buscar" [(ngModel)]="searchText">
             <div class="input-group-append">
-                <button class="search-button">
+                <button class="search-button" (click)="filterProducts()">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
         </div>
 
-        <div style="margin-top: 3em;">
+        <div style="margin-top: 2.5em;">
             <div class="carousel">
                 <div class="product-container">
                     <div *ngFor="let producto of productos.slice(currentIndex, currentIndex + 4); let i = index"
@@ -36,8 +36,8 @@
                             (click)="goToProduct(producto.id)">
                         <div style="display: grid;">
                             <div class="description">{{ producto.descripcion }}</div>
-                        <div class="description">{{ producto.precio }}</div>
-                        <div class="description">{{ producto.oferta }}</div>
+                            <div class="description">{{ producto.precio }}</div>
+                            <div class="description">{{ producto.oferta }}</div>
                         </div>
                     </div>
                 </div>
@@ -51,6 +51,11 @@
                 </div>
             </div>
         </div>
+        <h2>Coincidencias</h2>
+            <div class="image-container">
+                <img class="img-p" *ngFor="let imagen of imagenes" [src]="imagen" alt="Imagen">
+            </div>
+        
     </main>
     <app-footer-page></app-footer-page>
 </body>
