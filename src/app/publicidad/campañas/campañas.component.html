@@ -19,7 +19,7 @@
     <app-sidebar></app-sidebar>
     <section>
         <h2 class="text1">{{ nombre }}</h2>
-        <input class="buscarO" type="text" id="buscarCam" name="buscarCampaña" placeholder="BUSCAR POR TITULO O ANUNCIO">
+        <input class="buscarO" type="text" id="buscarCam" name="buscarCampaña" placeholder="BUSCAR POR NOMBRE">
         <button class="imgBuscador" type="button"></button> 
         <button class="agregarProductos" type="button">Agregar productos</button>
     </section>
@@ -29,7 +29,7 @@
                 <thead>
                     <tr>
                         <th>Estado</th>
-                        <th colspan="2">Titulo</th>
+                        <th colspan="2">Nombre</th>
                         <th>Impresiones</th>
                         <th>Clic's</th>
                         <th>Ventas</th>
@@ -39,17 +39,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let campania of campanias">
-                        <td class="td2"><input class="checkbox" type="checkbox"></td>         
-                        <td class="td2"><img src="{{ campania.foto }}" alt="{{ campania.nombre }}"></td>
-                        <td class="td3">{{ campania.titulo }}</td>
-                        <td>{{ campania.impresiones }}</td>
-                        <td>{{ campania.clics }}</td>
-                        <td>{{ campania.ventas }}</td>
-                        <td>{{ campania.ingresos}}</td>
-                        <td>{{ campania.inversion}}</td>
-                        <td>{{ campania.inv_cos}}</td>
-                        
+                    <tr *ngFor="let producto of productosEncontrados">
+                        <td class="td3">
+                            <button class="estado-btn" [ngClass]="{ 'estado-encendido': estadoP(true), 'estado-apagado': !estadoP(true) } "></button>
+                          </td>
+                        <td class="td2"><img src="{{ producto.fotos }}" alt="{{ producto.nombre }}"></td>
+                        <td class="td3">{{ producto.nombre }}</td>
+                        <td class="td3">{{ datosAleatorios(40, 400) }}</td>
+                        <td class="td3">{{ datosAleatorios(10, 120) }}</td>
+                        <td class="td3">{{ datosAleatorios(12, 30) }}</td>
+                        <td class="td3">${{ datosAleatorios(900, 5000) }}</td>
+                        <td class="td3">${{ datosAleatorios(100, 600) }}</td>
+                        <td class="td3">{{ datosAleatorios(20, 30) }}%</td>                       
                     </tr>
                 </tbody>
             </table>

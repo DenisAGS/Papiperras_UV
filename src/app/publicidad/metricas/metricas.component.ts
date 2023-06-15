@@ -79,4 +79,11 @@ export class MetricasComponent implements OnInit {
     this.router.navigate(['/campañas'], { state: { campania } });
   }
 
+  cambiarEstadoCampania(id: string) {
+    const campania = this.getCampaniasbyId(id);
+    if (campania) {
+      campania.estado = !campania.estado; // Cambia el estado de true a false, y viceversa
+    }
+  }
+
 }

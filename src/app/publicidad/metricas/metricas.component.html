@@ -66,7 +66,11 @@
             <ng-container *ngFor="let campania of campanias">
               <tr *ngIf="getCampaniasbyId(campania.id)">
                 <td class="td2" (click)="verDetallesCampania(getCampaniasbyId(campania.id))">{{ getCampaniasbyId(campania.id)?.nombre }}</td>
-                <td class="td2" (click)="verDetallesCampania(getCampaniasbyId(campania.id))">{{ getCampaniasbyId(campania.id)?.estado }}</td>
+                <td class="td2">
+                  <button class="estado-btn" [ngClass]="{ 'estado-encendido': getCampaniasbyId(campania.id)?.estado, 'estado-apagado': !getCampaniasbyId(campania.id)?.estado }"
+                          (click)="cambiarEstadoCampania(campania.id)">
+                  </button>
+                </td>
                 <td class="td2" (click)="verDetallesCampania(getCampaniasbyId(campania.id))">{{ getCampaniasbyId(campania.id)?.presupuestoDiario }}</td>
                 <td class="td2" (click)="verDetallesCampania(getCampaniasbyId(campania.id))">{{ getCampaniasbyId(campania.id)?.ventas }}</td>
                 <td class="td2" (click)="verDetallesCampania(getCampaniasbyId(campania.id))">{{ getCampaniasbyId(campania.id)?.impresiones }}</td>
