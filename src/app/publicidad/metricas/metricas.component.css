@@ -71,22 +71,21 @@
     left: 1000px;
     top:20px;
 }
-.fondoGrafica{
+.fondoGrafica {
     position: absolute;
     width: 1003.95px;
     height: 176.28px;
     left: 78.1px;
     top: 61.11px;
-
     background: #D9D9D9;
-}
+    z-index: 0;
+  }
 .fondoDatos{
     position: absolute;
     width: 1092.48px;
     height: 80.19px;
     left: -35px;
     top: 190px;
-
     background: rgba(121, 1, 126, 0.7);
     box-shadow: 0px 3.16204px 3.16204px rgba(0, 0, 0, 0.25);
     border-radius: 19.7627px;
@@ -174,4 +173,40 @@
   
   .estado-apagado:before {
     transform: translateX(0);
+  }
+  .toggle-button {
+    display: block;
+    margin: 10px auto;
+    margin-right: 80px;
+    background: #9B109B;
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 14px;
+  }
+  
+  .opciones {
+    background: #F8F8F8;
+    border: 1px solid #CCC;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    display: block;
+    position: relative; /* Agrega posición relativa */
+    z-index: 2; /* Ajusta el valor de z-index */
+  }
+  
+  .opciones-container {
+    position: absolute;
+    top: calc(9% + 10px); /* Espacio entre el botón y las opciones */
+    right: 80px; /* Posición a la derecha */
+    width: 120px; /* Ancho del contenedor de las opciones */
+    background: #F8F8F8;
+    border: 1px solid #CCC;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 1; /* Asegura que el contenedor esté por encima del .fondoGrafica */
   }

@@ -22,7 +22,11 @@
         <h2 class="text1">Ventas por publicidad</h2>
         <div class="circulito2xd"></div>
         <h2 class="text2">Ventas sin publicidad</h2>
-        <div class="dropdown">
+        <button class="toggle-button" (click)="toggleOpciones()">Ultimo quincena</button>
+        <div class="opciones-container" *ngIf="mostrarOpciones">
+          <!-- Aquí van las opciones adicionales -->
+          <p>Ultimo mes</p>
+          <p>Ultimo trimestre</p>
         </div>
         <div class="fondoGrafica">
           <div class="fondoDatos">

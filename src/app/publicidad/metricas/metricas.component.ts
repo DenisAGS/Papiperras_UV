@@ -86,4 +86,11 @@ export class MetricasComponent implements OnInit {
     }
   }
 
+  mostrarOpciones: boolean = false;
+  toggleOpciones() {
+    this.mostrarOpciones = !this.mostrarOpciones;
+  }
+
+
+
 }
