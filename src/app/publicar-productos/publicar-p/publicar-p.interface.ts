@@ -10,4 +10,5 @@ export interface Producto {
     terminosCondiciones: string;
     precioFinal: number | null;
     precioDescuento?: number;
+    seleccionado?: boolean; 
 }

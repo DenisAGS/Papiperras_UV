@@ -32,6 +32,7 @@ export class CampañasComponent implements OnInit {
 
   getProductobyId(campaniaId: string): Producto[] | undefined {
     const campania = this.campaniass.find(campania => campania.id === campaniaId);
+    this.agregarProductos();
     if (campania && campania.productos) {
       const idsProductos = campania.productos;
       const productosCampaña = idsProductos.map(id => {
@@ -67,6 +68,45 @@ export class CampañasComponent implements OnInit {
     this.getProductobyId(this.id);
     this.mostrarProductos(this.id);
 
+  }
+  mostrarModal = false;
+  productosDisponibles: Producto[] = [];
+  seleccionadosMap: Map<string, boolean> = new Map();
+  seleccionados: Producto[] = [];
+
+  abrirModal(): void {
+    // Obtener todos los productos del json productosJson
+    this.productosDisponibles = this.productos;
+    // Filtrar los productos ya agregados (productosEncontrados)
+    const productosAgregadosIds = this.productosEncontrados?.map(producto => producto.id) || [];
+    this.productosDisponibles = this.productosDisponibles.filter(producto => !productosAgregadosIds.includes(producto.id));
+    // Mostrar la ventana modal
+    this.mostrarModal = true;
+  }
+
+  toggleSeleccionado(producto: Producto) {
+    if (this.seleccionadosMap.has(producto.id)) {
+      this.seleccionadosMap.delete(producto.id);
+    } else {
+      this.seleccionadosMap.set(producto.id, true);
+    }
+  }
+  
+  agregarProductos() {
+    this.seleccionados = [];
+  
+    this.seleccionadosMap.forEach((value, key) => {
+      if (value) {
+        const productoSeleccionado = this.productosDisponibles.find(producto => producto.id === key);
+        if (productoSeleccionado) {
+          this.seleccionados.push(productoSeleccionado);
+        }
+      }
+    });
+  
+    this.mostrarModal = false;
+  
+    console.log(this.seleccionados); // Imprimir los productos seleccionados en la consola
   }
 
 }
