@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ReclamosServices } from '../services/reclamos.services';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detalles',
@@ -9,7 +10,7 @@ import { ReclamosServices } from '../services/reclamos.services';
 })
 export class DetallesComponent implements OnInit {
 
-  constructor(private preguntasService: ReclamosServices, private router: Router) { }
+  constructor(private preguntasService: ReclamosServices, private router: Router, private route: ActivatedRoute) { }
 
   redirectToRespuestaPreguntas(){
     this.router.navigate(['/home']);
@@ -27,6 +28,8 @@ export class DetallesComponent implements OnInit {
 
   dataPagina: any[] = [];//datos para la paginacion
   dataCompleta: any[] = [];//datos para la paginacion
+
+  selectedItems: any[] = [];
 
   onPageChange(event: any) {
     this.paginaActual = event; // Actualizar la página actual con el valor proporcionado por el evento
@@ -54,13 +57,22 @@ export class DetallesComponent implements OnInit {
   }
 
   eliminarFilasSeleccionadas() {//Eliminar filas seleccionadas por el checkbox
-    this.data = this.data.filter(item => !item.selected);
+    this.selectedItems = this.selectedItems.filter(item => !item.selected);
+    this.actualizarDatosTabla();
   }
 
   ngOnInit() {
     this.preguntasService.getJsonData().subscribe(data => {//mostrar datos en la tabla
       this.data = data;//datos
       this.dataCompleta = data;//datos completos para filtrar
+      this.actualizarDatosTabla();//actualizar tabla
+    });
+
+    
+    this.route.queryParams.subscribe(params => {
+      if (params['items']) {
+        this.selectedItems = JSON.parse(params['items']);
+      }
       this.actualizarDatosTabla();//actualizar tabla
     });
   }
