@@ -13,5 +13,12 @@ export class CargosService {
   getCargos(): Observable<any> {
     return this.http.get<any>(this.cargosUrl);
   }
-}
 
+  getCargos2(): Observable<any[]> {
+    return this.http.get<any[]>(this.cargosUrl);
+  }
+  
+  actualizarCargos(cargos: any[]): Observable<any> {
+    return this.http.put(this.cargosUrl, cargos);
+  }
+}
