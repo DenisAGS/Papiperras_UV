@@ -7,7 +7,7 @@
 </head>
 <body>
     <header> 
-        <app-header-page title="Preguntas Clientes"></app-header-page>
+        <app-header-page title="Reclamos Clientes"></app-header-page>
       </header>
       
       <app-sidebar></app-sidebar>
@@ -44,7 +44,7 @@
                      <tr *ngFor="let item of data | paginate: {itemsPerPage: elementosPorPagina, currentPage: paginaActual}">
                         <td><input type="checkbox" [(ngModel)]="item.selected"></td>
                         <td>{{ item.fecha }}</td>
-                        <td>{{ item.tipo_producto }}<a routerLink="/detalles">Ver detalles</a></td>
+                        <td>{{ item.tipo_producto }}<a (click)="redireccionar()">Ver detalles</a></td>
                         <td>{{ item.condicion }}</td>
                         <td>{{ item.motivo }}</td>
                         <td>{{ item.estado }}</td>
@@ -67,7 +67,7 @@
             <p>🟡 Pendiente</p>
             
             <button class="boton1" (click)="eliminarFilasSeleccionadas()">Declinar</button>
-            <button class="boton2" routerLink="/home">Aceptar</button>
+            <button class="boton2" routerLink="/principal">Aceptar</button>
         </div>
     </main>
 </body>
