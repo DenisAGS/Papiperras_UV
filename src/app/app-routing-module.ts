@@ -89,7 +89,7 @@ const routes: Routes = [
     component: ConsejosComponent
   },
   {
-    path:'detalle',
+    path:'detalle-venta',
     component: DetalleVentaComponent
   },
   {
