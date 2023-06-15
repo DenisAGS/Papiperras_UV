@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Asociados UV</title>
+  <base href="/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+   <!-- Link hacia el archivo de estilos css -->
+   <link rel="stylesheet" href="requestpasword.component.css">
+
+   <style type="text/css">
+   </style>
+   
+   <script>
+
+    function validarPassword() {
+      var email = document.getElementById("email").value;
+
+      // Validación del correo electrónico
+      if (!email || email.trim() === "") {
+        alert("Por favor, ingresa un correo electrónico válido.");
+        return false;
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="datos">
+        <h2><b>¿Olvidaste tú contraseña?</b></h2>
+        <h3><b>No te preocupes, nosotros te ayudamos.</b></h3>
+        <p>Si aún recuerda su dirección de correo electrónico, puede restablecer rápidamente su contraseña.<br>
+        Simplemente ingrese esa información en los campos a continuación y haga clic en el botón. 
+        Esto le enviará un nuevo correo electrónico que lo vinculará al sitio web de cambio de contraseña.</p>
+        
+        <img class="seguro" src="../../assets/Images/password/seguro.png" alt="">
+        <img class="settings" src="../../assets/Images/password/settings.png" alt="">
+
+        <form onsubmit="return validarPassword()">
+                   
+            <input type="email" id="confirmemail" name="confirmemail" required required placeholder="Ingresa tú correo electronico"><br><br>
+
+            <button class="Btn-solicitud" type="submit" >Cambio de contraseña</button><br>
+          </form>
+        </div>
+    </div>
+</body>
+</html>

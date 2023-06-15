@@ -8,35 +8,32 @@ body {
 }
 
 .imagen {
+  position: relative;
+  left: 10%;
   width: 90%;
   height: auto;
-  max-width: 300px;
-  max-height: 150px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 30px;
+  max-width: 275px;
+  max-height: 125px;
+  margin-top: 10%;
 }
 
 .logo1{
   width: 90%;
   height: auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 300px;
+  max-height: 300px;
   position: absolute;
   left: 130%;
-  transform: translateX(-50%);
   top: 200px;
 }
 
 .logo2{
   width: 90%;
   height: auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 300px;
+  max-height: 300px;
   position: absolute;
-  left: 170%;
-  transform: translateX(-50%);
+  left: 200%;
   top: 50px;
 }
 
@@ -54,7 +51,7 @@ body {
   border-radius: 30px;
 }
 
-.contenedor {
+.datos {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -65,17 +62,27 @@ body {
 }
 
 input{
-  padding: 15px;
-  width: auto;
+  position: relative;
+  padding: 20px;
+  width: 350px;
   height: 50px;
   background: #FFFFFF;
   border: 1px solid #9B109B;
   border-radius: 30px;
   outline: none;
+  margin-top: 10%;
 }
 
 a{
+  line-height: 10%;
+  position: relative;
   color:#9B109B;
+  text-decoration: none;
+  font-family: 'raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
 }
 
 .BtnIniciar {
@@ -109,6 +116,7 @@ letter-spacing: 0.25px;
     font-size: 14px;
   }
   .screen{
+    margin-top: 5%;
     width: 100%;
     max-width: 100%;
   }
@@ -118,8 +126,14 @@ letter-spacing: 0.25px;
   .BtnIniciar {
     max-width: 100%;
   }
+
+  a{
+    font-size: 16px;
+    top: 5%;
+  }
     .imagen {
-      top: 30px;
+      top: 10px;
+      left: 5%;
     }
     .logo1,
     .logo2{

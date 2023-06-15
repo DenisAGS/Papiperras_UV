@@ -8,6 +8,8 @@ import { PrincipalComponent } from './principal/principal.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
 import { PasswordComponent } from './password/password.component';
+import { RequestpaswordComponent } from './requestpasword/requestpasword.component';
+import { ValidpaswordComponent } from './validpasword/validpasword.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { InventarioComponent } from './inventario/inventario.component';
@@ -52,6 +54,14 @@ const routes: Routes = [
   {
     path:'password',
     component: PasswordComponent
+  },
+  {
+    path:'validpasword',
+    component: ValidpaswordComponent
+  },
+  {
+    path: 'requestpasword',
+    component: RequestpaswordComponent
   },
   {
     path:'profile',

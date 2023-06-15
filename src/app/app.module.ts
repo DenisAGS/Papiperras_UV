@@ -10,6 +10,8 @@ import { PrincipalComponent } from './principal/principal.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
 import { PasswordComponent } from './password/password.component';
+import { ValidpaswordComponent } from './validpasword/validpasword.component';
+import { RequestpaswordComponent } from './requestpasword/requestpasword.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { InventarioComponent } from './inventario/inventario.component';
@@ -36,6 +38,8 @@ import { ConsejosComponent } from './consejos/consejos.component';
     AboutUsComponent,
     LoginComponent,
     PasswordComponent,
+    ValidpaswordComponent,
+    RequestpaswordComponent,
     ProfileComponent,
     DevolucionComponent,
     InventarioComponent,
@@ -54,7 +58,9 @@ import { ConsejosComponent } from './consejos/consejos.component';
     EstadisticaComponent,
     ConsejosComponent,
     ProfileComponent,
-    PasswordComponent
+    PasswordComponent,
+    RequestpaswordComponent,
+    ValidpaswordComponent
   ],
   imports: [
     BrowserModule,

@@ -13,24 +13,28 @@
 
    <style type="text/css">
    </style>
-   
-   <script type="text/javascript">
-
-   </script>
 </head>
 <body>
   <div class="screen">
-    <img class="imagen" src="../../assets/Images/login/logo.png" alt="">
-    <img class="logo1" src="../../assets/Images/login/sesion.png" alt="">
-    <img class="logo2" src=".../../assets/Images/login/negocios.png" alt="">
-    
-    <div class="contenedor"><br><br>
-      <input type="email" required placeholder=" Ingresa tu correo electronico"><br>
-      <input type="password" required placeholder="Ingresa tu contraseña">
+    <div class="datos">
+      <img class="imagen" src="../../assets/Images/login/logo.png" alt="">
+      <img class="logo1" src="../../assets/Images/login/sesion.png" alt="">
+      <img class="logo2" src=".../../assets/Images/login/negocios.png" alt="">
+      
+      <form>
+      <input type="email" id="email" name="email" required placeholder="Ingresa tú correo electronico">
+
+      <input type="password" id="password" name="password" required placeholder="Ingresa tú contraseña">
+
       <button class="BtnIniciar" routerLink="/principal">Iniciar sesion</button>
-      <a href="">¿Olvidaste tu contraseña?</a>
-      <a href="">Crear tu cuenta</a><br><br>
+
+      <a href="">¿Olvidaste tu contraseña?</a><br>
+      <a href="">Crear tú cuenta.</a><br><br>
+    
+    </form>
+
     </div>
+    
   </div>
 </body>
 </html>
