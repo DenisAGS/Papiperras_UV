@@ -1,7 +1,10 @@
 #principal {
     padding-left: 75px;
   }
-
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+  }
   @media (max-width: 768px) {
     #principal {
       padding-left: 0;

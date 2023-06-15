@@ -5,7 +5,10 @@
     margin: auto;
     margin-bottom: 20px;
 }
-
+body {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+  }
 .card-title{
     margin: 5px;
 }
