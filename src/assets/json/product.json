@@ -30,48 +30,93 @@
     },
     {
       "id": 4,
-      "nombre": "Producto 4",
-      "imagen": "assets/Images/img-carrusel/aspi.png",
-      "categoria": "Linea blanca",
-      "descripcion": "precio",
-      "precio": "Precio normal $1200.69",
-      "oferta": "Oferta $960.00"
+      "nombre": "Producto 13",
+      "imagen": "assets/Images/img-carrusel/7.png",
+      "categoria": "Telefonia",
+      "descripcion": "Xiaomi Pocophone Poco M5s Dual SIM 128 GB gris 6 GB RAM",
+      "precio": "Precio normal $3,040",
+      "oferta": "Oferta $2948.00"
     },
     {
       "id": 5,
       "nombre": "Producto 5",
-      "imagen": "assets/Images/img-carrusel/aspi.png",
-      "categoria": "Linea blanca",
-      "descripcion": "Descripción del Producto 3",
+      "imagen": "assets/Images/img-carrusel/1.png",
+      "categoria": "Telefonia",
+      "descripcion": "Celular Samsung Galaxy M14 5g 4gb + 128gb Azul",
       "precio": "Precio normal $1200.69",
       "oferta": "Oferta $960.00"
     },
     {
       "id": 6,
       "nombre": "Producto 6",
-      "imagen": "assets/Images/img-carrusel/aspi.png",
-      "categoria": "Linea blanca",
-      "descripcion": "Descripción del Producto 4",
-      "precio": "Precio normal $1200.69",
-      "oferta": "Oferta $960.00"
+      "imagen": "assets/Images/img-carrusel/8.png",
+      "categoria": "Telefonia",
+      "descripcion": "Celular Samsung Galaxy M14 5g 4gb + 128gb Azul",
+      "precio": "Precio normal $4,999",
+      "oferta": "Oferta $3,799"
     },
     {
       "id": 7,
       "nombre": "Producto 7",
-      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "imagen": "assets/Images/img-carrusel/2.png",
       "categoria": "Linea blanca",
-      "descripcion": "Descripción del Producto 3",
-      "precio": "Precio normal $1200.69",
-      "oferta": "Oferta $960.00"
+      "descripcion": "Refrigerador inverter no frost Samsung Top Mount RT32A5710",
+      "precio": "Precio normal $10,999",
+      "oferta": "Oferta $10,279"
     },
     {
       "id": 8,
       "nombre": "Producto 8",
-      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "imagen": "assets/Images/img-carrusel/3.png",
       "categoria": "Telefonia",
-      "descripcion": "Descripción del Producto 4",
-      "precio": "Precio normal $1200.69",
-      "oferta": "Oferta $960.00"
+      "descripcion": "Pandoran Paradise Palette Avatar Nyx Professional Makeup",
+      "precio": "Precio normal $1,499",
+      "oferta": "Oferta $750.00"
+    },
+    {
+      "id": 9,
+      "nombre": "Producto 9",
+      "imagen": "assets/Images/img-carrusel/4.png",
+      "categoria": "Cosmeticos",
+      "descripcion": "Avatar 2 Navi Paint Maquillaje Profesional Nyx Cosmetics Pmu",
+      "precio": "Precio normal $550",
+      "oferta": ""
+    },
+    {
+      "id": 10,
+      "nombre": "Producto 10",
+      "imagen": "assets/Images/img-carrusel/5.png",
+      "categoria": "Cosmeticos",
+      "descripcion": "Avatar 2 Biolume Stick Iluminador Nyx Professional Makeup",
+      "precio": "Precio normal $490",
+      "oferta": "Oferta $349"
+    },
+    {
+      "id": 11,
+      "nombre": "Producto 11",
+      "imagen": "assets/Images/img-carrusel/8.png",
+      "categoria": "Cosmeticos",
+      "descripcion": "Nueva Paleta Quinteto Bissú Varios Tonos Original Sombra ",
+      "precio": "Precio normal $90",
+      "oferta": "Oferta $75"
+    },
+    {
+      "id": 12,
+      "nombre": "Producto 12",
+      "imagen": "assets/Images/img-carrusel/10.png",
+      "categoria": "Cosmeticos",
+      "descripcion": "Sombra Individual De Ojos Bissú Variedad De Tonos (original)",
+      "precio": "Precio normal $94",
+      "oferta": "Mas vendido"
+    },
+    {
+      "id": 13,
+      "nombre": "Producto 4",
+      "imagen": "assets/Images/img-carrusel/6.png",
+      "categoria": "Electronica",
+      "descripcion": "Laptop Asus Gaming Tuf Fx517 15.6 Intel Ci5",
+      "precio": "Precio normal $19,999",
+      "oferta": "Oferta $34,999"
     }
   ]
 }
