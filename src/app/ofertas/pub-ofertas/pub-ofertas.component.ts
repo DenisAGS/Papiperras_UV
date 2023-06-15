@@ -83,4 +83,7 @@ export class PubOfertasComponent implements OnInit {
     // Navegar a ListOfertasComponent mediante la URL construida
     this.router.navigateByUrl(url);
   }
+  cancelar(){
+    this.router.navigate(['/list-ofertas']);
+  }
 }

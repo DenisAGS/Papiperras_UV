@@ -23,6 +23,7 @@ import { ConsejosComponent } from './consejos/consejos.component';
 import { ListOfertasComponent } from './ofertas/list-ofertas/list-ofertas.component';
 import { CampañasComponent } from './publicidad/campañas/campañas.component';
 import { MetricasComponent } from './publicidad/metricas/metricas.component';
+import { Publicidad1Component } from './publicidad/publicidad1/publicidad1.component';
 
 const routes: Routes = [  
   {
@@ -104,6 +105,9 @@ const routes: Routes = [
   {
     path: 'metricas/:id',
     component: MetricasComponent
+  },{
+    path: 'publicidad1',
+    component: Publicidad1Component
   }
 ];
 

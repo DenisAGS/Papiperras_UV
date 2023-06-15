@@ -1,0 +1,441 @@
+.imagenMoradita{
+  position: absolute;
+  resize: none;
+  left: calc(50% - 1370px/2 + 1px);
+  top: 69px;
+  width: 1358px;
+  height: 483px;
+  background-size: cover;
+  display: flex;
+  background: url("src\assets\Images\Sergio\pub1\image 96.png");
+  border-radius: 0px 0px 150px 0px;
+}
+
+.otherImg{
+  flex-direction:row;
+  align-items: flex-start;
+}
+
+.title1{
+  position: absolute;
+  width: 655.83px;
+  height: 170px;
+  left: 77.5px;
+  top: 35.83px;
+  
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53.3333px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+.title2{
+  position: absolute;
+  width: 837.15px;
+  height: 145.45px;
+  left: calc(50% - 837.15px/2 - 183.79px);
+  top: 1296.43px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42.6875px;
+  line-height: 52px;
+
+  color: #000000;
+}
+
+.text1{
+  position: absolute;
+  width: 840px;
+  height: 265.83px;
+  left: 77.5px;
+  top: 200.33px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26.6667px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.buttonEmpezar{
+  display: flex;
+  flex-direction: row;
+  padding: 5.3912px 30.5174px;
+  gap: 3.91px;
+  
+  position: absolute;
+  width: 158.1px;
+  height: 39.53px;
+  left: 102.77px;
+  top: 410px;
+  
+  background: #FFFFFF;
+  border: 0.790509px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 15.8102px 27.6678px rgba(0, 0, 0, 0.05);
+  border-radius: 39.5255px;   
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 10px;
+  align-items: center;
+  justify-content: center;
+/* identical to box height */
+
+text-transform: uppercase;
+color: rgba(105, 5, 105, 0.81);
+}
+
+.fondomorado{
+box-sizing: border-box;
+
+position: absolute;
+width: 1135px;
+height: 435px;
+left: calc(50% - 1135px/2 - 115.5px);
+top: 822.08px;
+border-radius: 67.9838px;
+background: url("src\assets\Images\Sergio\pub1\image 104.png");
+}
+.fondoproducts{
+position: relative;
+width: 614.23px;
+height: 381.03px;
+left: calc(50% - 837.15px/2 - 183.79px);
+top: 746.24px;
+border: 0.790509px solid #000000;
+top: 746.24px;
+border-radius: 27.6678px;
+background: #FFFFFF;
+}
+.info1{
+box-sizing: border-box;
+
+position: absolute;
+width: 411.86px;
+height: 528.85px;
+left: calc(50% - -710.15px/2 - 183.79px);
+top: 672.72px;
+
+background: #FFFFFF;
+border: 0.790509px solid rgba(0, 0, 0, 0.6);
+border-radius: 23.7153px;
+transform: matrix(1, 0, 0, 1, 0, 0);
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 15.8102px;
+line-height: 19px;
+}
+.text2{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: 35px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 28.4583px;
+line-height: 34px;
+
+color: #000000;
+}
+.text3{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: 35px;
+top:75px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 15.8102px;
+line-height: 19px;
+
+color: #000000;
+}
+.text4{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: 35px;
+top: 190px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 28.4583px;
+line-height: 34px;
+
+color: #000000;
+}
+.text6{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: 35px;
+top: 300px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 28.4583px;
+line-height: 34px;
+
+color: #000000;
+}
+.text5{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: 35px;
+top:230px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 15.8102px;
+line-height: 19px;
+
+color: #000000;
+}
+.text7{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: 35px;
+top:370px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 15.8102px;
+line-height: 19px;
+
+color: #000000;
+}
+.img1{
+position: absolute;
+width: 74.31px;
+height: 74.31px;
+left: calc(50% - 74.31px/2 - 565.21px);
+top: 1450.34px;
+border: none;
+}
+.img2{
+position: absolute;
+width: 74.31px;
+height: 74.31px;
+left: calc(50% - 74.31px/2 - 146.24px);
+top: 1451.34px;
+}
+.img3{
+position: absolute;
+width: 74.31px;
+height: 74.31px;
+left: calc(50% - 74.31px/2 + 271.94px);
+top: 1451.34px;
+}
+.text8{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: calc(50% - 837.15px/2 - 183.79px);
+top:1520px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 28.4583px;
+line-height: 34px;
+color: #000000;
+}
+.text9{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: calc(50% - 3.15px/2 - 183.79px);
+top:1520px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 28.4583px;
+line-height: 34px;
+color: #000000;
+}
+.text10{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: calc(50% - -835.15px/2 - 183.79px);
+top:1520px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 28.4583px;
+line-height: 34px;
+color: #000000;
+}
+.text11{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: calc(50% - 837.15px/2 - 183.79px);
+top:1590px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 15.8102px;
+line-height: 19px;
+
+color: #000000;
+}
+.text12{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: calc(50% - 3.15px/2 - 183.79px);
+top:1590px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 15.8102px;
+line-height: 19px;
+
+color: #000000;
+}
+.text13{
+position: absolute;
+width: 329.64px;
+height: 484.58px;
+left: calc(50% - -835.15px/2 - 183.79px);
+top:1590px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 15.8102px;
+line-height: 19px;
+color: #000000;
+}
+.textVendedores{
+position: absolute;
+width: 837.15px;
+height: 145.45px;
+left: calc(50% - 837.15px/2 - 32.81px);
+top: 1737.54px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 44.2685px;
+line-height: 53px;
+
+color: #000000;
+}
+.image5{
+position: absolute;
+width: 1147px;
+height: 394px;
+left: calc(50% - 548.2px/2 - 198.81px);
+top: 1886.08px;
+background: url("src\assets\Images\Sergio\pub1\image5.png");
+border: 1px solid #000000;
+border-radius: 71px;
+}
+.diego{
+box-sizing: border-box;
+position: absolute;
+width: 234px;
+height: 235px;
+left: calc(50% - 233.2px/2 - 198.81px);
+top: 1971.21px;
+background: url("src\assets\Images\Sergio\pub1\diega.png");
+border: 1px solid #FFFFFF;
+border-radius: 116.6px;
+}
+.textDiega{
+position: absolute;
+width: 586.56px;
+height: 286.16px;
+left: calc(50% - 586.56px/2 + 309.88px);
+top: 1942.52px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 26.8773px;
+line-height: 32px;
+color: #FFFFFF;
+}
+.textDiega2{
+position: absolute;
+width: 586.56px;
+height: 286.16px;
+left: calc(50% - 586.56px/2 + 309.88px);
+top: 2102.52px;
+
+font-family: 'Lato';
+font-family: 'Raleway';
+font-weight: 500;
+font-size: 26.8773px;
+line-height: 32px;
+color: #FFFFFF;
+}
+.image6{
+position: absolute;
+width: 173.12px;
+height: 45.85px;
+left: calc(50% - 173.12px/2 + 0.4px);
+top: 2355.08px;
+}
+.rectangulito{
+position: absolute;
+width: 1359px;
+height: 370.91px;
+left: calc(50% - 1373.12px/2 + 0.4px);
+top: 2400.93px;
+background: #401753;
+transform: matrix(1, 0, 0, 1, 0, 0);
+display: flex;
+}
+.isra{
+position: absolute;
+width: 387.35px;
+height: 399.21px;
+left: calc(50% - 387.35px/2 - 446.64px);
+top: 2373.63px;
+}
+.diege{
+position: absolute;
+width: 174.7px;
+height: 365.22px;
+left: calc(50% - 174.7px/2 + 527.67px);
+top: 2407.62px;
+}
+.ondita{
+position: absolute;
+width: 1359.2px;
+height: 86.96px;
+left: calc(50% - 1373.12px/2 + 0.4px);
+top: 2703.88px;
+border: none;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.text14{
+position: absolute;
+width: 586.56px;
+height: 286.16px;
+left: calc(50% - 586.56px/2);
+top: 2505.27px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 31.6204px;
+line-height: 38px;
+text-align: center;
+
+color: #FFFFFF;
+
+}

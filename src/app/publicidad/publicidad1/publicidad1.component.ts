@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-publicidad1',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Publicidad1Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  continuar(){
+    this.router.navigate(['/publicidad2']);
+  }
+
+  scrollToTop() {
+    document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
 }

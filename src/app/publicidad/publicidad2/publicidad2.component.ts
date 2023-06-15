@@ -72,4 +72,8 @@ export class Publicidad2Component implements OnInit {
   ngOnInit(): void {
   }
 
+  cancelar(){
+    this.router.navigate(['/publicidad1']);
+  }
+
 }
