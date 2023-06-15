@@ -1,0 +1,64 @@
+ {   
+    "datos":[
+    {
+      "id": 1,
+      "foto": "assets/Images/devolucion/celular.png",
+      "producto": "Celulares",
+      "motivo": "Error de modelo",
+      "estado": "Producto original",
+      "lugar": "Orizaba",
+      "fecha": "2023-01-01",
+      "cliente": "0011"
+    },
+    {
+      "id": 2,
+      "foto": "assets/Images/devolucion/zapatos.png",
+      "producto": "Zapatos",
+      "motivo": "Otra talla",
+      "estado": "Original",
+      "lugar": "Orizaba",
+      "fecha": "2023-02-15",
+      "cliente": "0012"
+    },
+    {
+      "id": 3,
+      "foto": "assets/Images/devolucion/tablet.png",
+      "producto": "Tablet",
+      "motivo": "Otro tamaño",
+      "estado": "Nuevo",
+      "lugar": "Cordoba",
+      "fecha": "2023-03-20",
+      "cliente": "0013"
+    },
+    {
+      "id": 4,
+      "foto": "assets/Images/devolucion/laptop.png",
+      "producto": "Laptop",
+      "motivo": "no es el modelo",
+      "estado": "Original",
+      "lugar": "Fortin",
+      "fecha": "2023-04-10",
+      "cliente": "0014"
+    },
+    {
+      "id": "01012",
+      "foto": "assets/Images/devolucion/camara.png",
+      "producto": "Camara web",
+      "motivo": "No es el modelo",
+      "estado": "Original",
+      "lugar": "Mendoza",
+      "fecha": "2023-05-05",
+      "cliente": "0015"
+    },
+    {
+      "id": "01013",
+      "foto": "assets/Images/devolucion/audifonos.png",
+      "producto": "Audifonos",
+      "motivo": "Estan rotos",
+      "estado": "Original",
+      "lugar": "Maltrata",
+      "fecha": "2023-06-01",
+      "cliente": "0016"
+    }
+  ]
+ }

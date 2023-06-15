@@ -24,6 +24,7 @@ export class VentasComponent implements OnInit {
   search() {
   }
 
+
   cambiarContenido(id: string, nuevoContenido: string) {
     if (id === 'enPreparacion') {
       this.enPreparacion = nuevoContenido;

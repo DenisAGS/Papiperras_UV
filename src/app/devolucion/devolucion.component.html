@@ -20,9 +20,9 @@
   <div style="margin-left: 8em;">
     <div class="mr-3" style="margin-left: 2em; display: inline-block;">
       <div class="search-wrapper">
-        <input type="search" class="search-input" placeholder="Buscar">
+        <input type="search" class="search-input" placeholder="Buscar" id="search-input" (keydown.enter)="search()" #searchInput>
         <div class="input-group-append">
-          <i class="fas fa-search search-icon" (click)="search()" (keydown.enter)="search()"></i>
+          <i class="fas fa-search search-icon" (click)="search()"></i>
         </div>
       </div>
     </div>
@@ -52,6 +52,7 @@
           </tr>
         </tbody>
       </table>
+      
     </div>
     <div id="pagination" class="centered-pagination">
       <button class="pagination-button" (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">

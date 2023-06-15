@@ -1,5 +1,5 @@
 {
-  "productos": [
+  "product": [
     {
       "id": 1,
       "nombre": "Producto 1",
@@ -33,7 +33,7 @@
       "nombre": "Producto 4",
       "imagen": "assets/Images/img-carrusel/aspi.png",
       "categoria": "Linea blanca",
-      "descripcion": "",
+      "descripcion": "precio",
       "precio": "Precio normal $1200.69",
       "oferta": "Oferta $960.00"
     },

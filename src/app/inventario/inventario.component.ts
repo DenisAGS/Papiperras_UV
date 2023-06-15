@@ -38,12 +38,10 @@ export class InventarioComponent implements OnInit {
     });
   }
 
-  selectAllRows(event: any) {
-    const checked = event.target.checked;
-    this.selectAll = checked;
-  
-    // Actualizar el estado de los checkboxes individuales
-    Object.keys(this.checkboxes).forEach(key => this.checkboxes[key] = checked);
+  selectAllRows() {
+    for (let row of this.displayedData) {
+      this.checkboxes[row[0]] = this.selectAll;
+    }
   }
 
     //Logica de la tabla y paginacion

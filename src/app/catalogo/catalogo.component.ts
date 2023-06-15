@@ -8,10 +8,10 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./catalogo.component.css']
 })
 export class CatalogoComponent implements OnInit {
-  productos!: any[]; // Array para almacenar los productos del JSON
+  product!: any[]; // Array para almacenar los productos del JSON
   currentIndex: number = 0; // Índice del producto actual
   categorias: string[] = ['Todas', 'Categoría 1', 'Categoría 2'];
-  imagenes: string[] = [];
+  imagenes!: any [];
   searchText: string = '';
   filteredProductos: any[] = [];
   selectedCategory: string = 'Todas';
@@ -19,17 +19,17 @@ export class CatalogoComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
-    this.http.get<any>('assets/json/productos.json').subscribe(data => {
-      this.productos = data.productos;
+    this.http.get<any>('assets/json/product.json').subscribe(data => {
+      this.product = data.product;
 
-      this.filteredProductos = this.productos;
-      this.imagenes = this.filteredProductos.slice(0, 6).map(producto => producto.imagen);
+      this.filteredProductos = this.product;
+      this.imagenes = this.filteredProductos.slice(0, 6).map(product => product.imagen);
     });
   }
 
   next() {
     // Avanzar al siguiente conjunto de productos
-    if (this.currentIndex < this.productos.length - 4) {
+    if (this.currentIndex < this.product.length - 4) {
       this.currentIndex++;
     }
   }
@@ -50,18 +50,8 @@ export class CatalogoComponent implements OnInit {
   }
 
   filterProducts() {
-    if (this.selectedCategory === 'Todas') {
-      this.filteredProductos = this.productos.filter(producto =>
-        producto.descripcion.toLowerCase().includes(this.searchText.toLowerCase())
-      ).slice(this.currentIndex, this.currentIndex + 4);
-    } else {
-      this.filteredProductos = this.productos.filter(producto =>
-        producto.categoria === this.selectedCategory &&
-        producto.descripcion.toLowerCase().includes(this.searchText.toLowerCase())
-      ).slice(this.currentIndex, this.currentIndex + 4);
-    }
-  
-    // Actualizar las imágenes
-    this.imagenes = this.filteredProductos.map(producto => producto.imagen);
+    this.imagenes = this.filteredProductos.filter(
+      (imagen) => imagen.categoria.toLowerCase().includes(this.searchText.toLowerCase())
+    ).map(product => product.imagen);
   }
 }

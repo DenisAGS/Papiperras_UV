@@ -30,7 +30,7 @@
         <div style="margin-top: 2.5em;">
             <div class="carousel">
                 <div class="product-container">
-                    <div *ngFor="let producto of productos.slice(currentIndex, currentIndex + 4); let i = index"
+                    <div *ngFor="let producto of product.slice(currentIndex, currentIndex + 4); let i = index"
                         class="product">
                         <img [src]="producto.imagen" alt="Imagen del Producto {{ producto.id }}"
                             (click)="goToProduct(producto.id)">
@@ -45,7 +45,7 @@
                     <button (click)="prev()" [disabled]="currentIndex === 0" class="arrow">
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    <button (click)="next()" [disabled]="currentIndex >= productos.length - 4" class="arrow">
+                    <button (click)="next()" [disabled]="currentIndex >= product.length - 4" class="arrow">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
@@ -53,7 +53,10 @@
         </div>
         <h2>Coincidencias</h2>
             <div class="image-container">
-                <img class="img-p" *ngFor="let imagen of imagenes" [src]="imagen" alt="Imagen">
+                <div *ngFor="let producto of product.slice(0, 6)">
+                    <img class="img-p" [src]="producto.imagen" alt="Imagen">
+                    <p>{{ producto.descripcion }}</p>
+                  </div>
             </div>
         
     </main>

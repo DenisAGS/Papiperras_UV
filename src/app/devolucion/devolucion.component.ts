@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-devolucion',
@@ -23,17 +22,27 @@ export class DevolucionComponent implements OnInit {
   recordsPerPage = 4;
 
   searchTerm: string = '';
-  searchResults: any[] = [];
+  filteredDatos: any[] = [];
+  filteredData: any[] = [];
+
+  @ViewChild('searchInput', { static: false }) searchInputRef!: ElementRef<HTMLInputElement>;
   
   constructor() { }
 
   ngOnInit(): void {
+    this.filteredDatos = this.data;
   }
 
   search() {
-
+    const searchTerm = this.searchInputRef.nativeElement.value.trim().toLowerCase();
+    if (searchTerm !== '') {
+      this.filteredData = this.data.filter((row) =>
+        row[2].toString().toLowerCase().includes(searchTerm) // Columna del Producto (índice 2)
+      );
+    } else {
+      this.filteredData = this.data;
+    }
   }
-
   //Logica de la tabla y paginacion
   get columns() {
     return ['ID','Foto', 'Producto', 'Motivo', 'Estado', 'Lugar', 'Fecha', 'N. Cliente'];
@@ -71,7 +80,6 @@ export class DevolucionComponent implements OnInit {
       return randomDate.toLocaleDateString();
     }  
 
-    filteredData: any[]  = [];
 
     filterByDate(selectedDate: string) {
       if (selectedDate) {
