@@ -13,6 +13,7 @@ import { PasswordComponent } from './password/password.component';
 import { ValidpaswordComponent } from './validpasword/validpasword.component';
 import { RequestpaswordComponent } from './requestpasword/requestpasword.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RegisterComponent } from './register/register.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
@@ -41,6 +42,7 @@ import { ConsejosComponent } from './consejos/consejos.component';
     ValidpaswordComponent,
     RequestpaswordComponent,
     ProfileComponent,
+    RegisterComponent,
     DevolucionComponent,
     InventarioComponent,
     PreguntasFrecuentesComponent,
@@ -60,7 +62,8 @@ import { ConsejosComponent } from './consejos/consejos.component';
     ProfileComponent,
     PasswordComponent,
     RequestpaswordComponent,
-    ValidpaswordComponent
+    ValidpaswordComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

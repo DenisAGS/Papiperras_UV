@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+   <!-- Link hacia el archivo de estilos css -->
+   <link rel="stylesheet" href="register.component.css">
+
+   <style type="text/css">
+   </style>
+
+
+</head>
+<header>
+    <app-header-page title="Registrarse"></app-header-page>
+</header>
+<app-sidebar></app-sidebar>
+<body>
+    <div class="container bg-white mt-sm-4 mb-5">
+        
+        <div class="wrapper d-flex justify-content-center flex-column px-md-5 px-1">
+            <div class="h3 text-center font-weight-bold"></div><br>
+            <div class="row my-4">
+                <div class="col-md-6"> <label>RFC  </label> <input type="text" placeholder="Jhon Smith"> </div>
+                <div class="col-md-6 pt-md-0 pt-4"> <label>Empresa</label> <input type="text" placeholder="Manager"> </div>
+            </div>
+            <div class="row my-md-4 my-2">
+                <div class="col-md-6"> <label>Correo electronico</label> <input type="email" placeholder="jhon19@mail.com"> </div>
+                <div class="col-md-6 pt-md-0 pt-4"> <label>Numero telefono</label> <input type="tel" placeholder="+7 483 779 90 60"> </div>
+            </div>
+            <div class="row my-md-4 my-2">
+                <div class="col-md-6"> <label>Company</label> <input type="email" placeholder="Company Name"> </div>
+                
+            </div> <label class="mt-md-0 mt-2">Numero empleados</label>
+            <div class="d-lg-flex justify-content-between align-items-center pb-4">
+                <div class="size"> <label class="option"> <input type="radio" name="radio">&lt; 10 <span class="checkmark"></span> </label> </div>
+                <div class="size"> <label class="option"> <input type="radio" name="radio">11 - 25 <span class="checkmark"></span> </label> </div>
+                <div class="size"> <label class="option"> <input type="radio" name="radio">26 - 50 <span class="checkmark"></span> </label> </div>
+                <div class="size"> <label class="option"> <input type="radio" name="radio">50 - 100 <span class="checkmark"></span> </label> </div>
+                <div class="size"> <label class="option"> <input type="radio" name="radio">&gt; 100 <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="d-flex justify-content-end"> 
+                <button class="btn" routerLink="/login">Registrarse</button> </div>
+                <p routerLink="">Acepto los terminos y condiones</p>
+        </div>
+    </div>
+</body>
+</html>

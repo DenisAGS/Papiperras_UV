@@ -1,304 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Asociados UV</title>
-  <base href="/">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<html>
 
-   <!-- Link hacia el archivo de estilos css -->
-   <link rel="stylesheet" href="profile.component.css">
+<head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+</head>
+<header>
+    <app-header-page title="Usuario"></app-header-page>
+</header>
+<app-sidebar></app-sidebar>
 
-   <style type="text/css">
-   </style>
-   
-   <script type="text/javascript">
-
-   </script>
-    </head>
-    <body>
-
-        <div class="container rounded bg-white mt-5">
-            <div class="row">
-                <div class="col-md-4 border-right">
-                    <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="https://i.imgur.com/0eg0aG0.jpg" width="90"><span class="font-weight-bold">John Doe</span><span class="text-black-50">john_doe12@bbb.com</span><span>United States</span></div>
-                </div>
-                <div class="col-md-8">
-                    <div class="p-3 py-5">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="d-flex flex-row align-items-center back"><i class="fa fa-long-arrow-left mr-1 mb-1"></i>
-                                <h6>Back to home</h6>
-                            </div>
-                            <h6 class="text-right">Edit Profile</h6>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-6"><input type="text" class="form-control" placeholder="first name" value="John"></div>
-                            <div class="col-md-6"><input type="text" class="form-control" value="Doe" placeholder="Doe"></div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-md-6"><input type="text" class="form-control" placeholder="Email" value="john_doe12@bbb.com"></div>
-                            <div class="col-md-6"><input type="text" class="form-control" value="+19685969668" placeholder="Phone number"></div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-md-6"><input type="text" class="form-control" placeholder="address" value="D-113, right avenue block, CA,USA"></div>
-                            <div class="col-md-6"><input type="text" class="form-control" value="USA" placeholder="Country"></div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-md-6"><input type="text" class="form-control" placeholder="Bank Name" value="Bank of America"></div>
-                            <div class="col-md-6"><input type="text" class="form-control" value="043958409584095" placeholder="Account Number"></div>
-                        </div>
-                        <div class="mt-5 text-right"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+<body style="margin-top: 60px;">
+  <div class="container rounded bg-white mt-5">
+    <div class="row">
+        <div class="col-md-4 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="https://i.imgur.com/0eg0aG0.jpg" width="90"><span class="font-weight-bold">John Doe</span><span class="text-black-50">john_doe12@bbb.com</span><span>United States</span></div>
+        </div>
+        <div class="col-md-8">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex flex-row align-items-center back"><i class="fa fa-long-arrow-left mr-1 mb-1"></i>
                     </div>
+                    <h6 class="text-right">Editar perfil</h6>
                 </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre" ></div>
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Apellidos"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Correo electronico"></div>
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Numero de telefono"></div>
+                </div>
+                <div class="row mt-3">  
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Dirección"></div>
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Estado"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="RFC"></div>
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Empresa"></div>
+                </div>
+                <div class="mt-5 text-right"><button class="btn btn-primary profile-button" type="button">Guardar perfil</button></div>
             </div>
         </div>
-        <header>
-          <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">       
-              </a>
-            </div>
-          </nav>
-            <div class="toolbar" role="banner">
-              <li class="nav-item">
-                <a class="nav-link" data-widget="pushmenu" href="#" role="button" style="display: flex; align-items: center; justify-content: center; width: 45px; height: 45px;">
-                  <i class="fas fa-bars" style="color: #ffffff; font-size: 20px;"></i></a>
-              </li>
-                <a class="link-icon" href="">
-                  <img src="../assets/Images/apreton-de-manos.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                  ASOCIADOS UV
-                </a>
-            
-            
-                <div class="header-icons">
-                  <a href="" class="icon-link">
-                      <img src="../../assets/Images/Alerta.png" alt="Alertas">
-                
-                    <span>Alertas</span>
-                  </a>
-                  <a href="" class="icon-link">
-                    <img src="../../assets/Images/usuario.png" alt="Sesion">
-                    <span>Sesion</span>
-                  </a>
-                </div>
-              </div>
-        </header>    
-      
-        
-        <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark elevation-4" style="margin-top: 70px; height: 88.5vh; display: flex; flex-direction: column;">
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-                            with font-awesome or any other icon font library -->
-                            <li class="nav-item">
-                                <a href="../widgets.html" class="nav-link">
-                                    <i class="nav-icon fas fa-cart-plus"></i>
-                                    <p>
-                                        Publicar Producto
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fas fa-comments"></i>
-                                    <p>
-                                        Preguntas
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="../layout/top-nav.html" class="nav-link">
-                                            <i class="far fa-question-circle nav-icon"></i>
-                                            <p>Preguntas de Clientes</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../layout/top-nav-sidebar.html" class="nav-link">
-                                            <i class="fas fa-bullhorn nav-icon"></i>
-                                            <p>Reclamos</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-shipping-fast nav-icon"></i>
-              <p>
-                Progreso de la venta
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../charts/chartjs.html" class="nav-link">
-                  <i class="fas fa-truck nav-icon"></i>
-                  <p>Estado de la venta</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/flot.html" class="nav-link">
-                  <i class="fas fa-truck-loading nav-icon"></i>
-                  <p>Información de envío</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-boxes"></i>
-              <p>
-                Inventario
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../UI/general.html" class="nav-link">
-                  <i class="fas fa-warehouse nav-icon"></i>
-                  <p>Mi Almacén</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/icons.html" class="nav-link">
-                  <i class="fas fa-percent nav-icon"></i>
-                  <p>Ofertas</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-dollar-sign"></i>
-              <p>
-                Movimientos
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../forms/general.html" class="nav-link">
-                  <i class="fas fa-file-invoice-dollar nav-icon"></i>
-                  <p>Estado de Cuenta</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../forms/advanced.html" class="nav-link">
-                  <i class="fas fa-hand-holding-usd nav-icon"></i>
-                  <p>Retiro de Fondos</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../forms/editors.html" class="nav-link">
-                  <i class="fas fa-receipt nav-icon"></i>
-                  <p>Facturas</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-toolbox"></i>
-              <p>
-                Herramientas
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../tables/simple.html" class="nav-link">
-                  <i class="fas fa-chart-bar nav-icon"></i>
-                  <p>Estadisticas</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/data.html" class="nav-link">
-                  <i class="fas fa-ad nav-icon"></i>
-                  <p>Publicidad</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/jsgrid.html" class="nav-link">
-                  <i class="fas fa-chart-line nav-icon"></i>
-                  <p>Tendencias</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/jsgrid.html" class="nav-link">
-                  <i class="fas fa-search-plus nav-icon"></i>
-                  <p>Otros Productos</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/jsgrid.html" class="nav-link">
-                  <i class="fas fa-comment-medical nav-icon"></i>
-                  <p>Consejos</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-grin-stars"></i>
-              <p>
-                Valoración
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../tables/simple.html" class="nav-link">
-                  <i class="fas fa-thumbs-up nav-icon"></i>
-                  <p>Reseñas Recibidas</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/data.html" class="nav-link">
-                  <i class="fas fa-exclamation-triangle nav-icon"></i>
-                  <p>Resolución de Problemas</p>
-                </a>
-              </li>
-            </ul>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-hands-helping"></i>
-                <p>
-                  Ayuda
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="../tables/simple.html" class="nav-link">
-                    <i class="fas fa-people-carry nav-icon"></i>
-                    <p>Preguntas Frecuentes</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="../tables/data.html" class="nav-link">
-                    <i class="fas fa-life-ring nav-icon"></i>
-                    <p>Tutoriales</p>
-                  </a>
-                </li>
-              </ul>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
-  </aside>
+</div>
 
-    </body>
+</body>
+
 </html>
-          
-
-
-              

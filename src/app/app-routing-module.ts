@@ -11,6 +11,7 @@ import { PasswordComponent } from './password/password.component';
 import { RequestpaswordComponent } from './requestpasword/requestpasword.component';
 import { ValidpaswordComponent } from './validpasword/validpasword.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RegisterComponent } from './register/register.component';
 import { DevolucionComponent } from './devolucion/devolucion.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
@@ -66,6 +67,10 @@ const routes: Routes = [
   {
     path:'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   },
   {
     path:'devolucion',
