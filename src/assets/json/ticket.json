@@ -1,0 +1,189 @@
+{
+    "categorias": {
+        "semana": {
+            "labels": [
+                "Electrónica",
+                "Ropa",
+                "Hogar",
+                "Accesorios",
+                "Juguetes",
+                "Deportes",
+                "Belleza"
+            ],
+            "volumentotal": [
+                828, 1176, 682, 897, 1112, 492, 1041
+            ]
+        },
+        "mensual": {
+            "labels": [
+                "Electrónica",
+                "Ropa",
+                "Hogar",
+                "Accesorios",
+                "Juguetes",
+                "Deportes",
+                "Belleza"
+            ],
+            "volumentotal": [
+                469, 1046, 562, 763, 759, 680, 812
+            ]
+        },
+        "anual": {
+            "labels": [
+                "Electrónica",
+                "Ropa",
+                "Hogar",
+                "Accesorios",
+                "Juguetes",
+                "Deportes",
+                "Belleza"
+            ],
+            "volumentotal": [
+                469, 1046, 562, 763, 759, 680, 812
+            ]
+        }
+    },
+    "area": {
+        "semana": {
+            "labels": [
+                "Electrónica",
+                "Ropa",
+                "Hogar",
+                "Accesorios",
+                "Juguetes",
+                "Deportes",
+                "Belleza"
+            ],
+            "categorias": {
+                "Electrónica": {
+                    "volumen": [
+                        37, 46, 39, 22, 31, 33, 28
+                    ]
+                },
+                "Ropa": {
+                    "volumen": [
+                        21, 30, 35, 19, 45, 36, 24
+                    ]
+                },
+                "Hogar": {
+                    "volumen": [
+                        21, 30, 35, 19, 45, 36, 24
+                    ]
+                },
+                "Accesorios": {
+                    "volumen": [
+                        21, 30, 25, 19, 45, 36, 24
+                    ]
+                },
+                "Juguetes": {
+                    "volumen": [
+                        21, 30, 35, 59, 45, 36, 24
+                    ]
+                },
+                "Deportes": {
+                    "volumen": [
+                        43, 31, 22, 38, 49, 27, 17
+                    ]
+                },
+                "Belleza": {
+                    "volumen": [
+                        43, 31, 22, 38, 49, 27, 17
+                    ]
+                }
+            }
+        },
+        "anual": {
+            "labels": [
+                "Electrónica",
+                "Ropa",
+                "Hogar",
+                "Accesorios",
+                "Juguetes",
+                "Deportes",
+                "Belleza"
+            ],
+            "categorias": {
+                "Electrónica": {
+                    "volumen": [
+                        43, 31, 22, 38, 49, 27, 17
+                    ]
+                },
+                "Ropa": {
+                    "volumen": [
+                        35, 46, 34, 20, 28, 41, 39
+                    ]
+                },
+                "Hogar": {
+                    "volumen": [
+                        45, 17, 30, 24, 16, 40, 43
+                    ]
+                },
+                "Accesorios": {
+                    "volumen": [
+                        27, 18, 32, 48, 37, 29, 23
+                    ]
+                },
+                "Juguetes": {
+                    "volumen": [
+                        19, 47, 26, 36, 21, 44, 15
+                    ]
+                },
+                "Deportes": {
+                    "volumen": [
+                        29, 47, 66, 36, 21, 44, 45
+                    ]
+                },
+                "Belleza": {
+                    "volumen": [
+                        21, 30, 35, 19, 45, 36, 24
+                    ]
+                }
+            }
+        },
+        "mensual": {
+            "labels": [
+                "Semana 1",
+                "Semana 2",
+                "Semana 3",
+                "Semana 4"
+            ],
+            "categorias": {
+                "Electrónica": {
+                    "volumen": [
+                        21, 30, 35, 19, 45, 36, 24
+                    ]
+                },
+                "Ropa": {
+                    "volumen": [
+                        33, 17, 39, 38, 23, 47, 15
+                    ]
+                },
+                "Hogar": {
+                    "volumen": [
+                        32, 42, 20, 43, 26, 28, 16
+                    ]
+                },
+                "Accesorios": {
+                    "volumen": [
+                        50, 47, 15, 25, 16, 19, 45
+                    ]
+                },
+                "Juguetes": {
+                    "volumen": [
+                        37, 46, 39, 22, 31, 33, 28
+                    ]
+                },
+                "Deportes": {
+                    "volumen": [
+                        37, 46, 39, 22, 31, 33, 28
+                    ]
+                },
+                "Belleza": {
+                    "volumen": [
+                        37, 46, 39, 22, 31, 33, 28
+                    ]
+                }
+            }
+        }
+    }
+}

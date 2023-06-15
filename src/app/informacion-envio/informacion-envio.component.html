@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retiro de Fondos</title>
+</head>
+<header>
+    <app-header-page title="Retiro de Fondos"></app-header-page>
+    <link rel="stylesheet" href="informacion-envio.component.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+
+</header>
+<app-sidebar></app-sidebar>
+
+<body style="margin-top: 60px;">
+    <!-- Content Wrapper. Contains page content -->
+    <div id="principal">
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card direct-chat direct-chat-primary" style="background: rgba(255, 201, 148, 0.2);
+                            border-radius: 25px;">
+                            <div class="card-header">
+                               <b><h2 class="card-title">Datos de envío</h2></b>
+                            </div>
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-4">
+                                            <p style="margin-top: 25px;">Modo de envío: </p>
+                                        </div>
+                                        <div class="col-12 col-sm-8">
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-bottom: 20px;">
+                                        <div class="col-12 col-sm-4">
+                                            <p style="margin-top: 15px;">Número de guía: </p>
+                                        </div>
+                                        <div class="col-12 col-sm-8">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" id ="numero" value="0" min="0" max="100">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row">
+                                      <div class="col-12 col-sm-4">
+                                          <p style="margin-top: 15px;">Paquetería: </p>
+                                      </div>
+                                      <div class="col-12 col-sm-8">
+                                          <input type="text" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <p style="margin-top: 15px;">Fecha de envío: </p>
+                                    </div>
+                                    <div class="col-12 col-sm-8">
+                                        <input class="input" type="date" id="inicioOfe" name="inicioOferta" min="<?= date('Y-m-d'); ?>"> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-12 col-sm-4">
+                                      <p style="margin-top: 15px;">Fecha de entrega: </p>
+                                  </div>
+                                  <div class="col-12 col-sm-8">
+                                      <input class="input" type="date" id="inicioOfe" name="inicioOferta" min="<?= date('Y-m-d'); ?>"> 
+                                  </div>  
+                              </div> 
+                                </form> 
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <div class="card direct-chat direct-chat-primary" style="background: rgba(255, 201, 148, 0.2); border-radius: 25px;">
+                              <div class="card-header">
+                                <h3 class="card-title">Recepción de mercancia </h3>
+                              </div>
+                              <div class="card-body">
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-4">
+                                            <p style="margin-top: 25px;">Persona quien recibe: </p>
+                                        </div>
+                                        <div class="col-12 col-sm-8">
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-bottom: 20px;">
+                                        <div class="col-12 col-sm-4">
+                                            <p style="margin-top: 15px;">Número de recepción: </p>
+                                        </div>
+                                        <div class="col-12 col-sm-8">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" id ="numero" value="0" min="0" max="100">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                  <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <p style="margin-top: 15px;">Fecha de recepción: </p>
+                                    </div>
+                                    <div class="col-12 col-sm-8">
+                                        <input class="input" type="date" id="inicioOfe" name="inicioOferta" min="<?= date('Y-m-d'); ?>"> 
+                                    </div>
+                                </div>
+                                </form> 
+                              </div>
+                            </div>
+                          </div>
+                    </div>   
+                    
+                    <div class="row " style="padding-top: 40px; padding-bottom: 40px; ">             
+                        <div class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
+                            <button type="submit" id="btnAceptar"class="btn btn-primary btn-block">Generar PDF</button>
+                        </div>
+                    </div>
+    
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <app-footer-page></app-footer-page>
+</body>
+
+</html>

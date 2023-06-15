@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Facturación</title>
+</head>
+<header>
+    <app-header-page title="Retiro de Fondos"></app-header-page>
+    <link rel="stylesheet" href="facturacionft.component.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+
+</header>
+<app-sidebar></app-sidebar>
+
+<body style="margin-top: 60px;">
+    <!-- Content Wrapper. Contains page content -->
+    <div id="principal">
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <tr>
+                        <td>
+                            <div class="col-md-16">
+                                <div class="card direct-chat direct-chat-primary" style="background: rgba(255, 201, 148, 0.2);
+                                    border-radius: 25px;">
+                                    <div class="card-header">
+                                       <h2 class="card-title">Datos de facturación</h2>
+                                    </div>
+                                        <form action="#" method="post">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4">
+                                                    <p style="margin-top: 25px;">Tipo de persona: </p>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <input type="text" class="form-control" >
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4">
+                                                    <p style="margin-top: 25px;">Nombre o razón social: </p>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <input type="text" class="form-control" >
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4">
+                                                    <p style="margin-top: 25px;">Nombre fiscal o timbrado: </p>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <input type="text" class="form-control" >
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4">
+                                                    <p style="margin-top: 25px;">Regimen fiscal: </p>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <input type="text" class="form-control" >
+                                                </div>
+                                            </div>
+                                            <tr>
+                                                <td>
+                                                    <div class="row" style="padding-bottom: 20px;">
+                                                        <div class="col-12 col-sm-4">
+                                                            <p style="margin-top: 15px;">RFC: </p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-5">
+                                                            <input type="text" class="form-control" >
+                                                        </div>
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                      <div class="col-12 col-sm-6">
+                                                          <p style="margin-top: 15px;">Código postal: </p>
+                                                      </div>
+                                                      <div class="col-12 col-sm-5">
+                                                          <input type="text" class="form-control">
+                                                      </div>
+                                                  </div>
+        
+                                                </td>
+                                            </tr>                                  
+                                        </form> 
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row " style="padding-top: 20px;">             
+                                <div class="col-12 col-sm-8 d-flex align-items-center justify-content-center">
+                                    <button type="submit" id="btnAceptar"class="btn btn-primary btn-block" routerLink="/facturacioni">Generar Factura</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr> 
+
+                   
+
+                    <div id="table-container" >
+                        <tr>
+                            <td>
+                                <h2 class="card-title col-10 align-items-center justify-content-center">Historial: </h2>
+                            </td>
+                        </tr>
+                         
+                        <table id="data-table">
+                          <thead>
+                            <tr>
+                              <th *ngFor="let column of columns">{{ column }}</th>
+                            </tr>
+                          </thead>
+                          
+                          <tbody>
+                              <tr *ngFor="let row of displayedData">
+                              <td>{{ row[0] }}</td> <!-- ID -->
+                              <td>{{ row[1] }}</td><!-- Producto -->
+                              <td>{{ row[2] }}</td> <!-- Nombre -->
+                              <td>{{ row[3] }}</td> <!-- Motivo -->
+                              <td>{{ row[4] }}</td> <!-- Estado -->
+                              <td>{{ row[5] }}</td> <!-- Lugar -->
+                              <td>{{ row[6] }}</td> <!-- Fecha -->
+                              <td>{{ row[7] }}</td> <!-- N. Cliente -->
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div id="pagination" class="centered-pagination">
+                        <button class="pagination-button" (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">
+                          <i class="fas fa-arrow-left"></i> Anterior
+                        </button>
+                    
+                        <button *ngFor="let pageNumber of getPageNumbers()" [class.active]="pageNumber === currentPage"
+                          (click)="changePage(pageNumber)">
+                          {{ pageNumber }}
+                        </button>
+                    
+                        <button class="pagination-button" (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">
+                          Siguiente <i class="fas fa-arrow-right"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <app-footer-page></app-footer-page>
+</body>
+
+</html>

@@ -32,10 +32,18 @@ import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { VolumenComponent } from './volumen/volumen.component';
 import { ConsejosComponent } from './consejos/consejos.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
+import { InformacionEnvioComponent } from './informacion-envio/informacion-envio.component';
+import { NotificacionesComponent } from './notificaciones/notificaciones.component';
+import { EstadocuentaComponent } from './estadocuenta/estadocuenta.component';
+import { FilterPipe } from './estadocuenta/filter.pipe';
+import { FacturacionftComponent } from './facturacionft/facturacionft.component';
+import { FacturacionimgComponent } from './facturacionimg/facturacionimg.component';
+import { TicketComponent } from './ticket/ticket.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FilterPipe,
     PrincipalComponent,
     AboutUsComponent,
     DevolucionComponent,
@@ -56,7 +64,13 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
     ConsejosComponent,
     CalendarioComponent,
     VolumenComponent,
-    SaldosComponent
+    SaldosComponent,
+    InformacionEnvioComponent,
+    NotificacionesComponent,
+    EstadocuentaComponent,
+    FacturacionftComponent,
+    FacturacionimgComponent,
+    TicketComponent
   ],
   imports: [
     BrowserModule,

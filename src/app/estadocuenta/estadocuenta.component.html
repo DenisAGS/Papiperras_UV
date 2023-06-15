@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados UV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <app-header-page title="Estado de cuenta"></app-header-page>
+  </header>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados UV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <app-header-page title="Estado de cuenta"></app-header-page>
+  </header>
+  <app-sidebar></app-sidebar>
+
+  <div style="margin-left: 8em;">
+    <div class="mr-3" style="margin-left: 2em; display: inline-block;">
+      <div class="search-wrapper">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Filtrar">
+        <div class="input-group-append">
+          <i class="fas fa-search search-icon" (click)="search()" (keydown.enter)="search()"></i>
+        </div>
+      </div>
+    </div>
+    <div class="filtro-date">
+      <input class="input" type="date" id="inicioOfe" name="inicioOferta" min="<?= date('Y-m-d'); ?>">
+    </div>
+  
+    <div id="table-container">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th *ngFor="let column of columns">{{ column }}</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of displayedData | filter: searchTerm" (click)="selectObject(row)">
+              <input type="checkbox" data-required="1">
+            <td>{{ row[0] }}</td> <!-- ID -->
+            <td>{{ row[1] }}</td><!-- Producto -->
+            <td>{{ row[2] }}</td> <!-- Nombre -->
+            <td>{{ row[3] }}</td> <!-- Motivo -->
+            <td>{{ row[4] }}</td> <!-- Estado -->
+            <td>{{ row[5] }}</td> <!-- Lugar -->
+            <td>{{ row[6] }}</td> <!-- Fecha -->
+            <td>{{ row[7] }}</td> <!-- N. Cliente -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="pagination" class="centered-pagination">
+      <button class="pagination-button" (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">
+        <i class="fas fa-arrow-left"></i> Anterior
+      </button>
+  
+      <button *ngFor="let pageNumber of getPageNumbers()" [class.active]="pageNumber === currentPage"
+        (click)="changePage(pageNumber)">
+        {{ pageNumber }}
+      </button>
+  
+      <button class="pagination-button" (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">
+        Siguiente <i class="fas fa-arrow-right"></i>
+      </button>
+
+      <div class="row ">             
+        <button type="submit" id="btnAceptar"class="btn btn-primary btn-block" routerLink="/facturaciont">Facturar</button>
+      </div>
+    </div>
+  </div>
+  
+  <app-footer-page></app-footer-page>
+</body>
+</html>
+

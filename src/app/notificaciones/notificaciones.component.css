@@ -1,0 +1,16 @@
+#principal {
+    padding-left: 30%;
+  }
+
+  @media (max-width: 870px) {
+    #principal {
+      padding-left: 0;
+}
+}
+.card-body{
+  color: aliceblue;
+}
+
+.card-header{
+    background: rgba(242, 157, 245, 0.7);
+  }

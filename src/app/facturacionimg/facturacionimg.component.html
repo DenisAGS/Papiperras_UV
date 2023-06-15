@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Facturación</title>
+</head>
+<header>
+    <app-header-page title="Retiro de Fondos"></app-header-page>
+    <link rel="stylesheet" href="facturacionimg.component.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+
+</header>
+<app-sidebar></app-sidebar>
+
+<body style="margin-top: 60px;">
+    <!-- Content Wrapper. Contains page content -->
+    <div id="principal">
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <tr>
+                        <td>
+                            <div class="col-md-16">
+                                <img src="../assets/Images/notificaciones/facturacion.png" alt="Imagen del producto"
+                                                    style="height: 1000px; width: 700px; border-radius: 15px;">
+                            </div> <br><br>
+
+                            <div class="contenedor-terminos"><input type="checkbox" data-required="1">
+                                <label for="terminos"><span class="span-terminos"> Acepto que mis datos estan correctamente 
+                                    </span>
+                            </label>
+                            </div> <br>
+                            <div class="row ">             
+                                <button type="submit" id="btnAceptar"class="btn btn-primary btn-block">Generar Factura</button>
+                            </div>
+                        </td>
+                    </tr> 
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -22,7 +22,12 @@ import { SaldosComponent } from './saldos/saldos.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { VolumenComponent } from './volumen/volumen.component';
-
+import {InformacionEnvioComponent} from './informacion-envio/informacion-envio.component';
+import {NotificacionesComponent} from './notificaciones/notificaciones.component';
+import {EstadocuentaComponent} from './estadocuenta/estadocuenta.component';
+import {FacturacionftComponent} from './facturacionft/facturacionft.component';
+import {FacturacionimgComponent} from './facturacionimg/facturacionimg.component';
+import { TicketComponent } from './ticket/ticket.component';
 const routes: Routes = [
   {
     path: '',
@@ -95,6 +100,31 @@ const routes: Routes = [
   {
     path: 'reclamos-formulario',
     component: ReclamosFormularioComponent
+  },
+  {
+    path: 'informacion-envio',
+    component: InformacionEnvioComponent
+  },
+  {
+    path: 'notificaciones',
+    component: NotificacionesComponent
+  },
+
+  {
+    path: 'estadocuenta',
+    component: EstadocuentaComponent
+  },
+  {
+    path: 'facturaciont',
+    component: FacturacionftComponent
+  },
+  {
+    path: 'facturacioni',
+    component: FacturacionimgComponent
+  },
+  {
+    path: 'ticket',
+    component: TicketComponent
   }
 
 ];
