@@ -16,6 +16,7 @@ a{
     color: #690569;
     font-size: smaller;
     display: block;
+    cursor: pointer;
 }
 
 .tabla{
