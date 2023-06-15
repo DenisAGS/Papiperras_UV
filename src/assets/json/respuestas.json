@@ -1,0 +1,42 @@
+[
+    {
+        "fecha": "2022-02-03",
+        "tipo_producto": "Ropa",
+        "Pregunta": "¿Tienes esta camiseta en talla L?",
+        "Nombre": "María",
+        "Estado": "🔴",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-03",
+        "tipo_producto": "Electrónico",
+        "Pregunta": "¿Es compatible con mi dispositivo?",
+        "Nombre": "Laura",
+        "Estado": "🔴",
+        "selected": false
+    },
+    {
+        "fecha": "2021-02-02",
+        "tipo_producto": "Ropa",
+        "Pregunta": "¿Tienes este vestido en color azul?",
+        "Nombre": "Ana",
+        "Estado": "🔴",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-06",
+        "tipo_producto": "Hogar",
+        "Pregunta": "¿Tienen envío internacional?",
+        "Nombre": "Elena",
+        "Estado": "🔴",
+        "selected": false
+    },
+    {
+        "fecha": "2023-02-11",
+        "tipo_producto": "Electrónico",
+        "Pregunta": "¿Cuál es la capacidad de almacenamiento?",
+        "Nombre": "Javier",
+        "Estado": "🔴",
+        "selected": false
+    }
+]

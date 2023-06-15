@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProblemasProductos</title>
+</head>
+<body>
+    <header> 
+        <app-header-page title="Preguntas Clientes"></app-header-page>
+      </header>
+      
+      <app-sidebar></app-sidebar>
+
+    <main>
+        <div class="busqueda">
+            <div class="filtro">
+                <form action="problemas-productos.component.ts">
+                    <select [(ngModel)]="filtroSeleccionado" (change)="filtrarTabla()">
+                        <option value="">ordenar por</option>
+                        <option value="dia">Día</option>
+                        <option value="semana">Semana</option>
+                        <option value="mes">Mes</option>
+                        <option value="anio">Año</option>
+                    </select>
+                </form>
+              </div>
+              <form action=""><input class="buscar" type="text" name="search" [(ngModel)]="searchText" (input)="filtrarTabla()" autocomplete="on" placeholder="BUSCAR"></form>
+
+        </div>
+        <div class="contenedor">
+            <table class="tabla">
+                <thead>
+                <tr>
+                    <th><input type="checkbox" [(ngModel)]="selectAll" (change)="toggleSelectAll()"></th>
+                    <th>Fecha</th>
+                    <th>Tipo de producto</th>
+                    <th>Pregunta</th>
+                    <th>Usuario</th>
+                    <th>Estado</th>
+                </tr>
+                </thead>
+                <tbody>
+                     <tr *ngFor="let item of data | paginate: {itemsPerPage: elementosPorPagina, currentPage: paginaActual}">
+                        <td><input type="checkbox" [(ngModel)]="item.selected"></td>
+                        <td>{{ item.fecha }}</td>
+                        <td>{{ item.tipo_producto }}</td>
+                        <td>{{ item.Pregunta }}</td>
+                        <td>{{ item.Nombre }}</td>
+                        <td>{{ item.Estado }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        
+        <div class="paginacion">
+            <pagination-controls (page)="paginaActual"
+            (itemsPerPage)="elementosPorPagina"
+            (totalItems)="data.length"
+            (pageChange)="onPageChange($event)"
+            ></pagination-controls>
+        </div>
+
+        <div class="final">
+            <p class="p">🟢 Respondida</p>
+            <p>🔴 Sin responder</p>
+            
+            <button class="boton1" (click)="eliminarFilasSeleccionadas()">Eliminar</button>
+            <button class="boton2" (click)="redireccionar()">Responder</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -15,6 +15,13 @@ import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.compo
 import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
 import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component';
 import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
+
+import { ProblemasProductosComponent } from './problemas-productos/problemas-productos.component';
+import { PreguntasClientesComponent } from './preguntas-clientes/preguntas-clientes.component';
+import { RespuestasPreguntasComponent } from './respuestas-preguntas/respuestas-preguntas.component';
+import { ReclamosClientesComponent } from './reclamos-clientes/reclamos-clientes.component';
+import { DetallesComponent } from './detalles/detalles.component';
+
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
 import { DatosRetiroComponent } from './datos-retiro/datos-retiro.component';
@@ -22,6 +29,7 @@ import { SaldosComponent } from './saldos/saldos.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { VolumenComponent } from './volumen/volumen.component';
+
 
 const routes: Routes = [
   {
@@ -95,6 +103,26 @@ const routes: Routes = [
   {
     path: 'reclamos-formulario',
     component: ReclamosFormularioComponent
+  },
+  {
+    path:'problemas-productos',
+    component: ProblemasProductosComponent
+  },
+  {
+    path:'preguntas-clientes',
+    component: PreguntasClientesComponent
+  },
+  {
+    path:'respuestas-preguntas',
+    component: RespuestasPreguntasComponent
+  },
+  {
+    path:'reclamos-clientes',
+    component: ReclamosClientesComponent
+  },
+  {
+    path:'detalles',
+    component: DetallesComponent
   }
 
 ];

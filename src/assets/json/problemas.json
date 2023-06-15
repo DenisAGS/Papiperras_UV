@@ -1,44 +1,46 @@
 [
-  {
-    "fecha": "08/11/2021",
-    "tipo_producto": "Licuadora",
-    "motivo": "Producto incompleto...",
-    "estado": ""
-  },
-  {
-    "fecha": "25/02/2022",
-    "tipo_producto": "Bocina",
-    "motivo": "Producto dañado...",
-    "estado": ""
-  },
-  {
-    "fecha": "15/03/2022",
-    "tipo_producto": "Audífonos",
-    "motivo": "Producto irrelevante...",
-    "estado": ""
-  },
-  {
-    "fecha": "08/11/2021",
-    "tipo_producto": "Licuadora",
-    "motivo": "Producto incompleto...",
-    "estado": ""
-  },
-  {
-    "fecha": "25/02/2022",
-    "tipo_producto": "Bocina",
-    "motivo": "Producto dañado...",
-    "estado": ""
-  },
-  {
-    "fecha": "08/11/2021",
-    "tipo_producto": "Licuadora",
-    "motivo": "Producto incompleto...",
-    "estado": "🟢"
-  },
-  {
-    "fecha": "25/02/2022",
-    "tipo_producto": "Bocina",
-    "motivo": "Producto dañado...",
-    "estado": "🔴"
-  }
-]
+    {
+      "fecha": "08/11/2021",
+      "tipo_producto": "Licuadora",
+      "motivo": "Producto incompleto...",
+      "estado": ""
+    },
+    {
+      "fecha": "25/02/2022",
+      "tipo_producto": "Bocina",
+      "motivo": "Producto dañado...",
+      "estado": ""
+    },
+    {
+      "fecha": "15/03/2022",
+      "tipo_producto": "Audífonos",
+      "motivo": "Producto irrelevante...",
+      "estado": ""
+    },
+    {
+      "fecha": "08/11/2021",
+      "tipo_producto": "Licuadora",
+      "motivo": "Producto incompleto...",
+      "estado": ""
+    },
+    {
+      "fecha": "25/02/2022",
+      "tipo_producto": "Bocina",
+      "motivo": "Producto dañado...",
+      "estado": ""
+    },
+    {
+      "fecha": "08/11/2021",
+      "tipo_producto": "Licuadora",
+      "motivo": "Producto incompleto...",
+      "estado": "🟢"
+    },
+    {
+      "fecha": "25/02/2022",
+      "tipo_producto": "Bocina",
+      "motivo": "Producto dañado...",
+      "estado": "🔴"
+    }
+  ]
+  
+

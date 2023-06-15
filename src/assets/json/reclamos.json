@@ -1,73 +1,149 @@
 [
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Electrónico",
-      "condición": "Nuevo",
-      "motivo": "Regalo de cumpleaños",
-      "estado": "🔴"
+      "fecha": "2021-08-11",
+      "tipo_producto": "Licuadora",
+      "condicion":"Original",
+      "motivo": "Producto incompleto...",
+      "estado": "🟡",
+      "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+      "imagen": "../assets/Images/Licuadora.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Ropa",
-      "condición": "Usado",
-      "motivo": "Venta de garaje",
-      "estado": "🟢"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Audifonos",
+        "condicion":"De uso",
+        "motivo": "Disfuncional...",
+        "estado": "🔵",
+        "descripcion": "Se escucha hueco",
+        "imagen": "../assets/Images/Audifonos.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Hogar",
-      "condición": "Nuevo",
-      "motivo": "Decoración",
-      "estado": "🔵"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Audifonos",
+        "condicion":"De uso",
+        "motivo": "Disfuncional...",
+        "estado": "🔵",
+        "descripcion": "Se escucha hueco",
+        "imagen": "../assets/Images/Audifonos.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Electrónico",
-      "condición": "Usado",
-      "motivo": "Actualización",
-      "estado": "🟡"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Audifonos",
+        "condicion":"De uso",
+        "motivo": "Disfuncional...",
+        "estado": "🔵",
+        "descripcion": "Se escucha hueco",
+        "imagen": "../assets/Images/Audifonos.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Ropa",
-      "condición": "Nuevo",
-      "motivo": "Moda",
-      "estado": "🟢"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Hogar",
-      "condición": "Usado",
-      "motivo": "Mudanza",
-      "estado": "🔴"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Electrónico",
-      "condición": "Nuevo",
-      "motivo": "Necesidad",
-      "estado": "🔵"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Ropa",
-      "condición": "Usado",
-      "motivo": "Regalo",
-      "estado": "🟡"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Hogar",
-      "condición": "Nuevo",
-      "motivo": "Renovación",
-      "estado": "🔵"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
     },
     {
-      "fecha": "02-06-2023",
-      "tipo de producto": "Electrónico",
-      "condición": "Usado",
-      "motivo": "Tecnología",
-      "estado": "🔴"
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
+    },
+    {
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
+    },
+    {
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
+    },
+    {
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
+    },
+    {
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
+    },
+    {
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
+    },
+    {
+        "fecha": "2021-08-11",
+        "tipo_producto": "Licuadora",
+        "condicion":"Original",
+        "motivo": "Producto incompleto...",
+        "estado": "🟡",
+        "descripcion":"No funcionan las cuchillas, se quedan quietas y no licua",
+        "imagen": "../assets/Images/Licuadora.png"
     }
   ]
+
+
   

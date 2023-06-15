@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProblemasProductos</title>
+</head>
+<body>
+    <header> 
+        <app-header-page title="Preguntas Clientes"></app-header-page>
+      </header>
+      
+      <app-sidebar></app-sidebar>
+
+    <main>
+        <div *ngIf="selectedItems"></div>
+        <div class="contenedor">
+            <table class="tabla">
+                <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Usuario</th>
+                    <th>Tipo de producto</th>
+                    <th>Pregunta</th>
+                    <th>Respuesta</th>
+                </tr>
+                </thead>
+                <tbody>
+                     <tr *ngFor="let item of selectedItems | paginate: {itemsPerPage: elementosPorPagina, currentPage: paginaActual}">
+                        <td>{{ item.fecha }}</td>
+                        <td>{{ item.Nombre }}</td>
+                        <td>{{ item.tipo_producto }}</td>
+                        <td>{{ item.Pregunta }}</td>
+                        <td><textarea  rows="4" cols="40"> </textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        
+        <div class="paginacion">
+            <pagination-controls (page)="paginaActual"
+            (itemsPerPage)="elementosPorPagina"
+            (totalItems)="data.length"
+            (pageChange)="onPageChange($event)"
+            ></pagination-controls>
+        </div>
+
+        <div class="final">
+            <button class="boton2" routerLink="/preguntas-clientes">Regresar</button>
+        </div>
+    </main>
+</body>
+</html>

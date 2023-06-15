@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination'; //npm install ngx-pagination --save
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
+
 /*import { MatIconModule} from '@angular/material/icon';*/
 
 import { AppComponent } from './app.component';
@@ -16,6 +22,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { Publicidad2Component } from './publicidad/publicidad2/publicidad2.component';
 import { PubOfertasComponent } from './ofertas/pub-ofertas/pub-ofertas.component';
 import { PublicarPComponent } from './publicar-productos/publicar-p/publicar-p.component' ;
+import { ProblemasProductosComponent } from './problemas-productos/problemas-productos.component';
+import { PreguntasClientesComponent } from './preguntas-clientes/preguntas-clientes.component';
+import { RespuestasPreguntasComponent } from './respuestas-preguntas/respuestas-preguntas.component';
+import { ReclamosClientesComponent } from './reclamos-clientes/reclamos-clientes.component';
+import { DetallesComponent } from './detalles/detalles.component';
 import { ReclamosFormularioComponent } from './reclamos-formulario/reclamos-formulario.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RetiroComponent } from './retiro/retiro.component';
@@ -47,6 +58,11 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
     Publicidad2Component,
     PubOfertasComponent,
     PublicarPComponent,
+    ProblemasProductosComponent,
+    PreguntasClientesComponent,
+    RespuestasPreguntasComponent,
+    ReclamosClientesComponent,
+    DetallesComponent
     ReclamosFormularioComponent,
     HomepageComponent,
     RetiroComponent,
@@ -62,6 +78,9 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
     NgChartsModule,
     HttpClientModule,
     MatFormFieldModule,
