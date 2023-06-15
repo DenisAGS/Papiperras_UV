@@ -75,7 +75,7 @@
           <table class="tabla2">
             <thead>
               <tr>
-                <th><input class="checkbox" type="checkbox" id=""></th>
+                <th><input type="checkbox" id=""></th>
                 <th colspan="2">Producto</th>
                 <th >Precio</th>
                 <th >Stock</th>
@@ -83,7 +83,7 @@
             </thead>
             <tbody>
               <tr *ngFor="let producto of productosDisponibles">
-                <td><input class="checkbox" type="checkbox" [checked]="seleccionadosMap.has(producto.id)" (change)="toggleSeleccionado(producto)"></td>
+                <td class="td3"><input type="checkbox" [checked]="seleccionadosMap.has(producto.id)" (change)="toggleSeleccionado(producto)"></td>
                 <td class="td3"><img src="{{ producto.fotos }}"></td>
                 <td class="td3">{{ producto.nombre }}</td>
                 <td class="td3">${{ producto.precio }}</td>
@@ -92,7 +92,7 @@
             </tbody>
           </table>
           <div class="botones">
-            <button class="botonCancelar" type="button">Cancelar</button> 
+            <button class="botonCancelar" type="button" (click)="cerrarModal()">Cancelar</button> 
             <button class="botonContinuar" type="button" (click)="agregarProductos()">Confirmar</button>
           </div>
           <div class="espacio"></div>

@@ -32,7 +32,6 @@ export class CampañasComponent implements OnInit {
 
   getProductobyId(campaniaId: string): Producto[] | undefined {
     const campania = this.campaniass.find(campania => campania.id === campaniaId);
-    this.agregarProductos();
     if (campania && campania.productos) {
       const idsProductos = campania.productos;
       const productosCampaña = idsProductos.map(id => {
@@ -75,12 +74,9 @@ export class CampañasComponent implements OnInit {
   seleccionados: Producto[] = [];
 
   abrirModal(): void {
-    // Obtener todos los productos del json productosJson
     this.productosDisponibles = this.productos;
-    // Filtrar los productos ya agregados (productosEncontrados)
     const productosAgregadosIds = this.productosEncontrados?.map(producto => producto.id) || [];
     this.productosDisponibles = this.productosDisponibles.filter(producto => !productosAgregadosIds.includes(producto.id));
-    // Mostrar la ventana modal
     this.mostrarModal = true;
   }
 
@@ -105,8 +101,11 @@ export class CampañasComponent implements OnInit {
     });
   
     this.mostrarModal = false;
-  
-    console.log(this.seleccionados); // Imprimir los productos seleccionados en la consola
+    console.log(this.seleccionados); 
+  }
+
+  cerrarModal(){
+    this.mostrarModal = false;
   }
 
 }
