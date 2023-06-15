@@ -30,6 +30,7 @@ import { ListOfertasComponent } from './ofertas/list-ofertas/list-ofertas.compon
 import { CampañasComponent } from './publicidad/campañas/campañas.component';
 import { MetricasComponent } from './publicidad/metricas/metricas.component';
 import { Publicidad1Component } from './publicidad/publicidad1/publicidad1.component';
+import { EditarProductosComponent } from './editarP/editar-productos/editar-productos.component';
 
 
 
@@ -58,7 +59,8 @@ import { Publicidad1Component } from './publicidad/publicidad1/publicidad1.compo
     ListOfertasComponent,
     CampañasComponent,
     MetricasComponent,
-    Publicidad1Component
+    Publicidad1Component,
+    EditarProductosComponent
   ],
   imports: [
     BrowserModule,

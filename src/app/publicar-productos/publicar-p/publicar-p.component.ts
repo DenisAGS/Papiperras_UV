@@ -46,6 +46,7 @@ export class PublicarPComponent implements OnInit {
   agregarProducto() {
     const productos = (productosJson as any).default;
     productos.push(this.producto);
+    this.router.navigate(['/'], { state: { producto: this.producto } });
     this.producto = {
       id: '',
       nombre: '',

@@ -24,6 +24,7 @@ import { ListOfertasComponent } from './ofertas/list-ofertas/list-ofertas.compon
 import { CampañasComponent } from './publicidad/campañas/campañas.component';
 import { MetricasComponent } from './publicidad/metricas/metricas.component';
 import { Publicidad1Component } from './publicidad/publicidad1/publicidad1.component';
+import { EditarProductosComponent } from './editarP/editar-productos/editar-productos.component';
 
 const routes: Routes = [  
   {
@@ -105,9 +106,14 @@ const routes: Routes = [
   {
     path: 'metricas/:id',
     component: MetricasComponent
-  },{
+  },
+  {
     path: 'publicidad1',
     component: Publicidad1Component
+  },
+  {
+    path: 'editar_productos',
+    component: EditarProductosComponent
   }
 ];
 
