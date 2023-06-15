@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PreguntasServices } from '../services/preguntas.services';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-preguntas-clientes',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class PreguntasClientesComponent implements OnInit {
 
-  constructor(private preguntasService: PreguntasServices, private router: Router) { }
+  constructor(private preguntasService: PreguntasServices, private router: Router, private route: ActivatedRoute) { }
 
   redirectToRespuestaPreguntas(){
     this.router.navigate(['/respuestas-preguntas']);
@@ -27,6 +28,8 @@ export class PreguntasClientesComponent implements OnInit {
   dataPagina: any[] = [];//datos para la paginacion
   dataCompleta: any[] = [];//datos para la paginacion
 
+  selectedItems: any[] = [];//arreglo que almacena los checkbox seleccionados para redireccionar a la otra pagina
+
   onPageChange(event: any) {
     this.paginaActual = event; // Actualizar la página actual con el valor proporcionado por el evento
     this.actualizarDatosTabla(); // Método para actualizar los datos de la tabla según la página actual
@@ -42,10 +45,16 @@ export class PreguntasClientesComponent implements OnInit {
     const indiceFinal = indiceInicial + this.elementosPorPagina;
     this.dataPagina = this.dataCompleta.slice(indiceInicial, indiceFinal);
   }
-
+  
   getSelectedItems() {//checkbox uno por uno
-    return this.data.filter(item => item.selected);
+    this.selectedItems = this.data.filter(item => item.selected);
+    return this.selectedItems;
   }
+  
+  redireccionar() {
+    const items = this.getSelectedItems();
+    this.router.navigate(['/respuestas-preguntas'], { queryParams: { items: JSON.stringify(items) } });
+  }  
 
   toggleSelectAll() {//checkbox selecciona todo
     this.selectAll = !this.selectAll;
