@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { RespuestasServices } from '../services/respuestas.services';
+import { ActivatedRoute } from '@angular/router';
+import { PreguntasServices } from '../services/preguntas.services';
 
 @Component({
   selector: 'app-respuestas-preguntas',
@@ -9,7 +10,7 @@ import { RespuestasServices } from '../services/respuestas.services';
 })
 export class RespuestasPreguntasComponent implements OnInit {
 
-  constructor(private preguntasService: RespuestasServices, private router: Router) { }
+  constructor(private preguntasService: PreguntasServices, private router: Router, private route: ActivatedRoute) { }
 
   redirectToRespuestaPreguntas(){
     this.router.navigate(['/preguntas-clientes']);
@@ -26,6 +27,8 @@ export class RespuestasPreguntasComponent implements OnInit {
 
   dataPagina: any[] = [];//datos para la paginacion
   dataCompleta: any[] = [];//datos para la paginacion
+
+  selectedItems: any[] = [];
 
   onPageChange(event: any) {
     this.paginaActual = event; // Actualizar la página actual con el valor proporcionado por el evento
@@ -57,102 +60,17 @@ export class RespuestasPreguntasComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.preguntasService.getJsonData().subscribe(data => {//mostrar datos en la tabla
-      this.data = data;//datos
-      this.dataCompleta = data;//datos completos para filtrar
+    this.preguntasService.getJsonData().subscribe(data => {
+      this.dataCompleta = data;
+      this.actualizarDatosTabla();
+    });
+
+    this.route.queryParams.subscribe(params => {
+      if (params['items']) {
+        this.selectedItems = JSON.parse(params['items']);
+      }
       this.actualizarDatosTabla();//actualizar tabla
     });
   }
-
-  filtrarTabla() {
-    if (this.filtroSeleccionado) {
-      this.filtrar(this.filtroSeleccionado);
-    } else {
-      this.dataPagina = [...this.dataCompleta];
-      this.actualizarDatosTabla();
-    }
-  }
-
-  filtrarPorDia() {
-    const fechaActual = new Date();
-    const fechaInicio = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), fechaActual.getDate());
-    const fechaFin = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), fechaActual.getDate() + 1);
-
-    this.dataPagina = this.dataCompleta.filter(dato => {
-      const fechaDato = new Date(dato.fecha); // Asegúrate de adaptar esto según la estructura de tu objeto JSON
-      return fechaDato >= fechaInicio && fechaDato < fechaFin;
-    }).sort((a, b) => {
-      const fechaA = new Date(a.fecha);
-      const fechaB = new Date(b.fecha);
-      return fechaA.getTime() - fechaB.getTime();
-    });
-
-    this.actualizarDatosTabla();
-  }
-
-  filtrarPorSemana() {
-    const fechaActual = new Date();
-    const primerDiaSemana = fechaActual.getDate() - fechaActual.getDay();
-    const fechaInicio = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), primerDiaSemana);
-    const fechaFin = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), primerDiaSemana + 7);
-
-    this.dataPagina = this.dataCompleta.filter(dato => {
-      const fechaDato = new Date(dato.fecha); // Asegúrate de adaptar esto según la estructura de tu objeto JSON
-      return fechaDato >= fechaInicio && fechaDato < fechaFin;
-    }).sort((a, b) => {
-      const fechaA = new Date(a.fecha);
-      const fechaB = new Date(b.fecha);
-      return fechaA.getTime() - fechaB.getTime();
-    });
-
-    this.actualizarDatosTabla();
-  }
-
-  filtrarPorMes() {
-    const fechaActual = new Date();
-    const fechaInicio = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), 1);
-    const fechaFin = new Date(fechaActual.getFullYear(), fechaActual.getMonth() + 1, 0);
-
-    this.dataPagina = this.dataCompleta.filter(dato => {
-      const fechaDato = new Date(dato.fecha); // Asegúrate de adaptar esto según la estructura de tu objeto JSON
-      return fechaDato >= fechaInicio && fechaDato <= fechaFin;
-    }).sort((a, b) => {
-      const fechaA = new Date(a.fecha);
-      const fechaB = new Date(b.fecha);
-      return fechaA.getTime() - fechaB.getTime();
-    });
-
-    this.actualizarDatosTabla();
-  }
-
-  filtrarPorAnio() {
-    const fechaActual = new Date();
-    const fechaInicio = new Date(fechaActual.getFullYear(), 0, 1);
-    const fechaFin = new Date(fechaActual.getFullYear(), 11, 31);
-
-    this.dataPagina = this.dataCompleta.filter(dato => {
-      const fechaDato = new Date(dato.fecha); // Asegúrate de adaptar esto según la estructura de tu objeto JSON
-      return fechaDato >= fechaInicio && fechaDato <= fechaFin;
-    }).sort((a, b) => {
-      const fechaA = new Date(a.fecha);
-      const fechaB = new Date(b.fecha);
-      return fechaA.getTime() - fechaB.getTime();
-    });
-
-    this.actualizarDatosTabla();
-  }
-
-  filtrar(tipoFiltro: string) {
-    if (tipoFiltro === 'dia') {
-      this.filtrarPorDia();
-    } else if (tipoFiltro === 'semana') {
-      this.filtrarPorSemana();
-    } else if (tipoFiltro === 'mes') {
-      this.filtrarPorMes();
-    } else if (tipoFiltro === 'anio') {
-      this.filtrarPorAnio();
-    }
-  }
-
 
 }
